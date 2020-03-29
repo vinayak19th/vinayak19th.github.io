@@ -52,8 +52,8 @@ about_content: | # this will include new lines to allow paragraphs
   - [Tensorflow](https://www.tensorflow.org/), [cirq](https://cirq.readthedocs.io/en/stable/) and their combinational 
   library [Tensorflow Quantum](https://www.tensorflow.org/quantum). 
   - I also have some experience with deploying models using [tensorflow.js](https://www.tensorflow.org/js)
-  <br>
-  I aim to combine my two passions and work in the field of Quantum Machine Learning.
+  
+  <br>I aim to combine my two passions and work in the field of Quantum Machine Learning.
 
 # Projects Section
 # projects_title: Projects #(Use this to override about projects section title)
