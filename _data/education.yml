@@ -1,9 +1,22 @@
 # Education Template
 - layout: left
-  name: Institution name
-  dates: Date Range (eg. 2016 - 2019)
-  qualification: Qualifications (eg. BA Performing Arts)
+  name: SRM INSTITUTE OF SCIENCE AND TECHNOLOGY
+  dates: 2017 - 2021
+  qualification: B.Tech Computer Science & Engineering
   quote: >
-    Short institution or course description (optional)
-  description: | # this will include new lines to allow paragraphs
-    Description of qualification
+    Education is all about creating an environment of academic freedom, where bright minds meet, 
+    discover and learn. One would experience top of the world living and learning experience at SRM.<hr>
+  description: > # this will include new lines to allow paragraphs
+    - CGPA - 9.2  
+    
+    - Chennai, India
+
+- layout: left
+  name: LAKSHMIPAT SINGHANIA ACADEMY
+  dates: 2017 - 2021  
+  qualification: High School
+  uote: >
+    Education is all about creating an environment of academic freedom, where bright minds meet, 
+    discover and learn. One would experience top of the world living and learning experience at SRM.
+  description: > # this will include new lines to allow paragraphs
+    CBSE | Kolkata,India

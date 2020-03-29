@@ -73,13 +73,12 @@ table {
   border-collapse: collapse;
   font-feature-settings: "kern", "liga", "tnum";
   margin: 0.75rem 0;
-  table-layout: fixed;
+  table-layout: auto;
   width: 100%; }
 
 th {
   border-bottom: 1px solid #a6a6a6;
   font-weight: 600;
-  padding: 0.75rem 0;
   text-align: left; }
 
 td {
