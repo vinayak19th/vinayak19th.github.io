@@ -1,4 +1,4 @@
-repository: vinayak19th/Resume
+repository: vinayak19th/vinayaks.github.io
 # favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
 
 # Personal info
@@ -6,7 +6,7 @@ name: Vinayak Sharma
 title: Third Year Engineering Student, Computer Science & Engineering
 email: vinayak1998th@Gmail.com
 phone: "9994756433"
-website: https://github.com/vinayak19th/Resume
+website: https://github.com/vinayak19th/vinayaks.github.io
 
 darkmode: true
 
@@ -52,8 +52,8 @@ about_content: | # this will include new lines to allow paragraphs
   - [Tensorflow](https://www.tensorflow.org/), [cirq](https://cirq.readthedocs.io/en/stable/) and their combinational 
   library [Tensorflow Quantum](https://www.tensorflow.org/quantum). 
   - I also have some experience with deploying models using [tensorflow.js](https://www.tensorflow.org/js)
-  <br>
-  I aim to combine my two passions and work in the field of Quantum Machine Learning.
+  
+  <br>I aim to combine my two passions and work in the field of Quantum Machine Learning.
 
 # Projects Section
 # projects_title: Projects #(Use this to override about projects section title)
@@ -73,7 +73,7 @@ footer_show_references: true
 
 # Build settings
 # theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-remote_theme: vinayak19th/Resume
+remote_theme: vinayak19th/vinayaks.github.io
 
 sass:
   sass_dir: _sass
