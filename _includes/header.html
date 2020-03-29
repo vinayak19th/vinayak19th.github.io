@@ -113,7 +113,7 @@
       {%- endif -%}
       {%- if site.phone -%}
         <p>
-          Phone: {{ site.phone | escape }}
+          Phone: <a href="tel:{{ site.phone | escape }}">{{ site.phone | escape }}5</a>
         </p>
       {%- endif -%}
       {%- if site.website -%}

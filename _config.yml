@@ -1,36 +1,35 @@
-# Site
 repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
 # favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
 
 # Personal info
-name: Your Name
-title: Your job title
-email: Your email (optional)
-phone: Your phone number (optional)
-website: Your website (eg. https://google.com)(optional)
+name: Vinayak Sharma
+title: Third Year Engineering Student, Computer Science & Engineering
+email: vinayak1998th@Gmail.com
+phone: "9994756433"
+website: https://github.com/vinayak19th/Resume
 
-darkmode: false
+darkmode: true
 
 # Social links
-twitter_username: jekyllrb
-github_username:  jekyll
-stackoverflow_username: "00000001"
-dribbble_username: jekyll
-facebook_username: jekyll
-flickr_username: jekyll
-instagram_username: jekyll
-linkedin_username: jekyll
-xing_username: jekyll
-pinterest_username: jekyll
-youtube_username: jekyll
-googleplus_username: +jekyll
-orcid_username: 0000-0000-0000-0000
+#twitter_username: jekyllrb
+github_username:  vinayak19th
+stackoverflow_username: 8700517/vinayak-sharma
+#dribbble_username: jekyll
+facebook_username: vinayak19th
+#flickr_username: jekyll
+instagram_username: stochastic_individual
+linkedin_username: vinayaksha
+#xing_username: jekyll
+#pinterest_username: jekyll
+#youtube_username: jekyll
+#googleplus_username: +jekyll
+#orcid_username: 0000-0000-0000-0000
 
 # Additional icon links
-additional_links:
-- title: Link name
-  icon: Font Awesome brand icon name (eg. fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-  url: Link url (eg. https://google.com)
+#additional_links:
+#- title: Link name
+#  icon: Font Awesome brand icon name (eg. fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#  url: Link url (eg. https://google.com)
 # - title: another link
 #   icon: font awesome brand icon name (eg. fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
 #   url: Link url (eg. https://google.com)
@@ -43,15 +42,18 @@ additional_links:
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: Directory of profile image (eg. images/profile.jpg)
+about_profile_image: images/picture.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
-
-  You can even add paragraphs by using empty lines like this and add anything else markdown supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-    - Images
+  Student Researcher with a passion for the fields of <mark>Deep Learning</mark> & <mark>Quantum Computing</mark>.
+  Currently the <mark>Head of Research, AI & Quantum Computing</mark> as [Next Tech Lab](https://nextech.io/) and Vice-Chairperson of 
+  [ACM Student chapter](https://www.facebook.com/SRMACM/) at SRM IST. <br>
+  I am proficient with :
+  - Python 3.x and its common associtated libraries (numpy, pandas, matplotlib, django)
+  - [Tensorflow](https://www.tensorflow.org/), [cirq](https://cirq.readthedocs.io/en/stable/) and their combinational 
+  library [Tensorflow Quantum](https://www.tensorflow.org/quantum). 
+  - I also have some experience with deploying models using [tensorflow.js](https://www.tensorflow.org/js)
+  <br>
+  I aim to combine my two passions and work in the field of Quantum Machine Learning.
 
 # Projects Section
 # projects_title: Projects #(Use this to override about projects section title)
@@ -65,10 +67,7 @@ about_content: | # this will include new lines to allow paragraphs
 # More Section
 # more_title: A Little More About Me #(Use this to override about more section title)
 more_content: | # this will include new lines to allow paragraphs
-  This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
-
-  Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
-
+  
 # Footer
 footer_show_references: true
 
