@@ -1,4 +1,4 @@
-repository: https://github.com/vinayak19th/vinayak19th.github.io
+repository: vinayak19th/vinayak19th.github.io
 # favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
 
 # Personal info
@@ -71,7 +71,7 @@ footer_show_references: true
 
 # Build settings
 # theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-remote_theme: https://github.com/vinayak19th/vinayak19th.github.io
+remote_theme: vinayak19th/vinayak19th.github.io
 
 sass:
   sass_dir: _sass
