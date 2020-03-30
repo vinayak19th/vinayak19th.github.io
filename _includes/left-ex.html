@@ -9,10 +9,14 @@
         {%- if include.item.qualification -%}<p><b>{{ include.item.qualification }}</b></p>{%- endif -%}
         {%- if include.item.dates -%}<p>{{ include.item.dates }}</p>{%- endif -%}
         {%- if include.item.location -%}<p>{{ include.item.location}}</p>{%- endif -%}
-        {% for job in include.item.jobs %}
-            <p><b>{{ job.title }}</b></p>
-            <p>{{ job.dates }}</p>
-        {% endfor %}
+        {%- if include.item.document -%}
+                {% include a.html href=include.item.doclink class="link" %}<p><u><b>{{include.item.document}}</b></u></p></a>
+        {%- endif -%}
+        {%- if include.item.stack -%}
+            <p> {% for job in include.item.stack %}
+                {{job}}
+            {% endfor %}</p>
+        {%- endif -%}
     {%- if include.item.github -%}
     <p class="no-print">
         <a href="https://github.com/{{ include.item.github }}" target="_blank">

@@ -48,12 +48,12 @@ about_content: | # this will include new lines to allow paragraphs
   Currently the <mark>Head of Research, AI & Quantum Computing</mark> at [Next Tech Lab](https://nextech.io/) and Vice-Chairperson of 
   [ACM Student chapter](https://www.facebook.com/SRMACM/) at SRM IST. <br>
   I am proficient with :
-  - Python 3.x and its common associtated libraries (numpy, pandas, matplotlib, django)
+  - Python 3.x and its common associated libraries (numpy, pandas, matplotlib, django)
   - [Tensorflow](https://www.tensorflow.org/), [cirq](https://cirq.readthedocs.io/en/stable/) and their combinational 
   library [Tensorflow Quantum](https://www.tensorflow.org/quantum). 
   - I also have some experience with deploying models using [tensorflow.js](https://www.tensorflow.org/js)
 
-  I aim to purse a masters degree in Computer Science with a focus on Quantum Machine Learning. 
+  I aim to pursue a masters degree in Computer Science with a focus on Quantum Machine Learning. 
 
 # Projects Section
 # projects_title: Projects #(Use this to override about projects section title)
