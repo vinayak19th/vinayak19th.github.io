@@ -45,7 +45,7 @@ linkedin_username: vinayaksha
 about_profile_image: images/picture.jpg
 about_content: | # this will include new lines to allow paragraphs
   Student Researcher with a passion for the fields of <mark>Deep Learning</mark> & <mark>Quantum Computing</mark>.
-  Currently the <mark>Head of Research, AI & Quantum Computing</mark> as [Next Tech Lab](https://nextech.io/) and Vice-Chairperson of 
+  Currently the <mark>Head of Research, AI & Quantum Computing</mark> at [Next Tech Lab](https://nextech.io/) and Vice-Chairperson of 
   [ACM Student chapter](https://www.facebook.com/SRMACM/) at SRM IST. <br>
   I am proficient with :
   - Python 3.x and its common associtated libraries (numpy, pandas, matplotlib, django)
