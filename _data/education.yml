@@ -1,6 +1,7 @@
 # Education Template
 - layout: left-edu
   name: SRM INSTITUTE OF SCIENCE AND TECHNOLOGY
+  link: https://www.srmist.edu.in/
   dates: 2017 - 2021
   qualification: B.Tech Computer Science & Engineering
   description: > # this will include new lines to allow paragraphs
@@ -14,6 +15,7 @@
 
 - layout: left-edu
   name: LAKSHMIPAT SINGHANIA ACADEMY
+  link: https://www.lsakolkata.com/
   dates: 2004 - 2017  
   qualification: High School 
   description: > # this will include new lines to allow paragraphs

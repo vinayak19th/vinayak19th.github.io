@@ -3,7 +3,7 @@
 
 A modern simple static resume template and theme. Powered by Jekyll and GitHub pages. Host your own resume on GitHub for free!
 
-Based on : [modern-resume-theme](modern-resume-theme)
+Based on : [modern-resume-theme](https://github.com/sproogen/modern-resume-theme)
 
 ## Contributing
 

@@ -1,10 +1,53 @@
 # Experience template
-- layout: left
-  company: Company name
-  link: Link to company (optional)
-  job_title: Job title
-  dates: Date Range (eg. November 2016 - present)
-  quote: >
-   Short description of the company (optional)
-  description: | # this will include new lines to allow paragraphs
-    Description of role
+- layout: left-ex
+  company: MYELIN FOUNDRY
+  link: http://myelinfoundry.com/
+  job_title: Machine Learning Intern
+  dates: June 2019 – July 2019
+  location: Bangalore, India
+  quote: > 
+    Myelin Foundry is a deep tech product start-up that transforms human experiences and industry 
+    outcomes by building Artificial Intelligence algorithms on video, voice, and sensor data, for edge devices.
+  description: > # this will include new lines to allow paragraphs
+    As an intern in my 2<sup>nd</sup> Year
+
+    - Worked to create End-to-End speech recognition system in low-resource
+    languages such as Assamese & Pashto.
+    
+    - Working on speech systems for dubbing local languages.
+
+- layout: left-ex
+  company: SAMSUNG
+  link: http://myelinfoundry.com/
+  job_title: Research Partner PRISM
+  dates: June 2019 – July 2019
+  location: Bangalore, India
+  quote: > 
+    Myelin Foundry is a deep tech product start-up that transforms human experiences and industry 
+    outcomes by building Artificial Intelligence algorithms on video, voice, and sensor data, for edge devices.
+  description: > # this will include new lines to allow paragraphs
+    As an intern in my 2<sup>nd</sup> Year
+
+    - Worked to create End-to-End speech recognition system in low-resource
+    languages such as Assamese & Pashto.
+    
+    - Working on speech systems for dubbing local languages.
+
+
+- layout: left-ex
+  company: MYELIN FOUNDRY
+  link: http://myelinfoundry.com/
+  job_title: Machine Learning Intern
+  dates: June 2019 – July 2019
+  location: Bangalore, India
+  quote: > 
+    Myelin Foundry is a deep tech product start-up that transforms human experiences and industry 
+    outcomes by building Artificial Intelligence algorithms on video, voice, and sensor data, for edge devices.
+  description: > # this will include new lines to allow paragraphs
+    As an intern in my 2<sup>nd</sup> Year
+
+    - Worked to create End-to-End speech recognition system in low-resource
+    languages such as Assamese & Pashto.
+    
+    - Working on speech systems for dubbing local languages.
+
