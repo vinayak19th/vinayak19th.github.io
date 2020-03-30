@@ -3,6 +3,13 @@
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 header-left">
       <h1>{{ site.name | escape }}</h1>
       <h2>{{ site.title | escape }}</h2>
+      <button onclick="myFunction()">Toggle dark mode</button>
+      <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark");
+      }
+      </script>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 header-right">
       <ul class="icons no-print">
@@ -113,12 +120,12 @@
       {%- endif -%}
       {%- if site.phone -%}
         <p>
-          Phone: <a href="tel:{{ site.phone | escape }}">{{ site.phone | escape }}5</a>
+          Phone: <a href="tel:{{ site.phone | escape }}">{{ site.phone | escape }}</a>
         </p>
       {%- endif -%}
       {%- if site.website -%}
         <p>
-          Web: {% include a.html href=site.website %}{{ site.website | escape }}</a>
+          Website: {% include a.html href=site.website %}{{ site.website | escape }}</a>
         </p>
       {%- endif -%}
     </div>
