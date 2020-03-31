@@ -3,10 +3,10 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "modern-resume-theme/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "modern-resume-theme"
+  spec.name          = "modern-resume-theme-extended"
   spec.version       = ModernResumeTheme::VERSION
-  spec.authors       = ["James Grant"]
-  spec.email         = ["sprog31@gmail.com"]
+  spec.authors       = ["Vinayak Sharma","James Grant"]
+  spec.email         = ["vinayak19th@Gmail.com","sprog31@gmail.com"]
 
   spec.summary       = "A modern simple static resume template and theme. Powered by Jekyll and GitHub pages."
   spec.homepage      = "https://github.com/sproogen/modern-resume-theme"

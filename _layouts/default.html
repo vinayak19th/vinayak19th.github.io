@@ -5,6 +5,8 @@
 
 <body class="{% if site.darkmode %}dark{% endif %}">
 
+  {%- include nav.html -%}
+
   {%- include header.html -%}
 
   <main class="page-content" aria-label="Content">
@@ -12,30 +14,26 @@
       {%- if jekyll.environment == 'production' and site.gtm -%}
         {%- include gtm_body.html -%}
       {%- endif -%}
-
       {%- include about.html -%}
-
       {%- if site.data.experience.size > 0 -%}
-        {%- include experience.html -%}
+          {%- include experience.html -%}
       {%- endif -%}
 
       {%- if site.data.education.size > 0 -%}
-        {%- include education.html -%}
+          {%- include education.html -%}
       {%- endif -%}
 
       {%- if site.data.projects.size > 0 -%}
-        {%- include projects.html -%}
-      {%- endif -%}
-      
-      {%- if site.more_content -%}
-        {%- include more.html -%}
+          {%- include projects.html -%}
       {%- endif -%}
 
+      {%- if site.more_content -%}
+          {%- include more.html -%}
+      {%- endif -%}
     </div>
   </main>
-
   {%- include footer.html -%}
-  <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
+  {%- include js.html -%}
 </body>
 
 </html>
