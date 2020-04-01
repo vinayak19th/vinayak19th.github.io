@@ -1,5 +1,5 @@
-<div class="container experience-container" id="Experience">
-  <h3>{{ site.experience_title | default: "Experience" }}</h3>
+<div class="container experience-container" >
+  <h3 id="Experience">{{ site.experience_title | default: "Experience" }}</h3>
   {% for experience in site.data.experience %}
     {% if forloop.last %}
       {% include {{ experience.layout | default: 'left' | append: ".html" }} item=experience %}

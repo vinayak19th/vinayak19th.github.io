@@ -16,19 +16,23 @@ color: #e6e6e6;
 .navbar {
 text-transform: uppercase;
 font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-font-weight: 600;
+font-weight: 500;
+font-size: 1rem;
 }
 
 .navbar a:focus {
 outline: 0;
+color: #e6e6e6;
+font-size: 1.5rem;
 }
 
 .navbar .navbar-nav {
-letter-spacing: 1px;
+letter-spacing: 0px;
+font-size: 1.5rem;
 }
 
 .navbar .navbar-nav li a{
-    outline: 0;
+    outline: 3;
     color: #e6e6e6;
     }
 
@@ -41,7 +45,8 @@ letter-spacing: 1px;
 
 .nav-link.active,
 .nav-item.show .nav-link {
-    border-color:  #222;;
+    border-color:  #e6e6e6;
+    color: #e6e6e6;
 }
 
 .navbar-default{
@@ -50,4 +55,8 @@ letter-spacing: 1px;
 }
 .navbar-inverse {
 border: 0;
+}
+
+.nav-link :focus {
+    color: #e6e6e6;
 }

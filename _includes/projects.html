@@ -1,4 +1,4 @@
-<div class="container projects-container">
+<div class="container projects-container" id="projects">
   <h3>{{ site.projects_title | default: "Projects" }}</h3>
   {% for project in site.data.projects %}
     {% include {{ project.layout | default: 'left' | append: ".html" }} item=project %}

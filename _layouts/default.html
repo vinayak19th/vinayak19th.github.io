@@ -3,7 +3,7 @@
 
 {%- include head.html -%}
 
-<body class="{% if site.darkmode %}dark{% endif %}">
+<body class="{% if site.darkmode %}dark{% endif %}" id = "page-top" style= "position: relative;">
 
   {%- include nav.html -%}
 
@@ -19,12 +19,18 @@
           {%- include experience.html -%}
       {%- endif -%}
 
+      <h1 id="Education" style-"margin: 10rem;"></h1>
       {%- if site.data.education.size > 0 -%}
           {%- include education.html -%}
       {%- endif -%}
 
       {%- if site.data.projects.size > 0 -%}
           {%- include projects.html -%}
+      {%- endif -%}
+
+      <h1 id="Certifications"></h1>
+      {%- if site.data.certification.size > 0 -%}
+        {%- include certificates.html -%}
       {%- endif -%}
 
       {%- if site.more_content -%}
