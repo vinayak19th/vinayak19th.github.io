@@ -28,3 +28,13 @@
     Implementing basic quantum algorithms in QisKit
   description: | # this will include new lines to allow paragraphs
     Description about the work on/with the project
+
+- layout: layout/top-middle
+  name: QisKit Implementations
+  link: 
+  github: vinayak19th/Neural-Style-Transfer
+  stack : ["Tensorflow","Numpy","Scikit-learn"]
+  quote: >
+    Implementing basic quantum algorithms in QisKit
+  description: | # this will include new lines to allow paragraphs
+    Description about the work on/with the project

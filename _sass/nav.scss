@@ -7,10 +7,11 @@
 
 .navbar-fixed-top .navbar-brand {
 font-size: 2em;
--webkit-transition: all .3s;
--moz-transition: all .3s;
-transition: all .3s;
 color: #e6e6e6;
+}
+.navbar-brand:hover{
+    color: #e6e6e6 !important;
+    background-color: transparent !important;
 }
 
 .navbar {

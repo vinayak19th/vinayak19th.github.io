@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,50 +20,65 @@
   <link rel="shortcut icon" type="image/x-icon" href="/images/fav.ico">
   <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"></head>
-<body class="" id = "page-top" style= "position: relative;">    <nav class="navbar navbar-default navbar-fixed-top"> 
-        <div class="container navig-container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header ">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">Vinayak Sharma</a>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                
-                    <li class="page-scroll">
-                        <a href="#about">about</a>
-                    </li>
-                
-                    <li class="page-scroll">
-                        <a href="#experience">experience</a>
-                    </li>
-                
-                    <li class="page-scroll">
-                        <a href="#projects">projects</a>
-                    </li>
-                
-                    <li class="page-scroll">
-                        <a href="#education">education</a>
-                    </li>
-                
-                    <li class="page-scroll">
-                        <a href="#"></a>
-                    </li>
-                
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+
+<body class="" id = "pagetop" style= "position: relative;">
+
+  <script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark");
+    }
+</script>
+<nav class="navbar navbar-default navbar-fixed-top"> 
+    <div class="container navig-container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header ">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand ">Vinayak Sharma</span>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-    <div class="container header-container">
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+            
+                <li class="page-scroll">
+                    <a href="#about">about</a>
+                </li>
+            
+                <li class="page-scroll">
+                    <a href="#experience">experience</a>
+                </li>
+            
+                <li class="page-scroll">
+                    <a href="#education">education</a>
+                </li>
+            
+                <li class="page-scroll">
+                    <a href="#projects">projects</a>
+                </li>
+            
+                <li class="page-scroll">
+                    <a href="#Certifications">Certifications</a>
+                </li>
+            
+            <li>
+                <button type="button" class="nav-item" onclick="myFunction()" style = "padding-top:">Dark mode</button>
+            </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+    
+  <h1 id="#page-top"" style"margin: 10rem;"></h1>
+  <div class="container header-container" id="#page-top">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 header-left">
       <h1>Vinayak Sharma</h1>
@@ -108,8 +125,12 @@
         </p></div>
   </div>
 </div>
-<main class="page-content" aria-label="Content">
-    <div class="wrapper"><div class="container intro-container" id="about" style="overflow-y: scroll;"">
+
+
+  <main class="pagecontent" arialabel="Content">
+    <div class="wrapper"> 
+      
+      <div class="container intro-container" id="about">
   <h3>About Me</h3>
   <div class="row clearfix"><div class="col-xs-12 col-sm-4 col-md-3 no-print">
         <span class="profile-img" style="background-image: url(/images/picture.jpg)"></span>
@@ -131,7 +152,9 @@ library <a href="https://www.tensorflow.org/quantum">Tensorflow Quantum</a>.</li
     </div>
   </div>
 </div>
-<div class="container experience-container" >
+
+      
+          <div class="container experience-container" >
   <h3 id="experience">Experience</h3>
   
     <div class="row clearfix layout layout-left">
@@ -204,7 +227,11 @@ library <a href="https://www.tensorflow.org/quantum">Tensorflow Quantum</a>.</li
   
 </div>
 
-<h1 id="Education" style-"margin: 10rem;"></h1><div class="container education-container" id="education">
+
+      
+      
+      
+          <div class="container education-container" id="education">
   <h3>Education</h3>
   
     <div class="row clearfix layout layout-left">
@@ -239,7 +266,11 @@ library <a href="https://www.tensorflow.org/quantum">Tensorflow Quantum</a>.</li
   
 </table>
 </div>
-<div class="container projects-container" id="projects">
+
+      
+
+      
+          <div class="container projects-container" id="projects">
   <h3>Projects</h3>
   
     <div class="row clearfix layout layout-top-middle">
@@ -294,13 +325,39 @@ library <a href="https://www.tensorflow.org/quantum">Tensorflow Quantum</a>.</li
         </a>
       </p></div>
   <div class="col-xs-12 col-print-12">
-    <p class="text-xs-center mid">Description about the work on/with the project</p>
+    <p class="text-xs-center mid">Description about the work on/with the project
+</p>
+  </div>
+</div>
+    <center><hr width="70%"></center>
+  
+    <div class="row clearfix layout layout-top-middle">
+  <div class="col-xs-12 col-print-12 details"><h4>QisKit Implementations</h4><p>
+      <mark>Tensorflow</mark>  |  
+    
+      <mark>Numpy</mark>  |  
+    
+      <mark>Scikit-learn</mark>  
+    </p><p class="no-print">
+        <a href="https://github.com/vinayak19th/Neural-Style-Transfer" target="_blank">
+          <b><u><mark>GitHub Repo</mark></u></b>
+          <i class="fa fa-github" title="QisKit Implementations Github link"></i>
+        </a>
+      </p></div>
+  <div class="col-xs-12 col-print-12">
+    <p class="text-xs-center mid">Description about the work on/with the project
+</p>
   </div>
 </div>
     
   
 </div>
-<h1 id="Certifications"></h1><div class="container education-container" id = "certifications">
+
+      
+
+      <h1 id="Certifications"></h1>
+      
+        <div class="container education-container" id = "certifications">
   <h3>Certifications</h3>
   
     <div class="row clearfix layout layout-left">
@@ -378,7 +435,11 @@ library <a href="https://www.tensorflow.org/quantum">Tensorflow Quantum</a>.</li
   
 </table>
 </div>
-<div class="container more-container">
+
+      
+
+      
+          <div class="container more-container">
   <h3>A Little More About Me</h3>
   <div class="row clearfix">
     <div class="col-md-12">
@@ -387,16 +448,21 @@ library <a href="https://www.tensorflow.org/quantum">Tensorflow Quantum</a>.</li
     </div>
   </div>
 </div>
-</div>
-  </main><div class="container footer-container">
+
+      
+    </div>
+  </main>
+  <div class="container footer-container">
   <p>
     Vinayak Sharma -
     <a href="mailto:vinayak1998th@Gmail.com" target="_blank">vinayak1998th@Gmail.com</a>&nbsp;- References on request</p>
-</div><!-- jQuery Version 1.11.0 -->
+</div>
+  <!-- jQuery Version 1.11.0 -->
     <script src="/assets/js/jquery-1.11.0.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-slider.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="/assets/js/jquery.easing.min.js"></script>
@@ -409,6 +475,7 @@ library <a href="https://www.tensorflow.org/quantum">Tensorflow Quantum</a>.</li
     <script src="/assets/js/index.js"></script>
 
     
+
 </body>
 
 </html>
