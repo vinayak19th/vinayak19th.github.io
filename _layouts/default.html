@@ -6,6 +6,7 @@
 <body class="{% if site.darkmode %}dark{% endif %} pt-5" id = "pagetop">
 
   {% include nav.html %}
+  {% include js.html %}
   <h1 id="#page-top"" style"margin: 10rem;"></h1>
   {% include header.html %}
 
@@ -31,14 +32,9 @@
       {% if site.data.certification.size > 0 %}
         {% include certificates.html %}
       {% endif %}
-
-      {% if site.more_content %}
-          {% include more.html %}
-      {% endif %}
     </div>
   </main>
   {% include footer.html %}
-  {% include js.html %}
 </body>
 
 </html>
