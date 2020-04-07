@@ -7,34 +7,43 @@
   quote: >
     A project based on the BABEL Dataset from the US government
   description: | # this will include new lines to allow paragraphs
-    Description about the work on/with the project
+    • An End-to-End Framework for performing automatic speech recognition on low-resource languages such as 
+    Urdu and Pashto <br>
+    • Created the framework based on ESPnet.
 
 - layout: layout/top-middle
   name: Quantum Machine Learning
   link: 
   github: VINAYAK19TH/QUANTUM-ML
   stack : ["QisKit","Numpy"]
-  quote: >
-    Implementation of the coding assignments from the University of Toronto Quantum Machine Learning Course
   description: | # this will include new lines to allow paragraphs
-    Description about the work on/with the project
+    • Implementing various Quantum Machine Learning algorithms from the University of Toronto Course<br>
+    • Implemented using the QISKit API from IBM
 
 - layout: layout/top-middle
   name: QisKit Implementations
   link: 
   github: VINAYAK19TH/QISkit_Implementations
   stack : ["QisKit","Numpy"]
-  quote: >
-    Implementing basic quantum algorithms in QisKit
   description: | # this will include new lines to allow paragraphs
-    Description about the work on/with the project
+    • Implementing various Quantum Circuits on quantumA
+    computers<br>
+    • Implemented using the QISKit API from IBM
 
 - layout: layout/top-middle
-  name: QisKit Implementations
+  name: BREVIS-NEWS
+  link: 
+  github: VINAYAK19TH/BREVIS-NEWS
+  stack : ["Tensorflow","Django","NLTK"]
+  description: | # this will include new lines to allow paragraphs
+    • A Natural Language Processing(NLP) based system to summarize news
+    articles. The network was trained using ”inshorts” summaries as training data. <br>
+    • Created a Django based back-end for deployment of the model for edge inference.
+
+- layout: layout/top-middle
+  name: Neural-Style-Transfer
   link: 
   github: vinayak19th/Neural-Style-Transfer
   stack : ["Tensorflow","Numpy","Scikit-learn"]
-  quote: >
-    Implementing basic quantum algorithms in QisKit
   description: | # this will include new lines to allow paragraphs
-    Description about the work on/with the project
+    • Implementing Neural Style Transfer on a Beta Version of Tensorflow 2.0<br>
