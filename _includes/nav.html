@@ -14,21 +14,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                {%for page in site.data.pages%}
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="#{{page.name}}">{{page.name}}</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#Experience">Experience</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#Education">Education</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#Certifications">Certifications</a>
-                    </li>
+                {%endfor%}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
