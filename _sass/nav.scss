@@ -61,3 +61,10 @@ border: 0;
 .nav-link :focus {
     color: #e6e6e6;
 }
+
+
+@media (prefers-color-scheme: dark) {
+    html {
+      content: "dark";
+    }
+}

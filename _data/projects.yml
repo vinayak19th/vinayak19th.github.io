@@ -26,7 +26,7 @@
   github: VINAYAK19TH/QISkit_Implementations
   stack : ["QisKit","Numpy"]
   description: | # this will include new lines to allow paragraphs
-    • Implementing various Quantum Circuits on quantumA
+    • Implementing various Quantum Circuits on quantumA 
     computers<br>
     • Implemented using the QISKit API from IBM
 
