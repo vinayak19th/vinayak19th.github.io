@@ -8,10 +8,9 @@
     {%- if include.item.job_title -%}<p><b>{{ include.item.job_title }}</b></p>{%- endif -%}
     {%- if include.item.qualification -%}<p><b>{{ include.item.qualification }}</b></p>{%- endif -%}
     {%- if include.item.dates -%}<p>{{ include.item.dates }}</p>{%- endif -%}
-    {% for job in include.item.jobs %}
-      <p><b>{{ job.title }}</b></p>
-      <p>{{ job.dates }}</p>
-    {% endfor %}
+    <p>{% for tech in include.item.stack %}
+      <mark>{{ tech }}</mark> {%unless forloop.last%} | {% endunless %} 
+    {% endfor %}</p>
     {%- if include.item.github -%}
       <p class="no-print">
         <a href="https://github.com/{{ include.item.github }}" target="_blank">
@@ -22,9 +21,6 @@
     {%- endif -%}
   </div>
   <div class="col-xs-12 col-print-12">
-    {%- if include.item.quote -%}
-      <p class="quote">{{ include.item.quote }}</p>
-    {%- endif -%}
-    <p>{{include.item.description | strip | markdownify }}</p>
+    <p class="text-xs-center mid">{{include.item.description  }}</p>
   </div>
 </div>

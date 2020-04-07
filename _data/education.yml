@@ -1,5 +1,5 @@
 # Education Template
-- layout: left-edu
+- layout: layout/left-edu
   name: SRM INSTITUTE OF SCIENCE AND TECHNOLOGY
   link: https://www.srmist.edu.in/
   dates: 2017 - 2021
@@ -13,7 +13,7 @@
     
     - **City** : Chennai, India
 
-- layout: left-edu
+- layout: layout/left-edu
   name: LAKSHMIPAT SINGHANIA ACADEMY
   link: https://www.lsakolkata.com/
   dates: 2004 - 2017  

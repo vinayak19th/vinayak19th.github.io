@@ -1,7 +1,8 @@
-<div class="container certificate-container" >
-  <h3>{{ site.certification_title | default: "Online Courses" }}</h3>
+<div class="container education-container" id = "certifications">
+  <h3>{{ site.certification_title | default: "Certifications" }}</h3>
   {% for certificate in site.data.certification %}
     {% include {{ certificate.layout | default: 'left' | append: ".html" }} item=certificate %}
+    {% unless forloop.last %}<center><hr width="70%"></center>{% endunless %}
   {% endfor %}
 </table>
 </div>

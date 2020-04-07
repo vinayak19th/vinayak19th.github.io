@@ -1,42 +1,72 @@
-# Education Template
-- layout: left-cer
-  name: Deep Learning.AI
-  link: https://www.srmist.edu.in/
-  dates: 2017 - 2021
-  qualification: B.Tech Computer Science & Engineering
+# Certifications Template
+- layout: layout/left-cer
+  name: Deep Learning.AI Specialization
+  link: https://www.coursera.org/account/accomplishments/specialization/D9DJAGFNHJTY
+  qualification: Deep Learning.ai 
+  provider: Coursera
   description: > # this will include new lines to allow paragraphs
-    SRM Institute of Science and Technology (formerly known as SRM University) is one of the top ranking universities in India 
-    with over 38,000 students and more than 2600 faculty across all the campus, offering a wide range of undergraduate, 
-    postgraduate and doctoral programs in Engineering, Management, Medicine and Health sciences, and Science and Humanities.
+    The Deep Learning Specialization was created and is taught by Dr. Andrew Ng, a global leader in AI and co-founder of Coursera.
+    In addition to the lectures and programming assignments, you will also watch exclusive interviews with many Deep Learning leaders. 
+    They will share with you their personal stories and give you career advice.
     
-    - **CGPA** : 9.2  
+    - CNN models
     
-    - **City** : Chennai, India
+    - RNN models
 
-- layout: left-cer
-  name: Deep Learning.AI
-  link: https://www.srmist.edu.in/
-  dates: 2017 - 2021
-  qualification: B.Tech Computer Science & Engineering
-  description: > # this will include new lines to allow paragraphs
-    SRM Institute of Science and Technology (formerly known as SRM University) is one of the top ranking universities in India 
-    with over 38,000 students and more than 2600 faculty across all the campus, offering a wide range of undergraduate, 
-    postgraduate and doctoral programs in Engineering, Management, Medicine and Health sciences, and Science and Humanities.
-    
-    - **CGPA** : 9.2  
-    
-    - **City** : Chennai, India
+    - Hyperparameter tuning
 
-- layout: left-cer
-  name: Deep Learning.AI
-  link: https://www.srmist.edu.in/
-  dates: 2017 - 2021
-  qualification: B.Tech Computer Science & Engineering
+- layout: layout/left-cer
+  name: UTQML101x - Quantum Machine Learning
+  link: https://courses.edx.org/certificates/2743eaafda92485bba335011037e0f1f
+  provider: edX
+  qualification: University_of_TorontoX
   description: > # this will include new lines to allow paragraphs
-    SRM Institute of Science and Technology (formerly known as SRM University) is one of the top ranking universities in India 
-    with over 38,000 students and more than 2600 faculty across all the campus, offering a wide range of undergraduate, 
-    postgraduate and doctoral programs in Engineering, Management, Medicine and Health sciences, and Science and Humanities.
+    This course is to show what benefits current and future quantum technologies can provide to machine learning, 
+    focusing on algorithms that are challenging with classical digital computers. We put a strong emphasis on implementing 
+    the protocols, using open source frameworks in Python. Prominent researchers in the field will give guest lectures to 
+    provide extra depth to each major topic. These guest lecturers include Alán Aspuru-Guzik, Seth Lloyd, Roger Melko, and 
+    Maria Schuld.
+
+- layout: layout/left-cer
+  name: Machine Learning
+  link: https://www.coursera.org/account/accomplishments/verify/4TMXGREEAKZE
+  qualification: Stanford Andrew Ng
+  provider: Courserak
+  description: > # this will include new lines to allow paragraphs
+    This course provides a broad introduction to machine learning, datamining, and statistical pattern recognition. 
+    Topics include: 
+      
+    - _Supervised learning_ - parametric/non-parametric algorithms, support vector machines, kernels, neural networks 
+
+    - _Unsupervised learning_ - clustering, dimensionality reduction, recommender systems, deep learning 
+
+    - _Best practices in machine learning_ - bias/variance theory; innovation process in machine learning and AI 
     
-    - **CGPA** : 9.2  
-    
-    - **City** : Chennai, India
+
+    The course will also draw from numerous case studies and applications, so that you'll also learn how to apply learning 
+    algorithms to building smart robots (perception, control), text understanding (web search, anti-spam), computer vision,
+    medical informatics, audio, database mining, and other areas.
+
+- layout: layout/left-cer
+  name: Browser-based Models with TensorFlow.js
+  link: https://www.coursera.org/account/accomplishments/verify/GHCM4ZTZZV76
+  qualification: Deep Learning.ai 
+  provider: Coursera
+  description: > # this will include new lines to allow paragraphs
+    This course teaches you learn how to train and run machine learning models in any browser using TensorFlow.js. 
+    You’ll learn techniques for handling data in the browser, and at the end you’ll build a computer vision project that 
+    recognizes and classifies objects from a webcam.<br><br>
+    I personally incorporated my learning in this course into my internship at Myelin Foundry to test viability of project 
+    deployment in Tensorflow.js for web browser based inference. This was done for multiple projects.
+
+- layout: layout/left-cer
+  name: Browser-based Models with TensorFlow.js
+  link: https://www.coursera.org/account/accomplishments/verify/VMFTUV25QCVU
+  qualification: Deep Learning.ai 
+  provider: Coursera
+  description: > # this will include new lines to allow paragraphs
+    This course teaches you how to use a suite of tools in TensorFlow to more effectively leverage data and train your model. 
+    You’ll learn how to leverage built-in datasets with just a few lines of code, use APIs to control how you split your data, 
+    and process all types of unstructured data. <br><br>
+    I personally incorporated my learning in this course into my internship at Myelin Foundry to test viability of project 
+    deployment in Tensorflow.js for web browser based inference. This was done for multiple projects.
