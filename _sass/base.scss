@@ -21,7 +21,8 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   transition: background-color 150ms ease;
   user-select: none;
   vertical-align: middle;
-  white-space: nowrap; }
+  white-space: nowrap; 
+}
   button:hover,
   button:focus, input[type="button"]:hover,
   input[type="button"]:focus, input[type="reset"]:hover,
@@ -103,7 +104,9 @@ picture {
   max-width: 100%; }
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  height: 100% 
+}
 
 *,
 *::after,
@@ -146,16 +149,17 @@ html {
     top: 0px; }
 
 body {
+  /*background-image: url('images/code.jpeg');
+  background-repeat: no-repeat; background-size: cover; background-position: center center;*/
   background: #ffffff;
   font-family: Roboto, sans-serif;
-  -webkit-font-smoothing: antialiased; }
-
+  -webkit-font-smoothing: antialiased; 
+}
 .center-text {
   text-align: center; }
 
 .container {
   margin-top:30px;
-
   @media print {
     margin-top: 20px;
   }

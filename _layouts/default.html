@@ -6,35 +6,14 @@
 <body class="{% if site.darkmode %}dark{% endif %} pt-5" id = "pagetop">
 
   {% include nav.html %}
-  {% include js.html %}
-  <h1 id="#page-top"" style"margin: 10rem;"></h1>
-  {% include header.html %}
 
   <main class="pagecontent" arialabel="Content">
     <div class="wrapper"> 
-      {% if jekyll.environment == 'production' and site.gtm %}
-        {% include gtm_body.html %}
-      {% endif %}
-      {% include about.html %}
-      {% if site.data.experience.size > 0 %}
-          {% include experience.html %}
-      {% endif %}
-      
-      {% if site.data.education.size > 0 %}
-          {% include education.html %}
-      {% endif %}
-
-      {% if site.data.projects.size > 0 %}
-          {% include projects.html %}
-      {% endif %}
-
-      <h1 id="Certifications"></h1>
-      {% if site.data.certification.size > 0 %}
-        {% include certificates.html %}
-      {% endif %}
+      {{content}}
     </div>
   </main>
   {% include footer.html %}
+  {% include js.html %}
 </body>
 
 </html>

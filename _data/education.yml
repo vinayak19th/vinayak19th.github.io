@@ -12,16 +12,3 @@
     - **CGPA** : 9.2  
     
     - **City** : Chennai, India
-
-- layout: layout/left-edu
-  name: LAKSHMIPAT SINGHANIA ACADEMY
-  link: https://www.lsakolkata.com/
-  dates: 2004 - 2017  
-  qualification: High School 
-  description: > # this will include new lines to allow paragraphs
-    The Lakshmipat Singhania Education Foundation was founded in the 1960s to promote education in India.
-    The Kolkata branch of the school opened in 1996. It is located at the intersection of Alipore Road and Judge's Court Road. <br>
-    
-    - **Board Percentage** : 91% CBSE
-
-    - **City** : Kolkata, India

@@ -4,6 +4,8 @@
 @import "nav";
 @import "dark";
 @import "icons";
+@import "termynal";
+@import "animate";
 
 .header-right p {
   margin-bottom: 3px;
@@ -13,6 +15,7 @@
   color:inherit;
   font-weight:500;
 }
+
 
 @media screen and (max-width: 768px) {
   .header-contianer div{
@@ -138,7 +141,7 @@
 }
 
 .footer-container {
-  margin-top:100px;
+  margin-top:25px;
 }
 
 .footer-container p {
