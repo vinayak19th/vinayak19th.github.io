@@ -1,9 +1,21 @@
-<div class="container intro-container" id="about">
-  <div class="row clearfix">
-    {%- if site.about_profile_image -%}
-      <div class="col-xs-12 col-sm-4 col-md-3 no-print">
-        <span class="profile-img" style="background-image: url({{site.about_profile_image | relative_url }})"></span>
-      </div>
-    {%- endif -%}
+<div class="container intro-container" id="about" style="margin-top:15rem;">
+  <div class="row clearfix" style="margin-bottom:2rem; text-align:center;">
+        <h1>HELLO WORLD!</h1><br>
+        <h2 class = " line-1 anim-typewriter">Welcome to my profile page</h2>
+  </div>
+  <div class="row clearfix" style="margin-bottom:2rem;">
+      <div id="termynal" data-termynal>
+            <span data-ty="input">~/profile.sh init</span>
+            <span data-ty>Loading Assets...</span>
+            <span data-ty="progress"></span>
+            <span data-ty="input" data-ty-prompt="Profile>">load data </span>
+            {%for page in site.data.pages%}
+                  <span data-ty>&emsp; {{page.name}}>><u><a href="/{{page.name}}/">{{page.name}}.html</a></u>
+            {%endfor%}
     </div>
+  </div>
+  <div class="row">
+    {% include intro.html %}
+  </div>
+    <script src="assets/js/termynal.js" data-termynal-container="#termynal"></script>
 </div>

@@ -4,7 +4,6 @@
 {% include head.html %}
 
 <body class="{% if site.darkmode %}dark{% endif %}" id = "pagetop" >
-  {% include js.html %}
   {% include nav.html %}
   {% include header.html %}
   <main class="pagecontent" arialabel="Content">
@@ -16,7 +15,7 @@
     {{ content }}
   </main>
   {% include footer.html %}
-  
+  {% include js.html %}
 </body>
 
 </html>
