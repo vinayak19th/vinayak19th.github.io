@@ -3,20 +3,10 @@
 
 {% include head.html %}
 
-<body class="{% if site.darkmode %}dark{% endif %}" id = "pagetop" style= "position: relative;">
-
-  <script>      
-      const theme = localStorage.getItem('theme');
-        if (theme === "dark") {
-          document.documentElement.setAttribute('data-theme', 'dark');
-          var element = document.body;
-          element.classList.toggle("dark");
-        }
-  </script>
+<body class="{% if site.darkmode %}dark{% endif %}" id = "pagetop" >
+  {% include js.html %}
   {% include nav.html %}
-
   {% include header.html %}
-
   <main class="pagecontent" arialabel="Content">
     <div class="wrapper">
       {% if jekyll.environment == 'production' and site.gtm %}
@@ -25,41 +15,8 @@
     </div>
     {{ content }}
   </main>
-  
   {% include footer.html %}
-  {% include js.html %}
-  <script>
-const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');	
-
-if (theme === "dark") {
-	document.getElementById("theme-toggle").innerHTML = "Light Mode";
-} else if (theme === "light") {
-	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-} else if  (userPrefers === "dark") {
-	document.documentElement.setAttribute('data-theme', 'dark');
-	window.localStorage.setItem('theme', 'dark');
-	document.getElementById("theme-toggle").innerHTML = "Light Mode";
-} else {
-	document.documentElement.setAttribute('data-theme', 'light');
-	window.localStorage.setItem('theme', 'light');
-	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-}
-
-function modeSwitcher() {
-	let currentMode = document.documentElement.getAttribute('data-theme');
-  var element = document.body;
-  element.classList.toggle("dark");
-	if (currentMode === "dark") {
-		document.documentElement.setAttribute('data-theme', 'light');
-		window.localStorage.setItem('theme', 'light');
-		document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-	} else {
-		document.documentElement.setAttribute('data-theme', 'dark');
-		window.localStorage.setItem('theme', 'dark');
-		document.getElementById("theme-toggle").innerHTML = "Light Mode";
-	}
-}
-</script>
+  
 </body>
 
 </html>

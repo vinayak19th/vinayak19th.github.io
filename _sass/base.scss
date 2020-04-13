@@ -103,7 +103,9 @@ picture {
   max-width: 100%; }
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  height: 100% 
+}
 
 *,
 *::after,
@@ -146,10 +148,12 @@ html {
     top: 0px; }
 
 body {
-  background: #ffffff;
+  /*background-image: url('images/code.jpeg');
+  background-repeat: no-repeat; background-size: cover; background-position: center center;*/
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
   font-family: Roboto, sans-serif;
-  -webkit-font-smoothing: antialiased; }
-
+  -webkit-font-smoothing: antialiased; 
+}
 .center-text {
   text-align: center; }
 
