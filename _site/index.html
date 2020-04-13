@@ -34,8 +34,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">$> ~/vinayak_sharma</a> <h2 class="navbar-brand"> | </h2>
-            <button type="btn-outline-success" id="theme-toggle" onclick="modeSwitcher()" style = "margin-top:1.3rem;margin-left:.5rem">Dark Mode</button>
+            <a class="navbar-brand" href="/">$ ~/vinayak_sharma</a>
+            <h2 class="navbar-brand">|</h2>
+            <button class="dark-mode" id="theme-toggle" onclick="modeSwitcher()" style = "margin-top:1.3rem;margin-left:.5rem">Dark Mode</button>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -48,10 +49,6 @@
             
                 <li class="page-scroll">
                     <a href="/experience/">experience</a>
-                </li>
-            
-                <li class="page-scroll">
-                    <a href="/education/">education</a>
                 </li>
             
                 <li class="page-scroll">
@@ -72,27 +69,31 @@
 
   <main class="pagecontent" arialabel="Content">
     <div class="wrapper"> 
-      <div class="container intro-container" id="about" style="margin-top:15rem;">
-  <div class="row clearfix" style="margin-bottom:2rem; text-align:center;">
+      <div class="container intro-container" id="about" style="margin-top:10rem;">
+  <div class="row clearfix" style="margin-bottom:1rem; text-align:center;">
         <h1>HELLO WORLD!</h1><br>
-        <h2 class = " line-1 anim-typewriter">Welcome to my profile page</h2>
+        <h2>Welcome to my profile page</h2>
   </div>
-  <div class="row clearfix" style="margin-bottom:2rem;">
+  <div class="row clearfix">
       <div id="termynal" data-termynal>
             <span data-ty="input">~/profile.sh init</span>
             <span data-ty>Loading Assets...</span>
             <span data-ty="progress"></span>
-            <span data-ty="input" data-ty-prompt="Profile>">load data </span>
+            <span data-ty="input" data-ty-prompt="Profile>">bio --show</span>
+            <span data-ty="input" data-ty-prompt="&emsp; Name :" data-ty-typeDelay="10">Vinayak Sharma</span>
+            <span data-ty="input" data-ty-prompt="&emsp; Currently :" data-ty-typeDelay="10">3rd Year Engineer, CSE</span>
+            <span data-ty="input" data-ty-prompt="&emsp; Specialization :" data-ty-typeDelay="10">Machine Learning</span>
+            <span data-ty="input" data-ty-prompt="Profile>" data-ty-typeDelay="30">sudo build profile --file-type html </span>
+            <span data-ty="input" data-ty-prompt="" data-ty-typeDelay="10">[sudo] password for $USER: </span>
+            <span data-ty="input" data-ty-prompt="" data-ty-startDelay="900" data-ty-typeDelay="10">building..</span>
             
-                  <span data-ty>&emsp; about>><u><a href="/about/">about.html</a></u>
+                  <span data-ty data-ty-delay="50 ">about>><u><a href="/about/">about.html</a></u></span>
             
-                  <span data-ty>&emsp; experience>><u><a href="/experience/">experience.html</a></u>
+                  <span data-ty data-ty-delay="50 ">experience>><u><a href="/experience/">experience.html</a></u></span>
             
-                  <span data-ty>&emsp; education>><u><a href="/education/">education.html</a></u>
+                  <span data-ty data-ty-delay="50 ">projects>><u><a href="/projects/">projects.html</a></u></span>
             
-                  <span data-ty>&emsp; projects>><u><a href="/projects/">projects.html</a></u>
-            
-                  <span data-ty>&emsp; certifications>><u><a href="/certifications/">certifications.html</a></u>
+                  <span data-ty data-ty-delay="50 ">certifications>><u><a href="/certifications/">certifications.html</a></u></span>
             
     </div>
   </div>

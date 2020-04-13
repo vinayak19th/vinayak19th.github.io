@@ -26,11 +26,13 @@
     border-radius: 4px;
     padding: 75px 45px 35px;
     position: relative;
+    word-wrap: break-word;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     a{
         color:var(--color-text);
     }
+    overflow-x: hidden;
 }
 
 [data-termynal]:before {
@@ -60,7 +62,10 @@
 
 [data-ty] {
     display: block;
-    line-height: 2;
+    line-height: 1.8;
+    @media screen and (max-width: 768px) {
+        line-height: 1.6;
+    }
 }
 
 [data-ty]:before {

@@ -29,8 +29,10 @@ text-transform: lowercase;
 text-transform: capitalize;
 font-weight: 400;
 font-size: 1rem;
-background: #36363615 ;
-height:6%;
+background: #eeeeee ;
+    @media screen and (min-width: 768px) {
+        height: 6%;
+    }
 }
 
 .navbar a:hover {
@@ -72,8 +74,10 @@ border: 0;
     color: #e6e6e6;
 }
 
-@media (max-width: 768px) {
-    .navbar .show{
-        background: rgb(0, 0, 0) ;
-    }
+.dark-mode{
+    background-color: #39393a;
+    border-radius: 10px;
+}
+button:hover, button:focus{
+    background-color: #39393a !important;
 }

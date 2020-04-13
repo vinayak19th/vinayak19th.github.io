@@ -21,7 +21,8 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   transition: background-color 150ms ease;
   user-select: none;
   vertical-align: middle;
-  white-space: nowrap; }
+  white-space: nowrap; 
+}
   button:hover,
   button:focus, input[type="button"]:hover,
   input[type="button"]:focus, input[type="reset"]:hover,
@@ -159,7 +160,6 @@ body {
 
 .container {
   margin-top:30px;
-
   @media print {
     margin-top: 20px;
   }
