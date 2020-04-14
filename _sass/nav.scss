@@ -83,6 +83,8 @@ border: 0;
 .dark-mode{
     background-color: #39393a;
     border-radius: 10px;
+    display: inline-block;
+    vertical-align: middle;
 }
 button:hover, button:focus{
     background-color: #39393a !important;
