@@ -1,3 +1,9 @@
+:root{
+    --cursor-color: rgb(0, 0, 0);
+    .dark{
+        --cursor-color: rgb(255, 255, 255);
+    }
+}
 
 .navbar-fixed-top {
     -webkit-transition: padding .3s;
@@ -86,7 +92,7 @@ button:hover, button:focus{
     width: 0.5rem;
     height: 1.7rem;
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: var(--cursor-color);
     -webkit-animation: blinking 2s infinite;
     animation: blinking 2s infinite;
 }
@@ -99,17 +105,6 @@ button:hover, button:focus{
         background-color: transparent;
     }
     50% {
-        background-color: rgba(116,127,224,.65);
-    }
-}
-
-.blink_me {
-    display:inline;
-    font-weight: 1000;
-    animation: blinker 1s linear infinite;
-}
-@keyframes blinker {
-    50% {
-        opacity: 0;
+        background-color: var(--cursor-color);
     }
 }
