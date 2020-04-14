@@ -1,12 +1,11 @@
 .dark {
-  background: #252525;
-  
+  background: rgb(45, 51, 66);
   color: #e6e6e6;
 }
 
 .dark {
   mark {
-    color: #222;
+    color: #373F51;;
     background-color: #e6e6e6;
   }
 
@@ -15,7 +14,7 @@
   }
 
   .navbar{
-    background: #252525 ;
+    background: #373F51;
   }
   .navbar .navbar-nav li a{
     color: #ffffff ;
@@ -27,7 +26,7 @@
   
   .dark-mode{
     background-color: #ececec;
-    color: black;
+    color: #373F51;
   }
   button:hover,button:focus{ 
       background-color: #ececec !important;
@@ -35,7 +34,10 @@
   .top{
     background-color: #ffffff;
     background-image: url("images/dark-fab.png");
-    color: rgb(0, 0, 0);
+    color: #373F51;;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0);
   }
 
 .button--sacnite::before {
