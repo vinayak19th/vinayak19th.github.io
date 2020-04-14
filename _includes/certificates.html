@@ -2,7 +2,7 @@
   <h3>{{ site.certification_title | default: "Certifications" }}</h3>
   {% for certificate in site.data.certification %}
     {% include {{ certificate.layout | default: 'left' | append: ".html" }} item=certificate %}
-    {% unless forloop.last %}<center><hr width="70%"></center>{% endunless %}
+    {% unless forloop.last %}<center><hr width="80%"></center>{% endunless %}
   {% endfor %}
 </table>
 </div>

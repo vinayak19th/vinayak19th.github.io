@@ -100,8 +100,10 @@ hr {
 
 img,
 picture {
-  margin: 0;
-  max-width: 100%; }
+  vertical-align: middle;
+  max-width: 100%; 
+  max-height: 100%;
+}
 
 html {
   box-sizing: border-box;
@@ -149,8 +151,6 @@ html {
     top: 0px; }
 
 body {
-  /*background-image: url('images/code.jpeg');
-  background-repeat: no-repeat; background-size: cover; background-position: center center;*/
   background: #ffffff;
   font-family: Roboto, sans-serif;
   -webkit-font-smoothing: antialiased; 

@@ -36,8 +36,7 @@
   field : Machine Learning
   provider: Coursera
   description: > # this will include new lines to allow paragraphs
-    This course provides a broad introduction to machine learning, datamining, and statistical pattern recognition. 
-    Topics include: 
+    This course provides a broad introduction to machine learning. Topics include: 
       
     - _Supervised learning_ - parametric/non-parametric algorithms, support vector machines, kernels, neural networks 
 
@@ -47,8 +46,7 @@
     
 
     The course will also draw from numerous case studies and applications, so that you'll also learn how to apply learning 
-    algorithms to building smart robots (perception, control), text understanding (web search, anti-spam), computer vision,
-    medical informatics, audio, database mining, and other areas.
+    algorithms in many cutting edge practical circumstances.
 
 - layout: layout/left-cer
   name: Browser-based Models with TensorFlow.js
