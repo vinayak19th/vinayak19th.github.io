@@ -3,6 +3,7 @@
   name: Deep Learning.AI Specialization
   link: https://www.coursera.org/account/accomplishments/specialization/D9DJAGFNHJTY
   qualification: Deep Learning.ai 
+  field : Deep Learning
   provider: Coursera
   description: > # this will include new lines to allow paragraphs
     The Deep Learning Specialization was created and is taught by Dr. Andrew Ng, a global leader in AI and co-founder of Coursera.
@@ -20,6 +21,7 @@
   link: https://courses.edx.org/certificates/2743eaafda92485bba335011037e0f1f
   provider: edX
   qualification: University_of_TorontoX
+  field : Quantum Computing
   description: > # this will include new lines to allow paragraphs
     This course is to show what benefits current and future quantum technologies can provide to machine learning, 
     focusing on algorithms that are challenging with classical digital computers. We put a strong emphasis on implementing 
@@ -31,7 +33,8 @@
   name: Machine Learning
   link: https://www.coursera.org/account/accomplishments/verify/4TMXGREEAKZE
   qualification: Stanford Andrew Ng
-  provider: Courserak
+  field : Machine Learning
+  provider: Coursera
   description: > # this will include new lines to allow paragraphs
     This course provides a broad introduction to machine learning, datamining, and statistical pattern recognition. 
     Topics include: 
@@ -51,6 +54,7 @@
   name: Browser-based Models with TensorFlow.js
   link: https://www.coursera.org/account/accomplishments/verify/GHCM4ZTZZV76
   qualification: Deep Learning.ai 
+  field : Deep Learning
   provider: Coursera
   description: > # this will include new lines to allow paragraphs
     This course teaches you learn how to train and run machine learning models in any browser using TensorFlow.js. 
@@ -60,9 +64,10 @@
     deployment in Tensorflow.js for web browser based inference. This was done for multiple projects.
 
 - layout: layout/left-cer
-  name: Browser-based Models with TensorFlow.js
+  name: Data Pipelines with TensorFlow Data Services
   link: https://www.coursera.org/account/accomplishments/verify/VMFTUV25QCVU
   qualification: Deep Learning.ai 
+  field : Deep Learning
   provider: Coursera
   description: > # this will include new lines to allow paragraphs
     This course teaches you how to use a suite of tools in TensorFlow to more effectively leverage data and train your model. 
