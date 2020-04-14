@@ -193,5 +193,5 @@ class Termynal {
 if (document.currentScript.hasAttribute('data-termynal-container')) {
     const containers = document.currentScript.getAttribute('data-termynal-container');
     containers.split('|')
-        .forEach(container => new Termynal(container,{progressLength:20, typeDelay:40,lineDelay:1000}))
+        .forEach(container => new Termynal(container,{progressLength:20, typeDelay:10,lineDelay:1000}))
 }
