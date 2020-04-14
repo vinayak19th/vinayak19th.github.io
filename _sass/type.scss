@@ -47,13 +47,12 @@ h2 {
 }
 
 h3 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 3rem;
   text-align: center;
   border-bottom: dashed 2px #CCCCCC;
   padding-bottom: 10px;
   margin-bottom:40px;
-
   @media print {
     margin-bottom: 20px;
   }

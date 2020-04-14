@@ -1,7 +1,6 @@
 .dark {
-  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), 
-  linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
-  background-blend-mode: multiply;
+  background: #252525;
+  
   color: #e6e6e6;
 }
 
@@ -30,11 +29,17 @@
     background-color: #ececec;
     color: black;
   }
-  button:hover,button:focus{
+  button:hover,button:focus{ 
       background-color: #ececec !important;
   }
   .top{
-    background-color: #3f3f3f;
+    background-color: #ffffff;
+    background-image: url("images/dark-fab.png");
+    color: rgb(0, 0, 0);
+  }
+
+.button--sacnite::before {
+    box-shadow: inset 0 0 0 35px rgb(223, 223, 223);
   }
 }
 

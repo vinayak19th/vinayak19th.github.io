@@ -1,5 +1,5 @@
 ul.icons a:hover {
-  background: rgba(0, 0, 0, 0.025);
+  background: rgba(255, 255, 255, 0.712);
 }
 
 ul.icons li {
@@ -10,23 +10,20 @@ ul.icons li {
 ul.icons a {
   -moz-transition: background-color 0.25s ease-in-out;
   -webkit-transition: background-color 0.25s ease-in-out;
-  -ms-transition: background-color 0.25s ease-in-out;
   transition: background-color 0.25s ease-in-out;
   display: inline-block;
   width: 2.75rem;
   height: 2.75rem;
   line-height: 2.8rem;
   text-align: center;
-  border: 0;
-  box-shadow: none;
-  padding:0;
   border-radius: 100%;
-  color: #aaa;
+  background: #ffff;
 }
 
 .icons i {
   font-size: 30px;
   line-height:60px;
+  color: rgb(255, 255, 255);
 }
 
 .icons {
@@ -44,11 +41,12 @@ ul.icons a {
 
 .dark {
   .icons i {
-    background: none;
-    color: #222;
+    color: rgb(0, 0, 0);
   }
-
+ul.icons a {
+  background: rgb(0, 0, 0);
+}
   .icons a:hover i {
-    color: #e6e6e6;
+    color: #000000;
   }
 }
