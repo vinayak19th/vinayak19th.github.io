@@ -1,4 +1,5 @@
-    const theme = localStorage.getItem('theme');
+const theme = localStorage.getItem('theme');
+
 if (theme === "dark") {
     document.documentElement.setAttribute('data-theme', 'dark');
     var element = document.body;
@@ -34,4 +35,9 @@ element.classList.toggle("dark");
         window.localStorage.setItem('theme', 'dark');
         document.getElementById("theme-toggle").innerHTML = "Light Mode";
     }
+}
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.body.classList.add("dark");
+    document.getElementById("theme-toggle").innerHTML = "Light Mode";
 }
