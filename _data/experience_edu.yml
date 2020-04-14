@@ -1,0 +1,37 @@
+- layout: layout/left-ex
+  company: NEXT TECH LAB
+  link: https://nextech.io/
+  job_title: Head of Research, AI & Quantum Computing
+  dates: August 2018 – Present
+  location: Chennai, India
+  document : Interview by College 
+  doclink : https://www.youtube.com/watch?v=1LOvapiljts
+  quote: > 
+    We believe everyone has the capacity to be creative. Next Tech Lab is a place where people use design to develop their 
+    own creative potential . Yes, we need to come up with a better mission statement.
+  description: > # this will include new lines to allow paragraphs
+    <p>As the Head of Research at our college's premier research lab, I am incharge of <b>mentoring our students, 
+    conducting interviews for new recruits, managing research budgets</b>. These are on top of the 
+    research projects that I undertake myself.  I also take part of all administrative duties of the lab such as : <b>approval of 
+    equipment & managing partnerships with other organizations.</b></p>
+    <p> I pioneered <b>Quantum Computing Research</b> at the Next Tech Lab. My work here was acknowledged by my university and 
+    for my work I was interviewed by them.</p>
+- layout: layout/left-ex
+  company: ASSOCIATION OF COMPUTING MACHINERY
+  link: www.facebook.com/SRMACM/
+  job_title: Vice Chairperson, Student Chapter
+  dates: January 2019 – Present
+  location: Chennai, India
+  document : Certificate of Service
+  doclink : https://drive.google.com/file/d/1DJFX6AYO8C-GZe45a38oGvzMCMD8ojj2/view?usp=sharing
+  quote: > 
+    The Association for Computing Machinery is a US-based international learned society for computing. It is the world's largest 
+    scientific and educational computing society. The ACM is a non-profit professional membership group, claiming nearly 100,000 
+    student and professional members as of 2019
+  description: > # this will include new lines to allow paragraphs
+    <p>As Vice Chairperson of our college's ACM Student Chapter, I am incharge of <b>conducting interviews for new recruits
+    , managing events</b>. I am tasked administrative duties such as : <b>approval of equipment, managing 
+    partnerships with other organizations, approving events & get sponsorships.</b></p>
+    <p> I served as the secretary here till Jan 2020. My work here was acknowledged by ACM Global and I was sent a letter of 
+    appreciation. Under my term, our team grew from 18 people to 250 people. The growth was accompanied by a growth in our number
+    of events.</p>
