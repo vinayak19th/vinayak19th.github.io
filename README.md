@@ -1,7 +1,7 @@
 # Resume
 <u>Website for my Resume.</u>
 
-Website link : <a href="vinayak19th.github.io">link</a>
+Website link : [link](https://vinayak19th.github.io/)
 
 
 A modern simple static resume template and theme. Powered by Jekyll and GitHub pages. Host your own resume on GitHub for free!

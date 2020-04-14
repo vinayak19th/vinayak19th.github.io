@@ -1,5 +1,7 @@
 .dark {
-  background-color: #222;
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), 
+  linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply;
   color: #e6e6e6;
 }
 
@@ -12,4 +14,27 @@
   a {
     color: #66adff;
   }
+
+  .navbar{
+    background: #252525 ;
+  }
+  .navbar .navbar-nav li a{
+    color: #ffffff ;
+  }
+
+  .navbar-fixed-top .navbar-brand {
+    color: #ffffff;
+    }
+  
+  .dark-mode{
+    background-color: #ececec;
+    color: black;
+  }
+  button:hover,button:focus{
+      background-color: #ececec !important;
+  }
+  .top{
+    background-color: #3f3f3f;
+  }
 }
+

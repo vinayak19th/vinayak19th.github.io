@@ -4,6 +4,8 @@
 @import "nav";
 @import "dark";
 @import "icons";
+@import "termynal";
+@import "animate";
 
 .header-right p {
   margin-bottom: 3px;
@@ -14,11 +16,18 @@
   font-weight:500;
 }
 
-@media screen and (max-width: 768px) {
-  .header-contianer div{
-    text-align: center;
-  }
+.top{
+  padding-top: 2rem; 
+  padding-bottom: 2rem; 
+  background-color: #d8d8d8;
+}
 
+.header-contianer div{
+  @media screen and (max-width: 768px) {
+    text-align: center !important;
+  }
+}
+@media screen and (max-width: 768px) {
   .header-right p {
     text-align: center;
   }
@@ -138,7 +147,7 @@
 }
 
 .footer-container {
-  margin-top:100px;
+  margin-top:25px;
 }
 
 .footer-container p {

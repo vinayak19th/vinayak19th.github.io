@@ -3,19 +3,16 @@
 
 {% include head.html %}
 
-<body class="{% if site.darkmode %}dark{% endif %}" id = "pagetop" style= "position: relative;">
-
+<body class="{% if site.darkmode %}dark{% endif %}" id = "pagetop" >
   {% include nav.html %}
-
   {% include header.html %}
-
   <main class="pagecontent" arialabel="Content">
     <div class="wrapper">
       {% if jekyll.environment == 'production' and site.gtm %}
         {% include gtm_body.html %}
       {% endif %}
-      {% include about.html %}
     </div>
+    {{ content }}
   </main>
   {% include footer.html %}
   {% include js.html %}
