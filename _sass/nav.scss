@@ -82,7 +82,30 @@ button:hover, button:focus{
     background-color: #39393a !important;
 }
 
+.blinking {
+    width: 0.5rem;
+    height: 1.7rem;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.65);
+    -webkit-animation: blinking 2s infinite;
+    animation: blinking 2s infinite;
+}
+
+@keyframes blinking {
+    0% {
+        background-color: transparent;
+    }
+    49% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: rgba(116,127,224,.65);
+    }
+}
+
 .blink_me {
+    display:inline;
+    font-weight: 1000;
     animation: blinker 1s linear infinite;
 }
 @keyframes blinker {
