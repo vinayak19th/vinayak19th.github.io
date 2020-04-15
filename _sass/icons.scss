@@ -2,6 +2,10 @@ ul.icons a:hover {
   background: rgba(255, 255, 255, 0.712);
 }
 
+.icons a:hover i {
+  color: #000000;
+}
+
 ul.icons li {
   display: inline-block;
   padding-left: 0.75rem;
@@ -43,9 +47,9 @@ ul.icons a {
   .icons i {
     color: rgb(0, 0, 0);
   }
-ul.icons a {
-  background: rgb(0, 0, 0);
-}
+  ul.icons a {
+    background: rgb(0, 0, 0);
+  }
   .icons a:hover i {
     color: #ffffff;
   }
