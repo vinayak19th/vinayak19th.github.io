@@ -85,9 +85,18 @@ border: 0;
     border-radius: 10px;
     display: inline-block;
     vertical-align: middle;
+
+    a {
+        color: inherit;
+    }
 }
-button:hover, button:focus{
-    background-color: #39393a !important;
+
+button:focus{
+    background-color: #39393a;
+}
+button:hover{
+    background-color: rgb(72, 202, 133) !important;
+    color: black;
 }
 
 .blinking {

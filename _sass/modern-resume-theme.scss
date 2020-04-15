@@ -16,6 +16,7 @@
   font-weight:500;
 }
 
+
 .img-container{
   background: white;
   border-radius: 1.3rem;
@@ -93,6 +94,12 @@
 .projects-container, .experience-container, .education-container, .certificate-container {
   h3 {
     margin-bottom: 0;
+  }
+}
+
+.intro{
+  @media screen and (max-width: 768px) {
+    margin-top: 2rem;
   }
 }
 

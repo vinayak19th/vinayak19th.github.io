@@ -27,9 +27,16 @@
   .dark-mode{
     background-color: #ececec;
     color: #373F51;
+    a {
+      color: inherit;
+    }
   }
-  button:hover,button:focus{ 
-      background-color: #ececec !important;
+
+  .button:focus{
+    background-color: #ececec !important;
+  }
+  button:hover{ 
+      background-color: #73E2A7!important;
   }
   .top{
     background-color: #ffffff;
