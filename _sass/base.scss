@@ -22,6 +22,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   user-select: none;
   vertical-align: middle;
   white-space: nowrap; 
+  outline:none;
 }
   button:hover,
   button:focus, input[type="button"]:hover,
