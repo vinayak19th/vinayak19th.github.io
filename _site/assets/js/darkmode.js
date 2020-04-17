@@ -37,7 +37,8 @@ element.classList.toggle("dark");
     }
 }
 
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+//Check User Device Settings
+/*if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     document.body.classList.add("dark");
     document.getElementById("theme-toggle").innerHTML = "Light Mode";
-}
+}*/
