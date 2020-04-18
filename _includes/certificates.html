@@ -14,7 +14,7 @@
         <div role="tabpanel" id="{{cat.id}}" class="tab-pane fade {% if forloop.first %} in active {% endif %}">
           {% for certificate in cat.certification %}
             {% include {{ certificate.layout | append: ".html" }} item=certificate %}
-            {% unless forloop.last %}<center><hr width="80%"></center>{% endunless %}
+            {% unless forloop.last %}<center><hr width="90%"></center>{% endunless %}
           {% endfor %}
         </div>
       {% endfor %}

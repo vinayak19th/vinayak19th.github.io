@@ -5,7 +5,6 @@ certification:
     name: Deep Learning.AI Specialization
     link: https://www.coursera.org/account/accomplishments/specialization/D9DJAGFNHJTY
     qualification: Deep Learning.ai 
-    field : Deep Learning
     provider: Coursera
     description: > # this will include new lines to allow paragraphs
       The Deep Learning Specialization was created and is taught by Dr. Andrew Ng, a global leader in AI and co-founder of Coursera.
@@ -22,7 +21,6 @@ certification:
     name: Machine Learning
     link: https://www.coursera.org/account/accomplishments/verify/4TMXGREEAKZE
     qualification: Stanford Andrew Ng
-    field : Machine Learning
     provider: Coursera
     description: > # this will include new lines to allow paragraphs
       This course provides a broad introduction to machine learning. Topics include: 
@@ -41,7 +39,6 @@ certification:
     name: Browser-based Models with TensorFlow.js
     link: https://www.coursera.org/account/accomplishments/verify/GHCM4ZTZZV76
     qualification: Deep Learning.ai 
-    field : Deep Learning
     provider: Coursera
     description: > # this will include new lines to allow paragraphs
       This course teaches you learn how to train and run machine learning models in any browser using TensorFlow.js. 
@@ -54,7 +51,6 @@ certification:
     name: Data Pipelines with TensorFlow Data Services
     link: https://www.coursera.org/account/accomplishments/verify/VMFTUV25QCVU
     qualification: Deep Learning.ai 
-    field : Deep Learning
     provider: Coursera
     description: > # this will include new lines to allow paragraphs
       This course teaches you how to use a suite of tools in TensorFlow to more effectively leverage data and train your model. 
@@ -62,3 +58,14 @@ certification:
       and process all types of unstructured data. <br><br>
       I personally incorporated my learning in this course into my internship at Myelin Foundry to test viability of project 
       deployment in Tensorflow.js for web browser based inference. This was done for multiple projects.
+  
+  - layout: layout/left-cer
+    name: Creating Custom Callbacks in Keras
+    link: https://www.coursera.org/account/accomplishments/certificate/5JGZFBHDT2B4
+    qualification: Rhyme
+    provider: Coursera
+    description: > # this will include new lines to allow paragraphs
+      In this 1.5-hour long project-based course, you will learn to create a custom callback function in Keras and use 
+      the callback during a model training process. We will implement the callback function to perform three tasks: 
+      Write a log file during the training process, plot the training metrics in a graph during the training process, and 
+      reduce the learning rate during the training with each epoch.
