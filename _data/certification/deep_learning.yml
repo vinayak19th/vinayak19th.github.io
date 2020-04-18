@@ -36,16 +36,16 @@ certification:
       algorithms in many cutting edge practical circumstances.
 
   - layout: layout/left-cer
-    name: Browser-based Models with TensorFlow.js
-    link: https://www.coursera.org/account/accomplishments/verify/GHCM4ZTZZV76
+    name: Advanced Deployment Scenarios with TensorFlow
+    link: https://www.coursera.org/account/accomplishments/certificate/Z289DRUGXM8H
     qualification: Deep Learning.ai 
     provider: Coursera
     description: > # this will include new lines to allow paragraphs
-      This course teaches you learn how to train and run machine learning models in any browser using TensorFlow.js. 
-      You’ll learn techniques for handling data in the browser, and at the end you’ll build a computer vision project that 
-      recognizes and classifies objects from a webcam.<br><br>
-      I personally incorporated my learning in this course into my internship at Myelin Foundry to test viability of project 
-      deployment in Tensorflow.js for web browser based inference. This was done for multiple projects.
+      In this final course, you’ll explore four different scenarios you’ll encounter when deploying models. 
+      You’ll be introduced to TensorFlow Serving, a technology that lets you do inference over the web. 
+      You’ll move on to TensorFlow Hub, a repository of models that you can use for transfer learning. Then you’ll use 
+      TensorBoard to evaluate and understand how your models work, as well as share your model metadata with others. Finally, 
+      you’ll explore federated learning and how you can retrain deployed models with user data while maintaining data privacy.
 
   - layout: layout/left-cer
     name: Data Pipelines with TensorFlow Data Services
@@ -56,6 +56,18 @@ certification:
       This course teaches you how to use a suite of tools in TensorFlow to more effectively leverage data and train your model. 
       You’ll learn how to leverage built-in datasets with just a few lines of code, use APIs to control how you split your data, 
       and process all types of unstructured data. <br><br>
+      I personally incorporated my learning in this course into my internship at Myelin Foundry to test viability of project 
+      deployment in Tensorflow.js for web browser based inference. This was done for multiple projects.
+
+  - layout: layout/left-cer
+    name: Browser-based Models with TensorFlow.js
+    link: https://www.coursera.org/account/accomplishments/verify/GHCM4ZTZZV76
+    qualification: Deep Learning.ai 
+    provider: Coursera
+    description: > # this will include new lines to allow paragraphs
+      This course teaches you learn how to train and run machine learning models in any browser using TensorFlow.js. 
+      You’ll learn techniques for handling data in the browser, and at the end you’ll build a computer vision project that 
+      recognizes and classifies objects from a webcam.<br><br>
       I personally incorporated my learning in this course into my internship at Myelin Foundry to test viability of project 
       deployment in Tensorflow.js for web browser based inference. This was done for multiple projects.
   
