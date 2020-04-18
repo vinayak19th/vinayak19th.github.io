@@ -60,9 +60,9 @@ certification:
       deployment in Tensorflow.js for web browser based inference. This was done for multiple projects.
 
   - layout: layout/left-cer
-    name: Data Pipelines with TensorFlow Data Services
-    link: https://www.coursera.org/account/accomplishments/verify/VMFTUV25QCVU
-    qualification: Deep Learning.ai 
+    name: End-to-End Machine Learning with TensorFlow on GCP
+    link: https://www.coursera.org/account/accomplishments/certificate/QVDMFGYC86AS
+    qualification: Google Cloud
     provider: Coursera
     description: > # this will include new lines to allow paragraphs
       In the first course of this specialization, we will recap what was covered in the Machine Learning with TensorFlow
