@@ -1,0 +1,13 @@
+topic : Dev Ops
+id : dev_ops
+certification:
+  - layout: layout/left-cer
+    name: Getting Started with Google Kubernetes Engine
+    link: https://www.coursera.org/account/accomplishments/certificate/N3GKABSBBL2W
+    qualification: Google Cloud 
+    field : Deep Learning
+    provider: Coursera
+    description: > # this will include new lines to allow paragraphs
+      This one-week, accelerated online class equips students to containerize workloads in Docker containers, deploy them to
+      Kubernetes clusters provided by Google Kubernetes Engine, and scale those workloads to handle increased traffic.  
+      Students also learn how to continuously deploy new code in a Kubernetes cluster to provide application updates.

@@ -1,0 +1,64 @@
+topic : Deep Learning  
+id : deep_learning
+certification:
+  - layout: layout/left-cer
+    name: Deep Learning.AI Specialization
+    link: https://www.coursera.org/account/accomplishments/specialization/D9DJAGFNHJTY
+    qualification: Deep Learning.ai 
+    field : Deep Learning
+    provider: Coursera
+    description: > # this will include new lines to allow paragraphs
+      The Deep Learning Specialization was created and is taught by Dr. Andrew Ng, a global leader in AI and co-founder of Coursera.
+      In addition to the lectures and programming assignments, you will also watch exclusive interviews with many Deep Learning leaders. 
+      They will share with you their personal stories and give you career advice.
+      
+      * CNN models
+      
+      * RNN models
+
+      - Hyperparameter tuning
+
+  - layout: layout/left-cer
+    name: Machine Learning
+    link: https://www.coursera.org/account/accomplishments/verify/4TMXGREEAKZE
+    qualification: Stanford Andrew Ng
+    field : Machine Learning
+    provider: Coursera
+    description: > # this will include new lines to allow paragraphs
+      This course provides a broad introduction to machine learning. Topics include: 
+        
+      - _Supervised learning_ - parametric/non-parametric algorithms, support vector machines, kernels, neural networks 
+
+      - _Unsupervised learning_ - clustering, dimensionality reduction, recommender systems, deep learning 
+
+      - _Best practices in machine learning_ - bias/variance theory; innovation process in machine learning and AI 
+      
+
+      The course will also draw from numerous case studies and applications, so that you'll also learn how to apply learning 
+      algorithms in many cutting edge practical circumstances.
+
+  - layout: layout/left-cer
+    name: Browser-based Models with TensorFlow.js
+    link: https://www.coursera.org/account/accomplishments/verify/GHCM4ZTZZV76
+    qualification: Deep Learning.ai 
+    field : Deep Learning
+    provider: Coursera
+    description: > # this will include new lines to allow paragraphs
+      This course teaches you learn how to train and run machine learning models in any browser using TensorFlow.js. 
+      You’ll learn techniques for handling data in the browser, and at the end you’ll build a computer vision project that 
+      recognizes and classifies objects from a webcam.<br><br>
+      I personally incorporated my learning in this course into my internship at Myelin Foundry to test viability of project 
+      deployment in Tensorflow.js for web browser based inference. This was done for multiple projects.
+
+  - layout: layout/left-cer
+    name: Data Pipelines with TensorFlow Data Services
+    link: https://www.coursera.org/account/accomplishments/verify/VMFTUV25QCVU
+    qualification: Deep Learning.ai 
+    field : Deep Learning
+    provider: Coursera
+    description: > # this will include new lines to allow paragraphs
+      This course teaches you how to use a suite of tools in TensorFlow to more effectively leverage data and train your model. 
+      You’ll learn how to leverage built-in datasets with just a few lines of code, use APIs to control how you split your data, 
+      and process all types of unstructured data. <br><br>
+      I personally incorporated my learning in this course into my internship at Myelin Foundry to test viability of project 
+      deployment in Tensorflow.js for web browser based inference. This was done for multiple projects.

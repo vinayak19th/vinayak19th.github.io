@@ -1,8 +1,22 @@
 <div class="container education-container" id = "certifications">
   <h3>{{ site.certification_title | default: "Certifications" }}</h3>
-  {% for certificate in site.data.certification %}
-    {% include {{ certificate.layout | default: 'left' | append: ".html" }} item=certificate %}
-    {% unless forloop.last %}<center><hr width="80%"></center>{% endunless %}
-  {% endfor %}
-</table>
+  <div class="tab" role="tabpanel">
+    <ul class="nav nav-tabs nav-fill" style="margin-top:1rem" role="tablist">
+      {% for category in site.data.certification %}
+        {% assign cat = category[1] %}
+        <li class= "tabs nav-item {% if forloop.first %} active {% endif %}"><a data-toggle="tab" href="#{{cat.id}}">{{cat.topic}}</a></li>
+      {% endfor %}
+    </ul>
+    <h3></h3>
+    <div class="tab-content tabs">
+      {% for category in site.data.certification %}
+        {% assign cat = category[1] %}
+        <div role="tabpanel" id="{{cat.id}}" class="tab-pane fade {% if forloop.first %} in active {% endif %}">
+          {% for certificate in cat.certification %}
+            {% include {{ certificate.layout | append: ".html" }} item=certificate %}
+            {% unless forloop.last %}<center><hr width="80%"></center>{% endunless %}
+          {% endfor %}
+        </div>
+      {% endfor %}
+  </div>
 </div>
