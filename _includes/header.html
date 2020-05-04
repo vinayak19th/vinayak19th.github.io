@@ -1,18 +1,25 @@
 <div class="top">
   <div class="container header-container" id="#page-top">
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 header-left">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-7 header-left">
         <h1>{{ site.name | escape }}</h1>
         <h2>{{ site.title | escape }}</h2>
         <br>
       </div>
       <br>
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 header-right">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 header-right">
         <ul class="icons no-print">
           {%- if site.facebook_username -%}
             <li>
               <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
                 <i class="fab fa-facebook" title="Facebook link"></i>
+              </a>
+            </li>
+          {%- endif -%}
+          {%- if site.whatsapp_number -%}
+            <li>
+              <a target="_blank" href="https://wa.me/{{ site.whatsapp_number| cgi_escape | escape }}" class="button button--sacnite button--round-l">
+                <i class="fab fa-whatsapp" title="Whatsapp link"></i>
               </a>
             </li>
           {%- endif -%}
