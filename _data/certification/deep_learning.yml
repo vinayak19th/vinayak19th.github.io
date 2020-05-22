@@ -36,6 +36,14 @@ certification:
       algorithms in many cutting edge practical circumstances.
 
   - layout: layout/left-cer
+    name: Natural Language Processing
+    link: https://www.coursera.org/account/accomplishments/certificate/JR7MM98QAACJ
+    qualification: The Hong Kong University of Science and Technology
+    provider: Coursera
+    description: > # this will include new lines to allow paragraphs
+      This course covers a wide range of tasks in Natural Language Processing from basic to advanced: sentiment analysis, summarization, dialogue state tracking, to name a few. Upon completing, you will be able to recognize NLP tasks in your day-to-day work, propose approaches, and judge what techniques are likely to work well.  The final project is devoted to one of the most hot topics in today’s NLP. You will build your own conversational chat-bot that will assist with search on StackOverflow website. The project will be based on practical assignments of the course, that will give you hands-on experience with such tasks as text classification, named entities recognition, and duplicates detection. 
+
+  - layout: layout/left-cer
     name: Advanced Deployment Scenarios with TensorFlow
     link: https://www.coursera.org/account/accomplishments/certificate/Z289DRUGXM8H
     qualification: Deep Learning.ai 
