@@ -4,7 +4,7 @@
     <ul class="nav nav-tabs nav-fill" style="margin-top:1rem" role="tablist">
       {% for category in site.data.certification %}
         {% assign cat = category[1] %}
-        <li class= "tabs nav-item {% if forloop.first %} active {% endif %}"><a data-toggle="tab" href="#{{cat.id}}">{{cat.topic}}</a></li>
+        <li class= "tabs nav-item {% if forloop.first %} active {% endif %}"><a data-toggle="tab" href="#{{cat.id}}">{{cat.topic}} <mark>{{cat.certification.size}}</mark></a></li>
       {% endfor %}
     </ul>
     <h3></h3>
