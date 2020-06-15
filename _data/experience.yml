@@ -1,10 +1,27 @@
 # Experience template
 - layout: layout/left-ex
+  company: TATA ELXSI
+  link: https://www.tataelxsi.com/
+  job_title: Machine Learning
+   Intern
+  dates: May 2020 – June 2020
+  location: Work From Home 
+  document : Letter Of Recommendation 
+  doclink : https://drive.google.com/file/d/1PxrCJSXEymsoQrzECKPsS5pK1jeFWI9t/view?usp=sharing
+  stack: [<mark>Tensorflow</mark>,<mark>Docker</mark>,<mark>OpenCV</mark>]
+  quote: > 
+    Tata Elxsi is amongst the world’s leading providers of design and technology services across industries including Automotive, Broadcast, Communications and Healthcare.
+  description: > # this will include new lines to allow paragraphs
+    <p>As an intern for Tata Elxsi, I was tasked with <b>creating an API to perform object detection in identifying humans from video footage and estimating their distance</b>. One of the 
+    many proposed applications for the API was to enforce <i>Social Distancing</i> protocols to assist clients better ensure safe working conditions. The API was packaged into a <u>Docker container</u> to 
+    maintain stability and ease of sharing.
+
+- layout: layout/left-ex
   company: MYELIN FOUNDRY
   link: www.myelinfoundry.com
   job_title: Machine Learning Intern
   dates: June 2019 – July 2019
-  location: Bangalore, India |
+  location: Bangalore, India 
   document : Letter Of Recommendation 
   doclink : https://drive.google.com/file/d/1oFySerdQF5OGhKNeobj0N22yT5KHxSRK/view?usp=sharing
   stack: [<mark>Tensorflow</mark>,<mark>PyTorch ESPNet</mark>,<mark>Kaldi</mark>,<mark>Tensorflow.js</mark>]
