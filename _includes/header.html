@@ -23,6 +23,13 @@
               </a>
             </li>
           {%- endif -%}
+          {%- if site.medium -%}
+            <li>
+              <a target="_blank" href="https://medium.com/@{{ site.medium| cgi_escape | escape }}" class="button button--sacnite button--round-l">
+                <i class="fa fa-medium" title="Medium link"></i>
+              </a>
+            </li>
+        {%- endif -%}
           {%- if site.github_username -%}
             <li>
               <a target="_blank" href="https://github.com/{{ site.github_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
