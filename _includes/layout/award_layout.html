@@ -1,0 +1,15 @@
+<div class="row clearfix layout layout-left">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+        {%- if include.item.name -%}<h4>{{ include.item.name }}</h4>{%- endif -%}
+        {%- if include.item.link -%}
+            <p>{% include a.html href=include.item.link class="link" %}<b><u>Certificate Link</u></b></a></p>
+        {%- endif -%}
+        {%- if include.item.position -%}
+            {%- if include.item.position -%}<p><b><mark>{{ include.item.position }}</mark></b></p>{%- endif -%}
+        {%- endif -%}
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
+        <p><b>Brief Information</b></p>
+        {{ include.item.description | strip | markdownify }}
+    </div>
+    </div>
