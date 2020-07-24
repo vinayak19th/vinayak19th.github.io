@@ -41,7 +41,7 @@
 - layout: layout/left-ex
   company: SAMSUNG
   link: www.samsung.com
-  job_title: Research Partner PRISM
+  job_title: Samsung PRISM Researcher
   dates: November 2019 – Present
   location: Chennai, India
   stack: [<mark>Tensorflow</mark>,<mark>Bezier Curves</mark>,<mark>BERT</mark>,<mark>NLTK</mark>]
