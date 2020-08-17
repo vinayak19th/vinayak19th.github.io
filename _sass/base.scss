@@ -191,6 +191,22 @@ body {
   text-align: right;
 }
 
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: 10px;
+}
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+}
+
 @media print {
   a[href]:after {
     content: none !important;
@@ -245,5 +261,10 @@ body {
 
   .no-print, .no-print * {
     display: none !important;
+  }
+}
+@media only screen and (max-width: 500px){
+  .pt{
+    margin-top: 3rem;
   }
 }
