@@ -1,5 +1,18 @@
 # Experience template
 - layout: layout/left-ex
+  company: MYELIN FOUNDRY
+  link: www.myelinfoundry.com
+  job_title: Deep Learning Intern
+  dates: August 2020 - Present
+  location: Bangalore, India (Work From Home currently)
+  stack: [<mark>Tensorflow</mark>,<mark>PyTorch</mark>,<mark>Tensorflow.js</mark>]
+  quote: > 
+    Myelin Foundry is a deep tech product start-up that transforms human experiences and industry 
+    outcomes by building Artificial Intelligence algorithms on video, voice, and sensor data, for edge devices.
+  description: > # this will include new lines to allow paragraphs
+    Currently working as a Deep Learning Intern
+
+- layout: layout/left-ex
   company: TATA ELXSI
   link: https://www.tataelxsi.com/
   job_title: Machine Learning
