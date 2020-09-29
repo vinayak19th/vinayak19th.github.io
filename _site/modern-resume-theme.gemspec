@@ -14,10 +14,11 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
 
-  spec.required_ruby_version = '~> 2.0'
+  spec.required_ruby_version = '~> 2.3'
 
-  spec.add_runtime_dependency 'github-pages', '~> 198'
+  spec.add_runtime_dependency 'github-pages', '~> 208'
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.1"
+  spec.add_runtime_dependency "kramdown", "~> 2.3.0"
 
   spec.add_development_dependency "html-proofer", "~> 3.9"
 end
