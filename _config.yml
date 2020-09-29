@@ -3,10 +3,10 @@ favicon: images/fav.ico``
 
 # Personal info
 name: Vinayak Sharma
-title: Third Year, Computer Science & Engineering
+title: Final Year, Computer Science & Engineering
 email: vinayak1998th@Gmail.com
-phone: "9994756433"
-website: vinayak19th.github.io
+phone: "+91 9748939032"
+website: vinayaksharma.tech
 
 darkmode: false
 
@@ -41,16 +41,14 @@ medium: vinayak1998th
 about_profile_image: images/picture.jpg
 about_content: | # this will include new lines to allow paragraphs
   Student Researcher with a passion for the fields of <mark>Deep Learning</mark> & <mark>Quantum Computing</mark>.
-  Currently the <mark>Head of Research, AI & Quantum Computing</mark> at [Next Tech Lab](https://nextech.io/) and Vice-Chairperson of 
-  [ACM Student chapter](https://www.facebook.com/SRMACM/) at SRM IST. <br>
-  I am proficient with :
-  - Python 3.x and its common associated libraries (numpy, pandas, matplotlib, django)
-  - [Tensorflow](https://www.tensorflow.org/), [cirq](https://cirq.readthedocs.io/en/stable/) and their combinational 
-  library [Tensorflow Quantum](https://www.tensorflow.org/quantum). 
-  - I also have some experience with deploying models using [tensorflow.js](https://www.tensorflow.org/js)
+  I've worked extensively on Deep Learning solutions to problems on Vision, Natural Language and Audio.
+  Some of the challenges I've tackled :
+  - Real-Time automated monitoring of social distancing based on single camera feed
+  - Deep learning based Medical Imageing of intracranial hemorrhaging
+  - Supervised Quantum space information encoding for efficient data conversion to Quantum Computers (currently working on the math)
+  - Handwritting recognition and ASR for very low resource languages (Bengali: Handwritting and Pashto: ASR)
 
-  I aim to pursue a masters degree in Computer Science with a focus on Quantum Machine Learning. 
-
+  <mark>I look forward to exploring more and learning while working on the bleeding edge</mark>
 # Projects Section
 # projects_title: Projects #(Use this to override about projects section title)
 
