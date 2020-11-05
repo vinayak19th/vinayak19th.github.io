@@ -10,7 +10,7 @@
         {%- if include.item.dates -%}<p>{{ include.item.dates }}</p>{%- endif -%}
         {%- if include.item.location -%}<p>{{ include.item.location}}</p>{%- endif -%}
         {%- if include.item.document -%}
-                {% include a.html href=include.item.doclink class="link" %}<p><u><b>{{include.item.document}}</b></u></p></a>
+                {% include a.html href=include.item.doclink class="link" %}<p><u><b><mark>{{include.item.document}}</mark></b></u></p></a>
         {%- endif -%}
         {%- if include.item.stack -%}
             <p> {% for job in include.item.stack %}
