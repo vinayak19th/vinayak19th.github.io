@@ -7,7 +7,7 @@
   location: Bangalore, India (Work From Home currently)
   document : Letter Of Recommendation 
   doclink : https://drive.google.com/file/d/1oFySerdQF5OGhKNeobj0N22yT5KHxSRK/view?usp=sharing
-  stack: [<mark>Tensorflow</mark>,<mark>PyTorch</mark>,<mark>ESPNET</mark>,<mark>Docker</mark>,<mark>FFmpeg</mark>]
+  stack: [<mark>Tensorflow</mark>,<mark>PyTorch</mark>,<mark>ESPNET</mark>,<mark>Docker</mark>,<mark>FFmpeg</mark>,<mark>OpenCV</mark>,<mark>Tensorflow Lite</mark>,<mark>Tf.Data</mark>,<mark>Raspberry Pi 4</mark>]
   quote: > 
     Myelin Foundry is a deep tech product start-up that transforms human experiences and industry 
     outcomes by building Artificial Intelligence algorithms on video, voice, and sensor data, for edge devices.
@@ -15,13 +15,15 @@
     At Myelin Foundry I worked on :<br>
     <u> August 2020 - Present</u>
       * Creating novel new architectures and training pipelines to <b>create higher detail SR outputs.</b>
-      * Co-ordinating the comapny hackathon in partnership with NASSCOM
+      * Created an <b>end-to-end enhanced data loader pipeline in tf.data</b> to enable rapid prototyping
+      * Co-ordinating the <b>comapny hackathon in partnership with NASSCOM</b>
+      * Tested out <b>deep learning based audio enhancements</b> for improved user experiences
       * Working on solutions to employing media super resolution on edge devices with higher fidelity
       * Redesigned container based server managment pipeline to allow for faster prototyping of models
 
     <u> June 2019 – July 2019</u>
-      * Created an end-to-end speech to text system for Pashto - A challenge due to the extreme data scarcity associated with the language
-      * Tested & evaluated the viability of Tensorflow.js for the deployment of the organizations product stack
+      * Created an <b>end-to-end speech to text system for Pashto<b> - A challenge due to the extreme data scarcity associated with the language
+      * Tested & evaluated the viability of <b>Tensorflow.js</b> for the deployment of the organizations product stack
       * Helped set up the company servers for model training
 
 
@@ -38,11 +40,9 @@
     Tata Elxsi is amongst the world’s leading providers of design and technology services across industries including Automotive, Broadcast, Communications and Healthcare.
   description: > # this will include new lines to allow paragraphs
     As an intern for Tata Elxsi, I was tasked with :
-    
-    * Creating an API to perform object detection in identifying humans from video footage and estimating their distance.
-    
-    * One of the many proposed applications for the API was to enforce <i>Social Distancing</i> protocols to assist clients better ensure safe working conditions. The API was packaged into a <u>Docker container</u> to 
-    maintain stability and ease of sharing.
+      * <b>Creating an API to perform object detection</b> in identifying humans <b>from video footage</b> and estimating their distance.
+      * One of the many proposed applications for the API was to <b>enforce Social Distancing</b> protocols to assist clients better ensure safe working conditions. 
+      * The API was packaged into a <i>Docker container</i> to maintain stability and ease of sharing.
 
 - layout: layout/left-ex
   company: SAMSUNG
@@ -57,11 +57,11 @@
     Samsung is a South Korean multinational conglomerate headquartered in Samsung Town, Seoul. It comprises numerous 
     affiliated businesses, most of them united under the Samsung brand, and is the largest South Korean chaebol. 
   description: > # this will include new lines to allow paragraphs
-    <p>As part of a team of student researcher under the <b>Samsung PRISM</b> program, I worked on <b>Online Handwritting 
-    Recognition</b> in <b>Bengali</b> and <b>Tamil</b>. The <i>dataset</i> was collected by us on campus and comprised of 1300 
-    Handwritting samples. The data was in the form of <b>XML Files</b> with <b>(x,y,t)</b> information.</p>
-    <p> The model we chose to use was an <b>attention based LSTM</b> to learn more information. This model was combined with a 
-    <b>pre-trained language model - BERT</b> to improve the accuracy of our predictions. <i>currently working on testing and 
-    modifying the model architecture. 
+    As part of a team of student researcher under the <b>Samsung PRISM</b> program, I worked on:
+      * <b>Online Handwritting Recognition</b> in <b>Bengali</b> and <b>Tamil</b>. 
+      * The <i>dataset</i> was collected by us on campus and comprised of 1300 Handwritting samples. 
+      * The data was in the form of <b>XML Files</b> with <b>(x,y,t)</b> information.
+      * The model we chose to use was an <b>attention based LSTM</b> to learn more information. 
+      * This model was combined with a <b>pre-trained language model - BERT</b> to improve the accuracy of our predictions.  
 
 
