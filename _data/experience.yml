@@ -3,20 +3,32 @@
   company: MYELIN FOUNDRY
   link: www.myelinfoundry.com
   job_title: Deep Learning Intern
-  dates: August 2020 - Present
+  dates: June 2019 – July 2019 & <br>August 2020 - Present
   location: Bangalore, India (Work From Home currently)
-  stack: [<mark>Tensorflow</mark>,<mark>PyTorch</mark>,<mark>Tensorflow.js</mark>]
+  document : Letter Of Recommendation 
+  doclink : https://drive.google.com/file/d/1oFySerdQF5OGhKNeobj0N22yT5KHxSRK/view?usp=sharing
+  stack: [<mark>Tensorflow</mark>,<mark>PyTorch</mark>,<mark>ESPNET</mark>,<mark>Docker</mark>,<mark>FFmpeg</mark>]
   quote: > 
     Myelin Foundry is a deep tech product start-up that transforms human experiences and industry 
     outcomes by building Artificial Intelligence algorithms on video, voice, and sensor data, for edge devices.
   description: > # this will include new lines to allow paragraphs
-    Working on implementing Myelin Technology on a variety of new devices as per the overall goal and ambition of the organization. Additionally, I've been tasked with helping organize and manage the company hackathon.
+    At Myelin Foundry I worked on :<br>
+    <u> August 2020 - Present</u>
+      * Creating novel new architectures and training pipelines to <b>create higher detail SR outputs.</b>
+      * Co-ordinating the comapny hackathon in partnership with NASSCOM
+      * Working on solutions to employing media super resolution on edge devices with higher fidelity
+      * Redesigned container based server managment pipeline to allow for faster prototyping of models
+
+    <u> June 2019 – July 2019</u>
+      * Created an end-to-end speech to text system for Pashto - A challenge due to the extreme data scarcity associated with the language
+      * Tested & evaluated the viability of Tensorflow.js for the deployment of the organizations product stack
+      * Helped set up the company servers for model training
+
 
 - layout: layout/left-ex
   company: TATA ELXSI
   link: https://www.tataelxsi.com/
-  job_title: Machine Learning
-   Intern
+  job_title: Machine Learning Intern
   dates: May 2020 – June 2020
   location: Work From Home 
   document : Internship Letter
@@ -25,31 +37,12 @@
   quote: > 
     Tata Elxsi is amongst the world’s leading providers of design and technology services across industries including Automotive, Broadcast, Communications and Healthcare.
   description: > # this will include new lines to allow paragraphs
-    <p>As an intern for Tata Elxsi, I was tasked with <b>creating an API to perform object detection in identifying humans from video footage and estimating their distance</b>. One of the 
-    many proposed applications for the API was to enforce <i>Social Distancing</i> protocols to assist clients better ensure safe working conditions. The API was packaged into a <u>Docker container</u> to 
+    As an intern for Tata Elxsi, I was tasked with :
+    
+    * Creating an API to perform object detection in identifying humans from video footage and estimating their distance.
+    
+    * One of the many proposed applications for the API was to enforce <i>Social Distancing</i> protocols to assist clients better ensure safe working conditions. The API was packaged into a <u>Docker container</u> to 
     maintain stability and ease of sharing.
-
-- layout: layout/left-ex
-  company: MYELIN FOUNDRY
-  link: www.myelinfoundry.com
-  job_title: Machine Learning Intern
-  dates: June 2019 – July 2019
-  location: Bangalore, India 
-  document : Letter Of Recommendation 
-  doclink : https://drive.google.com/file/d/1oFySerdQF5OGhKNeobj0N22yT5KHxSRK/view?usp=sharing
-  stack: [<mark>Tensorflow</mark>,<mark>PyTorch ESPNet</mark>,<mark>Kaldi</mark>,<mark>Tensorflow.js</mark>]
-  quote: > 
-    Myelin Foundry is a deep tech product start-up that transforms human experiences and industry 
-    outcomes by building Artificial Intelligence algorithms on video, voice, and sensor data, for edge devices.
-  description: > # this will include new lines to allow paragraphs
-    <p>As an intern in my 2<sup>nd</sup> year, I worked on a <b>NLP based
-    project</b> which focused on the <b>Pashto</b> and <b>Urdu</b> languages.  In
-    particular, working with Pashto was quite a challenge as there was
-    very small footprint of data available for train/test and yet the
-    model had to be built which had to deliver a high level of accuracy, easy
-    for inferencing and also be language agnostic to minimise language specific rebuilds of the model.</p>
-    <p> Additionally, I worked on other project to evaluate models in Tensorflow.js for deployment. I was also given
-    the task to help set up the on-site GPU server for ssh use.</p>
 
 - layout: layout/left-ex
   company: SAMSUNG
