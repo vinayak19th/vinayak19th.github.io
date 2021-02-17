@@ -1,4 +1,17 @@
 # Project template
+
+- layout: layout/top-middle
+  name: ARCNN-keras
+  link: 
+  github: VINAYAK19TH/ARCNN-keras
+  stack : ["Tensorflow","Keras","Docker","tf.data","PIL"]
+  quote: >
+    A project based on the BABEL Dataset from the US government
+  description: | # this will include new lines to allow paragraphs
+    A tf-keras implementation of ARCNN mentioned in :<br>
+    • Implemented ARCNN in tf.keras for easy of use
+    • Created a novel "lite" version using dilated convolutions and reducing the number of parameters to half of that of Faster ARCNN (64k -> 32k)
+
 - layout: layout/top-middle
   name: LOW-RESOURCE ASR
   link: 
