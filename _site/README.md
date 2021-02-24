@@ -1,6 +1,10 @@
-# Resume
-![Website](https://img.shields.io/website?down_color=ff3300&down_message=Offline&style=for-the-badge&up_color=339933&up_message=Online&url=https%3A%2F%2Fvinayaksharma.tech%2F)
-[![Made withJupyter](https://img.shields.io/badge/Made%20with-Jekyll-ff3300?style=for-the-badge&logo=Jekyll)](https://jupyter.org/try)
+# Resume 
+![GitHub package.json version](https://img.shields.io/github/package-json/v/vinayak19th/vinayak19th.github.io?color=FFD43B&style=for-the-badge)
+[![Website](https://img.shields.io/website?down_color=ff3300&down_message=Offline&style=for-the-badge&up_color=339933&up_message=Online&url=https%3A%2F%2Fvinayaksharma.tech%2F)](https://vinayaksharma.tech/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&color=339933)](http://makeapullrequest.com)
+[![Made withJupyter](https://img.shields.io/badge/Made%20with-Jekyll-ff3300?style=for-the-badge&logo=Jekyll)](https://jekyllrb.com/)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/vinayak1998th/resume-container?label=Docker%20Image&logo=Docker&style=for-the-badge)](https://hub.docker.com/repository/docker/vinayak1998th/resume-container)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg?&style=for-the-badge&color=FFD43B)](https://lbesson.mit-license.org/)
 
 
 Website hosting my resume and profile
@@ -15,6 +19,7 @@ Based on : [modern-resume-theme](https://github.com/sproogen/modern-resume-theme
 Bug reports and pull requests are welcome on GitHub at https://github.com/vinayak19th/vinayak19th.github.io. You can view our full guide to contributing [here](https://github.com/vinayak19th/vinayak19th.github.io/blob/master/CONTRIBUTING.md)
 This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
+**Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://kcd.im/pull-request)
 
 ### Docker
 
@@ -65,8 +70,28 @@ A full example of the _config.yml can be found [here](https://github.com/vinayak
 
 **Main config options:**
 
-1. Social Links:
-    * All so
+1. Personal info:
+    * Replace all the personal info in this section
+    * This will automatically update the following:
+        * Navbar home button
+        * Home page terminal animation
+        * Header on ever page
+    * Ignore the darkmode toggle
+2. Social Links:
+    * Replace all the personal info in this section
+    * This will automatically update the following:
+        * All buttons in the header and homepage
+    * If **githubstats** is set to any value and not commented out, **github_username** will generate all the GitHub statics on the about page
+3. About Section:
+    * Replace all the personal info in this section
+    * This will automatically update the following:
+        * The **profile image** and **favicon** needs to be stored in the images folder of your repo and will update your favicon and Profile picture on the about page
+        * **about_content** only populates your about page
+
+> DON'T MODIFY ANYHTING ELSE HERE UNLESS YOU KNOW WHAT YOU ARE DOING
+
+
+
 
 ### Content
 The main content for you resume will all come under the content property in the `_config.yml` file. This can be quite complex and a good understanding on [YAML](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html) will be helpful here.

@@ -1,6 +1,4 @@
 repository: vinayak19th/vinayak19th.github.io/
-favicon: images/fav.ico
-
 # Personal info
 name: Vinayak Sharma
 title: Final Year, Computer Science & Engineering
@@ -42,6 +40,7 @@ githubstats: True
 
 # About Section
 # about_title: About Me (Use this to override about section title)
+favicon: images/fav.ico
 about_profile_image: images/picture.jpg
 about_content: | # this will include new lines to allow paragraphs
   Student Researcher with a passion for the fields of <mark>Deep Learning</mark> & <mark>Quantum Computing</mark>.
