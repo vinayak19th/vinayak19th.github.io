@@ -6,20 +6,20 @@ if (theme == "dark") {
     element.classList.toggle("dark");
     document.getElementById("theme-toggle").innerHTML = "Light Mode";
     var items = document.getElementsByClassName("GitData");
-    for (var i=0; i < items.length; i++) {
-        items[i].src = items[i].src.replace('blueberry','tokyonight');
+    for (var i = 0; i < items.length; i++) {
+        items[i].src = items[i].src.replace('blueberry', 'tokyonight');
     }
 }
-const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');	
+const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');
 
 if (theme === "dark") {
     document.getElementById("theme-toggle").innerHTML = "Light Mode";
 } else if (theme === "light") {
     document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-} else if  (userPrefers === "dark") {
+} else if (userPrefers === "dark") {
     document.documentElement.setAttribute('data-theme', 'dark');
     window.localStorage.setItem('theme', 'dark');
-    document.getElementById("theme-toggle").innerHTML = "Light Mode";    
+    document.getElementById("theme-toggle").innerHTML = "Light Mode";
 } else {
     document.documentElement.setAttribute('data-theme', 'light');
     window.localStorage.setItem('theme', 'light');
@@ -35,17 +35,16 @@ function modeSwitcher() {
         window.localStorage.setItem('theme', 'light');
         document.getElementById("theme-toggle").innerHTML = "Dark Mode";
         var items = document.getElementsByClassName("GitData");
-        for (var i=0; i < items.length; i++) {
-            items[i].src = items[i].src.replace('tokyonight','blueberry');
+        for (var i = 0; i < items.length; i++) {
+            items[i].src = items[i].src.replace('tokyonight', 'blueberry');
         }
-    } 
-    else {
+    } else {
         document.documentElement.setAttribute('data-theme', 'dark');
         window.localStorage.setItem('theme', 'dark');
         document.getElementById("theme-toggle").innerHTML = "Light Mode";
         var items = document.getElementsByClassName("GitData");
-        for (var i=0; i < items.length; i++) {
-            items[i].src = items[i].src.replace('blueberry','tokyonight');
+        for (var i = 0; i < items.length; i++) {
+            items[i].src = items[i].src.replace('blueberry', 'tokyonight');
         }
     }
 }
