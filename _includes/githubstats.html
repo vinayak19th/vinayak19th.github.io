@@ -1,0 +1,31 @@
+{%- if site.githubstats -%}
+<div class="container intro-container" id="GitStats" style="padding-bottom:3rem;padding-top:1rem;">
+    <h3>Github Statistics</h3>
+    <div class="row clearfix layout layout-left" style="margin-top:2rem">
+        <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+            <div class="jumbotron align-self-center">
+                <h4> Profile Statistics </h4>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
+            <div class="gitstats">
+                <img class= "GitData" src="https://github-readme-stats.vercel.app/api?username={{site.github_username}}&show_icons=true&theme=blueberry&count_private=true&hide_border=true&cache_seconds=1800">
+            </div>
+        </div>
+    </div>
+    <center><hr width="90%" style="margin-top:3rem"></center>
+    <div class="row clearfix layout layout-left">
+        <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+            <div class="jumbotron align-self-center">
+                <h4> Language Usage Statistics </h4>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
+            <div class="gitstats">
+                <img class= "GitData" src="https://github-readme-stats.vercel.app/api/top-langs/?username={{site.github_username}}&layout=compact&langs_count=8&show_icons=true&hide_border=true&theme=blueberry&card_width=500">
+            </div>
+        </div>
+    </div>
+
+</div>
+{%- endif -%}

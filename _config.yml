@@ -21,6 +21,9 @@ linkedin_username: vinayaksha
 whatsapp_number: "919994756433"
 medium: vinayak1998th
 
+#Comment out to disable github stats
+githubstats: True
+
 # Additional icon links
 #additional_links:P
 #- title: Link name
