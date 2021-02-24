@@ -1,0 +1,120 @@
+:root {
+    --cursor-color: rgb(0, 0, 0);
+    .dark {
+        --cursor-color: rgb(255, 255, 255);
+    }
+}
+
+.navbar-fixed-top {
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+}
+
+.navbar-fixed-top .navbar-brand {
+    font-size: 2rem;
+    color: #000000;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+.navbar-center {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-brand:hover {
+    color: #b4b4b4;
+    font-size: 2rem !important;
+}
+
+.navbar {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 1rem;
+    background: #eeeeee;
+    @media screen and (min-width: 768px) {
+        height: 6%;
+    }
+}
+
+.navbar a:hover {
+    outline: 0;
+    font-size: 1.5rem;
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 0px;
+    font-size: 1.7rem;
+}
+
+.navbar .navbar-nav li a {
+    outline: 3;
+    color: #000000;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+    color: #000000;
+    .dark {
+        color: #ffffff;
+    }
+    border-color: #e6e6e6;
+}
+
+.nav-link.active,
+.nav-item.show .nav-link {
+    border-color: #e6e6e6;
+    color: #e6e6e6;
+}
+
+.navbar-inverse {
+    border: 0;
+}
+
+.nav-link :focus {
+    color: #e6e6e6;
+}
+
+.dark-mode {
+    background-color: #39393a;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    a {
+        color: white;
+    }
+}
+
+button:focus {
+    background-color: #39393a;
+}
+
+button:hover {
+    background-color: rgb(72, 202, 133) !important;
+    color: black;
+}
+
+.blinking {
+    width: 0.5rem;
+    height: 1.7rem;
+    display: inline-block;
+    background-color: var(--cursor-color);
+    -webkit-animation: blinking 2s infinite;
+    animation: blinking 2s infinite;
+}
+
+@keyframes blinking {
+    0% {
+        background-color: transparent;
+    }
+    49% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: var(--cursor-color);
+    }
+}

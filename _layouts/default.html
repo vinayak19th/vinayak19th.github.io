@@ -1,41 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
-{%- include head.html -%}
+{% include head.html %}
 
-<body class="{% if site.darkmode %}dark{% endif %}">
+<body class="{% if site.darkmode %}dark{% endif %} pt-5" id = "pagetop">
 
-  {%- include header.html -%}
+  {% include nav.html %}
 
-  <main class="page-content" aria-label="Content">
-    <div class="wrapper">
-      {%- if jekyll.environment == 'production' and site.gtm -%}
-        {%- include gtm_body.html -%}
-      {%- endif -%}
-
-      {%- include about.html -%}
-
-      {%- if site.data.experience.size > 0 -%}
-        {%- include experience.html -%}
-      {%- endif -%}
-
-      {%- if site.data.education.size > 0 -%}
-        {%- include education.html -%}
-      {%- endif -%}
-
-      {%- if site.data.projects.size > 0 -%}
-        {%- include projects.html -%}
-      {%- endif -%}
-      
-      {%- if site.more_content -%}
-        {%- include more.html -%}
-      {%- endif -%}
-
+  <main class="pagecontent" arialabel="Content" >
+    <div class="wrapper"> 
+      {{content}}
     </div>
   </main>
-
-  {%- include footer.html -%}
-  <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
+  {% include footer.html %}
+  {% include js.html %}
 </body>
 
 </html>

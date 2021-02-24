@@ -1,0 +1,21 @@
+<!-- jQuery Version 1.11.0 -->
+    <script src="{{ "/assets/js/jquery-1.11.0.js" }}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ "/assets/js/bootstrap.min.js" }}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{ "/assets/js/jquery.easing.min.js" }}"></script>
+    <script src="{{ "/assets/js/classie.js" }}"></script>
+
+    <!--Darkmode button-->
+    <script src="{{ "/assets/js/darkmode.js" }}"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{{ "/assets/js/freelancer.js" }}"></script>
+
+    {% if site.contact == "disqus" %}
+    <!-- Disqus Stuff -->
+    {% include js_disqus.html %}
+    {% endif %}

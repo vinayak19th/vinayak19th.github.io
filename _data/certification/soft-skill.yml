@@ -1,0 +1,13 @@
+topic : Soft Skills
+id : sk
+certification:
+  - layout: layout/left-cer
+    name: How to Write a Resume
+    link: https://www.coursera.org/account/accomplishments/certificate/NAAUC7W9QZUU
+    qualification: The State University of New York
+    provider: Coursera
+    description: > # this will include new lines to allow paragraphs
+      In this project-centered course*, you will craft an essential cornerstone of the modern-day job or internship search: 
+      the resume. You’ll review resume best practices and explore current trends with guidance from a professional career counselor 
+      and recruiter, and you’ll exchange structured feedback with your peers as you work to polish your own resume. 
+      When you complete the course, you’ll have an eye-catching resume that lets your professional strengths shine. 

@@ -1,0 +1,15 @@
+topic : Quantum Computing
+id : q_c
+certification:  
+  - layout: layout/left-cer
+    name: UTQML101x - Quantum Machine Learning
+    link: https://courses.edx.org/certificates/2743eaafda92485bba335011037e0f1f
+    provider: edX
+    qualification: University_of_TorontoX
+    field : Quantum Computing
+    description: > # this will include new lines to allow paragraphs
+      This course is to show what benefits current and future quantum technologies can provide to machine learning, 
+      focusing on algorithms that are challenging with classical digital computers. We put a strong emphasis on implementing 
+      the protocols, using open source frameworks in Python. Prominent researchers in the field will give guest lectures to 
+      provide extra depth to each major topic. These guest lecturers include Alán Aspuru-Guzik, Seth Lloyd, Roger Melko, and 
+      Maria Schuld.

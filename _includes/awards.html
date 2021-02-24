@@ -1,0 +1,19 @@
+<div class="container experience-container">
+    <h3 id="awards">{{ site.awards_title | default: "Accolades" }}</h3>
+    {%- if site.data.awards.non-tech -%}
+        <h2 style="text-align:center;margin-top:2rem;font-size:3rem"><mark style="padding-left:2rem; padding-right:2rem;"> Technical </mark></h2> <center><hr width="70%"></center>
+    {%- endif -%}
+
+    {% for award in site.data.awards.tech %}
+    {% include {{ award.layout | default: 'left' | append: ".html" }} item=award %}
+        {% unless forloop.last %}<center><hr width="70%"></center>{% endunless %}
+    {% endfor %}
+    {%- if site.data.awards.non-tech -%}
+        <h2 style="text-align:center;margin-top:2rem;font-size:3rem"><mark style="padding-left:2rem; padding-right:2rem;"> Non-Technical </mark></h2> <center><hr width="70%"></center>
+        {% for award in site.data.awards.non-tech %}
+        {% include {{ award.layout | default: 'left' | append: ".html" }} item=award %}
+            {% unless forloop.last %}<center><hr width="70%"></center>{% endunless %}
+        {% endfor %}
+    {%- endif -%}
+</div>
+

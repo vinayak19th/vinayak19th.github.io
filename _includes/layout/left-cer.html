@@ -1,0 +1,19 @@
+<div class="row clearfix layout layout-left">
+  <div class="col-xs-12 col-sm-2 col-md-2 col-print-12">
+    <div class=" img-container">
+      <span class="helper"></span>
+      <img src="{{site.baseurl}}/assets/images/company/{{ include.item.provider }}.png"></img>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-3 col-md-2 col-print-12 details">
+    {%- if include.item.name -%}<p><b>{{ include.item.name }}</b></p>{%- endif -%}
+    {%- if include.item.qualification -%}<p>{{ include.item.qualification }}</p>{%- endif -%} 
+    {%- if include.item.link -%}
+      <p>{% include a.html href=include.item.link class="link" %}<b><u>Certificate Link</u></b></a></p>
+    {%- endif -%}
+  </div>
+  <div class="col-xs-12 col-sm-7 col-md-8 col-print-12 ">
+    <p><b>Brief Information</b>
+    {{ include.item.description  | markdownify }}</p>
+  </div>
+</div>

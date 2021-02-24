@@ -1,0 +1,26 @@
+<div class="row clearfix layout layout-top-middle">
+  <div class="col-xs-12 col-print-12 details">
+    {%- if include.item.name -%}<h4>{{ include.item.name }}</h4>{%- endif -%}
+    {%- if include.item.company -%}<h4>{{ include.item.company }}</h4>{%- endif -%}
+    {%- if include.item.link -%}
+      {% include a.html href=include.item.link class="link" %}{{ include.item.link }}</a>
+    {%- endif -%}
+    {%- if include.item.job_title -%}<p><b>{{ include.item.job_title }}</b></p>{%- endif -%}
+    {%- if include.item.qualification -%}<p><b>{{ include.item.qualification }}</b></p>{%- endif -%}
+    {%- if include.item.dates -%}<p>{{ include.item.dates }}</p>{%- endif -%}
+    <p>{% for tech in include.item.stack %}
+      <mark>{{ tech }}</mark> {%unless forloop.last%} | {% endunless %} 
+    {% endfor %}</p>
+    {%- if include.item.github -%}
+      <p class="no-print">
+        <a href="https://github.com/{{ include.item.github }}" target="_blank">
+          <b><u><mark>GitHub Repo</mark></u></b>
+          <i class="fa fa-github" title="{{ include.item.name }} Github link"></i>
+        </a>
+      </p>
+    {%- endif -%}
+  </div>
+  <div class="col-xs-12 col-print-12">
+    <p class="text-xs-center mid">{{include.item.description  }}</p>
+  </div>
+</div>
