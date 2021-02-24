@@ -1,8 +1,10 @@
 # Resume
-<u>Website for my Resume.</u>
+![Website](https://img.shields.io/website?down_color=ff3300&down_message=Offline&style=for-the-badge&up_color=339933&up_message=Online&url=https%3A%2F%2Fvinayaksharma.tech%2F)
+[![Made withJupyter](https://img.shields.io/badge/Made%20with-Jekyll-ff3300?style=for-the-badge&logo=Jekyll)](https://jupyter.org/try)
 
+
+Website hosting my resume and profile
 Website link : <a href="https://vinayak19th.github.io/">link</a>
-
 
 A modern simple static resume template and theme. Powered by Jekyll and GitHub pages. Host your own resume on GitHub for free!
 
