@@ -9,9 +9,9 @@
             <span data-ty>Loading Assets...</span>
             <span data-ty="progress"></span>
             <span data-ty="input" data-ty-prompt="Profile>">bio --show</span>
-            <span data-ty="input" data-ty-prompt="&emsp; Name :" data-ty-typeDelay="3">Vinayak Sharma</span>
+            <span data-ty="input" data-ty-prompt="&emsp; Name :" data-ty-typeDelay="3">{{site.name | escape }}</span>
             <span data-ty="input" data-ty-prompt="&emsp; Currently :" data-ty-typeDelay="3">{{ site.title | escape }}</span>
-            <span data-ty="input" data-ty-prompt="&emsp; Specialization :" data-ty-typeDelay="3">Machine Learning</span>
+            <span data-ty="input" data-ty-prompt="&emsp; Specialization :" data-ty-typeDelay="3">{{ site.specialization | escape }}</span>
             <span data-ty="input" data-ty-prompt="Profile>" data-ty-typeDelay="10">sudo build profile --file-type html </span>
             <span data-ty="input" data-ty-prompt="" data-ty-typeDelay="5">[sudo] password for $USER: </span>
             <span data-ty="input" data-ty-prompt="" data-ty-startDelay="900" data-ty-typeDelay="5">building..</span> {%for page in site.data.pages%}
