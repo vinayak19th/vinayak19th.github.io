@@ -30,12 +30,12 @@ Based on : [modern-resume-theme](https://github.com/sproogen/modern-resume-theme
 * Modular self generating based on yml datasheets
 * Homepage terminal effect
 
+> More screenshots of the [key features here](docs/preview.md)
+
 ### Light Home Page
 ![term_light](./docs/Term/Light_Term.png)
 ### Dark Home Page
 ![term_dark](./docs/Term/Dark_Term.png)
-
-> More screenshots of the [key features here](docs/preview.md)
 
 
 ## Contributing
