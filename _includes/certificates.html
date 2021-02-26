@@ -9,7 +9,7 @@
     </ul>
     <h3></h3>
     <div class="tab-content tabs">
-      {% for category in site.data.certification %}
+      {% for category in site.data.certification | sort %}
         {% assign cat = category[1] %}
         <div role="tabpanel" id="{{cat.id}}" class="tab-pane fade {% if forloop.first %} in active {% endif %}">
           {% for certificate in cat.certification %}
