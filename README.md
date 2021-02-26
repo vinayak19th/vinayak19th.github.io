@@ -18,9 +18,25 @@ Based on : [modern-resume-theme](https://github.com/sproogen/modern-resume-theme
 ## Notable Features:
 * System persistent dark mode (Remembers your preference via cookies)
 * Live Github based Statistcs
-* Smart Design differ
+    * Profie Statistics on the about page
+    * Project statistics per repository in the project page
+* Reactive design for mobile friendly operation
+* Tabbed Page for certifications for easy of reading and management
+* Header section with live links such as :
+    * Direct whatsapp message
+    * Medium Profile
+    * Stack Overflow
+    * etc
 * Modular self generating based on yml datasheets
 * Homepage terminal effect
+
+### Light Home Page
+![term_light](./docs/Term/Light_Term.png)
+### Dark Home Page
+![term_dark](./docs/Term/Dark_Term.png)
+
+> More screenshots of the [key features here](docs/preview.md)
+
 
 ## Contributing
 
@@ -28,6 +44,12 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/vinaya
 This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 **Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://kcd.im/pull-request)
+
+### Known Bugs:
+- [ ] Issue with dark mode button position on Ipad: Only seems to be seen with Ipads. 
+
+Would appreciate contributions towards these bug fixes
+
 
 ### Docker
 
