@@ -12,7 +12,15 @@ Website link : <a href="https://vinayak19th.github.io/">link</a>
 
 A modern simple static resume template and theme. Powered by Jekyll and GitHub pages. Host your own resume on GitHub for free!
 
-Based on : [modern-resume-theme](https://github.com/sproogen/modern-resume-theme)
+Based on : [modern-resume-theme](https://github.com/sproogen/modern-resume-theme) **Major Modifications across the board**
+
+
+## Notable Features:
+* System persistent dark mode (Remembers your preference via cookies)
+* Live Github based Statistcs
+* Smart Design differ
+* Modular self generating based on yml datasheets
+* Homepage terminal effect
 
 ## Contributing
 
