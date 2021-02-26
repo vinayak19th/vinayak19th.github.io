@@ -10,6 +10,8 @@
 Website hosting my resume and profile
 Website link : <a href="https://vinayak19th.github.io/">link</a>
 
+[Source Code for downloading ](https://github.com/vinayak19th/vinayak19th.github.io/releases/)
+
 A modern simple static resume template and theme. Powered by Jekyll and GitHub pages. Host your own resume on GitHub for free!
 
 Based on : [modern-resume-theme](https://github.com/sproogen/modern-resume-theme) **Major Modifications across the board**
@@ -68,6 +70,8 @@ Fork this repository (helps with awareness and contributions) and clone it on yo
 ```bash
 $ git clone https://github.com/vinayak19th/vinayak19th.github.io.git
 ```
+
+or download the source code from [releases](https://github.com/vinayak19th/vinayak19th.github.io/releases/)
 ### Step 3 - Create your repository
 
 Create a repository on GitHub to host your website. You can find out how to do that [here](https://pages.github.com/)
