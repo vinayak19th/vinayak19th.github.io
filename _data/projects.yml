@@ -12,6 +12,28 @@
     • Created a novel "lite" version using dilated convolutions and reducing the number of parameters to half of that of Faster ARCNN (64k -> 32k)
 
 - layout: layout/left-proj
+  name: Vinayak-Sharma.tech
+  link: 
+  github: VINAYAK19TH/vinayak19th.github.io
+  stack : ["Jekyll","BootStrap","termynal.js","JQuery","Docker","SCSS", "HTML5"]
+  brief: The code repo for this website and instructions for - Creating your own version & Contributing to the Open Source Project
+  description: | # this will include new lines to allow paragraphs
+    Website hosting my resume and profile. Notable Features include:
+      * System persistent dark mode (Remembers your preference via cookies)
+      * Live Github based Statistcs
+          * Profie Statistics on the about page
+          * Project statistics per repository in the project page
+      * Reactive design for mobile friendly operation
+      * Tabbed Page for certifications for easy of reading and management
+      * Header section with live links such as :
+          * Direct whatsapp message
+          * Medium Profile
+          * Stack Overflow
+          * etc
+      * Modular self generating based on yml datasheets
+      * Homepage terminal effect
+
+- layout: layout/left-proj
   name: LOW-RESOURCE ASR
   link: 
   github: VINAYAK19TH/ASR-LOW-RESOURCE
