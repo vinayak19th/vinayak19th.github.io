@@ -7,7 +7,7 @@ if (theme == "dark") {
     document.getElementById("theme-toggle").innerHTML = "Light Mode";
     var items = document.getElementsByClassName("GitData");
     for (var i = 0; i < items.length; i++) {
-        items[i].src = items[i].src.replace('blueberry', 'tokyonight');
+        items[i].src = items[i].src.replace('ocean_dark', 'tokyonight');
     }
 }
 const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');
@@ -36,7 +36,7 @@ function modeSwitcher() {
         document.getElementById("theme-toggle").innerHTML = "Dark Mode";
         var items = document.getElementsByClassName("GitData");
         for (var i = 0; i < items.length; i++) {
-            items[i].src = items[i].src.replace('tokyonight', 'blueberry');
+            items[i].src = items[i].src.replace('ocean_dark', 'tokyonight');
         }
     } else {
         document.documentElement.setAttribute('data-theme', 'dark');
@@ -44,7 +44,7 @@ function modeSwitcher() {
         document.getElementById("theme-toggle").innerHTML = "Light Mode";
         var items = document.getElementsByClassName("GitData");
         for (var i = 0; i < items.length; i++) {
-            items[i].src = items[i].src.replace('blueberry', 'tokyonight');
+            items[i].src = items[i].src.replace('tokyonight', 'ocean_dark');
         }
     }
 }

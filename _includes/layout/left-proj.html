@@ -16,7 +16,7 @@
     <div class="repostats">
         {% assign data  = include.item.github | split:"/" %}
         <a href="https://github.com/{{ include.item.github }}" target="_blank">
-            <img class = "GitData" style="" src="https://github-readme-stats.vercel.app/api/pin/?username={{data[0]}}&repo={{data[1]}}&theme=blueberry&show_owner=true">
+            <img class = "GitData" style="" src="https://github-readme-stats.vercel.app/api/pin/?username={{data[0]}}&repo={{data[1]}}&theme=tokyonight&show_owner=true">
         </a>
     </div>
     {%- endif -%}

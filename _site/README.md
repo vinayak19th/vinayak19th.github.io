@@ -46,10 +46,25 @@ Create a repository on GitHub to host your website. You can find out how to do t
 ``` bash
 $ git clone https://github.com/username/username.github.io
 ```
-where username should be your GitHub ID
+where username should be your GitHub ID and **copy over <u>all</u> the content from this repository**
 
-### Step 4 - Push it
-Commit and push the resume template to github
+> **If you do not have a custom domain, delete the CNAME file**
+
+
+## Deployment
+
+### Step 1 : Local static generation
+You can generate your entire website locally using :
+```bash
+$ docker-compose up
+```
+This will generate the website and run a local server to view the website
+
+
+***Note:** The first time the command runs it will be much slower due to needing to pull and build the image. It will be much faster on every subsequent call*
+
+### Step 2 : Hosting
+Commit and push the resume template to github to host
 ```
 $ git add --all
 $ git commit -m "Initial resume setup"
@@ -58,13 +73,17 @@ $ git push -u origin master
 ### Step 5 - See it
 You should now be able to see the demo resume template using this theme at `[your-username].github.io`
 
+### Step 6 - Setting a custom domain
+If you own a custom domain, modify the [cname](./CNAME) file with your own custom 
+
+
 ----
 
-## Usage
+# Usage
 
 So now you will be able to see the demo template at your github URL. You can can edit the yml files and replace the demo content with your own. Hopefully it will be fairly simple to work out where all the content goes, but here is a quick overview.
 
-### `_config.yml`
+## `_config.yml`
 This will contain all the of the main configuration for your resume such as your name, email, social media links and about me content. It also contains all the content for your resume.  
 A full example of the _config.yml can be found [here](https://github.com/vinayak19th/vinayak19th.github.io/blob/master/_config.yml)
 
@@ -90,24 +109,54 @@ A full example of the _config.yml can be found [here](https://github.com/vinayak
 
 > DON'T MODIFY ANYHTING ELSE HERE UNLESS YOU KNOW WHAT YOU ARE DOING
 
-
-
-
-### Content
+## Content
 The main content for you resume will all come under the content property in the `_config.yml` file. This can be quite complex and a good understanding on [YAML](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html) will be helpful here.
 
 ### `_data` Folder
 
 The [_data](https://github.com/vinayak19th/vinayak19th.github.io/tree/master/_data) folder contains  files for all the main pages ie : [education,experience,pages,etc].
 
+> Adding entries in the exact format as in the samples will automatically populate the **webpages** 
+
+**Main config options:**
+1. General Notes:
+    * Do not change the layout unless you want really messed up front end
+    * You **CAN** leave fields blank without too much trouble
+    * Add **NEW** fields **WILL NOT** automatically update them into pages. You will need to modify the respective [layout](https://github.com/vinayak19th/vinayak19th.github.io/tree/master/_includes/layout) to have them appear. Refer to the Jekyll documentation.
+2. [education.yml](https://github.com/vinayak19th/vinayak19th.github.io/blob/master/_data/education.yml):
+    * Basic options
+    * Only updates the about page
+3. [experience_edu.yml](https://github.com/vinayak19th/vinayak19th.github.io/blob/master/_data/experience_edu.yml):
+    * Used to highlight things like *committee* & *club* memberships in college
+    * Can use doc links for certificates
+4. [experience.yml](https://github.com/vinayak19th/vinayak19th.github.io/blob/master/_data/experience.yml):
+    * Used to show **professional** positions such as jobs and internships 
+    * Can use doc links for LOR's etc
+5. [projects.yml](https://github.com/vinayak19th/vinayak19th.github.io/blob/master/_data/projects.yml):
+    * Used to populate your projects on GitHub
+    * You have to add a Github link by just using username/repo-name in the **github** field
+    * The repo cards and stats will be **updated automatically** by this change
+7. [awards](https://github.com/vinayak19th/vinayak19th.github.io/blob/master/_data/awards):
+    * Used to list achievements
+    * You can add a seperate non-tech yml file to include those
+    * Added to about page
+8. [certification](https://github.com/vinayak19th/vinayak19th.github.io/blob/master/_data/certification):
+    * **Most complex to understand**
+    * The files in this folder are used **populate the tabs** in the certification page
+    * The addition of tabs is automatic and based on the name of the file you create
+    * All details in the files within are reproduced on their own
+    * **Only supports the providers** Coursera and edX right now, feel free to add more and submit a PR
+    * **CANNOT LEAVE PROVIDERS EMPTY**
+9. [pages.yml](https://github.com/vinayak19th/vinayak19th.github.io/blob/master/_data/pages.yml):
+    * Used to populate the navbar.
+    * Leave it unchanged unless you are adding new pages
+
 You can simply replace the data in the yml files to really quickly build up your website.
 
-Below is a the full list of content options.
-```
-
-```
 
 ***Note:** The description or content areas (fields starting with `| #`) use markdown, this means that you have the ability to format the section in many different ways and add things such as images, code & syntax highlighting and tables. You can find a good [Markdown cheatsheet here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)*
+
+
 
 ## License
 
