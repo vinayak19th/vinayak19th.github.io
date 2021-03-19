@@ -6,3 +6,12 @@
   date: 28th Febuary 2020
   description: > # this will include new lines to allow paragraphs
     Our team placed first for our paper - "Intracranial Hemorrhage Detection using Neural Network methods". In the paper we outlined various methods and analyzed their performace. The aim was to provide a safe and efficient way to detect "Intracranial Hemorrhages", with minimal need of a doctor.
+
+- layout: layout/award_layout
+  name: SAMSUNG PRISM
+  org: Samsung Research Institute
+  position: Certificate of Excellence
+  link: "https://drive.google.com/file/d/1zJz9bNg8mqhOhEcAL17YGZ3Zay3a34Ms/view?usp=sharing"
+  date: 28th Febuary 2020
+  description: > # this will include new lines to allow paragraphs
+    For our work in designing a new framework for Online Handwritting Recognition in Bengali and Tamil, the Samsung Research Institute awarded us with a certificate of excellence. Our approach utilized large pre-trained text prediction models to augment a recurrent CNN. 
