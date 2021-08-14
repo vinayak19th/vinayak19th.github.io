@@ -5,7 +5,21 @@
         {%- if include.item.link -%}
             {% include a.html href=include.item.link class="link" %}{{ include.item.link }}</a>
         {%- endif -%}
-        {%- if include.item.job_title -%}<p><b>{{ include.item.job_title }}</b></p>{%- endif -%}
+
+        <div class="timeline-container">
+            <ul class="timeline">
+                {% for role in include.item.job_title %}
+                <li>
+                    <p class = "timeline">
+                    <mark>{{role[0]}}</mark><br>
+                    {{role[1]}}
+                    </p>
+                </li>
+                {% endfor %} 
+            </ul>
+        </div>
+        
+
         {%- if include.item.qualification -%}<p><b>{{ include.item.qualification }}</b></p>{%- endif -%}
         {%- if include.item.dates -%}<p>{{ include.item.dates }}</p>{%- endif -%}
         {%- if include.item.location -%}<p>{{ include.item.location}}</p>{%- endif -%}

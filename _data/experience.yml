@@ -2,8 +2,7 @@
 - layout: layout/left-ex
   company: MYELIN FOUNDRY
   link: www.myelinfoundry.com
-  job_title: Deep Learning Intern
-  dates: June 2019 – July 2019 & <br>August 2020 - Present
+  job_title: [[Deep Learning Consultant,Aug 2021 - Present],[Deep Learning Intern,Aug 2020 - Aug 2021],[Deep Learning Intern,June 2019 – July 2019]]
   location: Bangalore, India (Work From Home currently)
   document : Letter Of Recommendation 
   doclink : https://drive.google.com/file/d/1oFySerdQF5OGhKNeobj0N22yT5KHxSRK/view?usp=sharing
@@ -30,8 +29,7 @@
 - layout: layout/left-ex
   company: TATA ELXSI
   link: https://www.tataelxsi.com/
-  job_title: Machine Learning Intern
-  dates: May 2020 – June 2020
+  job_title: [[Machine Learning Intern,May 2020 – June 2020]]
   location: Work From Home 
   document : Internship Letter
   doclink : https://drive.google.com/file/d/1PxrCJSXEymsoQrzECKPsS5pK1jeFWI9t/view?usp=sharing
@@ -47,10 +45,9 @@
 - layout: layout/left-ex
   company: SAMSUNG
   link: www.samsung.com
-  job_title: Samsung PRISM Researcher
+  job_title: [[Samsung PRISM Researcher,November 2019 – August 2020]]
   document : Certificate of Excellence
   doclink : https://drive.google.com/file/d/1zJz9bNg8mqhOhEcAL17YGZ3Zay3a34Ms/view?usp=sharing
-  dates: November 2019 – August 2020
   location: Chennai, India
   stack: [<mark>Tensorflow</mark>,<mark>Bezier Curves</mark>,<mark>BERT</mark>,<mark>NLTK</mark>]
   quote: > 
