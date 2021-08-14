@@ -1,13 +1,13 @@
 <div class="top">
   <div class="container header-container" id="#page-top">
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-7 header-left">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 header-left">
         <h1>{{ site.name | escape }}</h1>
         <h2>{{ site.title | escape }}</h2>
         <br>
       </div>
       <br>
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 header-right">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 header-right">
         <ul class="icons no-print">
           {%- if site.facebook_username -%}
             <li>
@@ -72,6 +72,11 @@
               </a>
             </li>
           {%- endif -%}
+          <li>
+              {% include a.html href="https://drive.google.com/u/0/uc?id=1lnXD__B2iqIKH3B-mdpuoHJx9LqH7h0d&export=download" class="button button--sacnite button--round-l" %}
+                <i class="far fa-id-badge" title="{{ Resume | escape }}"></i>
+              </a>
+          </li>
           {% for link in site.additional_links %}
             <li>
               {% include a.html href=link.url class="button button--sacnite button--round-l" %}
