@@ -2,6 +2,17 @@ topic : Quantum Computing
 id : q_c
 certification:  
   - layout: layout/left-cer
+    name: 2021 Qiskit Global Summer School on Quantum Machine Learning
+    link: https://drive.google.com/file/d/1hb9Lf0KVLjEoiiPaMCUuedBNcDigs0q9/view?usp=sharing
+    provider: IBMQisKit
+    qualification: Certificate of Excellence
+    field : Quantum Computing, Quantum Machine Learning
+    description: > # this will include new lines to allow paragraphs
+      Completed the two-week intensive course provided by IBM Quantum, completing all graded lab work assignments with a final 
+      cumulative score above 75%, demonstrating applied understanding and comfort with and about Quantum Computing and Quantum Machine 
+      Learning using Qiskit
+      
+  - layout: layout/left-cer
     name: UTQML101x - Quantum Machine Learning
     link: https://courses.edx.org/certificates/2743eaafda92485bba335011037e0f1f
     provider: edX

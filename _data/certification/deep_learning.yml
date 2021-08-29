@@ -6,6 +6,7 @@ certification:
     link: https://www.coursera.org/account/accomplishments/specialization/D9DJAGFNHJTY
     qualification: Deep Learning.ai 
     provider: Coursera
+    field : Deep Learning General
     description: > # this will include new lines to allow paragraphs
       The Deep Learning Specialization was created and is taught by Dr. Andrew Ng, a global leader in AI and co-founder of Coursera.
       In addition to the lectures and programming assignments, you will also watch exclusive interviews with many Deep Learning leaders. 
@@ -22,6 +23,7 @@ certification:
     link: https://www.coursera.org/account/accomplishments/verify/4TMXGREEAKZE
     qualification: Stanford Andrew Ng
     provider: Coursera
+    field : Machine Learning
     description: > # this will include new lines to allow paragraphs
       This course provides a broad introduction to machine learning. Topics include: 
         
@@ -40,6 +42,7 @@ certification:
     link: https://www.coursera.org/account/accomplishments/certificate/JR7MM98QAACJ
     qualification: The Hong Kong University of Science and Technology
     provider: Coursera
+    field : NLP
     description: > # this will include new lines to allow paragraphs
       This course covers a wide range of tasks in Natural Language Processing from basic to advanced: sentiment analysis, summarization, dialogue state tracking, to name a few. Upon completing, you will be able to recognize NLP tasks in your day-to-day work, propose approaches, and judge what techniques are likely to work well.  The final project is devoted to one of the most hot topics in today’s NLP. You will build your own conversational chat-bot that will assist with search on StackOverflow website. The project will be based on practical assignments of the course, that will give you hands-on experience with such tasks as text classification, named entities recognition, and duplicates detection. 
 
@@ -48,6 +51,7 @@ certification:
     link: https://www.coursera.org/account/accomplishments/certificate/Z289DRUGXM8H
     qualification: Deep Learning.ai 
     provider: Coursera
+    field : Production Level Deep Learning (MLOps)
     description: > # this will include new lines to allow paragraphs
       In this final course, you’ll explore four different scenarios you’ll encounter when deploying models. 
       You’ll be introduced to TensorFlow Serving, a technology that lets you do inference over the web. 
@@ -60,6 +64,7 @@ certification:
     link: https://www.coursera.org/account/accomplishments/verify/VMFTUV25QCVU
     qualification: Deep Learning.ai 
     provider: Coursera
+    field : Data Pipelines for Deep Learning
     description: > # this will include new lines to allow paragraphs
       This course teaches you how to use a suite of tools in TensorFlow to more effectively leverage data and train your model. 
       You’ll learn how to leverage built-in datasets with just a few lines of code, use APIs to control how you split your data, 
@@ -72,6 +77,7 @@ certification:
     link: https://www.coursera.org/account/accomplishments/certificate/QVDMFGYC86AS
     qualification: Google Cloud
     provider: Coursera
+    field : Cloud Pipelines for Models (MLOps)
     description: > # this will include new lines to allow paragraphs
       In the first course of this specialization, we will recap what was covered in the Machine Learning with TensorFlow
       on [Google Cloud Platform Specialization](https://www.coursera.org/specializations/machine-learning-tensorflow-gcp). So, 
@@ -85,6 +91,7 @@ certification:
     link: https://www.coursera.org/account/accomplishments/verify/GHCM4ZTZZV76
     qualification: Deep Learning.ai 
     provider: Coursera
+    field : Web Deployment
     description: > # this will include new lines to allow paragraphs
       This course teaches you learn how to train and run machine learning models in any browser using TensorFlow.js. 
       You’ll learn techniques for handling data in the browser, and at the end you’ll build a computer vision project that 
@@ -97,6 +104,7 @@ certification:
     link: https://www.coursera.org/account/accomplishments/certificate/5JGZFBHDT2B4
     qualification: Rhyme
     provider: Coursera
+    field : Custom Models
     description: > # this will include new lines to allow paragraphs
       In this 1.5-hour long project-based course, you will learn to create a custom callback function in Keras and use 
       the callback during a model training process. We will implement the callback function to perform three tasks: 
