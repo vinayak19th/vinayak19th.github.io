@@ -1,9 +1,10 @@
 repository: vinayak19th/vinayak19th.github.io/
 # Personal info
 name: Vinayak Sharma
-title: Final Year, Computer Science & Engineering
+title: Product Engineer, Myelin Foundry
 specialization : Machine Learning
 email: vinayak1998th@Gmail.com
+
 phone: "+91 9748939032"
 website: vinayaksharma.tech
 
@@ -43,15 +44,14 @@ githubstats: True
 favicon: images/fav.ico
 about_profile_image: images/picture.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Student Researcher with a passion for the fields of <mark>Deep Learning</mark> & <mark>Quantum Computing</mark>.
-  I've worked extensively on Deep Learning solutions to problems on Vision, Natural Language and Audio.
-  Some of the challenges I've tackled :
-  - Improved super-resolution on low quality, high artifact video.
-  - Real-Time automated monitoring of social distancing based on single camera feed
-  - Deep learning based Medical Imageing of intracranial hemorrhaging
-  - Handwritting recognition and ASR for very low resource languages (Bengali: Handwritting and Pashto: ASR)
+  A Product Engineer [@Myelin Foundry](https://www.myelinfoundry.com/) specializing in <mark>Deep Learning</mark>.
+  I've worked extensively to develop solutions to problems in the field of Vision, Natural Language and Industrial Automation.
 
-  <mark>I look forward to exploring more and learning while working on the bleeding edge</mark>
+  Currently working on:
+  - Industrial Automation using Deep Learning Networks
+  Feel free to reach out on my [LinkedIn](https://www.linkedin.com/in/vinayaksha/) anytime. Always ready to talk <b>Tech</b> or </b>Anime</b>.
+
+
 # Projects Section
 # projects_title: Projects #(Use this to override about projects section title)
 
