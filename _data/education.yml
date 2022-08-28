@@ -1,8 +1,19 @@
 # Education Template
 - layout: layout/left-edu
-  name: SRM INSTITUTE OF SCIENCE AND TECHNOLOGY
+  name: Arizona State University
+  link: https://www.asu.edu/
+  dates: Present - 2022
+  qualification: Master of Science in Computer Science
+  description: > # this will include new lines to allow paragraphs
+    Arizona State University is a public research university in the Phoenix metropolitan area. Founded in 1885 by the 13th Arizona Territorial Legislature, ASU is one of the largest public universities by enrollment in the U.S.
+    Computer Science, MS: The Master of Science in computer science is a research-oriented degree, ideal for students with undergraduate education in computer science or related studies. This degree features advanced course work and a strong emphasis on student research. The M.S. program provides numerous opportunities for interdisciplinary study. Within this degree, students can concentrate their studies in the following areas: arts, media and engineering, and cybersecurity.
+      - **City** : Tempe, US
+
+
+- layout: layout/left-edu
+  name: SRM Institute of Science & Technology
   link: https://www.srmist.edu.in/
-  dates: 2017 - 2021
+  dates: 2021-2017
   qualification: B.Tech Computer Science & Engineering
   description: > # this will include new lines to allow paragraphs
     SRM Institute of Science and Technology (formerly known as SRM University) is one of the top ranking universities in India 

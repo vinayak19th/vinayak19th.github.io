@@ -1,12 +1,29 @@
 # Experience template
 - layout: layout/left-ex
+  company: ARIZONA STATE UNIVERSITY
+  link: https://scai.engineering.asu.edu/
+  job_title: [[Teaching Assistant,Present-Aug 2022]]
+  location: Tempe,Arizona
+  document : 
+  doclink : 
+  stack: []
+  quote: > 
+    Course CSE 486: Capstone Project
+  description: > # this will include new lines to allow paragraphs
+    Teaching the course CSE 486: Capstone Project for the SCAI department. My role involves:
+      * Helping final year undergraduate students with any issues they face in their 'Capstone Project'
+      * Teaching the fundamentals of *'Agile Development'*
+      * Giving guidance on the job search, interview and salary negotiation process  
+
+
+- layout: layout/left-ex
   company: MYELIN FOUNDRY
-  link: www.myelinfoundry.com
-  job_title: [[Product Engineer-ML,Sept 2021-Present],[Deep Learning Consultant,Aug 2021 - Sept 2021],[Deep Learning Intern,Aug 2020 - Aug 2021],[Deep Learning Intern,June 2019 – July 2019]]
-  location: Bangalore, India (Work From Home currently)
+  link: https://www.myelinfoundry.com
+  job_title: [[Product Engineer-ML,June 2022-Sept 2021],[Deep Learning Consultant,Sept 2021 - Aug 2021],[Deep Learning Intern,Aug 2021 - Aug 2020],[Deep Learning Intern,July 2019 – June 2019]]
+  location: Bangalore, India
   document : Letter Of Recommendation 
   doclink : https://drive.google.com/file/d/1oFySerdQF5OGhKNeobj0N22yT5KHxSRK/view?usp=sharing
-  stack: [<mark>Tensorflow</mark>,<mark>PyTorch</mark>,<mark>ESPNET</mark>,<mark>Docker</mark>,<mark>FFmpeg</mark>,<mark>OpenCV</mark>,<mark>Tensorflow Lite</mark>,<mark>Tf.Data</mark>,<mark>Raspberry Pi 4</mark>]
+  stack: [Tensorflow,PyTorch,ESPNET,Docker,FFmpeg,OpenCV,Tensorflow Lite,Tf.Data,Raspberry Pi 4]
   quote: > 
     Myelin Foundry is a deep tech product start-up that transforms human experiences and industry 
     outcomes by building Artificial Intelligence algorithms on video, voice, and sensor data, for edge devices.
@@ -25,31 +42,14 @@
       * Tested & evaluated the viability of <b>Tensorflow.js</b> for the deployment of the organizations product stack
       * Helped set up the company servers for model training
 
-
-- layout: layout/left-ex
-  company: TATA ELXSI
-  link: https://www.tataelxsi.com/
-  job_title: [[Machine Learning Intern,May 2020 – June 2020]]
-  location: Work From Home 
-  document : Internship Letter
-  doclink : https://drive.google.com/file/d/1PxrCJSXEymsoQrzECKPsS5pK1jeFWI9t/view?usp=sharing
-  stack: [<mark>Tensorflow</mark>,<mark>Docker</mark>,<mark>OpenCV</mark>]
-  quote: > 
-    Tata Elxsi is amongst the world’s leading providers of design and technology services across industries including Automotive, Broadcast, Communications and Healthcare.
-  description: > # this will include new lines to allow paragraphs
-    As an intern for Tata Elxsi, I was tasked with :
-      * <b>Creating an API to perform object detection</b> in identifying humans <b>from video footage</b> and estimating their distance.
-      * One of the many proposed applications for the API was to <b>enforce Social Distancing</b> protocols to assist clients better ensure safe working conditions. 
-      * The API was packaged into a <i>Docker container</i> to maintain stability and ease of sharing.
-
 - layout: layout/left-ex
   company: SAMSUNG
-  link: www.samsung.com
-  job_title: [[Samsung PRISM Researcher,November 2019 – August 2020]]
+  link: https://www.samsung.com
+  job_title: [[Samsung PRISM Researcher, August 2020 - November 2019]]
   document : Certificate of Excellence
   doclink : https://drive.google.com/file/d/1zJz9bNg8mqhOhEcAL17YGZ3Zay3a34Ms/view?usp=sharing
   location: Chennai, India
-  stack: [<mark>Tensorflow</mark>,<mark>Bezier Curves</mark>,<mark>BERT</mark>,<mark>NLTK</mark>]
+  stack: [Tensorflow,Bezier Curves,BERT,NLTK]
   quote: > 
     Samsung is a South Korean multinational conglomerate headquartered in Samsung Town, Seoul. It comprises numerous 
     affiliated businesses, most of them united under the Samsung brand, and is the largest South Korean chaebol. 
@@ -62,3 +62,18 @@
       * This model was combined with a <b>pre-trained language model - BERT</b> to improve the accuracy of our predictions.  
 
 
+- layout: layout/left-ex
+  company: TATA ELXSI
+  link: https://www.tataelxsi.com/
+  job_title: [[Machine Learning Intern, June 2020 - May 2020]]
+  location: Work From Home 
+  document : Internship Letter
+  doclink : https://drive.google.com/file/d/1PxrCJSXEymsoQrzECKPsS5pK1jeFWI9t/view?usp=sharing
+  stack: [Tensorflow,Docker,OpenCV]
+  quote: > 
+    Tata Elxsi is amongst the world’s leading providers of design and technology services across industries including Automotive, Broadcast, Communications and Healthcare.
+  description: > # this will include new lines to allow paragraphs
+    As an intern for Tata Elxsi, I was tasked with :
+      * <b>Creating an API to perform object detection</b> in identifying humans <b>from video footage</b> and estimating their distance.
+      * One of the many proposed applications for the API was to <b>enforce Social Distancing</b> protocols to assist clients better ensure safe working conditions. 
+      * The API was packaged into a <i>Docker container</i> to maintain stability and ease of sharing.
