@@ -5,14 +5,12 @@
         <hr width="70%">
     </center>{% endunless %} {% endfor %}
     </table>
-    <div class="container experience-container">
-        <h2 style="text-align:center;margin-top:2rem;font-size:3rem">Clubs</h2>
-        <center>
-            <hr width="70%">
-        </center>
-        {% for experience in site.data.experience_edu %} {% include {{ experience.layout | default: 'left' | append: ".html" }} item=experience %} {% unless forloop.last %}
-        <center>
-            <hr width="70%">
-        </center>{% endunless %} {% endfor %}
-    </div>
+    <h2 style="text-align:center;margin-top:2rem;font-size:3rem">Clubs</h2>
+    <center>
+        <hr width="70%">
+    </center>
+    {% for experience in site.data.experience_edu %} {% include {{ experience.layout | default: 'left' | append: ".html" }} item=experience %} {% unless forloop.last %}
+    <center>
+        <hr width="70%">
+    </center>{% endunless %} {% endfor %}
 </div>
