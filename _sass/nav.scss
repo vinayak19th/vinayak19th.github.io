@@ -27,13 +27,13 @@
 }
 
 .navbar-brand:hover {
-    color: #48ca85;
+    color: #48ca85 !important;
     font-size: 2rem !important;
 }
 
 .navbar {
     text-transform: capitalize;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1rem;
     background: #2E3440;
     @media screen and (min-width: 768px) {
@@ -44,6 +44,7 @@
 .navbar a:hover {
     outline: 0;
     font-size: 1.5rem;
+    color: #48ca85 !important;
 }
 
 .navbar .navbar-nav {
