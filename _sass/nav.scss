@@ -1,7 +1,7 @@
 :root {
-    --cursor-color: rgb(0, 0, 0);
+    --cursor-color: #ffffff;
     .dark {
-        --cursor-color: rgb(255, 255, 255);
+        --cursor-color: #ffffff;
     }
 }
 
@@ -13,7 +13,7 @@
 
 .navbar-fixed-top .navbar-brand {
     font-size: 2rem;
-    color: #000000;
+    color: #ffffff;
     font-weight: 600;
     text-transform: lowercase;
 }
@@ -27,7 +27,7 @@
 }
 
 .navbar-brand:hover {
-    color: #b4b4b4;
+    color: #48ca85;
     font-size: 2rem !important;
 }
 
@@ -35,7 +35,7 @@
     text-transform: capitalize;
     font-weight: 400;
     font-size: 1rem;
-    background: #eeeeee;
+    background: #2E3440;
     @media screen and (min-width: 768px) {
         height: 6rem;
     }
@@ -53,12 +53,12 @@
 
 .navbar .navbar-nav li a {
     outline: 3;
-    color: #000000;
+    color: #ffffff;
 }
 
 .navbar .navbar-nav li a:focus {
     outline: 0;
-    color: #000000;
+    color: #ffffff;
     .dark {
         color: #ffffff;
     }
@@ -80,7 +80,8 @@
 }
 
 .dark-mode {
-    background-color: #39393a;
+    background-color: #E0E1DD;
+    color: black;
     border-radius: 10px;
     display: inline-block;
     vertical-align: middle;
@@ -90,11 +91,12 @@
 }
 
 button:focus {
-    background-color: #39393a;
+    background-color: #E0E1DD;
+    color: black;
 }
 
 button:hover {
-    background-color: rgb(72, 202, 133) !important;
+    background-color: #48ca85 !important;
     color: black;
 }
 

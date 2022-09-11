@@ -1,17 +1,16 @@
 <div class="container intro-container" id="term" style="margin-top: 10rem">
-  <div class="row clearfix" style="margin-bottom: 1rem; text-align: center">
-    <h1>HELLO WORLD!</h1>
-    <br />
-    <h2>Welcome to my profile page</h2>
-  </div>
-  <div class="row clearfix">
-    <div id="termynal" data-termynal>
-      <span data-ty="input">~/profile.sh init</span>
-      <span data-ty>Loading Assets...</span>
-      <span data-ty="progress"></span>
-      <span data-ty="input" data-ty-prompt="Profile>">bio --show</span>
-      <span data-ty="input" data-ty-prompt="&emsp; Name :" data-ty-typeDelay="3"
-        >{{site.name | escape }}</span
+    <div class="row clearfix" style="margin-bottom: 1rem; text-align: center">
+        <h1>HELLO WORLD!</h1>
+        <br />
+        <h2>Welcome to my profile page</h2>
+    </div>
+    <div class="row clearfix">
+        <div id="termynal" data-termynal>
+            <span data-ty="input">~/profile.sh init</span>
+            <span data-ty>Loading Assets...</span>
+            <span data-ty="progress"></span>
+            <span data-ty="input" data-ty-prompt="Profile>">bio --show</span>
+            <span data-ty="input" data-ty-prompt="&emsp; Name :" data-ty-typeDelay="3">{{site.name | escape }}</span
       >
       <span
         data-ty="input"
@@ -28,15 +27,9 @@
       <span data-ty="input" data-ty-prompt="Profile>" data-ty-typeDelay="10"
         >sudo build profile --file-type html
       </span>
-      <span data-ty="input" data-ty-prompt="" data-ty-typeDelay="5"
-        >[sudo] password for $USER:
+            <span data-ty="input" data-ty-prompt="" data-ty-typeDelay="5">[sudo] password for $USER:
       </span>
-      <span
-        data-ty="input"
-        data-ty-prompt=""
-        data-ty-startDelay="900"
-        data-ty-typeDelay="5"
-        >building..</span
+            <span data-ty="input" data-ty-prompt="" data-ty-startDelay="900" data-ty-typeDelay="5">building..</span
       >
       {%for page in site.data.pages%}
       <span data-ty data-ty-delay="20 "
@@ -48,10 +41,10 @@
     </div>
   </div>
 </div>
-<div class="container intro-container" id="about">
+<div class="container header-container" style="margin-top: 2rem;">
   <div class="row">
     <hr style="margin-bottom: 0.2rem" />
-    <h2 style="text-align: center; font-size: 3rem"><b>More about me </b></h2>
+    <h2 style="text-align: center; font-size: 3rem">More about me </h2>
     <hr style="margin-top: 0.2rem" />
     {% include intro.html %}
   </div>
