@@ -218,10 +218,18 @@ body {
     }
 }
 
+.resume-button {
+    background-color: #333333;
+    border-radius: 1rem;
+    a {
+        color: inherit;
+    }
+}
+
 .header-container {
     margin-top: 7rem;
     border-radius: 3rem;
-    box-shadow: 0px 0px 0px rgb(17, 15, 15);
+    box-shadow: 0px 0px 0px #110f0f;
     background: none;
 }
 

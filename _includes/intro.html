@@ -1,63 +1,63 @@
-  <div class="row" style="margin-top:1rem">   
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-7 header-left intro" id="resume-row">
-          <a href="{{site.data.docs.resume}}">
-              <button class="dark-mode" style="padding-top:1.1rem; margin-top:-2.3rem;">
+<div class="row" style="margin-top:1rem">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-7 header-left intro" id="resume-row">
+        <a href="{{site.data.docs.resume}}">
+            <button class="resume-button" style="padding-top:1.1rem; margin-top:-2.3rem;">
         <i class="far fa-id-badge fa-2x" title="Resume Link"></i>
         <h2 style="display:inline-block">&nbsp; Resume</h2>
       </button>
-          </a>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 header-right intro">
-          <ul class="icons">
-              {%- if site.facebook_username -%}
-              <li>
-                  <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-                      <i class="fab fa-facebook" title="Facebook link"></i>
-                  </a>
-              </li>
-              {%- endif -%} {%- if site.whatsapp_number -%}
-              <li>
-                  <a target="_blank" href="https://wa.me/{{ site.whatsapp_number| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-                      <i class="fab fa-whatsapp" title="Whatsapp link"></i>
-                  </a>
-              </li>
-              {%- endif -%} {%- if site.medium -%}
-              <li>
-                  <a target="_blank" href="https://medium.com/@{{ site.medium| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-                      <i class="fa fa-medium" title="Medium link"></i>
-                  </a>
-              </li>
-              {%- endif -%} {%- if site.github_username -%}
-              <li>
-                  <a target="_blank" href="https://github.com/{{ site.github_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-                      <i class="fab fa-github" title="Github link"></i>
-                  </a>
-              </li>
-              {%- endif -%} {%- if site.stackoverflow_username -%}
-              <li>
-                  <a target="_blank" href="https://stackoverflow.com/users/{{ site.stackoverflow_username }}" class="button button--sacnite button--round-l">
-                      <i class="fab fa-stack-overflow" title="Stackoverflow link"></i>
-                  </a>
-              </li>
-              {%- endif -%} {%- if site.instagram_username -%}
-              <li>
-                  <a target="_blank" href="https://www.instagram.com/{{ site.instagram_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-                      <i class="fab fa-instagram" title="Instagram link"></i>
-                  </a>
-              </li>
-              {%- endif -%} {%- if site.linkedin_username -%}
-              <li>
-                  <a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-                      <i class="fab fa-linkedin" title="Linkedin link"></i>
-                  </a>
-              </li>
-              {%- endif -%} {% for link in site.additional_links %}
-              <li>
-                  {% include a.html href=link.url class="button button--sacnite button--round-l" %}
-                  <i class="fab {{ link.icon }}" title="{{ link.title | escape }}"></i>
-                  </a>
-              </li>
-              {% endfor %}
-          </ul>
-      </div>
-  </div>
+        </a>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 header-right intro">
+        <ul class="icons">
+            {%- if site.facebook_username -%}
+            <li>
+                <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
+                    <i class="fab fa-facebook" title="Facebook link"></i>
+                </a>
+            </li>
+            {%- endif -%} {%- if site.whatsapp_number -%}
+            <li>
+                <a target="_blank" href="https://wa.me/{{ site.whatsapp_number| cgi_escape | escape }}" class="button button--sacnite button--round-l">
+                    <i class="fab fa-whatsapp" title="Whatsapp link"></i>
+                </a>
+            </li>
+            {%- endif -%} {%- if site.medium -%}
+            <li>
+                <a target="_blank" href="https://medium.com/@{{ site.medium| cgi_escape | escape }}" class="button button--sacnite button--round-l">
+                    <i class="fa fa-medium" title="Medium link"></i>
+                </a>
+            </li>
+            {%- endif -%} {%- if site.github_username -%}
+            <li>
+                <a target="_blank" href="https://github.com/{{ site.github_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
+                    <i class="fab fa-github" title="Github link"></i>
+                </a>
+            </li>
+            {%- endif -%} {%- if site.stackoverflow_username -%}
+            <li>
+                <a target="_blank" href="https://stackoverflow.com/users/{{ site.stackoverflow_username }}" class="button button--sacnite button--round-l">
+                    <i class="fab fa-stack-overflow" title="Stackoverflow link"></i>
+                </a>
+            </li>
+            {%- endif -%} {%- if site.instagram_username -%}
+            <li>
+                <a target="_blank" href="https://www.instagram.com/{{ site.instagram_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
+                    <i class="fab fa-instagram" title="Instagram link"></i>
+                </a>
+            </li>
+            {%- endif -%} {%- if site.linkedin_username -%}
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
+                    <i class="fab fa-linkedin" title="Linkedin link"></i>
+                </a>
+            </li>
+            {%- endif -%} {% for link in site.additional_links %}
+            <li>
+                {% include a.html href=link.url class="button button--sacnite button--round-l" %}
+                <i class="fab {{ link.icon }}" title="{{ link.title | escape }}"></i>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
