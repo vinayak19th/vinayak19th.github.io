@@ -12,7 +12,7 @@
     • Created a novel "lite" version using dilated convolutions and reducing the number of parameters to half of that of Faster ARCNN (64k -> 32k)
 
 - layout: layout/left-proj
-  name: Vinayak-Sharma.tech
+  name: vinayak19th.github.io
   link: 
   github: VINAYAK19TH/vinayak19th.github.io
   stack : ["Jekyll","BootStrap","termynal.js","JQuery","Docker","SCSS", "HTML5"]
