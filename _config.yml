@@ -48,7 +48,7 @@ about_profile_image: https://www.gravatar.com/avatar/2302f2e8d1521c441894759ef96
 # projects_title: Projects #(Use this to override about projects section title)
 
 # Experience Section
-# experience_title: Experience #(Use this to override about experience section title)
+experience_title: Professional Experience #(Use this to override about experience section title)
 
 # Education Section
 # education_title: Education #(Use this to override about education section title)

@@ -1,6 +1,7 @@
 .timeline-container {
     display: flex;
     margin-bottom: -1rem;
+
     @media screen and (max-width: 768px) {
         text-align: center !important;
         // margin-left: 30%;
@@ -12,6 +13,8 @@ p.timeline {
     margin: 0rem;
     padding: 0rem;
     display: inline-block;
+    text-align: left !important;
+    font-weight: 500 !important;
 }
 
 ul.timeline {
@@ -61,6 +64,7 @@ ul.timeline>li:before {
     ul.timeline:before {
         background: #e6e6e6;
     }
+
     ul.timeline>li:before {
         background: #3f4658;
         border: 3px solid #e6e6e6;
