@@ -7,7 +7,6 @@ email: vinayak1998th@Gmail.com
 
 # phone: "+91 9748939032" 
 website: vinayak19th.github.io
-
 darkmode: false
 
 # Social links
@@ -42,7 +41,7 @@ githubstats: True
 # About Section
 # about_title: About Me (Use this to override about section title)
 favicon: images/fav.ico
-about_profile_image: images/picture.jpg
+about_profile_image: https://www.gravatar.com/avatar/2302f2e8d1521c441894759ef96580b2?s=600
 
 
 # Projects Section
