@@ -1,20 +1,33 @@
 # Project template
+- layout: layout/left-proj
+  name: Aesthetic-Face-De-Identification
+  link: 
+  github: vinayak19th/Aesthetic-Face-De-Identification
+  stack : ["Tensorflow","OpenCV","Android","Image Filter"]
+  brief: A scalable approach protect the privacy of people in the background of the frame via a face de-identification filter
+  description: | # this will include new lines to allow paragraphs
+    A scalable approach to preserving the privacy of bystanders in social media posts :<br>
+    * Entirely '*edge*' system tested on low end android phones-
+    * Client side nature makes it scalable as no server compute required for new nodes,
+    * Edge compute improves privacy as unfiltered data never leaves the device
+    * Aesthetics are preserved via custom filter implementation based on human tendecies
+
 
 - layout: layout/left-proj
   name: ARCNN-keras
   link: 
-  github: VINAYAK19TH/ARCNN-keras
+  github: vinayak19th/ARCNN-keras
   stack : ["Tensorflow","Keras","Docker","tf.data","PIL"]
   brief: A tf-keras implementation of ARCNN
   description: | # this will include new lines to allow paragraphs
     A tf-keras implementation of ARCNN mentioned in :<br>
-    • Implemented ARCNN in tf.keras for easy of use
-    • Created a novel "lite" version using dilated convolutions and reducing the number of parameters to half of that of Faster ARCNN (64k -> 32k)
+    * Implemented ARCNN in tf.keras for easy of use
+    * Created a novel "lite" version using dilated convolutions and reducing the number of parameters to half of that of Faster ARCNN (64k -> 32k)
 
 - layout: layout/left-proj
   name: vinayak19th.github.io
   link: 
-  github: VINAYAK19TH/vinayak19th.github.io
+  github: vinayak19th/vinayak19th.github.io
   stack : ["Jekyll","BootStrap","termynal.js","JQuery","Docker","SCSS", "HTML5"]
   brief: The code repo for this website and instructions for - Creating your own version & Contributing to the Open Source Project
   description: | # this will include new lines to allow paragraphs
@@ -36,34 +49,34 @@
 - layout: layout/left-proj
   name: LOW-RESOURCE ASR
   link: 
-  github: VINAYAK19TH/ASR-LOW-RESOURCE
+  github: vinayak19th/ASR-LOW-RESOURCE
   stack : ["Kaldi","ESPNet","Bash","PyTorch"]
   brief: A project based on the BABEL Dataset from the US government
   description: | # this will include new lines to allow paragraphs
-    • An End-to-End Framework for performing automatic speech recognition on low-resource languages such as 
+    * An End-to-End Framework for performing automatic speech recognition on low-resource languages such as 
     Urdu and Pashto <br>
-    • Created the framework based on ESPnet.
+    * Created the framework based on ESPnet.
 
 - layout: layout/left-proj
   name: BREVIS-NEWS
   link: 
-  github: VINAYAK19TH/BREVIS-NEWS
+  github: vinayak19th/BREVIS-NEWS
   brief: Open source project to generate a summary of any news article.
   stack : ["Tensorflow","Django","NLTK"]
   description: | # this will include new lines to allow paragraphs
-    • A Natural Language Processing(NLP) based system to summarize news
+    * A Natural Language Processing(NLP) based system to summarize news
     articles. The network was trained using ”inshorts” summaries as training data. <br>
-    • Created a Django based back-end for deployment of the model for edge inference.
+    * Created a Django based back-end for deployment of the model for edge inference.
 
 - layout: layout/left-proj
   name: Quantum Machine Learning
   link: 
-  github: VINAYAK19TH/QUANTUM-ML
+  github: vinayak19th/QUANTUM-ML
   brief: Implementations of code and projects from the University of Toronto course on Quantum Machine Learning
   stack : ["QisKit","Numpy"]
   description: | # this will include new lines to allow paragraphs
-    • Implementing various Quantum Machine Learning algorithms from the University of Toronto Course<br>
-    • Implemented using the QISKit API from IBM
+    * Implementing various Quantum Machine Learning algorithms from the University of Toronto Course<br>
+    * Implemented using the QISKit API from IBM
 
 
 - layout: layout/left-proj
@@ -73,4 +86,4 @@
   brief: Neural-Style-Transfer implementation in Tf2 Beta
   stack : ["Tensorflow","Numpy","Scikit-learn"]
   description: | # this will include new lines to allow paragraphs
-    • Implementing Neural Style Transfer on a Beta Version of Tensorflow 2.0<br>
+    * Implementing Neural Style Transfer on a Beta Version of Tensorflow 2.0<br>

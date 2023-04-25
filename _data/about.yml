@@ -1,43 +1,45 @@
 content: | # this will include new lines to allow paragraphs
-    A Product Engineer [@Myelin Foundry](https://www.myelinfoundry.com/) specializing in <mark>Deep Learning</mark>.
-    I've worked extensively to develop solutions to problems in the field of Vision, Natural Language and Industrial Automation.
-
-    <b>I'm currently working on</b>: Industrial Automation using Deep Learning Networks
-
+    Hey there, <br>
+    I'm just a Masters Student who loves working on Machine Learning & Quantum Computing. Currently, I'm  working on ML algorithms that can improve the performance and functionality of NISQ Quantum computers at [@MPS-Lab](https://labs.engineering.asu.edu/mps-lab/person/vinayak-sharma/). I have full-time experience as a Deep Learning Developer at [@Myelin Foundry](https://www.myelinfoundry.com/). <br> <br>
+    <b>Where I'm looking to go</b>: My current goal is to pursue a PhD in Quantum Machine Learning and contribute to the development of this emerging and interdisciplinary field.<br><br>
     <b>Stuff I'm good with</b>:
 
 stack:
   - languages:
-      - <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
-      - <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/>
-      - <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
-      - <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
-      - <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/>
-      - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" alt="postgres" width="50" height="50"/>
-      - <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/>
-      - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" alt="Java" width="50" height="50" />
+      - <i class="devicon-python-plain devicon"></i>
+      - <i class="devicon-cplusplus-plain devicon"></i>
+      - <i class="devicon-html5-plain-wordmark devicon"></i> 
+      - <i class="devicon-javascript-plain devicon"></i>
+      - <i class="devicon-matlab-plain devicon"></i>
+      - <i class="devicon-postgresql-plain devicon"></i>
+      - <i class="devicon-bash-plain devicon"></i>
+      - <i class="devicon-java-plain devicon"></i>
+      - <i class="devicon-kotlin-plain devicon"></i>
 
   - machine_learning:
-      - <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/>
-      - <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/>
-      - <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/>
-      - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original-wordmark.svg" alt="numpy" width="60" height="60"/>
+      - <i class="devicon-tensorflow-original devicon"></i>
+      - <i class="devicon-pytorch-original devicon"></i>
+      - <i class="devicon-numpy-original devicon"></i>
+      - <i class="devicon-pandas-original-wordmark devicon "></i>
+      - <i class="devicon-opencv-plain-wordmark devicon "></i>
+      - <img class="filter-svg" src="https://raw.githubusercontent.com/scikit-learn/scikit-learn/main/doc/logos/scikit-learn-logo-without-subtitle.svg" alt="scikit_learn" width="40" height="40"/>
 
   - frameworks:
-      - <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/>
-      - <img src="https://www.vectorlogo.zone/logos/jekyllrb/jekyllrb-icon.svg" alt="jekyll" width="40" height="40"/> 
-      - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="django" width="40" height="40"/>
-      - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android" width="50" height="50" />
-
-
+      - <i class="devicon-sass-original devicon"></i>
+      - <i class="devicon-bootstrap-plain-wordmark devicon"></i>
+      - <i class="devicon-django-plain-wordmark devicon"></i>
+      - <i class="devicon-android-plain devicon"></i>
+      - <span class="devicon-fastapi-plain-wordmark devicon wordmark"></span>
+    #   - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original-wordmark.svg" alt="FastAPI" width="70" height="70" />
 
   - dev_ops:
-      - <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/>
-      - <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/>
-      - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain-wordmark.svg" alt="Kubernetes" width="50" height="50" />
-      - <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/>
-      - <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/>
-      - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" alt="git" width="50" height="50" />
+      - <i class="devicon-git-plain-wordmark devicon wordmark"></i>
+      - <i class="devicon-github-original-wordmark devicon"></i>
+      - <i class="devicon-docker-plain-wordmark devicon"></i>
+      - <i class="devicon-kubernetes-plain-wordmark devicon"></i>
+      - <i class="devicon-googlecloud-plain devicon"></i>
+      - <i class="devicon-amazonwebservices-plain-wordmark devicon wordmark"></i>
+      - <i class="devicon-azure-plain-wordmark devicon wordmark"></i>
     
 footer: |
   Feel free to reach out on my [LinkedIn](https://www.linkedin.com/in/vinayaksha/) anytime. Always ready to talk <b>Tech</b> or <b>Anime</b>.

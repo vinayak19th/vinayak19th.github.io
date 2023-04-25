@@ -56,4 +56,25 @@ ul.icons a {
     .button--sacnite::before {
         box-shadow: inset 0 0 0 35px #1B263B;
     }
+    .devicon {
+        color: #ececec;
+    }
+    .filter-svg {
+        filter: brightness(0%) contrast(129%) invert(100%);
+    }
+}
+
+.devicon {
+    font-size: 3.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    color: #1f2a41;
+    &.wordmark {
+        font-size: 6rem;
+    }
+}
+
+.filter-svg {
+    filter: brightness(0%) contrast(129%) saturate(100%) invert(29%) sepia(95%) saturate(1358%) hue-rotate(198deg) brightness(30%) contrast(101%);
+    ;
 }

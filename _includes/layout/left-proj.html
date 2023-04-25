@@ -1,25 +1,21 @@
 <div class="row clearfix layout layout-left">
     <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
-        {%- if include.item.name -%}<h4>{{ include.item.name }}</h4>{%- endif -%}
-        {%- if include.item.link -%}
-            {% include a.html href=include.item.link class="link" %}{{ include.item.link }}</a>
+        {%- if include.item.name -%}
+        <h4>{{ include.item.name }}</h4>{%- endif -%} {%- if include.item.link -%} {% include a.html href=include.item.link class="link" %}{{ include.item.link }}</a>
+        {%- endif -%} {%- if include.item.brief -%}
+        <p>{{ include.item.brief }}</p>{%- endif -%} {%- if include.item.stack -%}
+        <p> {% for tech in include.item.stack %}
+            <mark>{{tech}}</mark> {% endfor %}</p>
         {%- endif -%}
-        {%- if include.item.brief -%}<p>{{ include.item.brief }}</p>{%- endif -%}
-        {%- if include.item.stack -%}
-            <p> {% for tech in include.item.stack %}
-                <mark>{{tech}}</mark>
-            {% endfor %}</p>
-        {%- endif -%}
-</div>
-<div class="col-xs-12 col-sm-8 col-md-9 col-print-12 details">
-    {%- if include.item.github -%}
-    <div class="repostats">
-        {% assign data  = include.item.github | split:"/" %}
-        <a href="https://github.com/{{ include.item.github }}" target="_blank">
-            <img class = "GitData" style="" src="https://github-readme-stats.vercel.app/api/pin/?username={{data[0]}}&repo={{data[1]}}&theme=tokyonight&show_owner=true">
-        </a>
     </div>
-    {%- endif -%}
-    {{ include.item.description | strip | markdownify }}
-</div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 details">
+        {%- if include.item.github -%}
+        <div class="repostats">
+            {% assign data = include.item.github | split:"/" %}
+            <a href="https://github.com/{{ include.item.github }}" target="_blank">
+                <img class="GitData" style="" src="https://github-readme-stats.vercel.app/api/pin/?username={{data[0]}}&repo={{data[1]}}&theme=tokyonight">
+            </a>
+        </div>
+        {%- endif -%} {{ include.item.description | strip | markdownify }}
+    </div>
 </div>
