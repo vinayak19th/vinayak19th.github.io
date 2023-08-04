@@ -1,4 +1,13 @@
 - layout: layout/award_layout
+  name: Myelin Impact Award
+  org: Myelin Foundry
+  position: Winner
+  link: "https://www.linkedin.com/feed/update/urn:li:activity:6947132517200060416/"
+  date: 28th Febuary 2020
+  description: > # this will include new lines to allow paragraphs
+    An award given every 6 months to the member of the team having the biggest impact on the organization. I was given this award for my contribution to mulitple projects and setting up processes within the organization. The 'Maya' project was a special point of focus which helped us gain additional contracts from our client.
+
+- layout: layout/award_layout
   name: Research Day
   org: SRM Institute of Science & Technology
   position: Gold Medal
