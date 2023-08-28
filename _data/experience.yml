@@ -2,15 +2,20 @@
 - layout: layout/left-ex
   company: ARIZONA STATE UNIVERSITY
   link: https://scai.engineering.asu.edu/
-  job_title: [[Teaching Assistant,Dec 2022-Aug 2022]]
+  job_title: [[Teaching Assistant,Dec 2023-Aug 2023],[Teaching Assistant,Dec 2022-Aug 2022]]
   location: Tempe,Arizona
   document : 
   doclink : 
   stack: []
   quote: > 
-    Course CSE 486: Capstone Project
+    Was the Teaching Assistant for Multiple Courses at Arizona State University
   description: > # this will include new lines to allow paragraphs
-    Teaching the course CSE 486: Capstone Project for the SCAI department. My role involves:
+    <u> Dec 2023 - August 2023</u> 
+    Assisting <a href="https://www.zilin.one/">Prof. Zilin Jiang</a>:
+      * Graded and provided feedback on assignments related to randomized classical algorithms, basics of qubits and quantum computing systems, quantum cryptography and QML.
+
+    <u> Dec 2023 - August 2022</u> 
+    Taught the course CSE 486: Capstone Project:
       * Helping final year undergraduate students with any issues they face in their 'Capstone Project'
       * Teaching the fundamentals of *'Agile Development'*
       * Giving guidance on the job search, interview and salary negotiation process  
@@ -29,7 +34,7 @@
     outcomes by building Artificial Intelligence algorithms on video, voice, and sensor data, for edge devices.
   description: > # this will include new lines to allow paragraphs
     At Myelin Foundry I worked on :<br>
-    <u> August 2020 - Present</u>
+    <u> June 2022 - August 2020</u>
       * Creating novel new architectures and training pipelines to <b>create higher detail SR outputs.</b>
       * Created an <b>end-to-end enhanced data loader pipeline in tf.data</b> to enable rapid prototyping
       * Co-ordinating the <b>comapny hackathon in partnership with NASSCOM</b>
@@ -37,7 +42,7 @@
       * Working on solutions to employing media super resolution on edge devices with higher fidelity
       * Redesigned container based server managment pipeline to allow for faster prototyping of models
 
-    <u> June 2019 – July 2019</u>
+    <u> July 2019 - June 2019</u>
       * Created an <b>end-to-end speech to text system for Pashto<b> - A challenge due to the extreme data scarcity associated with the language
       * Tested & evaluated the viability of <b>Tensorflow.js</b> for the deployment of the organizations product stack
       * Helped set up the company servers for model training
