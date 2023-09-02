@@ -7,7 +7,14 @@
     The mission of Make Programming Simple Lab is to investigate novel architectural, compiler, runtime, and system operation mechanisms to make the task of programming these 
     ambitious applications easier on complex, distributed, and heterogeneous computing platforms.
   description: > # this will include new lines to allow paragraphs
-    <p>Working on my thesis and exploring new topics at the intersection of Machine Learning and Quantum Computing</p>
+    Working on my thesis in <u>"Learned Hilbert Space Embeddings"</u> under [Prof. Aviral Shrivastava](https://search.asu.edu/profile/969623) 
+    
+    <ul>
+      <li>Researching applications of deep learning to <b>enhance usability of current NISQ Quantum Computers</b></li>
+      <li>Exploring the frontiers of <b>Multi-Modal Models</b>.</li>
+      <li>Developing <b>TinyML</b>(ML that runs on embedded systms) models.</li>
+      <li>Founded a new Quantum-Machine Learning research vertical</li>
+    </ul>
 
 - layout: layout/left-ex
   company: NEXT TECH LAB
