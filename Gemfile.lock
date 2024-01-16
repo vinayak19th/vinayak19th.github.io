@@ -3,6 +3,7 @@ PATH
   specs:
     modern-resume-theme-extended (2.0.0)
       github-pages (~> 208)
+      jekyll-scholar (~> 5.16.0)
       jekyll-seo-tag (~> 2.1)
       kramdown (~> 2.3.0)
 
