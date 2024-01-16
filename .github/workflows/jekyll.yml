@@ -27,13 +27,13 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Upload _site
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Upload artifact
-        # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-pages-artifact@v3
+  # # Upload _site
+  # build:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Upload artifact
+  #       # Automatically uploads an artifact from the './_site' directory by default
+  #       uses: actions/upload-pages-artifact@v3
 
   # Deployment job
   deploy:
