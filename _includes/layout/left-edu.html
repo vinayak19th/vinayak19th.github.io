@@ -1,25 +1,10 @@
 <div class="row clearfix layout layout-left">
-  <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
-    {%- if include.item.name -%} 
-      {%- if include.item.link -%} 
-        {% include a.html href=include.item.link class="link" %}
-      {%- endif -%}
-      <h4>{{ include.item.name }}</h4>
-      {%- if include.item.link -%} 
-        </a>
-      {%- endif -%}
-    {%- endif -%} 
-    {%- if include.item.qualification-%}
-      <p><mark>{{ include.item.qualification }}</mark></p>
-    {%- endif -%}
-    {%- if include.item.dates -%}
-      <p>{{ include.item.dates }}</p>
-    {%- endif -%}
-  </div>
-  <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
-    <p><b>Brief Information</b></p>
-    {%- if include.item.quote -%}
-    <p class="quote">{{ include.item.quote }}</p>
-    {%- endif -%} {{ include.item.description | strip | markdownify }}
-  </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 inlines borderless">
+      <h4>{{include.item.degree}}</h4> <mark>in</mark> <h2>{{include.item.major}}</h2>
+      <p><a href="{{include.item.link class="link}}"><b>{{ include.item.name }}</b>, {{include.item.campus}}</p></a> 
+    </div>  
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 borderless inlines inlines-right">
+      <h4>{{ include.item.dates }}</h4>
+      <p><b>GPA: {{ include.item.gpa }}</b></p>
+    </div>
 </div>

@@ -12,14 +12,15 @@ darkmode: false
 # Social links
 #twitter_username: jekyllrb
 github_username:  vinayak19th
-stackoverflow_username: 8700517/vinayak-sharma
 #facebook_username: vinayak19th
-instagram_username: stochastic_individual
+google_scholar: https://scholar.google.com/citations?user=r763skMAAAAJ&hl=en
+orchid: https://orcid.org/0009-0009-5633-4003
 linkedin_username: vinayak19th
 #use international format
 whatsapp_number: "16025155883"
 medium: vinayak1998th
 
+resume: https://drive.google.com/file/d/1GxhM_rs3I_9nsX4EcIWg-H6LjNTq1tV_/view?usp=sharing
 #Comment out to disable github stats
 githubstats: True
 
@@ -74,6 +75,7 @@ sass:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll/scholar
 
 color:
   primary: 18bc9c #80B3FF
@@ -83,6 +85,14 @@ color:
 
 markdown: kramdown
 permalink: pretty
+
+scholar:
+  style: acm-sig-proceedings
+  source: _data/
+  bibliography: papers.bib
+  sort_by: year
+  order: descending
+  bibliography_template: paper
 
 exclude : [
   "Gemfile",

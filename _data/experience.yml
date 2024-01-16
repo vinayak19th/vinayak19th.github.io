@@ -1,6 +1,6 @@
 # Experience template
 - layout: layout/left-ex
-  company: ARIZONA STATE UNIVERSITY
+  company: Arizona State University
   link: https://scai.engineering.asu.edu/
   job_title: [[Teaching Assistant,Dec 2023-Aug 2023],[Teaching Assistant,Dec 2022-Aug 2022]]
   location: Tempe,Arizona
@@ -22,7 +22,7 @@
 
 
 - layout: layout/left-ex
-  company: MYELIN FOUNDRY
+  company: Myelin Foundry
   link: https://www.myelinfoundry.com
   job_title: [[Product Engineer-ML,June 2022-Sept 2021],[Deep Learning Consultant,Sept 2021 - Aug 2021],[Deep Learning Intern,Aug 2021 - Aug 2020],[Deep Learning Intern,July 2019 – June 2019]]
   location: Bangalore, India
@@ -48,7 +48,7 @@
       * Helped set up the company servers for model training
 
 - layout: layout/left-ex
-  company: SAMSUNG
+  company: Samsung Research Institute
   link: https://www.samsung.com
   job_title: [[Samsung PRISM Researcher, August 2020 - November 2019]]
   document : Certificate of Excellence
@@ -68,7 +68,7 @@
 
 
 - layout: layout/left-ex
-  company: TATA ELXSI
+  company: Tata Elxsi
   link: https://www.tataelxsi.com/
   job_title: [[Machine Learning Intern, June 2020 - May 2020]]
   location: Work From Home 

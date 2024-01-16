@@ -1,9 +1,6 @@
 content: | # this will include new lines to allow paragraphs
-    Hey there, <br>
     I'm just a Masters Student who loves working on Machine Learning & Quantum Computing. Currently, I'm  working on ML algorithms that can improve the performance and functionality of NISQ Quantum computers at [@MPS-Lab](https://labs.engineering.asu.edu/mps-lab/person/vinayak-sharma/). I have full-time experience as a Deep Learning Developer at [@Myelin Foundry](https://www.myelinfoundry.com/). <br> <br>
     <b>Where I'm looking to go</b>: My current goal is to pursue a PhD in Quantum Machine Learning and contribute to the development of this emerging and interdisciplinary field.<br><br>
-    <b>Stuff I'm good with</b>:
-
 stack:
   - languages:
       - <i class="devicon-python-plain devicon"></i>
@@ -43,3 +40,6 @@ stack:
     
 footer: |
   Feel free to message me on [LinkedIn](https://www.linkedin.com/in/vinayaksha/) anytime. <br>Always ready to talk <mark>Tech</mark>, <mark>Machine Learning</mark>, <mark>Quantum Computing</mark>, <b>K-Pop</b> or <b>Anime</b>.
+
+addons: | 
+    <b>Stuff I'm good with</b>:

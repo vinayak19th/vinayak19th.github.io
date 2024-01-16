@@ -21,9 +21,6 @@
         box-shadow: none;
         background: none;
     }
-}
-
-.dark {
     mark {
         color: #3f4658;
         background-color: #e6e6e6;
@@ -66,5 +63,18 @@
     .jumbotron {
         background-color: rgba(13, 28, 43, 0.767);
         color: #ececec;
+    }
+
+    .ref-button {
+        background-color: #007BFF;
+        a {
+            color: inherit;
+        }
+    }
+    span.landing{
+        border: 0.4rem solid #ececec;
+    }
+    span.profile-img {
+        border: 0.2rem solid #ececec;
     }
 }
