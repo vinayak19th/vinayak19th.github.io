@@ -1,3 +1,6 @@
+
+
+
 repository: vinayak19th/vinayak19th.github.io/
 # Personal info
 name: Vinayak Sharma
@@ -72,10 +75,7 @@ sass:
         - _sass
         - node_modules
 
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll/scholar
+plugins: ['jekyll/scholar','jekyll-seo-tag']
 
 color:
   primary: 18bc9c #80B3FF
