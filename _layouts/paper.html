@@ -1,17 +1,21 @@
 ---
 ---
 <div class="row clearfix layout layout-left" >
-    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 inlines borderless">
+    <div class="col-xs-12 col-sm-9 col-md-10 col-print-12 inlines borderless">
       {%- if entry.url -%}
         {% include a.html href=entry.url class="link" %}
         {%- endif -%}
-        <h4>{{ entry.title }}</h4> 
+        <h4>{{ entry.title }}
+          {% if entry.preprint == "true" %}
+            <span class="badge badge-danger">Pre-Print</span>
+          {% endif %}
+        </h4> 
         {%- if entry.url -%}
         </a>
         {%- endif -%}
         <p>{{ entry.author }}</p>
     </div>  
-    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 borderless inlines inlines-right">
+    <div class="col-xs-12 col-sm-3 col-md-2 col-print-12 borderless inlines inlines-right">
       <h4>{{ entry.year }}</h4>
       <p><button class="ref-button" type="button" data-toggle="collapse" data-target="#{{ entry.key }}" aria-expanded="false" aria-controls="collapseExample">
         Bibref
