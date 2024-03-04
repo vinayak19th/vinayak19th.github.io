@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-seo-tag"
   spec.add_runtime_dependency "kramdown"
   spec.add_runtime_dependency "webrick"
-  # spec.add_runtime_dependency "jekyll-scholar"
+  spec.add_runtime_dependency "jekyll-scholar"
 
   spec.add_development_dependency "html-proofer"
 end

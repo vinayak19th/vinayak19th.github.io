@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     modern-resume-theme-extended (3.0)
+      jekyll-scholar
       jekyll-seo-tag
       kramdown
       webrick
