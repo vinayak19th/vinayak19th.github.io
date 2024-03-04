@@ -33,7 +33,7 @@ ul.icons a {
     text-align: right;
 }
 
-.icon-text{
+.icon-text {
     text-align: center;
     font-weight: 500;
     font-size: 1.2rem;
@@ -50,22 +50,28 @@ ul.icons a {
     .icons i {
         color: #ececec;
     }
+
     ul.icons a {
         background: #ffffff;
     }
+
     .icons a:hover i {
         color: #000000;
     }
+
     .button--sacnite::before {
         box-shadow: inset 0 0 0 100px #1B263B;
     }
+
     .devicon {
         color: #ececec;
     }
+
     .filter-svg {
         filter: brightness(0%) contrast(129%) invert(100%);
     }
-    .icon-text{
+
+    .icon-text {
         margin-top: 1rem;
     }
 }
@@ -75,6 +81,7 @@ ul.icons a {
     display: inline-block;
     vertical-align: middle;
     color: #1f2a41;
+
     &.wordmark {
         font-size: 6rem;
     }

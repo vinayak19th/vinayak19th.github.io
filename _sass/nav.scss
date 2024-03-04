@@ -1,5 +1,8 @@
+$navbar-color: #2E3440;
+
 :root {
     --cursor-color: #ffffff;
+
     .dark {
         --cursor-color: #ffffff;
     }
@@ -35,7 +38,8 @@
     text-transform: capitalize;
     font-weight: 600;
     font-size: 1rem;
-    background: #2E3440;
+    background: $navbar-color;
+
     @media screen and (min-width: 768px) {
         height: 6rem;
     }
@@ -57,12 +61,19 @@
     color: #ffffff;
 }
 
+.collapse-button {
+    height: 4rem;
+    font-size: 2.5rem;
+}
+
 .navbar .navbar-nav li a:focus {
     outline: 0;
     color: #ffffff;
+
     .dark {
         color: #ffffff;
     }
+
     border-color: #e6e6e6;
 }
 
@@ -80,12 +91,21 @@
     color: #e6e6e6;
 }
 
+$icon-size : 3.2rem;
+
 .dark-mode {
     background-color: #E0E1DD;
-    color: black;
-    border-radius: 10px;
+    color: $navbar-color;
+    border-radius: 4rem;
     display: inline-block;
     vertical-align: middle;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-left: -0.5rem;
+    height: $icon-size;
+    width: $icon-size;
+    padding: 0px;
+
     a {
         color: white;
     }
@@ -93,12 +113,12 @@
 
 button:focus {
     background-color: #E0E1DD;
-    color: black;
+    color: $navbar-color;
 }
 
 button:hover {
     background-color: #48ca85 !important;
-    color: black;
+    color: $navbar-color;
 }
 
 .blinking {
@@ -114,9 +134,11 @@ button:hover {
     0% {
         background-color: transparent;
     }
+
     49% {
         background-color: transparent;
     }
+
     50% {
         background-color: var(--cursor-color);
     }
