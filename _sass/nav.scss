@@ -61,9 +61,24 @@ $navbar-color: #2E3440;
     color: #ffffff;
 }
 
+.navbar-header {
+    display: flex;
+    /* Allow flexible arrangement of items */
+    align-items: center;
+    /* Vertically center items */
+    justify-content: space-between;
+    /* Space between the collapse button and other elements */
+}
+
+
+
 .collapse-button {
     height: 4rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    padding: 0;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    border: 0px;
 }
 
 .navbar .navbar-nav li a:focus {
@@ -100,7 +115,6 @@ $icon-size : 3.2rem;
     display: inline-block;
     vertical-align: middle;
     font-size: 2rem;
-    margin-top: 1rem;
     margin-left: -0.5rem;
     height: $icon-size;
     width: $icon-size;
@@ -117,7 +131,7 @@ button:focus {
 }
 
 button:hover {
-    background-color: #48ca85 !important;
+    background-color: #48ca85;
     color: $navbar-color;
 }
 
