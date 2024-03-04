@@ -28,7 +28,7 @@
   name: vinayak19th.github.io
   link: 
   github: vinayak19th/vinayak19th.github.io
-  stack : ["Jekyll","BootStrap","termynal.js","JQuery","Docker","SCSS", "HTML5"]
+  stack : ["Jekyll","BootStrap","JQuery","Docker","SCSS", "HTML5"]
   brief: The code repo for this website and instructions for - Creating your own version & Contributing to the Open Source Project
   description: | # this will include new lines to allow paragraphs
     Website hosting my resume and profile. Notable Features include:
@@ -44,7 +44,6 @@
           * Stack Overflow
           * etc
       * Modular self generating based on yml datasheets
-      * Homepage terminal effect
 
 - layout: layout/left-proj
   name: LOW-RESOURCE ASR

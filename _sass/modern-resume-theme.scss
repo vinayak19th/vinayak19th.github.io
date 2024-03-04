@@ -4,9 +4,9 @@
 @import "nav";
 @import "dark";
 @import "icons";
-@import "termynal";
 @import "tabs";
 @import "timeline";
+
 .gitstats {
     @media screen and (max-width: 768px) {
         display: flex;
@@ -19,6 +19,7 @@
     display: flex;
     justify-content: left;
     margin-bottom: 2rem;
+
     @media screen and (max-width: 768px) {
         display: flex;
         justify-content: center;
@@ -43,6 +44,7 @@
     height: 7rem;
     margin-top: 2rem;
     white-space: nowrap;
+
     @media screen and (max-width: 768px) {
         text-align: center !important;
         margin-top: -1rem;
@@ -79,6 +81,7 @@
     .header-right p {
         text-align: center;
     }
+
     .header-left {
         margin-top: 0px;
         text-align: center;
@@ -98,12 +101,13 @@
     background-repeat: repeat, no-repeat;
 }
 
-.landing-div{
+.landing-div {
     height: 100%;
     padding-top: 10rem;
     overflow-y: hidden;
     box-sizing: border-box;
-    .icons{
+
+    .icons {
         text-align: center;
     }
 
@@ -118,40 +122,47 @@
         width: 10rem;
         height: 10rem;
     }
-    .icon-text{
+
+    .icon-text {
         text-align: center;
         font-weight: 600;
         font-size: 1.6rem;
-        margin-top:0.5rem;
+        margin-top: 0.5rem;
     }
-    
-    .icons-pad{
+
+    .icons-pad {
         padding-top: 5rem;
-        p{
+
+        p {
             text-align: center;
             font-weight: 500;
             font-size: 2.2em;
             margin-bottom: 1rem;
         }
     }
+
     @media screen and (max-width: 992px) {
         margin-top: 7rem;
+
         ul.icons a {
             display: inline-block;
             width: 7rem;
             height: 7rem;
         }
+
         .icons i {
             font-size: 3.5rem;
             line-height: 7rem;
         }
     }
+
     @media screen and (max-width: 768px) {
         margin-top: 1rem;
     }
 }
-.landing{
-    span{
+
+.landing {
+    span {
         width: 40rem;
         height: 40rem;
         margin: 0 auto;
@@ -162,17 +173,20 @@
         background-position: center;
         background-repeat: repeat, no-repeat;
     }
-    h1{
+
+    h1 {
         font-size: 7rem;
         font-weight: 700;
         border-radius: 2rem;
     }
-    h2{
+
+    h2 {
         font-size: 3rem;
         font-weight: 400;
     }
+
     @media screen and (max-width: 992px) {
-        span{
+        span {
             width: 30rem;
             height: 30rem;
             border-radius: 15rem;
@@ -198,9 +212,11 @@
     padding-top: 1.5rem;
     padding-left: 3rem;
     padding-right: 3rem;
+
     h3 {
         margin-bottom: 0;
     }
+
     @media screen and (max-width: 768px) {
         width: 95%;
         padding-left: 2rem;
@@ -222,94 +238,120 @@
 
 .layout {
     margin-top: 3rem;
-    .inlines-right{
+
+    .inlines-right {
         text-align: right !important;
-        h4{
+
+        h4 {
             text-align: right !important;
         }
     }
-    .inlines{
+
+    .inlines {
         text-align: left;
-        mark{
+
+        mark {
             font-size: 1.8rem;
             border-radius: 2rem;
         }
-        h2{
+
+        h2 {
             display: inline;
             font-size: 2rem;
         }
+
         p {
             margin-bottom: 3px;
             font-size: 1.6rem;
             text-align: inherit;
             font-weight: 300;
+
             b {
                 font-weight: 500;
             }
         }
+
         @media screen and (max-width: 768px) {
-            text-align: center!important;
+            text-align: center !important;
+
             p {
-                text-align: center!important;
+                text-align: center !important;
             }
         }
+
         a {
             color: inherit;
             font-style: italic;
             font-weight: 300;
         }
+
         .fa {
             font-size: 2rem;
         }
+
         .link {
             font-size: 1.5rem;
         }
+
         h4 {
             margin-bottom: 0.1rem;
             font-weight: 500;
             display: inline;
+
             @media print {
                 margin-bottom: 0.2rem;
             }
+
             a {
                 font-weight: 500 !important;
             }
         }
     }
+
     .details {
         text-align: left;
+
         p {
             margin-bottom: 3px;
             font-size: 1.6rem;
             text-align: inherit;
             font-weight: 300;
+
             b {
                 font-weight: 500;
             }
         }
+
         @media screen and (max-width: 768px) {
-            text-align: center!important;
+            text-align: center !important;
+
             p {
-                text-align: center!important;
+                text-align: center !important;
             }
         }
+
         a {
             color: inherit;
             font-style: italic;
             font-weight: 300;
         }
+
         .fa {
             font-size: 2rem;
         }
+
         .link {
             font-size: 1.5rem;
         }
+
         h4 {
             margin-bottom: 0.1rem;
             font-weight: 500;
+
             @media print {
                 margin-bottom: 0.2rem;
             }
+
             a {
                 font-weight: 500;
             }
@@ -344,7 +386,7 @@
     }
 }
 
-.footer-box{
+.footer-box {
     margin-top: 1.75rem;
     padding-bottom: 1rem;
     font-size: 1.2rem;
@@ -392,6 +434,7 @@ p.quote {
     font-style: italic;
     padding: 1rem 2.5rem;
     text-align: center;
+
     @media print {
         text-align: left;
         padding: 0rem 1rem;
