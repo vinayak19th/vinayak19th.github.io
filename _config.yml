@@ -75,7 +75,7 @@ sass:
         - _sass
         - node_modules
 
-plugins: ['jekyll-seo-tag']
+plugins: ['jekyll/scholar','jekyll-seo-tag']
 
 color:
   primary: 18bc9c #80B3FF
