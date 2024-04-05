@@ -4,11 +4,6 @@
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 header-left">
             <h1>{{ site.name | escape }}</h1>
             <h2>{{ site.title | escape }}</h2>
-            {%- if site.email -%}
-            <p>
-                <b>Email:</b> <a href="mailto:{{ site.email }}" target="_blank">{{ site.email | escape }}</a>
-            </p>
-            {%- endif -%}
         </div>
         <br>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 header-right">

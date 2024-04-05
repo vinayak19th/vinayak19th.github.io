@@ -7,6 +7,7 @@ certification:
     qualification: The Hong Kong University of Science and Technology
     provider: Coursera
     field : Web Development
+    date: May 22 2020
     description: > # this will include new lines to allow paragraphs
       This course will give you an overview of client-side web UI frameworks, in particular Bootstrap 4. You will learn about grids and responsive design, Bootstrap CSS and JavaScript components. You will learn about CSS preprocessors, Less and Sass. You will also learn the basics of Node.js and NPM and task runners like Grunt and Gulp.
       At the end of this course, you will be able to a)Set up, design and style a web page using Bootstrap 4 and its components, b) Create a responsive web page design, and c) Make use of web tools to setup and manage web sites.
@@ -18,6 +19,7 @@ certification:
     link: https://www.coursera.org/account/accomplishments/certificate/N3GKABSBBL2W
     qualification: Google Cloud 
     provider: Coursera
+    date: Apr 16 2020
     field : DevOps
     description: > # this will include new lines to allow paragraphs
       This one-week, accelerated online class equips students to containerize workloads in Docker containers, deploy them to

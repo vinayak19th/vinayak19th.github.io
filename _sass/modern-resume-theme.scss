@@ -6,6 +6,7 @@
 @import "icons";
 @import "tabs";
 @import "timeline";
+@import "footer";
 
 .gitstats {
     @media screen and (max-width: 768px) {
@@ -386,32 +387,6 @@
     }
 }
 
-.footer-box {
-    margin-top: 1.75rem;
-    padding-bottom: 1rem;
-    font-size: 1.2rem;
-}
-
-.footer-container {
-    padding-top: 1rem;
-    margin-top: 1rem;
-    padding-bottom: 0rem;
-    background: none;
-    box-shadow: none;
-}
-
-.footer-container p {
-    text-align: center;
-    font-style: italic;
-    font-weight: 300;
-}
-
-.footer-container a {
-    color: inherit;
-    font-style: italic;
-    font-weight: 300;
-}
-
 .page-content {
     padding: 0;
 }
@@ -446,4 +421,61 @@ p.mid {
     text-align: center;
     margin-top: 1rem;
     vertical-align: middle;
+}
+
+.badge-date {
+    background: #579463;
+    border-radius: 0.9rem;
+    padding: 0.6rem;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    margin-top: 1rem;
+    font-weight: 600;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 1rem;
+        margin-top: 0rem;
+    }
+}
+
+// .img-container {
+//     background: white;
+//     border-radius: 1.3rem;
+//     width: 10rem;
+//     padding-right: 0.5rem;
+//     vertical-align: middle;
+//     height: 7rem;
+//     margin-top: 2rem;
+//     white-space: nowrap;
+
+//     @media screen and (max-width: 768px) {
+//         text-align: center !important;
+//         margin-top: -1rem;
+//         margin-bottom: 2rem;
+//         margin-left: auto;
+//         margin-right: auto;
+//     }
+// }
+
+.badge-certificate {
+    background: #2E3440;
+    border-radius: 2rem;
+    padding: 0.9rem;
+    font-size: 1.3rem;
+}
+
+$cert-padding: 0.2rem;
+
+.certification {
+    background: #2E3440;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding-top: $cert-padding;
+    padding-bottom: $cert-padding;
+    padding-right: 0.7rem;
+    padding-left: 1rem;
+    margin-left: -1.2rem;
+    border-end-end-radius: 2rem;
+    border-start-end-radius: 2rem;
 }

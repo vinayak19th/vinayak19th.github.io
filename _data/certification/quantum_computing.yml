@@ -1,12 +1,27 @@
 topic : Quantum Computing
 id : q_c
-certification:  
+certification:
   - layout: layout/left-cer
-    name: 2021 Qiskit Global Summer School on Quantum Machine Learning
+    name: PennyLane 
+    link: https://cloud.pennylane.ai/profiles/ob/certificates/permalink/372a08e4-c719-44dd-a6e7-2b97d78e8442
+    provider: pennylane
+    qualification: Introduction to Pennylane
+    field : Quantum Computing
+    date: Apr 4 2024
+    description: > # this will include new lines to allow paragraphs
+      This course is to show what benefits current and future quantum technologies can provide to machine learning, 
+      focusing on algorithms that are challenging with classical digital computers. We put a strong emphasis on implementing 
+      the protocols, using open source frameworks in Python. Prominent researchers in the field will give guest lectures to 
+      provide extra depth to each major topic. These guest lecturers include Alán Aspuru-Guzik, Seth Lloyd, Roger Melko, and 
+      Maria Schuld.
+
+  - layout: layout/left-cer
+    name: Qiskit Global Summer School on Quantum Machine Learning
     link: https://drive.google.com/file/d/1hb9Lf0KVLjEoiiPaMCUuedBNcDigs0q9/view?usp=sharing
     provider: IBMQisKit
     qualification: Certificate of Excellence
     field : Quantum Computing, Quantum Machine Learning
+    date: Jul 23 2021
     description: > # this will include new lines to allow paragraphs
       Completed the two-week intensive course provided by IBM Quantum, completing all graded lab work assignments with a final 
       cumulative score above 75%, demonstrating applied understanding and comfort with and about Quantum Computing and Quantum Machine 
@@ -18,9 +33,12 @@ certification:
     provider: edX
     qualification: University_of_TorontoX
     field : Quantum Computing
+    date: Oct 23 2019
     description: > # this will include new lines to allow paragraphs
       This course is to show what benefits current and future quantum technologies can provide to machine learning, 
       focusing on algorithms that are challenging with classical digital computers. We put a strong emphasis on implementing 
       the protocols, using open source frameworks in Python. Prominent researchers in the field will give guest lectures to 
       provide extra depth to each major topic. These guest lecturers include Alán Aspuru-Guzik, Seth Lloyd, Roger Melko, and 
       Maria Schuld.
+
+ 

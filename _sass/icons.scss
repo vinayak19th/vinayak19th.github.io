@@ -38,6 +38,8 @@ ul.icons a {
     font-weight: 500;
     font-size: 1.2rem;
     margin-left: -0.5rem;
+    margin-top: 1rem;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -69,10 +71,6 @@ ul.icons a {
 
     .filter-svg {
         filter: brightness(0%) contrast(129%) invert(100%);
-    }
-
-    .icon-text {
-        margin-top: 1rem;
     }
 }
 
