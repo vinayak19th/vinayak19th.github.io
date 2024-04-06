@@ -2,8 +2,19 @@
 - layout: layout/left-edu
   name: Arizona State University
   link: https://www.asu.edu/
-  dates: Present - 2022
-  degree: Master of Science
+  dates: Present - 2024
+  degree: Doctor of Philosophy 
+  abbr: PhD
+  major: Computer Science
+  gpa: N/A
+  campus : Tempe
+
+- layout: layout/left-edu
+  name: Arizona State University
+  link: https://www.asu.edu/
+  dates: 2024 - 2022
+  degree: Master of Science 
+  abbr: MSc
   major: Computer Science
   gpa: 3.96/4
   campus : Tempe
@@ -13,7 +24,8 @@
   name: SRM Institute of Science & Technology
   link: https://www.srmist.edu.in/
   dates: 2021-2017
-  degree: Bachelor of Technology
+  degree: Bachelor of Technology 
+  abbr: B.Tech
   major: Computer Science & Engineering 
   gpa: 8.98/10  
   campus : Kattankulathur

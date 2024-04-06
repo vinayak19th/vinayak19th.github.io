@@ -1,10 +1,14 @@
 <div class="row clearfix layout layout-left">
-    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 inlines borderless">
-      <h4>{{include.item.degree}}</h4> <mark>in</mark> <h2>{{include.item.major}}</h2>
-      <p><a href="{{include.item.link class="link}}"><b>{{ include.item.name }}</b>, {{include.item.campus}}</p></a> 
-    </div>  
-    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 borderless inlines inlines-right">
-      <h4>{{ include.item.dates }}</h4>
-      <p><b>GPA: {{ include.item.gpa }}</b></p>
-    </div>
+  <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 inlines borderless">
+    <a href="{{include.item.link class=" link}}">
+      <h4>{{include.item.name}}</h4>
+      <p style="font-size: 1.8rem;display: inline-block;">, {{include.item.campus}}</p>
+    </a>
+    <p> [{{include.item.abbr}}] <span class="badge-degree"><b>{{ include.item.degree }}</b></span> <b>in
+        {{include.item.major}}</b></p>
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 borderless inlines inlines-right">
+    <h4>{{ include.item.dates }}</h4>
+    <p><b>GPA: {{ include.item.gpa }}</b></p>
+  </div>
 </div>

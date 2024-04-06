@@ -6,14 +6,10 @@ certification:
     link: https://cloud.pennylane.ai/profiles/ob/certificates/permalink/372a08e4-c719-44dd-a6e7-2b97d78e8442
     provider: pennylane
     qualification: Introduction to Pennylane
-    field : Quantum Computing
+    field : Quantum Computing, Quantum Machine Learning
     date: Apr 4 2024
     description: > # this will include new lines to allow paragraphs
-      This course is to show what benefits current and future quantum technologies can provide to machine learning, 
-      focusing on algorithms that are challenging with classical digital computers. We put a strong emphasis on implementing 
-      the protocols, using open source frameworks in Python. Prominent researchers in the field will give guest lectures to 
-      provide extra depth to each major topic. These guest lecturers include Alán Aspuru-Guzik, Seth Lloyd, Roger Melko, and 
-      Maria Schuld.
+      This certificate is awarded on the completion of the pennylane programming challenge, creating a quantum neural network from scratch. 
 
   - layout: layout/left-cer
     name: Qiskit Global Summer School on Quantum Machine Learning
@@ -32,7 +28,7 @@ certification:
     link: https://courses.edx.org/certificates/2743eaafda92485bba335011037e0f1f
     provider: edX
     qualification: University_of_TorontoX
-    field : Quantum Computing
+    field : Quantum Computing, Quantum Machine Learning
     date: Oct 23 2019
     description: > # this will include new lines to allow paragraphs
       This course is to show what benefits current and future quantum technologies can provide to machine learning, 

@@ -1,8 +1,8 @@
 .dark {
-    //background: #0D1B2A;
-    // background: linear-gradient(90deg, #0d1c2b 0%, hsla(220, 37%, 22%, 1) 100%);
     background: #0d1c2b;
     color: #E0E1DD;
+    $badge-background: #E0E1DD;
+    $badge-color: #2E3440;
 
     .container {
         background: #182838;
@@ -92,17 +92,22 @@
     }
 
     .badge-date {
-        background-color: #E0E1DD;
-        color: #2E3440;
+        color: $badge-color;
+        background-color: $badge-background;
     }
 
     .badge-certificate {
-        background-color: #E0E1DD;
-        color: #2E3440;
+        color: $badge-color;
+        background-color: $badge-background;
     }
 
     .certification {
-        background-color: #E0E1DD;
-        color: #2E3440;
+        color: $badge-color;
+        background-color: $badge-background;
+    }
+
+    .badge-degree {
+        color: $badge-color;
+        background-color: $badge-background;
     }
 }

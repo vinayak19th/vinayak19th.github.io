@@ -8,6 +8,10 @@
 @import "timeline";
 @import "footer";
 
+
+$cert-padding: 0.2rem;
+$badge-background: #2E3440;
+
 .gitstats {
     @media screen and (max-width: 768px) {
         display: flex;
@@ -438,36 +442,15 @@ p.mid {
     }
 }
 
-// .img-container {
-//     background: white;
-//     border-radius: 1.3rem;
-//     width: 10rem;
-//     padding-right: 0.5rem;
-//     vertical-align: middle;
-//     height: 7rem;
-//     margin-top: 2rem;
-//     white-space: nowrap;
-
-//     @media screen and (max-width: 768px) {
-//         text-align: center !important;
-//         margin-top: -1rem;
-//         margin-bottom: 2rem;
-//         margin-left: auto;
-//         margin-right: auto;
-//     }
-// }
-
 .badge-certificate {
-    background: #2E3440;
+    background: $badge-background;
     border-radius: 2rem;
     padding: 0.9rem;
     font-size: 1.3rem;
 }
 
-$cert-padding: 0.2rem;
-
 .certification {
-    background: #2E3440;
+    background: $badge-background;
     display: inline-block;
     color: #ffffff;
     font-size: 1.5rem;
@@ -478,4 +461,19 @@ $cert-padding: 0.2rem;
     margin-left: -1.2rem;
     border-end-end-radius: 2rem;
     border-start-end-radius: 2rem;
+}
+
+$deg-padding-vert: 0.3rem;
+$deg-padding-hori: 0.5rem;
+
+.badge-degree {
+    font-size: 1.4rem;
+    background: $badge-background;
+    color: #ffffff;
+    font-weight: 600;
+    padding-left: $deg-padding-hori;
+    padding-right: $deg-padding-hori;
+    padding-top: $deg-padding-vert;
+    padding-bottom: $deg-padding-vert;
+    border-radius: 0.6rem;
 }
