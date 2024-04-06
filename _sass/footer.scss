@@ -1,8 +1,14 @@
+.pagecontent {
+    margin-bottom: 2rem;
+}
+
 .footer-box {
-    margin-top: 2rem;
+    margin-top: auto;
     padding: 1rem;
     font-size: 1.5rem;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
+    bottom: 0;
+    position: static;
 }
 
 .button-footer {
