@@ -7,6 +7,7 @@
 @import "tabs";
 @import "timeline";
 @import "footer";
+@import "modal";
 
 
 $cert-padding: 0.2rem;
@@ -476,4 +477,13 @@ $deg-padding-hori: 0.5rem;
     padding-top: $deg-padding-vert;
     padding-bottom: $deg-padding-vert;
     border-radius: 0.6rem;
+}
+
+.badge-header {
+    background: $badge-background;
+    border-radius: 2rem;
+    padding: 0.9rem;
+    padding-top: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
 }

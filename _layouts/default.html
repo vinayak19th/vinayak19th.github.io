@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
-{% include head.html %}
+  {% include head.html %}
 
-<body class="{% if site.darkmode %}dark{% endif %} pt-5 landing" id = "pagetop">
+  <body class="{% if site.darkmode %}dark{% endif %} pt-5 landing" id="pagetop">
 
-  {% include nav.html %}
+    {% include nav.html %}
 
-  <main class="pagecontent" arialabel="Content" >
-    <div class="wrapper"> 
-      {{content}}
-    </div>
-  </main>
-  <!-- {% include footer.html %} -->
-  {% include js.html %}
-</body>
+    <main class="pagecontent" arialabel="Content">
+      <div class="wrapper">
+        {{content}}
+      </div>
+    </main>
+    {% include js.html %}
+  </body>
 
 </html>
