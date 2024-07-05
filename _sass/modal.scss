@@ -1,3 +1,44 @@
+$line-color: #f5f5f5;
+
+.navbar-divider {
+    height: 30px;  /* Adjust height as needed */
+    margin:0.5em;
+    margin-bottom:0px;
+    margin-top: 1rem ;  /* Adjust spacing as needed */
+    border: none;
+    border-left: 2px solid $line-color;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint if needed */ 
+    .navbar-divider {
+        height: 1px;   /* Adjust to desired thickness */
+        margin: 1rem 0; /* Adjust spacing */
+        border-left: none;
+        border-top: 1px solid $line-color;
+    }
+}
+
+.ContactButton{
+    background: none;
+    border-color: #E0E1DD;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 3rem;
+    margin-top: 0.6rem;
+    margin-left: 0.5rem;
+    @media (max-width: 768px) {
+        margin-top: 0.6rem;
+        border-style:hidden;
+    }
+}
+
+$button-pad: 6px;
+.fa-nopad{
+    padding-top: $button-pad !important;
+    padding-bottom: $button-pad !important;
+    margin: 0px;
+}
+
 .modalBox {
     background-color: #f5f5f5;
     color: #333333;

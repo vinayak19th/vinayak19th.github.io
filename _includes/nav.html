@@ -8,8 +8,8 @@
                 <i class="fa-solid fa-bars"></i>
             </button>
             <a class="navbar-brand" href="/">$ ~/{{site.name | replace_first: " ","_"}} <div class="blinking"></div></a>
-            <button class="dark-mode" id="theme-toggle" onclick="modeSwitcher()"><i
-                    class="fa-solid fa-moon"></i></button>
+            <button class="dark-mode" id="theme-toggle" onclick="modeSwitcher()"><i class="fa-solid fa-moon"></i>
+            </button>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -20,9 +20,59 @@
                     <a href="/{{page.name}}/">{{page.name}}</a>
                 </li>
                 {%endfor%}
+                <li>
+                    <hr class="navbar-divider">
+                </li>
+                <li class="ContactButton">
+                    <!-- Modal in footer.html -->
+                    <a class="fa-nopad" data-toggle="modal" data-target="#ContactModal"><i
+                            class="fa-solid fa-message"></i> &nbsp Message Me</a>
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
     </div>
     <!-- /.container-fluid -->
 </nav>
+
+
+<!-- Modal -->
+<div class="modal fade" id="ContactModal" tabindex="-1" role="dialog" aria-labelledby="ContactModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modalBox">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ContactModalLabel">Contact</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="modal-body ContactModalContent">
+                <div class="contact-info-container">
+                    <div class="contact-section">
+                        <h6><span class="badge badge-certificate"><i class="fa-solid fa-envelope"></i></span>
+                            &nbsp Email</h6>
+                        <ul>
+                            <li><a href="mailto:{{site.email}}">{{site.email}}</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-section">
+                        <h6><span class="badge badge-certificate"><i class="fa-solid fa-phone"></i></span>
+                            &nbsp Phone</h6>
+                        <ul>
+                            <li><a href="tel:{{site.phone}}">{{site.phone}}</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-section">
+                        <h6><span class="badge badge-certificate"><i class="fa-solid fa-link"></i></span>
+                            &nbsp Website</h6>
+                        <ul>
+                            <li><a href="{{site.website}}"> {{site.website}} </a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
