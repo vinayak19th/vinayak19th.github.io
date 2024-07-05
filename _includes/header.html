@@ -2,11 +2,7 @@
 <div class="container header-container" id="#page-top">
     <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 header-left">
-            <h1>{{ site.name | escape }}
-                <button data-toggle="modal" data-target="#ContactModal" class="badge badge-header">
-                    <i class="fa-solid fa-envelope"></i>
-                </button>
-            </h1>
+            <h1>{{ site.name | escape }}</h1>
             <h2 style="margin-left: 0.6rem;">{{site.title}}</h2>
         </div>
         <br>
@@ -16,45 +12,3 @@
     </div>
 </div>
 
-
-<!-- Modal -->
-<div class="modal fade" id="ContactModal" tabindex="-1" role="dialog" aria-labelledby="ContactModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content modalBox">
-            <div class="modal-header">
-                <h5 class="modal-title" id="ContactModalLabel">Contact</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            <div class="modal-body ContactModalContent">
-                <div class="contact-info-container">
-                    <div class="contact-section">
-                        <h6><span class="badge badge-certificate"><i class="fa-solid fa-envelope"></i></span>
-                            &nbsp Email</h6>
-                        <ul>
-                            <li><a href="mailto:{{site.email}}">{{site.email}}</a></li>
-                        </ul>
-                    </div>
-                    <div class="contact-section">
-                        <h6><span class="badge badge-certificate"><i class="fa-solid fa-phone"></i></span>
-                            &nbsp Phone</h6>
-                        <ul>
-                            <li><a href="tel:{{site.phone}}">{{site.phone}}</a></li>
-                        </ul>
-                    </div>
-                    <div class="contact-section">
-                        <h6><span class="badge badge-certificate"><i class="fa-solid fa-link"></i></span>
-                            &nbsp Website</h6>
-                        <ul>
-                            <li><a href="{{site.website}}"> {{site.website}} </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- </div> -->

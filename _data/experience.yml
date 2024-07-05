@@ -6,9 +6,9 @@
   location: Tempe,Arizona
   document : 
   doclink : 
-  stack: []
+  stack: [Teaching, Quantum Computing, Game Design]
   quote: > 
-    Was the Teaching Assistant for Multiple Courses at Arizona State University
+    Arizona State University supports its students with various assistantship positions
   description: > # this will include new lines to allow paragraphs
     <u> May 2024 - Jan 2024</u> 
     CPI 111:Game Development I under <a href="https://search.asu.edu/profile/325953">Prof. Yoshihiro Kobayashi</a>:
@@ -25,6 +25,18 @@
       * Teaching the fundamentals of *'Agile Development'*
       * Giving guidance on the job search, interview and salary negotiation process  
 
+- layout: layout/left-ex
+  company: Google Research
+  link: https://research.google/outreach/csrmp/recipients/
+  job_title: [[CS Research Mentorship Program Mentee,Jan 2024-Sept 2023]]
+  location: Remote
+  document : 
+  doclink : 
+  stack: []
+  quote: > 
+    CSRMP matches students from historically marginalized groups with peers and a Google mentor to support their pursuit of computing research pathways.
+  description: > # this will include new lines to allow paragraphs
+    Accepted to a three month program that matches students with Google mentors and peers to support their pursuit of computer science research pathways. (research.google/outreach/csrmp) 
 
 - layout: layout/left-ex
   company: Myelin Foundry
