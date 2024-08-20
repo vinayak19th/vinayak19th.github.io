@@ -1,100 +1,97 @@
-    <ul class="icons no-print">
-        {%- if site.whatsapp_number -%}
-        <li>
-            <div class="d-flex justify-content-around">
-                <a target="_blank" href="https://wa.me/{{ site.whatsapp_number| cgi_escape | escape }}"
-                    class="button button--sacnite button--round-l">
-                    <i class="fab fa-whatsapp" title="Whatsapp link"></i>
-                </a> 
-                <div class="mt-2 icon-text">
-                    Whatsapp
-                </div>
+<ul class="icons no-print">
+    {%- if site.whatsapp_number -%}
+    <li>
+        <div class="d-flex justify-content-around">
+            <a target="_blank" href="https://wa.me/{{ site.whatsapp_number| cgi_escape | escape }}"
+                class="button button--sacnite button--round-l">
+                <i class="fab fa-whatsapp" title="Whatsapp link"></i>
+            </a>
+            <div class="mt-2 icon-text">
+                Whatsapp
             </div>
-        </li>
-        
-        {%- endif -%} {%- if site.medium -%}
-        <li>
-            <div class="d-flex justify-content-around">
-                <a target="_blank" href="https://medium.com/@{{ site.medium| cgi_escape | escape }}"
-                    class="button button--sacnite button--round-l">
-                    <i class="fa fa-medium" title="Medium link"></i>
-                </a>
-                <div class="mt-2 icon-text">
-                    Medium
-                </div>
+        </div>
+    </li>
+
+    {%- endif -%} {%- if site.medium -%}
+    <li>
+        <div class="d-flex justify-content-around">
+            <a target="_blank" href="https://medium.com/@{{ site.medium| cgi_escape | escape }}"
+                class="button button--sacnite button--round-l">
+                <i class="fa fa-medium" title="Medium link"></i>
+            </a>
+            <div class="mt-2 icon-text">
+                Medium
             </div>
-        </li>
-        {%- endif -%} {%- if site.github_username -%}
-        <li>
-            <div class="d-flex justify-content-around">
-                <a target="_blank" href="https://github.com/{{ site.github_username| cgi_escape | escape }}"
-                    class="button button--sacnite button--round-l">
-                    <i class="fab fa-github" title="Github link"></i>
-                </a>
-                <div class="mt-2 icon-text">
-                    Github
-                </div>
+        </div>
+    </li>
+    {%- endif -%} {%- if site.github_username -%}
+    <li>
+        <div class="d-flex justify-content-around">
+            <a target="_blank" href="https://github.com/{{ site.github_username| cgi_escape | escape }}"
+                class="button button--sacnite button--round-l">
+                <i class="fab fa-github" title="Github link"></i>
+            </a>
+            <div class="mt-2 icon-text">
+                Github
             </div>
-        </li>
-        {%- endif -%} {%- if site.google_scholar -%}
-        <li>
-            <div class="d-flex justify-content-around">
-                <a target="_blank" href="{{site.google_scholar}}"
-                    class="button button--sacnite button--round-l">
-                    <i class="fa-brands fa-google-scholar"></i>
-                </a>
-                <div class="mt-2 icon-text">
-                    G-Scholar
-                </div>
+        </div>
+    </li>
+    {%- endif -%} {%- if site.google_scholar -%}
+    <li>
+        <div class="d-flex justify-content-around">
+            <a target="_blank" href="{{site.google_scholar}}" class="button button--sacnite button--round-l">
+                <i class="fa-brands fa-google-scholar"></i>
+            </a>
+            <div class="mt-2 icon-text">
+                G-Scholar
             </div>
-        </li>
-        {%- endif -%}{%- if site.orcid -%}
-        <li>
-            <div class="d-flex justify-content-around">
-                <a target="_blank" href="{{site.orcid}}"
-                    class="button button--sacnite button--round-l">
-                    <i class="fa-brands fa-orcid" title="orcid link"></i>
-                </a>
-                <div class="mt-2 icon-text">
-                    Orcid
-                </div>
+        </div>
+    </li>
+    {%- endif -%}{%- if site.orcid -%}
+    <li>
+        <div class="d-flex justify-content-around">
+            <a target="_blank" href="{{site.orcid}}" class="button button--sacnite button--round-l">
+                <i class="fa-brands fa-orcid" title="orcid link"></i>
+            </a>
+            <div class="mt-2 icon-text">
+                Orcid
             </div>
-        </li>
-        {%- endif -%}{%- if site.linkedin_username -%}
-        <li>
-            <div class="d-flex justify-content-around">
-                <a target="_blank"
-                    href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"
-                    class="button button--sacnite button--round-l">
-                    <i class="fab fa-linkedin" title="Linkedin link"></i>
-                </a>
-                <div class="mt-2 icon-text">
-                    LinkedIn
-                </div>
+        </div>
+    </li>
+    {%- endif -%}{%- if site.linkedin_username -%}
+    <li>
+        <div class="d-flex justify-content-around">
+            <a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"
+                class="button button--sacnite button--round-l">
+                <i class="fab fa-linkedin" title="Linkedin link"></i>
+            </a>
+            <div class="mt-2 icon-text">
+                LinkedIn
             </div>
-        </li>
-        {%- endif -%} {%- if site.twitter_username -%}
-        <li>
-            <div class="d-flex justify-content-around">
-                <a target="_blank" href="https://twitter.com/{{ site.twitter_username| cgi_escape | escape }}"
-                    class="button button--sacnite button--round-l">
-                    <i class="fab fa-twitter" title="Twitter link"></i>
-                </a>
-                <div class="mt-2 icon-text">
-                    Twitter
-                </div>
+        </div>
+    </li>
+    {%- endif -%} {%- if site.twitter_username -%}
+    <li>
+        <div class="d-flex justify-content-around">
+            <a target="_blank" href="https://twitter.com/{{ site.twitter_username| cgi_escape | escape }}"
+                class="button button--sacnite button--round-l">
+                <i class="fab fa-twitter" title="Twitter link"></i>
+            </a>
+            <div class="mt-2 icon-text">
+                Twitter
             </div>
-        </li>
-        {%- endif -%}{%- if site.resume -%}
-        <li>
-            <div class="d-flex justify-content-around">
-                <a target="_blank" href="{{site.resume}}" class="button button--sacnite button--round-l">
-                    <i class="far fa-id-badge" title="{{ Resume | escape }}"></i>
-                </a>
-                <div class="mt-2 icon-text">
-                    Resume
-                </div>
+        </div>
+    </li>
+    {%- endif -%}{%- if site.resume -%}
+    <li>
+        <div class="d-flex justify-content-around">
+            <a target="_blank" href="{{site.resume}}" class="button button--sacnite button--round-l">
+                <i class="far fa-id-badge" title="{{ Resume | escape }}"></i>
+            </a>
+            <div class="mt-2 icon-text">
+                Resume
             </div>
-        </li>
-        {%- endif -%} 
-    </ul>
+        </div>
+    </li>
+    {%- endif -%}
+</ul>
