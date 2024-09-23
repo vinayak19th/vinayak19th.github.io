@@ -1,11 +1,28 @@
 .dark {
-    background: #0d1c2b;
-    color: #E0E1DD;
-    $badge-background: #E0E1DD;
+    // background: #181825;
+    background: linear-gradient(-45deg, #11111b,#181825, #1e1e29 ,#1e1e2e);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    height: 100vh;
+
+    @keyframes gradient {
+        0% {
+        background-position: 0% 50%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
+    }
+
+    color: #a6adc8;
+    $badge-background: #a6adc8;
     $badge-color: #2E3440;
 
     .container {
-        background: #182838;
+        background: #1e1e2e;
         border-radius: 2rem;
         box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.205);
     }
@@ -18,7 +35,7 @@
     .navig-container {
         box-shadow: 0px 0px 0px rgb(17, 15, 15);
         // background: #00000000;
-        background: #1a1d23;
+        background: #1e1e2e;
     }
 
     .footer-container {
@@ -27,7 +44,7 @@
     }
 
     .footer-box {
-        background-color: #0d1c2b;
+        background-color: #181825;
     }
 
     mark {
@@ -41,15 +58,15 @@
 
     .navbar {
         // background: #0D1B2A;
-        background: #1a1d23;
+        background: #1e1e2e;
     }
 
     .navbar .navbar-nav li a {
-        color: #E0E1DD;
+        color: #a6adc8;
     }
 
     .navbar-fixed-top .navbar-brand {
-        color: #E0E1DD;
+        color: #a6adc8;
     }
 
     .button:focus {

@@ -210,10 +210,31 @@ body {
     top: 0px;
 }
 
+// body {
+//     background: #ffffff;
+//     
+// }
+
 body {
-    background: #ffffff;
+    background: linear-gradient(45deg, #ffffff, #f3f3f3, #CED4DA, #E9ECEF,#CED4DA);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    height: 100vh;
     font-family: Roboto, sans-serif;
-}
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
 
 .center-text {
     text-align: center;
