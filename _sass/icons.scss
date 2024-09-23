@@ -50,27 +50,27 @@ ul.icons a {
 
 .dark {
     .icons i {
-        color: #ececec;
+        color: #ccd0da;
     }
 
     ul.icons a {
-        background: #ffffff;
+        background: #cdd6f4;
     }
 
     .icons a:hover i {
-        color: #000000;
+        color: #11111b;
     }
 
     .button--sacnite::before {
-        box-shadow: inset 0 0 0 100px #1B263B;
+        box-shadow: inset 0 0 0 100px #12121b;
     }
 
     .devicon {
-        color: #ececec;
+        color: #ccd0da;
     }
 
     .filter-svg {
-        filter: brightness(0%) contrast(129%) invert(100%);
+        filter: brightness(80%) contrast(129%) invert(100%);
     }
 }
 
@@ -87,5 +87,4 @@ ul.icons a {
 
 .filter-svg {
     filter: brightness(0%) contrast(129%) saturate(100%) invert(29%) sepia(95%) saturate(1358%) hue-rotate(198deg) brightness(30%) contrast(101%);
-    ;
 }

@@ -2,7 +2,7 @@
 - layout: layout/left-ex
   company: Arizona State University
   link: https://scai.engineering.asu.edu/
-  job_title: [[Teaching Assistant,May 2024-Jan 2024],[Teaching Assistant,Dec 2023-Aug 2023],[Teaching Assistant,Dec 2022-Aug 2022]]
+  job_title: [[Research Assistant,Dec 2024-Aug 2024],[Teaching Assistant,Dec 2024-Aug 2024],[Teaching Assistant,May 2024-Jan 2024],[Teaching Assistant,Dec 2023-Aug 2023],[Teaching Assistant,Dec 2022-Aug 2022]]
   location: Tempe,Arizona
   document : 
   doclink : 
@@ -10,16 +10,24 @@
   quote: > 
     Arizona State University supports its students with various assistantship positions
   description: > # this will include new lines to allow paragraphs
-    <u> May 2024 - Jan 2024</u> 
+    [RA] <u> Dec 2024-Aug 2024</u> 
+    Under Professor <a href="https://search.asu.edu/profile/969623">Prof. Aviral Shrivastava</a>:
+      * Reasearching how to improve current NISQ Quantum Computers using SOTA Machine Learning
+      
+    [TA] <u> Dec 2024-Aug 2024</u> 
+    486: Capstone Project under <a href="https://search.asu.edu/profile/1215971">Prof. Helen Chavez</a>:
+      * Helping final year undergraduate students with any issues they face in their 'Capstone Project'
+
+    [TA] <u> May 2024 - Jan 2024</u> 
     CPI 111:Game Development I under <a href="https://search.asu.edu/profile/325953">Prof. Yoshihiro Kobayashi</a>:
       * Proving in-class support during game development. 
       * Working with a team of 2 graders and 5 UG-TAs.
     
-    <u> Dec 2023 - Aug 2023</u> 
+    [TA] <u> Dec 2023 - Aug 2023</u> 
     CSE 598:Quantum Computing under <a href="https://www.zilin.one/">Prof. Zilin Jiang</a>:
       * Graded and provided feedback on assignments related to randomized classical algorithms, basics of qubits and quantum computing systems, quantum cryptography and QML.
 
-    <u> Dec 2023 - Aug 2022</u> 
+    [TA] <u> Dec 2023 - Aug 2022</u> 
     486: Capstone Project under <a href="https://search.asu.edu/profile/1215971">Prof. Helen Chavez</a>:
       * Helping final year undergraduate students with any issues they face in their 'Capstone Project'
       * Teaching the fundamentals of *'Agile Development'*
