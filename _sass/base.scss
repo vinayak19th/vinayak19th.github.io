@@ -218,8 +218,12 @@ body {
 body {
     background: linear-gradient(45deg, #ffffff, #f3f3f3, #CED4DA, #E9ECEF,#CED4DA);
     background-size: 400% 400%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     animation: gradient 10s ease infinite;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: Roboto, sans-serif;
   }
   

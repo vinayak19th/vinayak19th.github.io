@@ -1,8 +1,10 @@
 .dark {
     // background: #181825;
-    background: linear-gradient(-45deg, #11111b,#181825, #1e1e29 ,#1e1e2e);
+    background: linear-gradient(-45deg, #272735,#181825, #1e1e29 ,#333342);
     background-size: 400% 400%;
-    animation: gradient 5s ease infinite;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: gradient 10s ease infinite;
     height: 100vh;
 
     @keyframes gradient {
