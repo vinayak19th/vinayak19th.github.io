@@ -10,6 +10,11 @@
   quote: > 
     Arizona State University supports its students with various assistantship positions
   description: > # this will include new lines to allow paragraphs
+    [TA] <u> Jan 2025 - May 2025</u>
+    CSE 598:Quantum Computing under <a href="https://search.asu.edu/profile/969623">Prof. Aviral Shrivastava</a>: 
+      * Created autograders for coding assignments in [Pennylane](https://pennylane.ai/)
+      * Created final exams and quizzes 
+
     [RA] <u> Dec 2024-Aug 2024</u> 
     Under Professor <a href="https://search.asu.edu/profile/969623">Prof. Aviral Shrivastava</a>:
       * Reasearching how to improve current NISQ Quantum Computers using SOTA Machine Learning
