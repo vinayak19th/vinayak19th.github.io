@@ -42,7 +42,7 @@ githubstats: True
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-favicon: images/fav.ico
+favicon: images/fav.svg
 about_profile_image: https://www.gravatar.com/avatar/2302f2e8d1521c441894759ef96580b2?s=600
 
 
