@@ -4,23 +4,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Vinayak Sharma Profile">
   <meta name="author" content="Vinayak Sharma">
-  
+
   <title>{{ site.name }}</title>
   {%- seo title=false -%}
 
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
-  <link rel="FavIcon"  type="image/svg+xml" href="{{ site.favicon | default: '/assets/favicon.ico' | relative_url }}", id="dynamic-favicon">
+  <!-- <link rel="FavIcon" type="image/svg+xml" href="{{ site.favicon | default: '/assets/favicon.svg' | relative_url }}" ,
+    id="dynamic-favicon"> -->
+  <!-- <link id="favicon" rel="icon" href="{{'/images/fav.svg' | relative_url }}" type="image/svg+xml"> -->
+
   <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
-  
+
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
+  {%- include google-analytics.html -%}
   {%- endif -%}
   {%- if jekyll.environment == 'production' and site.gtm -%}
-    {%- include gtm_head.html -%}
+  {%- include gtm_head.html -%}
   {%- endif -%}
   {%- if jekyll.environment == 'production' and site.gtag -%}
-    {%- include gtag.html -%}
+  {%- include gtag.html -%}
   {%- endif -%}
+
+  <script>
+    const gravatarHash = "{{ site.gravatar_hash }}";
+    const gravatarURL = `https://www.gravatar.com/avatar/${gravatarHash}?s=64&d=identicon`;
+
+    function setCircularFavicon(imageUrl) {
+      const img = new Image();
+      img.crossOrigin = "anonymous";
+
+      img.onload = function () {
+        const size = 64;
+        const canvas = document.createElement('canvas');
+        canvas.width = canvas.height = size;
+        const ctx = canvas.getContext('2d');
+
+        ctx.beginPath();
+        ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
+        ctx.closePath();
+        ctx.clip();
+
+        ctx.drawImage(img, 0, 0, size, size);
+
+        let favicon = document.querySelector('link[rel="icon"]');
+        if (!favicon) {
+          favicon = document.createElement('link');
+          favicon.rel = 'icon';
+          document.head.appendChild(favicon);
+        }
+        favicon.href = canvas.toDataURL('image/png');
+      };
+
+      img.onerror = function () {
+        console.error("Failed to load Gravatar image.");
+      };
+
+      img.src = imageUrl;
+    }
+
+    setCircularFavicon(gravatarURL);
+  </script>
 </head>

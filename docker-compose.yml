@@ -1,4 +1,3 @@
-version: "3"
 services:
     jekyll:
         image: vinayak1998th/resume-container

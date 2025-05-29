@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Vinayak Sharma Profile">
   <meta name="author" content="Vinayak Sharma">
-  
+
   <title>Vinayak Sharma</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Vinayak Sharma Profile" />
@@ -22,11 +22,52 @@
 {"@context":"https://schema.org","@type":"WebSite","headline":"Vinayak Sharma Profile","name":"MS in CS, Arizona State University","url":"http://0.0.0.0:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
-  <link rel="FavIcon"  type="image/svg+xml" href="/images/fav.svg", id="dynamic-favicon">
+  <!-- <link rel="FavIcon" type="image/svg+xml" href="/images/fav.svg" ,
+    id="dynamic-favicon"> -->
+  <!-- <link id="favicon" rel="icon" href="/images/fav.svg" type="image/svg+xml"> -->
+
   <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen"></head>
+  <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen"><script>
+    const gravatarHash = "2302f2e8d1521c441894759ef96580b2";
+    const gravatarURL = `https://www.gravatar.com/avatar/${gravatarHash}?s=64&d=identicon`;
 
+    function setCircularFavicon(imageUrl) {
+      const img = new Image();
+      img.crossOrigin = "anonymous";
+
+      img.onload = function () {
+        const size = 64;
+        const canvas = document.createElement('canvas');
+        canvas.width = canvas.height = size;
+        const ctx = canvas.getContext('2d');
+
+        ctx.beginPath();
+        ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
+        ctx.closePath();
+        ctx.clip();
+
+        ctx.drawImage(img, 0, 0, size, size);
+
+        let favicon = document.querySelector('link[rel="icon"]');
+        if (!favicon) {
+          favicon = document.createElement('link');
+          favicon.rel = 'icon';
+          document.head.appendChild(favicon);
+        }
+        favicon.href = canvas.toDataURL('image/png');
+      };
+
+      img.onerror = function () {
+        console.error("Failed to load Gravatar image.");
+      };
+
+      img.src = imageUrl;
+    }
+
+    setCircularFavicon(gravatarURL);
+  </script>
+</head>
 
   <body class=" pt-5 landing" id="pagetop">
 
