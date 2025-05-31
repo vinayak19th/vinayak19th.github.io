@@ -5,7 +5,7 @@
     {%- if entry.url -%}
     {% include a.html href=entry.url class="link" %}
     {%- endif -%}
-    <h4>{{ entry.title }}
+    <h4 class="bibtitle">{{ entry.title }}
       {% if entry.preprint == "true" %}
       <span class="badge badge-danger">Pre-Print</span>
       {% endif %}
@@ -16,16 +16,16 @@
     <p>{{ entry.author }}</p>
   </div>
   <div class="col-xs-12 col-sm-3 col-md-2 col-print-12 borderless inlines inlines-right">
-    <h4>{{ entry.year }}</h4>
+    <!-- <h4>{{ entry.year }}</h4> -->
     <p><button class="ref-button" type="button" data-toggle="collapse" data-target="#{{ entry.key }}"
         aria-expanded="false" aria-controls="collapseExample">
-        Bibref
+        BibTex
       </button></p>
   </div>
 </div>
 <div class="collapse" id="{{ entry.key }}" aria-labelledby="heading{{ forloop.index }}">
   <pre>{{ entry.bibtex }}</pre>
 </div>
-<center>
+<!-- <center>
   <hr width="70%">
-</center>
+</center> -->

@@ -501,3 +501,26 @@ $deg-padding-hori: 0.5rem;
     margin-bottom: 0.5rem;
     font-size: 2rem;
 }
+
+
+.biblography-container li {
+  display: contents;
+}
+
+.biblography-container .bibtitle::before {
+  content: "[" counters(item, ".") "]. ";
+  counter-increment: item;
+  font-style: normal;
+}
+
+.biblography-container {
+  counter-reset: item;
+}
+
+h2.bibliography{
+    margin-top: 1.5rem;
+    margin-bottom: -2rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-decoration: underline;
+}

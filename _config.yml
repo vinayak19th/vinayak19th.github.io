@@ -86,11 +86,13 @@ markdown: kramdown
 permalink: pretty
 
 scholar:
-  style: acm-sig-proceedings
+  style: acm-sig-proceedings-long-author-list
   source: _data/
   bibliography: papers.bib
   sort_by: year
   order: descending
+  group_by : year
+  group_order : descending
   bibliography_template: paper
 
 exclude : [
