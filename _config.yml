@@ -1,7 +1,7 @@
 repository: vinayak19th/vinayak19th.github.io/
 # Personal info
 name: Vinayak Sharma
-title: MS in CS, Arizona State University
+title: PhD in CS, Arizona State University
 specialization : Machine Learning
 email: vinayak1998th@Gmail.com
 phone: +16025155883
@@ -13,13 +13,14 @@ darkmode: false
 # Social links
 #twitter_username: jekyllrb
 github_username:  vinayak19th
+gravatar_username:  vinayak19th
 #facebook_username: vinayak19th
 google_scholar: https://scholar.google.com/citations?user=r763skMAAAAJ&hl=en
 orcid: https://orcid.org/0009-0009-5633-4003
 linkedin_username: vinayak19th
 #use international format
 whatsapp_number: "16025155883"
-medium: vinayak1998th
+# medium: vinayak1998th
 
 resume: https://drive.google.com/file/d/1VAwintQeMaNDLtPgi3sElW3MMeGBvPQ_/view?usp=sharing
 #Comment out to disable github stats
