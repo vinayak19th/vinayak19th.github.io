@@ -1,0 +1,27 @@
+{
+    "name": "vinayak19th.github.io",
+    "version": "3.0.0",
+    "description": "<u>Website for my Resume.</u>",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vinayak19th/vinayak19th.github.io.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/vinayak19th/vinayak19th.github.io/issues"
+    },
+    "homepage": "https://github.com/vinayak19th/vinayak19th.github.io#readme",
+    "dependencies": {
+        "bootstrap": "^4.4.1",
+        "jquery": "^3.5.0",
+        "popper.js": "^1.16.1"
+    }
+}
