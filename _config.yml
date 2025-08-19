@@ -75,7 +75,7 @@ sass:
         - node_modules
 
 plugins:
-  - jekyll-scholar
+  # - jekyll-scholar
   - jekyll-seo-tag
 
 color:
