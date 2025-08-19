@@ -7,70 +7,76 @@ permalink: /mywork/
     <h3>{{ site.publication.title | default: "Publications" }}</h3>
     <div class="biblography-container">
     <div id="filters" class="filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="2023">2023</button>
-        <button class="filter-btn" data-filter="2024">2024</button>
-        <button class="filter-btn" data-filter="conference">Conference</button>
-        <button class="filter-btn" data-filter="journal">Journal</button>
+      <div class="filter-group">
+        <label for="year-filter">Year: </label>
+        {% assign start_year = 2023 %}
+        {% assign current_year = 'now' | date: "%Y" | plus: 0 %}
+        <select id="year-filter" class="filter-select" data-filter-group="year">
+          <option value="all">All</option>
+            {% for year in (start_year..current_year) reversed %}
+                <option value="{{ year }}">{{ year }}</option>
+            {% endfor %}
+          </select>
+      </div>
+      <div class="filter-group">
+        <label for="type-filter">Type: </label>
+        <select id="type-filter" class="filter-select" data-filter-group="type">
+          <option value="all">All</option>
+          <option value="conference">Conference</option>
+          <option value="journal">Journal</option>
+          </select>
+      </div>
     </div>
-    Bibl : {{ site.bibliography }}
+    <hr>
     <div class="publications-list">
         {% bibliography %}
     </div>
     </div>
 </div>
 
-<style>
-  .publication-item {
-    margin-bottom: 1.5em;
-    padding-bottom: 1.5em;
-    border-bottom: 1px solid #eee;
-  }
-  .filters button {
-    margin-right: 5px;
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    cursor: pointer;
-  }
-  .filters button.active {
-    background-color: #007bff;
-    color: white;
-    border-color: #007bff;
-  }
-  .publication-item.hidden {
-    display: none;
-  }
-</style>
-
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  const filterButtons = document.querySelectorAll('#filters .filter-btn');
-  const publications = document.querySelectorAll('.publication-item');
+    const filterSelects = document.querySelectorAll('.filter-select');
+    const publications = document.querySelectorAll('.publication-item');
 
-  filterButtons.forEach(button => {
-    button.addEventListener('click', function () {
-      // Set active class on button
-      filterButtons.forEach(btn => btn.classList.remove('active'));
-      this.classList.add('active');
-
-      const filter = this.getAttribute('data-filter');
-
-      publications.forEach(item => {
-        const itemYear = item.getAttribute('data-year');
-        const itemType = item.getAttribute('data-type');
-
-        if (filter === 'all' || itemYear === filter || itemType === filter) {
-          item.classList.remove('hidden');
-        } else {
-          item.classList.add('hidden');
-        }
-      });
+    function applyFilters() {
+    // Create an object to hold the current filter values
+    const activeFilters = {};
+    filterSelects.forEach(select => {
+        const filterGroup = select.getAttribute('data-filter-group');
+        activeFilters[filterGroup] = select.value;
     });
-  });
+
+    // Loop through each publication and check if it matches ALL active filters
+    publications.forEach(item => {
+        let isVisible = true; // Assume the item is visible by default
+
+        for (const group in activeFilters) {
+        const filterValue = activeFilters[group];
+        const itemValue = item.getAttribute(`data-${group}`);
+        
+        // If a filter is set (not 'all') and the item doesn't match, hide it
+        if (filterValue !== 'all' && itemValue !== filterValue) {
+            isVisible = false;
+            break; // No need to check other filters for this item
+        }
+        }
+
+        // Show or hide the item based on the final visibility status
+        if (isVisible) {
+        item.classList.remove('hidden');
+        } else {
+        item.classList.add('hidden');
+        }
+    });
+    }
+
+    // Add a 'change' event listener to each dropdown
+    filterSelects.forEach(select => {
+    select.addEventListener('change', applyFilters);
+    });
 });
 </script>
-
 <br>
 
 <!-- {% include projects.html %} -->

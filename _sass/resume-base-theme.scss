@@ -8,6 +8,7 @@
 @import "timeline";
 @import "footer";
 @import "modal";
+@import "publications";
 @import "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css";
 
 $cert-padding: 0.2rem;
@@ -500,27 +501,4 @@ $deg-padding-hori: 0.5rem;
     padding-top: 1.1rem;
     margin-bottom: 0.5rem;
     font-size: 2rem;
-}
-
-
-.biblography-container li {
-  display: contents;
-}
-
-.biblography-container .bibtitle::before {
-  content: "[" counters(item, ".") "]. ";
-  counter-increment: item;
-  font-style: normal;
-}
-
-.biblography-container {
-  counter-reset: item;
-}
-
-h2.bibliography{
-    margin-top: 1.5rem;
-    margin-bottom: -2rem;
-    font-size: 2.2rem;
-    font-weight: 500;
-    text-decoration: underline;
 }
