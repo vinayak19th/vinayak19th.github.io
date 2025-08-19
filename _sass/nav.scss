@@ -15,7 +15,7 @@ $navbar-color: #2E3440;
 }
 
 .navbar-fixed-top .navbar-brand {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #ffffff;
     font-weight: 600;
     text-transform: lowercase;
@@ -77,7 +77,7 @@ $navbar-color: #2E3440;
     background: $navbar-color;
 
     @media screen and (min-width: 900px) {
-        height: 6rem;
+        height: 4.5  rem;
         align-items: center;
     }
 }
@@ -194,4 +194,75 @@ button:hover {
     50% {
         background-color: var(--cursor-color);
     }
+}
+
+
+.toggle-btn {
+  position: relative;
+  width: 45px;
+  height: 3rem;
+  background-color: #333;
+//   border: none;
+  border: 1px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.4s;
+  margin: 0px;
+  padding: 0px;
+  padding: 0;
+
+  @media (min-width: 849px) and (max-width: 990px) {
+      width: 45px;
+  }
+
+
+}
+
+.toggle-btn:focus {
+    background-color: #333;
+    border: 1px solid white;
+
+}
+
+.toggle-btn.dark{
+    background-color: #ccc;
+}
+
+.toggle-btn.dark:focus{
+    background-color: #ccc;
+    border: 1px solid white;
+
+}
+
+
+.toggle-circle {
+  position: absolute;
+  top: 0.4rem;
+  left: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  background: white;
+  color: #2E3440 !important;
+  border-radius: 50%;
+  padding-top: 1rem;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease; /* smooth sliding */
+}
+
+.mode-logo::before{
+    position: absolute;
+    top: 0.4rem;
+    left: 0.5rem;
+}
+
+.toggle-btn.active .toggle-circle {
+  transform: translateX(13px); /* moves to the right */
+  background: white;
+}
+
+.toggle-btn.active:hover {
+  background-color: #797979;
 }

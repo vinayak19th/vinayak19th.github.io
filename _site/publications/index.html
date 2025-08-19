@@ -81,10 +81,19 @@
                 <i class="fa-solid fa-bars"></i>
             </button>
             <a class="navbar-brand" href="/">$ ~/Vinayak_Sharma <div class="blinking"></div></a>
-            <button class="dark-mode" id="theme-toggle" onclick="modeSwitcher()"><i class="fa-solid fa-moon"></i>
-            </button>
+            <!-- <button class="dark-mode" id="theme-toggle" onclick="modeSwitcher()"><i class="fa-solid fa-moon"></i>
+            </button> -->
+                <button
+                    type="button"
+                    class="btn toggle-btn"
+                    aria-label="Switch Mode"
+                    id="mode-toggle"
+                    onClick="modeSwitcher()"
+                    data-bs-toggle="button"
+                    >
+                    <div class="toggle-circle" id="circle-toggle"><i class="bi bi-brightness-high-fill mode-logo"></i></div>
+                </button>
         </div>
-
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -115,7 +124,7 @@
                 <li class="ContactButton">
                     <!-- Modal in footer.html -->
                     <a class="fa-nopad" data-toggle="modal" data-target="#ContactModal"><i
-                            class="fa-solid fa-message"></i> &nbsp Message Me</a>
+                            class="bi bi-chat-fill"></i></a>
                 </li>
             </ul>
         </div>
@@ -180,6 +189,28 @@
         </div>
     </div>
 </div>
+
+
+<!-- <script>
+  $toggle = document.getElementById('mode-toggle');
+  $circle_toggle = document.getElementById('circle-toggle');
+  const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');
+  if (Theme.visualState == 'dark') {
+    $circle_toggle.innerHTML = '<i class="bi bi-brightness-high-fill"></i>';
+  } else if (Theme.visualState == 'light') {
+    $circle_toggle.innerHTML = '<i class="bi bi-moon-stars"></i>';
+  }
+  function iconSwap() {
+    $toggle.classList.toggle('active');
+    if (Theme.visualState == 'dark') {
+      $circle_toggle.innerHTML = '<i class="bi bi-moon-stars"></i>';
+    } else if (Theme.visualState == 'light') {
+      $circle_toggle.innerHTML = '<i class="bi bi-brightness-high-fill"></i>';
+    }
+    modeSwitcher()
+  }
+</script> -->
+
     <!-- <div class="top"> -->
 <div class="container header-container" id="#page-top">
     <div class="row">

@@ -26,16 +26,12 @@ $line-color: #f5f5f5;
 
 .ContactButton {
     background: none;
-    border-color: #a6adc8;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 3rem;
-    margin-top: 0.6rem;
-    margin-left: 0.5rem;
-
+    margin-top: 0.9rem;
+    margin-left: -10px;
     @media (max-width: 768px) {
         margin-top: 0.6rem;
         border-style: hidden;
+        margin-left: 0px;
     }
 }
 
