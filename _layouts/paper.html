@@ -1,5 +1,6 @@
 ---
 ---
+<div class="publication-item" data-year="{{ entry.year }}" data-type="{{ entry.entrytype | default: 'misc' }}">
 <div class="row clearfix layout layout-left">
   <div class="col-xs-12 col-sm-9 col-md-10 col-print-12 inlines borderless">
     {%- if entry.url -%}
@@ -25,6 +26,7 @@
 </div>
 <div class="collapse" id="{{ entry.key }}" aria-labelledby="heading{{ forloop.index }}">
   <pre>{{ entry.bibtex }}</pre>
+</div>
 </div>
 <!-- <center>
   <hr width="70%">

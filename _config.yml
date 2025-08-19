@@ -74,7 +74,9 @@ sass:
         - _sass
         - node_modules
 
-plugins: ['jekyll/scholar','jekyll-seo-tag']
+plugins:
+  - jekyll-scholar
+  - jekyll-seo-tag
 
 color:
   primary: 18bc9c #80B3FF
@@ -86,13 +88,8 @@ markdown: kramdown
 permalink: pretty
 
 scholar:
-  style: acm-sig-proceedings-long-author-list
   source: _data/
   bibliography: papers.bib
-  sort_by: year
-  order: descending
-  group_by : year
-  group_order : descending
   bibliography_template: paper
 
 exclude : [
