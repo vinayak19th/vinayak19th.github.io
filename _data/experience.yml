@@ -2,7 +2,7 @@
 - layout: layout/left-ex
   company: Arizona State University
   link: https://scai.engineering.asu.edu/
-  job_title: [[Research Assistant,Dec 2024-Aug 2024],[Teaching Assistant,Dec 2024-Aug 2024],[Teaching Assistant,May 2024-Jan 2024],[Teaching Assistant,Dec 2023-Aug 2023],[Teaching Assistant,Dec 2022-Aug 2022]]
+  job_title: [[Research Assistant,Dec 2024-Present],[Teaching Assistant,Dec 2024-Aug 2024],[Teaching Assistant,May 2024-Jan 2024],[Teaching Assistant,Dec 2023-Aug 2023],[Teaching Assistant,Dec 2022-Aug 2022]]
   location: Tempe,Arizona
   document : 
   doclink : 
@@ -10,14 +10,14 @@
   quote: > 
     Arizona State University supports its students with various assistantship positions
   description: > # this will include new lines to allow paragraphs
+    [RA] <u> Dec 2024- Present</u> 
+    Under Professor <a href="https://search.asu.edu/profile/969623">Prof. Aviral Shrivastava</a>:
+      * Reasearching how to improve current NISQ Quantum Computers using SOTA Machine Learning
+
     [TA] <u> Jan 2025 - May 2025</u>
     CSE 598:Quantum Computing under <a href="https://search.asu.edu/profile/969623">Prof. Aviral Shrivastava</a>: 
       * Created autograders for coding assignments in [Pennylane](https://pennylane.ai/)
       * Created final exams and quizzes 
-
-    [RA] <u> Dec 2024-Aug 2024</u> 
-    Under Professor <a href="https://search.asu.edu/profile/969623">Prof. Aviral Shrivastava</a>:
-      * Reasearching how to improve current NISQ Quantum Computers using SOTA Machine Learning
       
     [TA] <u> Dec 2024-Aug 2024</u> 
     486: Capstone Project under <a href="https://search.asu.edu/profile/1215971">Prof. Helen Chavez</a>:
