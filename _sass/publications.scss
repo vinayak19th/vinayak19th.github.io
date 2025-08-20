@@ -5,11 +5,18 @@
     display: flex;
     gap: 15px; /* Adds space between dropdowns */
 }
+
+.filters.dark{
+  background-color: #3b3b46;
+}
+
 .filters select {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+
 
 .biblography-container li {
   display: contents;

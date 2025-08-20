@@ -1,6 +1,6 @@
 ---
 ---
-<div class="publication-item" data-year="{{ entry.year }}" data-type="{{ entry.entrytype | default: 'misc' }}">
+<div class="publication-item" data-year="{{ entry.year }}" data-tag="{{ entry.tag | default: 'misc' }}">
 <div class="row clearfix layout layout-left">
   <div class="col-xs-12 col-sm-9 col-md-10 col-print-12 inlines borderless">
     {%- if entry.url -%}
@@ -14,10 +14,10 @@
     {%- if entry.url -%}
     </a>
     {%- endif -%}
-    <p>{{ entry.author }}</p>
+    <p><em>{{ entry.author }} ; {{ entry.year }}</em></p>
+    <p>[{{ entry.tag }}]</p>
   </div>
   <div class="col-xs-12 col-sm-3 col-md-2 col-print-12 borderless inlines inlines-right">
-    <!-- <h4>{{ entry.year }}</h4> -->
     <p><button class="ref-button" type="button" data-toggle="collapse" data-target="#{{ entry.key }}"
         aria-expanded="false" aria-controls="collapseExample">
         BibTex
