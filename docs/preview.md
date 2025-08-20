@@ -11,12 +11,12 @@ A preview of how the key features appear on desktop or large screen devices
         <td><center>Dark Mode</center></td>
     </tr>
     <tr>
-        <td><center>Terminal Into</center></td>
+        <td><center>Home page</center></td>
     	<td>
-    		<center><img src="./Term/Light_Term.png"></center>
+    		<center><img src="./HomePage/HomePageLight.png"></center>
     	</td>
     	<td>
-    		<center><img src="./Term/Dark_Term.png"></center>
+    		<center><img src="./HomePage/HomePageDark.png"></center>
     	</td>
     </tr>
     <tr>
@@ -55,6 +55,15 @@ A preview of how the key features appear on desktop or large screen devices
     		<center><img src="./Tabbed/Tabbed_Dark.png"></center>
     	</td>
     </tr>
+	<tr>
+        <td><center>Publication List generated from .bib </center></td>
+    	<td>
+    		<center><img src="./Publications/LightMode.png"></center>
+    	</td>
+    	<td>
+    		<center><img src="./Publications/DarkMode.png"></center>
+    	</td>
+    </tr>
 </table>
 </center>
 
@@ -71,10 +80,10 @@ A preview of how the key features appear on Mobile or Small screen devices
     <tr>
         <td><center>Terminal Into</center></td>
     	<td>
-    		<center><img src="./Term/Mobile_Light.png"></center>
+    		<center><img src="./HomePage/HomeMobilePageLight.png"></center>
     	</td>
     	<td>
-    		<center><img src="./Term/Mobile_dark.png"></center>
+    		<center><img src="./HomePage/HomeMobilePageDark.png"></center>
     	</td>
     </tr>
     <tr>
@@ -112,6 +121,15 @@ A preview of how the key features appear on Mobile or Small screen devices
     	<td>
     		<center><img src="./Tabbed/Tabbed_mobile_dark.png"></center>
     	</td>
+		<tr>
+        <td><center>Publication List generated from .bib </center></td>
+    	<td>
+    		<center><img src="./Publications/MobileLight.png"></center>
+    	</td>
+    	<td>
+    		<center><img src="./Publications/MobileDark.png"></center>
+    	</td>
+    </tr>
     </tr>
 </table>
 </center>

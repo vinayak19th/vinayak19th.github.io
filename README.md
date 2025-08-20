@@ -19,6 +19,7 @@ Based on : [modern-resume-theme](https://github.com/sproogen/modern-resume-theme
 
 ## Notable Features:
 * System persistent dark mode (Remembers your preference via cookies)
+* Auto Generating Publications from .bib file. 
 * Live Github based Statistcs
     * Profie Statistics on the about page
     * Project statistics per repository in the project page
@@ -30,14 +31,13 @@ Based on : [modern-resume-theme](https://github.com/sproogen/modern-resume-theme
     * Stack Overflow
     * etc
 * Modular self generating based on yml datasheets
-* Homepage terminal effect
 
 > More screenshots of the [key features here](docs/preview.md)
 
 ### Light Home Page
-![term_light](./docs/Term/Light_Term.png)
+![term_light](./docs/HomePage/HomePageLight.png)
 ### Dark Home Page
-![term_dark](./docs/Term/Dark_Term.png)
+![term_dark](./docs/HomePage/HomePageDark.png)
 
 
 ## Contributing

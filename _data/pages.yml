@@ -1,9 +1,14 @@
 - name : about
+  permalink: about
 
-- name : publications
+- name : My Work
+  permalink: mywork
 
-- name : experience 
+- name : experience
+  permalink: experience
 
-- name : Blog 
+- name : Blog
+  permalink: Blog
 
 - name : certifications
+  permalink: certifications
