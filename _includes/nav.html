@@ -2,16 +2,16 @@
     <div class="container navig-container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="collapse-button navbar-toggle" data-toggle="collapse"
+            <button id="navbarcollapse" type="button" class="collapse-button navbar-toggle" data-toggle="collapse"
                 data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <i class="fa-solid fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="/">$ ~/{{site.name | replace_first: " ","_"}} <div class="blinking"></div></a>
+            <a class="navbar-brand" href="/">$ ~/{{site.name | replace_first: " ",""}} <div class="blinking"></div></a>
             <!-- <button class="dark-mode" id="theme-toggle" onclick="modeSwitcher()"><i class="fa-solid fa-moon"></i>
             </button> -->
                 <button
-                    type="button"
+                    type="button"   
                     class="btn toggle-btn"
                     aria-label="Switch Mode"
                     id="mode-toggle"
@@ -31,10 +31,11 @@
                 {%endfor%}
                 <li>
                     <hr class="navbar-divider">
+                    <hr class="dropdown-divider">
                 </li>
                 <li class="ContactButton">
                     <!-- Modal in footer.html -->
-                    <a class="fa-nopad" data-toggle="modal" data-target="#ContactModal"><i
+                    <a class="fa-nopad" data-toggle="modal" data-target="#ContactModal"><p id="contact">Contact Me </p><i
                             class="bi bi-chat-fill"></i></a>
                 </li>
             </ul>
@@ -50,74 +51,9 @@
     aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content modalBox">
-            <div class="modal-header">
-                <h5 class="modal-title" id="ContactModalLabel">Contact</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            <div class="modal-body ContactModalContent">
-                <div class="contact-info-container">
-                    <div class="contact-section">
-                        <h6><span class="badge badge-message"><i class="fa-solid fa-envelope"></i></span>
-                            &nbsp Email</h6>
-                        <ul>
-                            <li><a href="mailto:{{site.email}}">{{site.email}}</a></li>
-                        </ul>
-                    </div>
-                    <div class="contact-section">
-                        <h6><span class="badge badge-message"><i class="fa-solid fa-phone"></i></span>
-                            &nbsp Phone</h6>
-                        <ul>
-                            <li><a href="tel:{{site.phone}}">{{site.phone}}</a></li>
-                        </ul>
-                    </div>
-                    <div class="contact-section">
-                        <h6><span class="badge badge-message"><i class="fa-solid fa-link"></i></span>
-                            &nbsp Website</h6>
-                        <ul>
-                            <li><a href="{{site.website}}"> {{site.website}} </a></li>
-                        </ul>
-                    </div>
-                    <!-- <div class="contact-section">
-                        <h6><span class="badge badge-message"><i class="fa-solid fa-message"></i></span>
-                            &nbsp Contact Me</h6>
-                        <form action="https://send.pageclip.co/WDjpKzIbF7yDQsQI5wcr9ehyOuhCPU9s/ContactMe"
-                            method="post"> -->
-                    <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
-
-                    <!-- It looks like you are creating a contact form. These email and subject fields are special -->
-                    <!-- See https://pageclip.co/docs#special-fields for more info -->
-                    <!-- <input type="text" name="name" value="Billy Jean" />
-                            <input type="text" name="email" value="billy@example.com" /> -->
-
-                    <!-- This button will have a loading spinner. Keep the inner span for best results. -->
-                    <!-- <button class="button pageclip-form__submit" type="submit">Send</button> -->
-                    <!-- </form> -->
-                    <!-- </div>  -->
-                </div>
+            <div class="modal-body">
+                {% include contact_card.html %}
             </div>
         </div>
     </div>
 </div>
-
-
-<!-- <script>
-  $toggle = document.getElementById('mode-toggle');
-  $circle_toggle = document.getElementById('circle-toggle');
-  const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');
-  if (Theme.visualState == 'dark') {
-    $circle_toggle.innerHTML = '<i class="bi bi-brightness-high-fill"></i>';
-  } else if (Theme.visualState == 'light') {
-    $circle_toggle.innerHTML = '<i class="bi bi-moon-stars"></i>';
-  }
-  function iconSwap() {
-    $toggle.classList.toggle('active');
-    if (Theme.visualState == 'dark') {
-      $circle_toggle.innerHTML = '<i class="bi bi-moon-stars"></i>';
-    } else if (Theme.visualState == 'light') {
-      $circle_toggle.innerHTML = '<i class="bi bi-brightness-high-fill"></i>';
-    }
-    modeSwitcher()
-  }
-</script> -->
