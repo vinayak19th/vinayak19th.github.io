@@ -1,7 +1,8 @@
 services:
     jekyll:
-        image: vinayak1998th/resume-container
+        image: jekyll/builder
         container_name: resume-run
+        working_dir: /site
         command: jekyll serve --watch --force_polling --verbose --host 0.0.0.0
         ports:
             - 4000:4000
