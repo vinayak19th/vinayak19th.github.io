@@ -1,7 +1,7 @@
 const theme = localStorage.getItem('theme');
-const darkicon = '<i class="bi bi-moon-stars mode-logo"></i>'
+const darkicon = '<i class="bi bi-moon-fill mode-logo"></i>'
 // const lighticon = '<i class="fa-solid fa-circle-half-stroke"></i>'
-const lighticon = '<i class="bi bi-brightness-high-fill mode-logo"></i>'
+const lighticon = '<i class="bi bi-sun-fill mode-logo"></i>'
 
 const toggle = document.getElementById('mode-toggle');
 const circle_toggle = document.getElementById('circle-toggle');

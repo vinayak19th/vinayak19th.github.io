@@ -1,32 +1,32 @@
 ---
 ---
-<div class="publication-item" data-year="{{ entry.year }}" data-tag="{{ entry.tag | default: 'misc' }}">
-<div class="row clearfix layout layout-left">
-  <div class="col-xs-12 col-sm-9 col-md-10 col-print-12 inlines borderless">
-    {%- if entry.url -%}
-    {% include a.html href=entry.url class="link" %}
-    {%- endif -%}
-    <h4 class="bibtitle">{{ entry.title }}
-      {% if entry.preprint == "true" %}
-      <span class="badge badge-danger">Pre-Print</span>
-      {% endif %}
-    </h4>
-    {%- if entry.url -%}
-    </a>
-    {%- endif -%}
-    <p><em>{{ entry.author }} ; {{ entry.year }}</em></p>
-    <p>[{{ entry.tag }}]</p>
+<div class="publication-item" data-paper-year="{{ entry.year }}" data-paper-tag="{{ entry.tag | default: 'misc' }}">
+  <div class="row clearfix layout layout-left">
+    <div class="col-xs-12 col-sm-9 col-md-10 col-print-12 inlines borderless">
+      {%- if entry.url -%}
+      {% include a.html href=entry.url class="link" %}
+      {%- endif -%}
+      <h4 class="bibtitle">{{ entry.title }}
+        {% if entry.preprint == "true" %}
+        <span class="badge badge-danger">Pre-Print</span>
+        {% endif %}
+      </h4>
+      {%- if entry.url -%}
+      </a>
+      {%- endif -%}
+      <p><em>{{ entry.author }} ; {{ entry.year }}</em></p>
+      <p>[{{ entry.tag }}]</p>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-2 col-print-12 borderless inlines inlines-right">
+      <p><button class="ref-button" type="button" data-toggle="collapse" data-target="#{{ entry.key }}"
+          aria-expanded="false" aria-controls="collapseExample">
+          BibTex
+        </button></p>
+    </div>
   </div>
-  <div class="col-xs-12 col-sm-3 col-md-2 col-print-12 borderless inlines inlines-right">
-    <p><button class="ref-button" type="button" data-toggle="collapse" data-target="#{{ entry.key }}"
-        aria-expanded="false" aria-controls="collapseExample">
-        BibTex
-      </button></p>
+  <div class="collapse" id="{{ entry.key }}" aria-labelledby="heading{{ forloop.index }}">
+    <pre>{{ entry.bibtex }}</pre>
   </div>
-</div>
-<div class="collapse" id="{{ entry.key }}" aria-labelledby="heading{{ forloop.index }}">
-  <pre>{{ entry.bibtex }}</pre>
-</div>
 </div>
 <!-- <center>
   <hr width="70%">

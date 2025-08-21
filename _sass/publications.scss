@@ -4,18 +4,43 @@
     margin-top: 20px;
     display: flex;
     gap: 15px; /* Adds space between dropdowns */
+    font-size: 2rem;
+
+    @media screen and (max-width: 768px) {
+          justify-content: center;
+    }
 }
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 5px; /* Space between label and select */
+
+    label {
+        margin-right: 5px; /* Space between label and select */
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    select {
+      padding: 5px;
+      margin-top: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1.3rem;
+
+      @media screen and (max-width: 768px) {
+        align-items: center !important;
+      }
+    }
+}
+
 
 .filters.dark{
   background-color: #3b3b46;
 }
-
-.filters select {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
 
 
 .biblography-container li {
@@ -25,7 +50,6 @@
 .biblography-container .bibtitle::before {
   content: "[" counters(item, ".") "]. ";
   counter-increment: item;
-  font-style: normal;
 }
 
 .biblography-container {
@@ -44,3 +68,4 @@ h2.bibliography{
     display: none;
     margin-left: -1em;  
 }
+

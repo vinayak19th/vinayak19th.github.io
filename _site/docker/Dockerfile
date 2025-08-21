@@ -1,4 +1,3 @@
-FROM bretfisher/jekyll
+FROM jekyll/minimal
 
 RUN bundle --full-index
-
