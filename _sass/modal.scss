@@ -96,6 +96,10 @@ $button-pad: 6px;
         color: #a6adc8;
         border-color: #a6adc8 ;
     }
+
+    .social-icons a {
+        color: #a6adc8;
+    }
 }
 
 .profile-card-rectangular {
@@ -118,7 +122,7 @@ $button-pad: 6px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 .social-icons a {
-    color: #a6adc8; /* Muted gray for icons */
+    color: #333333; /* Muted gray for icons */
     font-size: 1.8rem;
 }
 .social-icons i{
