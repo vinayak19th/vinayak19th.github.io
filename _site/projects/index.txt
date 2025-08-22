@@ -184,8 +184,8 @@
         </div>
         <br>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 header-right">
-            <ul class="icons no-print"><li>
-        <div class="d-flex justify-content-around">
+            <ul class="mt-lg-4 icons no-print"><li>
+        <div class="flex align-items-center">
             <a target="_blank" href="https://github.com/vinayak19th"
                 class="button button--sacnite button--round-l">
                 <i class="fab fa-github" title="Github link"></i>
@@ -195,16 +195,16 @@
             </div>
         </div>
     </li><li>
-        <div class="d-flex justify-content-around">
+        <div class="flex align-items-center">
             <a target="_blank" href="https://scholar.google.com/citations?user=r763skMAAAAJ&hl=en" class="button button--sacnite button--round-l">
-                <i class="fa-brands fa-google-scholar"></i>
+                    <i class="fa-brands fa-google-scholar"></i>
             </a>
             <div class="mt-2 icon-text">
                 G-Scholar
             </div>
         </div>
     </li><li>
-        <div class="d-flex justify-content-around">
+        <div class="flex justify-content-around">
             <a target="_blank" href="https://orcid.org/0009-0009-5633-4003" class="button button--sacnite button--round-l">
                 <i class="fa-brands fa-orcid" title="orcid link"></i>
             </a>
@@ -213,7 +213,7 @@
             </div>
         </div>
     </li><li>
-        <div class="d-flex justify-content-around">
+        <div class="flex justify-content-around">
             <a target="_blank" href="https://www.linkedin.com/in/vinayak19th"
                 class="button button--sacnite button--round-l">
                 <i class="fab fa-linkedin" title="Linkedin link"></i>
@@ -223,7 +223,7 @@
             </div>
         </div>
     </li><li>
-        <div class="d-flex justify-content-around">
+        <div class="flex justify-content-around">
             <a target="_blank" href="https://drive.google.com/file/d/1VAwintQeMaNDLtPgi3sElW3MMeGBvPQ_/view?usp=sharing" class="button button--sacnite button--round-l">
                 <i class="far fa-id-badge" title=""></i>
             </a>
@@ -232,7 +232,7 @@
             </div>
         </div>
     </li><li>
-        <div class="d-flex justify-content-around">
+        <div class="flex justify-content-around">
             <a target="_blank" href="https://gravatar.com/vinayak19th"
                 class="button button--sacnite button--round-l">
                 <i class="cib-gravatar" title="Gravatar link"></i>
@@ -242,7 +242,7 @@
             </div>
         </div>
     </li><li>
-        <div class="d-flex justify-content-around">
+        <div class="flex justify-content-around">
             <a target="_blank" href="https://wa.me/16025155883"
                 class="button button--sacnite button--round-l">
                 <i class="fab fa-whatsapp" title="Whatsapp link"></i>
