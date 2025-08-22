@@ -50,6 +50,7 @@ $button-pad: 6px;
     border-color: #333333 ;
     padding: 0.5rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: fit-content !important;
 }
 
 #ContactModalLabel {
@@ -102,8 +103,11 @@ $button-pad: 6px;
     }
 }
 
+.modal-dialog{
+    width: 100vw;
+} 
+
 .profile-card-rectangular {
-    max-width: 600px;
     border: none;
 }
 
@@ -113,10 +117,11 @@ $button-pad: 6px;
     justify-content: center;
     padding: 1.5rem;
 }
+
 .profile-img-circle {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+    width: 300px;
+    height: auto;
+    object-fit: fill;
     border-radius: 50%;
     border: 5px solid #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
