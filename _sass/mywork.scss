@@ -37,7 +37,6 @@
     }
 }
 
-
 .filters.dark{
   background-color: #3b3b46;
 }
@@ -69,3 +68,51 @@ h2.bibliography{
     margin-left: -1em;  
 }
 
+.hidden-item{
+  display: none;
+}
+
+.project-card {
+    transition: box-shadow 0.3s ease-in-out;
+    border: 1px solid #d4d4d4;
+    background-color: #f3f3f3;
+    padding: 2rem;
+    border-radius: 1rem; /* Match Bootstrap's card rounding */
+    margin-top: 0.5rem;
+
+    h2 {
+      font-weight: 500;
+    }
+}
+
+.project-card-header {
+  flex-shrink: 0;
+}
+
+.project-card-text {
+  height: 150px; 
+  overflow-y: scroll;
+
+  @media screen and (max-width: 768px) {
+    max-height: fit-content;
+  }
+}
+
+.project-card-text ul {
+    padding-left: 1.9rem; /* Add padding to the left of the list */
+}
+
+.project-card-footer {
+    gap: 0.5rem;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/* GitHub stats card styling */
+.github-stats-card {
+    width: 100%;
+    border-radius: 0.375rem; /* Match Bootstrap's card rounding */
+    border: 1px solid #dee2e6;
+}

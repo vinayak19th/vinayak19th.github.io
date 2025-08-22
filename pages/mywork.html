@@ -6,4 +6,62 @@ permalink: /mywork/
 
 {% include publications.html %}
 
-{% comment %} {% include projects.html %} {% endcomment %}
+{% include projects.html %}
+
+<!-- Script for filters -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    function applyFilters(filterSelects,items) {
+        // Create an object to hold the current filter values
+        const activeFilters = {};
+        filterSelects.forEach(select => {
+            const filterGroup = select.getAttribute('data-filter-group');
+            activeFilters[filterGroup] = select.value;
+        });
+
+        // Loop through each publication and check if it matches ALL active filters
+        items.forEach(item => {
+            let isVisible = true; // Assume the item is visible by default
+
+            for (const group in activeFilters) {
+            const filterValue = activeFilters[group];
+            const itemValue = item.getAttribute(`data-${group}`);
+            
+            // If a filter is set (not 'all') and the item doesn't match, hide it
+            if (filterValue !== 'all' && itemValue !== filterValue) {
+                    isVisible = false;
+                    break; // No need to check other filters for this item
+                }
+            }
+
+            // Show or hide the item based on the final visibility status
+            if (isVisible) {
+                item.classList.remove('hidden-item');
+            } else {
+                item.classList.add('hidden-item');
+            }
+        });
+    }
+
+    // Get publication items and filter selects
+    const publication_filterSelects = document.querySelectorAll('.publication-filter-select');
+    const publication_items = document.querySelectorAll('.publication-item');
+    // Publication filters on select change
+    publication_filterSelects.forEach(select => {
+        select.addEventListener('change',  () => {
+            applyFilters(publication_filterSelects,publication_items);
+        });
+    });
+
+    // Get project items and filter selects
+    const project_filterSelects = document.querySelectorAll('.project-filter-select');
+    const project_items = document.querySelectorAll('.project-item');
+    // Apply project filters on select change
+    project_filterSelects.forEach(select => {
+        select.addEventListener('change',  () => {
+            applyFilters(project_filterSelects, project_items);
+        });
+    });
+});
+</script>
+
