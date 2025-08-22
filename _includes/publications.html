@@ -6,7 +6,7 @@
         <label for="paper-year-filter"> Year&nbsp:</label>
         {% assign start_year = 2023 %}
         {% assign current_year = 'now' | date: "%Y" | plus: 0 %}
-        <select id="paper-year-filter" class="filter-select" data-filter-group="paper-year">
+        <select id="paper-year-filter" class="filter-select publication-filter-select" data-filter-group="paper-year">
           <option value="all">All</option>
             {% for year in (start_year..current_year) reversed %}
                 <option value="{{ year }}">{{ year }}</option>
@@ -15,7 +15,7 @@
       </div>
       <div class="filter-group">
         <label for="paper-tag-filter">Tag&nbsp:</label>
-        <select id="paper-tag-filter" class="filter-select" data-filter-group="paper-tag">
+        <select id="paper-tag-filter" class="filter-select publication-filter-select" data-filter-group="paper-tag">
           <option value="all">All</option>
           <option value="Quantum Machine Learning">Quantum Machine Learning</option>
           <option value="Machine Learning">Machine Learning</option>
@@ -23,53 +23,9 @@
       </div>
     </div>
     <hr>
-    <div class="publications-list">
-        {% bibliography %}
-    </div>
+      <div class="publications-list">
+          {% bibliography %}
+      </div>
     </div>
 </div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const filterSelects = document.querySelectorAll('.filter-select');
-    const publications = document.querySelectorAll('.publication-item');
-
-    function applyFilters() {
-    // Create an object to hold the current filter values
-    const activeFilters = {};
-    filterSelects.forEach(select => {
-        const filterGroup = select.getAttribute('data-filter-group');
-        activeFilters[filterGroup] = select.value;
-    });
-
-    // Loop through each publication and check if it matches ALL active filters
-    publications.forEach(item => {
-        let isVisible = true; // Assume the item is visible by default
-
-        for (const group in activeFilters) {
-        const filterValue = activeFilters[group];
-        const itemValue = item.getAttribute(`data-${group}`);
-        
-        // If a filter is set (not 'all') and the item doesn't match, hide it
-        if (filterValue !== 'all' && itemValue !== filterValue) {
-            isVisible = false;
-            break; // No need to check other filters for this item
-        }
-        }
-
-        // Show or hide the item based on the final visibility status
-        if (isVisible) {
-        item.classList.remove('hidden');
-        } else {
-        item.classList.add('hidden');
-        }
-    });
-    }
-
-    // Add a 'change' event listener to each dropdown
-    filterSelects.forEach(select => {
-    select.addEventListener('change', applyFilters);
-    });
-});
-</script>
 <br>

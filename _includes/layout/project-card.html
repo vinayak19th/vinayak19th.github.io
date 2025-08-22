@@ -1,0 +1,60 @@
+{% comment %} <div class="publication-item" data-project-area="{{ include.item.area }}">
+    <div class="row clearfix layout layout-left">
+        <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+            {%- if include.item.name -%}
+            <h4>{{ include.item.name }}</h4>{%- endif -%} {%- if include.item.link -%} {% include a.html href=include.item.link class="link" %}{{ include.item.link }}</a>
+            {%- endif -%} {%- if include.item.brief -%}
+            <p>{{ include.item.brief }}</p>{%- endif -%} {%- if include.item.stack -%}
+            <p> {% for tech in include.item.stack %}
+                <mark>{{tech}}</mark> {% endfor %}
+            {%- endif -%}</p>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 details">
+            {%- if include.item.github -%}
+            <div class="repostats">
+                {% assign data = include.item.github | split:"/" %}
+                <a href="https://github.com/{{ include.item.github }}" target="_blank">
+                    <img class="GitData" style="" src="https://github-readme-stats.vercel.app/api/pin/?username={{data[0]}}&repo={{data[1]}}&theme=tokyonight">
+                </a>
+            </div>
+            {%- endif -%} {{ include.item.description | strip | markdownify }}
+        </div>
+    </div>
+</div> {% endcomment %}
+
+<div class="project-item" data-project-area="{{ include.item.area }}">
+    <div class="col">
+        <div class="card project-card">
+            <div class="card-header">
+                <h2 class="text-center">{{ include.item.name }}</h4>
+            </div>
+            <div class="card-body project-card-header">
+                <!-- Brief -->
+                <div class="text-muted text-center">
+                    <p><em> {{ include.item.brief }} </em></p>
+                </div>
+                <!-- GitHub Stats Card Image -->
+                {%- if include.item.github -%}
+                <div class="repostats">
+                    {% assign data = include.item.github | split:"/" %}
+                    <a href="https://github.com/{{ include.item.github }}" target="_blank">
+                        <img class="GitData" 
+                        style="" height=100
+                        src="https://github-readme-stats.vercel.app/api/pin/?username={{data[0]}}&repo={{data[1]}}&theme=tokyonight">
+                    </a>
+                </div>
+                {%- endif -%} 
+                <!-- Description -->
+                <div class="card-text project-card-text">
+                    {{ include.item.description | strip | markdownify }}
+                </div>
+            </div>  
+            <div class="card-footer project-card-footer">
+                {%- if include.item.stack -%}
+                {% for tech in include.item.stack %}
+                    <mark>&nbsp{{tech}}&nbsp</mark> 
+                {% endfor %}{%- endif -%} 
+            </div>
+        </div>
+    </div>
+</div>

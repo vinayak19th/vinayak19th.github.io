@@ -140,36 +140,36 @@
         <div class="modal-content modalBox">
             <div class="modal-body">
                 <div class="contact-info-container">
-<div class="card profile-card-rectangular">
-    <div class="row">
-        <!-- Image Column -->
-        <div class="col-md-4 profile-img-container">
-            <!-- Circular Profile Picture -->
-            <img src="https://gravatar.com/avatar/953d19833b6b06cb9f2adbefdcf626affa5f541296a9f6e41990c937181d84c9?s=600" class="profile-img-circle" alt="Profile Picture">
-        </div>
-        <!-- Details Column -->
-        <div class="col-md-8">
-            <div class="card-body d-flex flex-column h-100 p-4">
-                <div class="card-header">
-                    <h2 class="card-title mb-0">Vinayak Sharma</h5>
-                    <p class="card-text mt-3">PhD in CS, Arizona State University</p>
-                </div>
-                <hr>
-                <div class="card-text mt-3">
-                    <p class="mb-1">Find me on: </p>    
-                </div>
-                <div class="mt-auto pt-3">
-                    <div class="social-icons d-flex gap-3">
-                        <a href="mailto:example@email.com" title="Email"><i class="fas fa-envelope"></i></a>
-                        <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-                        <a href="https://linkedin.com/in/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://github.com/" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+    <div class="card profile-card-rectangular">
+        <div class="row">
+            <!-- Image Column -->
+            <div class="col-md-4 profile-img-container">
+                <!-- Circular Profile Picture -->
+                <img src="https://gravatar.com/avatar/953d19833b6b06cb9f2adbefdcf626affa5f541296a9f6e41990c937181d84c9?s=600" class="profile-img-circle" alt="Profile Picture">
+            </div>
+            <!-- Details Column -->
+            <div class="col-md-8">
+                <div class="card-body d-flex flex-column h-100 p-4">
+                    <div class="card-header pb-2">
+                        <h2 class="card-title mb-2" style="font-weight: 500;">Vinayak Sharma</h2>
+                        <p class="card-text mb-2" style="font-size:1.5rem"><em>PhD in CS, Arizona State University</em></p>
+                    </div>
+                    <div class="card-text mt-3">
+                        <p class="mb-1">Find me on: </p>    
+                    </div>
+                    <div class="mt-3">
+                        <div class="social-icons d-flex gap-3">
+                            <a href="mailto:example@email.com" title="Email"><i class="fas fa-envelope"></i></a>
+                            <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                            <a href="https://linkedin.com/in/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div></div>
+</div>
             </div>
         </div>
     </div>
@@ -266,7 +266,7 @@
         <label for="paper-year-filter"> Year&nbsp:</label>
         
         
-        <select id="paper-year-filter" class="filter-select" data-filter-group="paper-year">
+        <select id="paper-year-filter" class="filter-select publication-filter-select" data-filter-group="paper-year">
           <option value="all">All</option>
             
                 <option value="2025">2025</option>
@@ -279,7 +279,7 @@
       </div>
       <div class="filter-group">
         <label for="paper-tag-filter">Tag&nbsp:</label>
-        <select id="paper-tag-filter" class="filter-select" data-filter-group="paper-tag">
+        <select id="paper-tag-filter" class="filter-select publication-filter-select" data-filter-group="paper-tag">
           <option value="all">All</option>
           <option value="Quantum Machine Learning">Quantum Machine Learning</option>
           <option value="Machine Learning">Machine Learning</option>
@@ -287,8 +287,8 @@
       </div>
     </div>
     <hr>
-    <div class="publications-list">
-        <ol class="bibliography"><li><div class="publication-item" data-paper-year="2025" data-paper-tag="Machine Learning">
+      <div class="publications-list">
+          <ol class="bibliography"><li><div class="publication-item" data-paper-year="2025" data-paper-tag="Machine Learning">
   <div class="row clearfix layout layout-left">
     <div class="col-xs-12 col-sm-9 col-md-10 col-print-12 inlines borderless">
 <a href="https://doi.org/10.1145/3735452.3735536" target="_blank" class="link"><h4 class="bibtitle">LUCI: Lightweight UI Command Interface
@@ -398,55 +398,380 @@
   <hr width="70%">
 </center> -->
 </li></ol>
-    </div>
+      </div>
     </div>
 </div>
+<br>
 
+
+
+
+<div class="container projects-container" id="projects">
+	<h3>Projects</h3>
+	<!-- Filter Controls -->
+
+	<div id="Projectfilters" class="filters">
+		<div class="filter-group">
+			<label for="project-area-filter"> Area: </label>
+			<select
+				id="project-area-filter"
+				class="filter-select project-filter-select"
+				data-filter-group="project-area"
+			>
+				<option value="all">All</option>
+				<option value="Quantum Machine Learning">
+					Quantum Machine Learning
+				</option>
+				<option value="Machine Learning">Machine Learning</option>
+				<option value="Web Development">Web Development</option>
+			</select>
+		</div>
+	</div>
+	<!-- Masonry grid container -->
+	<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+		 
+      
+
+<div class="project-item" data-project-area="Machine Learning">
+    <div class="col">
+        <div class="card project-card">
+            <div class="card-header">
+                <h2 class="text-center">Face De-Identification</h4>
+            </div>
+            <div class="card-body project-card-header">
+                <!-- Brief -->
+                <div class="text-muted text-center">
+                    <p><em> Scalable privacy preserving face de-identification </em></p>
+                </div>
+                <!-- GitHub Stats Card Image --><div class="repostats">
+                    
+                    <a href="https://github.com/vinayak19th/Aesthetic-Face-De-Identification" target="_blank">
+                        <img class="GitData" 
+                        style="" height=100
+                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=Aesthetic-Face-De-Identification&theme=tokyonight">
+                    </a>
+                </div><!-- Description -->
+                <div class="card-text project-card-text">
+                    <p>A scalable approach to preserving the privacy of bystanders in social media posts<br /></p>
+<ul>
+  <li>Entirely ‘<em>edge</em>’ system tested on low end android phones-</li>
+  <li>Client side nature makes it scalable as no server compute required for new nodes,</li>
+  <li>Edge compute improves privacy as unfiltered data never leaves the device</li>
+  <li>Aesthetics are preserved via custom filter implementation based on human tendecies</li>
+</ul>
+
+                </div>
+            </div>  
+            <div class="card-footer project-card-footer">
+                    <mark>&nbspTensorflow&nbsp</mark> 
+                
+                    <mark>&nbspOpenCV&nbsp</mark> 
+                
+                    <mark>&nbspAndroid&nbsp</mark> 
+                
+                    <mark>&nbspImage Filter&nbsp</mark> 
+                </div>
+        </div>
+    </div>
+</div>
+ 
+     
+      
+
+<div class="project-item" data-project-area="Quantum Machine Learning">
+    <div class="col">
+        <div class="card project-card">
+            <div class="card-header">
+                <h2 class="text-center">QML-Tutorials</h4>
+            </div>
+            <div class="card-body project-card-header">
+                <!-- Brief -->
+                <div class="text-muted text-center">
+                    <p><em> Set of tutorials to learn teach Quantum Machine Learning </em></p>
+                </div>
+                <!-- GitHub Stats Card Image --><div class="repostats">
+                    
+                    <a href="https://github.com/vinayak19th/QML-Tutorials" target="_blank">
+                        <img class="GitData" 
+                        style="" height=100
+                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=QML-Tutorials&theme=tokyonight">
+                    </a>
+                </div><!-- Description -->
+                <div class="card-text project-card-text">
+                    <p>A set of tutorials in Pennylane to teach <mark> Quantum Machine Learning</mark> convering:</p>
+<ul>
+  <li>Toy dataset generation using random quantum circuits</li>
+  <li>Basic Variational or Explicit Models</li>
+  <li>Data ReUploading Models</li>
+  <li>Quantum Kernel Classifiers or Implicit Models</li>
+</ul>
+
+                </div>
+            </div>  
+            <div class="card-footer project-card-footer">
+                    <mark>&nbspPennylane&nbsp</mark> 
+                
+                    <mark>&nbspTensorflow&nbsp</mark> 
+                
+                    <mark>&nbspNumpy&nbsp</mark> 
+                </div>
+        </div>
+    </div>
+</div>
+ 
+     
+      
+
+<div class="project-item" data-project-area="Machine Learning">
+    <div class="col">
+        <div class="card project-card">
+            <div class="card-header">
+                <h2 class="text-center">ARCNN-keras</h4>
+            </div>
+            <div class="card-body project-card-header">
+                <!-- Brief -->
+                <div class="text-muted text-center">
+                    <p><em> TF-keras implementation of ARCNN which removes JPEG compression artifacts </em></p>
+                </div>
+                <!-- GitHub Stats Card Image --><div class="repostats">
+                    
+                    <a href="https://github.com/vinayak19th/ARCNN-keras" target="_blank">
+                        <img class="GitData" 
+                        style="" height=100
+                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=ARCNN-keras&theme=tokyonight">
+                    </a>
+                </div><!-- Description -->
+                <div class="card-text project-card-text">
+                    <p>A tf-keras implementation of ARCNN mentioned in :<br /></p>
+<ul>
+  <li>Implemented ARCNN in tf.keras for easy of use</li>
+  <li>Created a novel “lite” version using dilated convolutions and reducing the number of parameters to half of that of Faster ARCNN (64k -&gt; 32k)</li>
+</ul>
+
+                </div>
+            </div>  
+            <div class="card-footer project-card-footer">
+                    <mark>&nbspTensorflow&nbsp</mark> 
+                
+                    <mark>&nbspKeras&nbsp</mark> 
+                
+                    <mark>&nbspDocker&nbsp</mark> 
+                
+                    <mark>&nbsptf.data&nbsp</mark> 
+                
+                    <mark>&nbspPIL&nbsp</mark> 
+                </div>
+        </div>
+    </div>
+</div>
+ 
+     
+      
+
+<div class="project-item" data-project-area="Web Development">
+    <div class="col">
+        <div class="card project-card">
+            <div class="card-header">
+                <h2 class="text-center">vinayak19th.github.io</h4>
+            </div>
+            <div class="card-body project-card-header">
+                <!-- Brief -->
+                <div class="text-muted text-center">
+                    <p><em> The code repo for this website and instructions </em></p>
+                </div>
+                <!-- GitHub Stats Card Image --><div class="repostats">
+                    
+                    <a href="https://github.com/vinayak19th/vinayak19th.github.io" target="_blank">
+                        <img class="GitData" 
+                        style="" height=100
+                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=vinayak19th.github.io&theme=tokyonight">
+                    </a>
+                </div><!-- Description -->
+                <div class="card-text project-card-text">
+                    <p>Website hosting my resume and profile. Notable Features include:</p>
+<ul>
+  <li>System persistent dark mode (Remembers your preference via cookies)</li>
+  <li>Live Github based Statistcs
+    <ul>
+      <li>Profie Statistics on the about page</li>
+      <li>Project statistics per repository in the project page</li>
+    </ul>
+  </li>
+  <li>Reactive design for mobile friendly operation</li>
+  <li>Tabbed Page for certifications for easy of reading and management</li>
+  <li>Header section with live links such as :
+    <ul>
+      <li>Direct whatsapp message</li>
+      <li>Medium Profile</li>
+      <li>Stack Overflow</li>
+      <li>etc</li>
+    </ul>
+  </li>
+  <li>Modular self generating based on yml datasheets</li>
+</ul>
+
+                </div>
+            </div>  
+            <div class="card-footer project-card-footer">
+                    <mark>&nbspJekyll&nbsp</mark> 
+                
+                    <mark>&nbspBootStrap&nbsp</mark> 
+                
+                    <mark>&nbspJQuery&nbsp</mark> 
+                
+                    <mark>&nbspSCSS&nbsp</mark> 
+                
+                    <mark>&nbspHTML5&nbsp</mark> 
+                </div>
+        </div>
+    </div>
+</div>
+ 
+     
+      
+
+<div class="project-item" data-project-area="Machine Learning">
+    <div class="col">
+        <div class="card project-card">
+            <div class="card-header">
+                <h2 class="text-center">LOW-RESOURCE ASR</h4>
+            </div>
+            <div class="card-body project-card-header">
+                <!-- Brief -->
+                <div class="text-muted text-center">
+                    <p><em> A project based on the BABEL Dataset from the US government </em></p>
+                </div>
+                <!-- GitHub Stats Card Image --><div class="repostats">
+                    
+                    <a href="https://github.com/vinayak19th/ASR-LOW-RESOURCE" target="_blank">
+                        <img class="GitData" 
+                        style="" height=100
+                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=ASR-LOW-RESOURCE&theme=tokyonight">
+                    </a>
+                </div><!-- Description -->
+                <div class="card-text project-card-text">
+                    <ul>
+  <li>An End-to-End Framework for performing automatic speech recognition on low-resource languages such as 
+Urdu and Pashto <br /></li>
+  <li>Created the framework based on ESPnet.</li>
+</ul>
+
+                </div>
+            </div>  
+            <div class="card-footer project-card-footer">
+                    <mark>&nbspKaldi&nbsp</mark> 
+                
+                    <mark>&nbspESPNet&nbsp</mark> 
+                
+                    <mark>&nbspBash&nbsp</mark> 
+                
+                    <mark>&nbspPyTorch&nbsp</mark> 
+                </div>
+        </div>
+    </div>
+</div>
+ 
+     
+      
+
+<div class="project-item" data-project-area="Quantum Machine Learning">
+    <div class="col">
+        <div class="card project-card">
+            <div class="card-header">
+                <h2 class="text-center">Quantum Machine Learning</h4>
+            </div>
+            <div class="card-body project-card-header">
+                <!-- Brief -->
+                <div class="text-muted text-center">
+                    <p><em> Implementations of code for the University of Toronto QML course </em></p>
+                </div>
+                <!-- GitHub Stats Card Image --><div class="repostats">
+                    
+                    <a href="https://github.com/vinayak19th/QUANTUM-ML" target="_blank">
+                        <img class="GitData" 
+                        style="" height=100
+                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=QUANTUM-ML&theme=tokyonight">
+                    </a>
+                </div><!-- Description -->
+                <div class="card-text project-card-text">
+                    <ul>
+  <li>Implementing various Quantum Machine Learning algorithms from the University of Toronto Course<br /></li>
+  <li>Implemented using the QISKit API from IBM</li>
+</ul>
+
+                </div>
+            </div>  
+            <div class="card-footer project-card-footer">
+                    <mark>&nbspQisKit&nbsp</mark> 
+                
+                    <mark>&nbspNumpy&nbsp</mark> 
+                </div>
+        </div>
+    </div>
+</div>
+ 
+    
+	</div>
+	<hr>
+</div>
+
+
+<!-- Script for filters -->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-    const filterSelects = document.querySelectorAll('.filter-select');
-    const publications = document.querySelectorAll('.publication-item');
+    function applyFilters(filterSelects,items) {
+        // Create an object to hold the current filter values
+        const activeFilters = {};
+        filterSelects.forEach(select => {
+            const filterGroup = select.getAttribute('data-filter-group');
+            activeFilters[filterGroup] = select.value;
+        });
 
-    function applyFilters() {
-    // Create an object to hold the current filter values
-    const activeFilters = {};
-    filterSelects.forEach(select => {
-        const filterGroup = select.getAttribute('data-filter-group');
-        activeFilters[filterGroup] = select.value;
-    });
+        // Loop through each publication and check if it matches ALL active filters
+        items.forEach(item => {
+            let isVisible = true; // Assume the item is visible by default
 
-    // Loop through each publication and check if it matches ALL active filters
-    publications.forEach(item => {
-        let isVisible = true; // Assume the item is visible by default
+            for (const group in activeFilters) {
+            const filterValue = activeFilters[group];
+            const itemValue = item.getAttribute(`data-${group}`);
+            
+            // If a filter is set (not 'all') and the item doesn't match, hide it
+            if (filterValue !== 'all' && itemValue !== filterValue) {
+                    isVisible = false;
+                    break; // No need to check other filters for this item
+                }
+            }
 
-        for (const group in activeFilters) {
-        const filterValue = activeFilters[group];
-        const itemValue = item.getAttribute(`data-${group}`);
-        
-        // If a filter is set (not 'all') and the item doesn't match, hide it
-        if (filterValue !== 'all' && itemValue !== filterValue) {
-            isVisible = false;
-            break; // No need to check other filters for this item
-        }
-        }
-
-        // Show or hide the item based on the final visibility status
-        if (isVisible) {
-        item.classList.remove('hidden');
-        } else {
-        item.classList.add('hidden');
-        }
-    });
+            // Show or hide the item based on the final visibility status
+            if (isVisible) {
+                item.classList.remove('hidden-item');
+            } else {
+                item.classList.add('hidden-item');
+            }
+        });
     }
 
-    // Add a 'change' event listener to each dropdown
-    filterSelects.forEach(select => {
-    select.addEventListener('change', applyFilters);
+    // Get publication items and filter selects
+    const publication_filterSelects = document.querySelectorAll('.publication-filter-select');
+    const publication_items = document.querySelectorAll('.publication-item');
+    // Publication filters on select change
+    publication_filterSelects.forEach(select => {
+        select.addEventListener('change',  () => {
+            applyFilters(publication_filterSelects,publication_items);
+        });
+    });
+
+    // Get project items and filter selects
+    const project_filterSelects = document.querySelectorAll('.project-filter-select');
+    const project_items = document.querySelectorAll('.project-item');
+    // Apply project filters on select change
+    project_filterSelects.forEach(select => {
+        select.addEventListener('change',  () => {
+            applyFilters(project_filterSelects, project_items);
+        });
     });
 });
 </script>
-<br>
-
 
 
     </main>
