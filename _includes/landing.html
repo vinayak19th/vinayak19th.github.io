@@ -13,6 +13,14 @@
             <h1 class="display-2 landing"> Hey There.</h1>
             <h2>I'm Vinayak Sharma</h2>
             {{ site.data.about.content | strip | markdownify }}
+
+            <p style="text-align: center;">
+            <button id="navbarcollapse" class="badge-certificate ExploreButton" type="button" data-toggle="collapse" data-target="#pagenavs">
+                <span class="sr-only">Toggle navigation</span>
+                Explore
+            </button>
+            <button id="wiggleButton" class="badge-certificate ExploreText">Explore</button>
+             around my site to know more about me.</p>
         </div>
     </div>
     <div class="icons-pad">
@@ -21,3 +29,28 @@
     </div>
 </div>
 
+
+<script>
+    // Get references to the button and the list text spans
+    const wiggleButton = document.getElementById('wiggleButton');
+    const listItems = document.querySelectorAll('#pagenavs .page-jump a');
+
+    // Add a click event listener to the button
+    wiggleButton.addEventListener('click', () => {
+        // Loop through each list item
+        listItems.forEach(item => {
+            // First, remove the class if it exists to reset the animation
+            item.classList.remove('wiggle');
+            
+            // We use a tiny timeout to allow the browser to remove the class
+            // before we add it back. This ensures the animation re-triggers.
+            setTimeout(() => {
+                item.classList.add('wiggle');
+            }, 1);
+            // Remove wiggle class after animation duration to allow re-triggering
+            setTimeout(() => {
+                item.classList.remove('wiggle');
+            }, 1000);
+        });
+    });
+</script>

@@ -19,8 +19,9 @@ Based on : [modern-resume-theme](https://github.com/sproogen/modern-resume-theme
 
 ## Notable Features:
 * System persistent dark mode (Remembers your preference via cookies)
-* Auto Generating Publications from .bib file. 
-* Live Github based Statistcs
+* Auto Generating **Filterable Publications List** from .bib file. 
+* Filtered Project List
+* Live Github Stats and Repo cards
     * Profie Statistics on the about page
     * Project statistics per repository in the project page
 * Reactive design for mobile friendly operation
@@ -184,6 +185,9 @@ The [_data](https://github.com/vinayak19th/vinayak19th.github.io/tree/master/_da
 9. [pages.yml](https://github.com/vinayak19th/vinayak19th.github.io/blob/master/_data/pages.yml):
     * Used to populate the navbar.
     * Leave it unchanged unless you are adding new pages
+10. [papers.bib](https://github.com/vinayak19th/vinayak19th.github.io/blob/master/_data/papers.bib):
+    * Directly add your publications here in bibtex format. 
+    * Add a `tag` entry in the bibitem to create a filterable tag based system  
 
 You can simply replace the data in the yml files to really quickly build up your website.
 

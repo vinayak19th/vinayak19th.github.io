@@ -22,6 +22,18 @@ $navbar-brand-font-size: 1.8rem;
     text-transform: lowercase;
 }
 
+.ExploreButton{
+    border-radius: 1rem !important;
+    @media (min-width: 1000px){
+        display: none;
+    }
+}
+
+.ExploreText{
+    margin-right: 0.5rem;
+    border-radius: 1rem !important;
+}
+
 @media (max-width: 1000px) {
     .navbar-header {
       float: none;
@@ -59,6 +71,9 @@ $navbar-brand-font-size: 1.8rem;
     }
     .navbar-header{
         width: 100vw;
+    }
+    .ExploreText{
+        display: none;
     }
 }
 
@@ -280,6 +295,7 @@ button:hover {
 }
 
 .dropdown-divider{
+    border-color : white;
     @media screen and (min-width: 1000px) {
         display: none;
     }
@@ -291,4 +307,38 @@ button:hover {
             display: inline-block;
             margin-right: 1rem;
     }
+}
+
+// Adding the wiggle animation to the Explore button
+
+/* The wiggle animation keyframes */
+@keyframes wiggle {
+    0%, 7% {
+        transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-5deg);
+    }
+    20% {
+        transform: rotateZ(3deg);
+    }
+    25% {
+        transform: rotateZ(-3deg);
+    }
+    30% {
+        transform: rotateZ(2deg);
+    }
+    35% {
+        transform: rotateZ(-2deg);
+    }
+    40%, 100% {
+        transform: rotateZ(0);
+    }
+}
+
+/* The class that will be added to the list items */
+.wiggle {
+    animation: wiggle 2s ease-in-out;
+    /* Ensures the animation runs once per click */
+    animation-iteration-count: 1;
 }
