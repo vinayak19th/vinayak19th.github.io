@@ -27,17 +27,6 @@ hr {
     border-color: #1e222b;
 }
 
-.repostats {
-    display: flex;
-    justify-content: left;
-    margin-bottom: 2rem;
-
-    @media screen and (max-width: 768px) {
-        display: flex;
-        justify-content: center;
-    }
-}
-
 .header-right p {
     margin-bottom: 3px;
 }

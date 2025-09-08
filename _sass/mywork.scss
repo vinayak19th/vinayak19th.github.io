@@ -85,12 +85,20 @@ h2.bibliography{
     }
 }
 
+
+.dark{
+  .project-card {
+    background-color: #181825 !important;
+  }
+}
+
+
 .project-card-header {
   flex-shrink: 0;
 }
 
 .project-card-text {
-  height: 150px; 
+  height: 200px; 
   overflow-y: scroll;
 
   @media screen and (max-width: 768px) {
@@ -116,4 +124,23 @@ h2.bibliography{
     width: 100%;
     border-radius: 0.375rem; /* Match Bootstrap's card rounding */
     border: 1px solid #dee2e6;
+}
+
+.repostats {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    a{
+      width: 100%;
+    }
+}
+
+.GitData {
+    width: 100% !important;
 }

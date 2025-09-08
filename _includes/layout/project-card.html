@@ -14,7 +14,7 @@
             <div class="repostats">
                 {% assign data = include.item.github | split:"/" %}
                 <a href="https://github.com/{{ include.item.github }}" target="_blank">
-                    <img class="GitData" style="" src="https://github-readme-stats.vercel.app/api/pin/?username={{data[0]}}&repo={{data[1]}}&theme=tokyonight">
+                    <img class="GitData" style="" src="https://github-readme-stats.vercel.app/api/pin/?username={{data[0]}}&repo={{data[1]}}&theme=material-palenight">
                 </a>
             </div>
             {%- endif -%} {{ include.item.description | strip | markdownify }}
@@ -39,8 +39,8 @@
                     {% assign data = include.item.github | split:"/" %}
                     <a href="https://github.com/{{ include.item.github }}" target="_blank">
                         <img class="GitData" 
-                        style="" height=100
-                        src="https://github-readme-stats.vercel.app/api/pin/?username={{data[0]}}&repo={{data[1]}}&theme=tokyonight">
+                        height=100 width=313 
+                        src="https://github-readme-stats.vercel.app/api/pin/?username={{data[0]}}&repo={{data[1]}}&card_width=313&theme=nord">
                     </a>
                 </div>
                 {%- endif -%} 

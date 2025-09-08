@@ -301,8 +301,8 @@
                     
                     <a href="https://github.com/vinayak19th/Aesthetic-Face-De-Identification" target="_blank">
                         <img class="GitData" 
-                        style="" height=100
-                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=Aesthetic-Face-De-Identification&theme=tokyonight">
+                        height=100 width=313 
+                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=Aesthetic-Face-De-Identification&card_width=313&theme=nord">
                     </a>
                 </div><!-- Description -->
                 <div class="card-text project-card-text">
@@ -347,8 +347,8 @@
                     
                     <a href="https://github.com/vinayak19th/QML-Tutorials" target="_blank">
                         <img class="GitData" 
-                        style="" height=100
-                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=QML-Tutorials&theme=tokyonight">
+                        height=100 width=313 
+                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=QML-Tutorials&card_width=313&theme=nord">
                     </a>
                 </div><!-- Description -->
                 <div class="card-text project-card-text">
@@ -391,8 +391,8 @@
                     
                     <a href="https://github.com/vinayak19th/ARCNN-keras" target="_blank">
                         <img class="GitData" 
-                        style="" height=100
-                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=ARCNN-keras&theme=tokyonight">
+                        height=100 width=313 
+                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=ARCNN-keras&card_width=313&theme=nord">
                     </a>
                 </div><!-- Description -->
                 <div class="card-text project-card-text">
@@ -437,8 +437,8 @@
                     
                     <a href="https://github.com/vinayak19th/vinayak19th.github.io" target="_blank">
                         <img class="GitData" 
-                        style="" height=100
-                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=vinayak19th.github.io&theme=tokyonight">
+                        height=100 width=313 
+                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=vinayak19th.github.io&card_width=313&theme=nord">
                     </a>
                 </div><!-- Description -->
                 <div class="card-text project-card-text">
@@ -499,8 +499,8 @@
                     
                     <a href="https://github.com/vinayak19th/ASR-LOW-RESOURCE" target="_blank">
                         <img class="GitData" 
-                        style="" height=100
-                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=ASR-LOW-RESOURCE&theme=tokyonight">
+                        height=100 width=313 
+                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=ASR-LOW-RESOURCE&card_width=313&theme=nord">
                     </a>
                 </div><!-- Description -->
                 <div class="card-text project-card-text">
@@ -543,8 +543,8 @@ Urdu and Pashto <br /></li>
                     
                     <a href="https://github.com/vinayak19th/QUANTUM-ML" target="_blank">
                         <img class="GitData" 
-                        style="" height=100
-                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=QUANTUM-ML&theme=tokyonight">
+                        height=100 width=313 
+                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=QUANTUM-ML&card_width=313&theme=nord">
                     </a>
                 </div><!-- Description -->
                 <div class="card-text project-card-text">
