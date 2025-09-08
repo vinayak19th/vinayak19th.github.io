@@ -13,7 +13,7 @@ if (theme == "dark") {
     circle_toggle.innerHTML = lighticon;
     var items = document.getElementsByClassName("GitData");
     for (var i = 0; i < items.length; i++) {
-        items[i].src = items[i].src.replace('nord', 'nord');
+        items[i].src = items[i].src.replace('ocean_dark', 'tokyonight');
     }
 }
 const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');
@@ -45,7 +45,7 @@ function modeSwitcher() {
         circle_toggle.innerHTML = darkicon;
         var items = document.getElementsByClassName("GitData");
         for (var i = 0; i < items.length; i++) {
-            items[i].src = items[i].src.replace('nord', 'nord');
+            items[i].src = items[i].src.replace('ocean_dark', 'tokyonight');
         }
     } else {
         document.documentElement.setAttribute('data-theme', 'dark');
@@ -53,7 +53,7 @@ function modeSwitcher() {
         circle_toggle.innerHTML = lighticon;
         var items = document.getElementsByClassName("GitData");
         for (var i = 0; i < items.length; i++) {
-            items[i].src = items[i].src.replace('nord', 'nord');
+            items[i].src = items[i].src.replace('tokyonight', 'ocean_dark');
         }
     }
 }

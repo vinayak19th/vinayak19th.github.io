@@ -57,7 +57,11 @@ $navbar-brand-font-size: 1.8rem;
       padding-top: 10px;
       padding-bottom: 10px;
     }
-  }
+    .navbar-header{
+        width: 100vw;
+    }
+}
+
 .navbar-center {
     float: none;
     display: inline-block;
