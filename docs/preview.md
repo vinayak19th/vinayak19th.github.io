@@ -38,7 +38,7 @@ A preview of how the key features appear on desktop or large screen devices
     	</td>
     </tr>
     <tr>
-        <td><center>Git Project Stats</center></td>
+        <td><center>Filtered Projects Section</center></td>
     	<td>
     		<center><img src="./ProjectStats/Light.png"></center>
     	</td>
@@ -56,7 +56,7 @@ A preview of how the key features appear on desktop or large screen devices
     	</td>
     </tr>
 	<tr>
-        <td><center>Publication List generated from .bib </center></td>
+        <td><center>Filtered Publication List generated from .bib </center></td>
     	<td>
     		<center><img src="./Publications/LightMode.png"></center>
     	</td>
