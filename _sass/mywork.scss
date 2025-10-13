@@ -144,3 +144,28 @@ h2.bibliography{
 .projectgit {
     width: 100% !important;
 }
+
+.badge-paper-tag{
+    background-color: #2E3440;
+    color: white;
+}
+
+.bibentry-print{
+  background-color: #ebebeb;
+  width: 85%;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+
+.dark{
+    .badge-paper-tag{
+        background-color: #a6adc8;
+        color: #2E3440;
+    }
+  .bibentry-print{
+    background-color: #3b3b46;
+    color: white;
+  }
+}
