@@ -1,4 +1,5 @@
-FROM bretfisher/jekyll
+FROM bretfisher/jekyll:latest
 
-RUN bundle --full-index
+COPY Gemfile Gemfile.lock modern-resume-theme.gemspec ./
+RUN bundle install
 
