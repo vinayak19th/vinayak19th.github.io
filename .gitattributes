@@ -1,2 +1,1 @@
-node_modules/ merge=ours
-_site/ merge=oursgit 
+node_modules/* merge=ours
