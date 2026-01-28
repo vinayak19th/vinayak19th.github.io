@@ -15,7 +15,12 @@
       </a>
       {%- endif -%}
       <p><em>{{ entry.author }} ; {{ entry.year }}</em></p>
-      <p><span class="badge badge-paper-tag">{{ entry.tag }}</span></p>
+      <p>
+        {% assign tags = entry.tag | split: ", " %}
+        {% for tag in tags %}
+        <span class="badge badge-paper-tag">{{ tag }}</span>
+        {% endfor %}
+      </p>
     </div>
     <div class="col-xs-12 col-sm-3 col-md-2 col-print-12 borderless inlines inlines-right">
       <p><button class="ref-button" type="button" data-toggle="collapse" data-target="#{{ entry.key }}"

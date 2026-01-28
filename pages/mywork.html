@@ -11,6 +11,26 @@ permalink: /mywork/
 <!-- Script for filters -->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+    function populatePaperFilters(items) {
+        const uniqueTags = new Set();
+        items.forEach(item => {
+            const rawTags = item.getAttribute('data-paper-tag');
+            if (rawTags) {
+                // Split by comma and trim whitespace
+                rawTags.split(',').forEach(tag => uniqueTags.add(tag.trim()));
+            }
+        });
+
+        const select = document.getElementById('paper-tag-filter');
+        // Convert Set to Array and sort, then add options
+        Array.from(uniqueTags).sort().forEach(tag => {
+            const option = document.createElement('option');
+            option.value = tag;
+            option.textContent = tag;
+            select.appendChild(option);
+        });
+    }
+
     function applyFilters(filterSelects,items) {
         // Create an object to hold the current filter values
         const activeFilters = {};
@@ -29,8 +49,8 @@ document.addEventListener('DOMContentLoaded', function () {
             
             // If a filter is set (not 'all') and the item doesn't match, hide it
             if (filterValue !== 'all') {
-                if(group === 'project-stack') {
-                    // Loose matching for stack (contains), case insensitive
+                if(group === 'project-stack' || group === 'paper-tag') {
+                    // Loose matching for stack/tags (contains), case insensitive
                      if (!itemValue || !itemValue.toLowerCase().includes(filterValue.toLowerCase())) {
                         isVisible = false;
                         break;
@@ -57,6 +77,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // Get publication items and filter selects
     const publication_filterSelects = document.querySelectorAll('.publication-filter-select');
     const publication_items = document.querySelectorAll('.publication-item');
+    
+    // Populate paper filters dynamically
+    if (publication_items.length > 0) {
+        populatePaperFilters(publication_items);
+    }
+    
     // Publication filters on select change
     publication_filterSelects.forEach(select => {
         select.addEventListener('change',  () => {
