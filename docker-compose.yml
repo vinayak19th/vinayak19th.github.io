@@ -2,7 +2,7 @@ services:
     jekyll:
         image: vinayak1998th/resume-container
         container_name: resume-run
-        command: jekyll serve --watch --force_polling --verbose --host 0.0.0.0
+        command: bundle exec jekyll serve --watch --force_polling --verbose --host 0.0.0.0
         ports:
             - 4000:4000
             - 35729:35729

@@ -61,6 +61,7 @@ GEM
     ethon (0.17.0)
       ffi (>= 1.15.0)
     eventmachine (1.2.7)
+    ffi (1.17.2-x86_64-linux-gnu)
     ffi (1.17.2-x86_64-linux-musl)
     fiber-annotation (0.2.0)
     fiber-local (1.1.0)
@@ -127,6 +128,8 @@ GEM
     metrics (0.12.2)
     namae (1.2.0)
       racc (~> 1.7)
+    nokogiri (1.18.9-x86_64-linux-gnu)
+      racc (~> 1.4)
     nokogiri (1.18.9-x86_64-linux-musl)
       racc (~> 1.4)
     observer (0.1.2)
@@ -173,6 +176,7 @@ GEM
     zeitwerk (2.6.18)
 
 PLATFORMS
+  x86_64-linux
   x86_64-linux-musl
 
 DEPENDENCIES

@@ -56,7 +56,7 @@ Would appreciate contributions towards these bug fixes
 
 ### Docker
 
-If you have docker installed you can simply run `docker-compose up` to launch the site in a container, it will then be hosted at `http://localhost:4000`
+If you have docker installed you can simply run `docker compose up` to launch the site in a container, it will then be hosted at `http://localhost:4000`
 
 ## Installation & setup guide
 This template is designed to be hosted using GitHub pages and so that's what these instructions will cover. If you plan on hosting it seperately then there might be some extra steps that we wont cover.
@@ -91,7 +91,7 @@ where username should be your GitHub ID and **copy over <u>all</u> the content f
 ### Step 1 : Local static generation
 You can generate your entire website locally using :
 ```bash
-$ docker-compose up
+$ docker compose up
 ```
 This will generate the website and run a local server to view the website
 
