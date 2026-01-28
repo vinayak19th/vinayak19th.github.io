@@ -466,11 +466,70 @@
 				<option value="Web Development">Web Development</option>
 			</select>
 		</div>
+
+        <!-- Stack Filter -->
+        
+        
+        
+
+        <div class="filter-group">
+            <label for="project-stack-filter"> Tech Stack: </label>
+            <select
+                id="project-stack-filter"
+                class="filter-select project-filter-select"
+                data-filter-group="project-stack"
+            >
+                <option value="all">All</option>
+                
+                    <option value="Android">Android</option>
+                
+                    <option value="Bash">Bash</option>
+                
+                    <option value="BootStrap">BootStrap</option>
+                
+                    <option value="Docker">Docker</option>
+                
+                    <option value="ESPNet">ESPNet</option>
+                
+                    <option value="HTML5">HTML5</option>
+                
+                    <option value="Image Filter">Image Filter</option>
+                
+                    <option value="JAX">JAX</option>
+                
+                    <option value="JQuery">JQuery</option>
+                
+                    <option value="Jekyll">Jekyll</option>
+                
+                    <option value="Kaldi">Kaldi</option>
+                
+                    <option value="Keras">Keras</option>
+                
+                    <option value="Numpy">Numpy</option>
+                
+                    <option value="OpenCV">OpenCV</option>
+                
+                    <option value="PIL">PIL</option>
+                
+                    <option value="PennyLane">PennyLane</option>
+                
+                    <option value="PyTorch">PyTorch</option>
+                
+                    <option value="QisKit">QisKit</option>
+                
+                    <option value="SCSS">SCSS</option>
+                
+                    <option value="TensorFlow">TensorFlow</option>
+                
+                    <option value="tf.data">tf.data</option>
+                
+            </select>
+        </div>
 	</div>
 	<!-- Masonry grid container -->
 	<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 		 
-      <div class="project-item" data-project-area="Machine Learning">
+      <div class="project-item" data-project-area="Machine Learning" data-project-stack="TensorFlow OpenCV Android Image Filter">
     <div class="col">
         <div class="card project-card">
             <div class="card-header">
@@ -501,7 +560,7 @@
                 </div>
             </div>  
             <div class="card-footer project-card-footer">
-                    <mark>&nbspTensorflow&nbsp</mark> 
+                    <mark>&nbspTensorFlow&nbsp</mark> 
                 
                     <mark>&nbspOpenCV&nbsp</mark> 
                 
@@ -514,7 +573,7 @@
 </div>
  
      
-      <div class="project-item" data-project-area="Quantum Machine Learning">
+      <div class="project-item" data-project-area="Quantum Machine Learning" data-project-stack="PennyLane TensorFlow Numpy">
     <div class="col">
         <div class="card project-card">
             <div class="card-header">
@@ -545,9 +604,9 @@
                 </div>
             </div>  
             <div class="card-footer project-card-footer">
-                    <mark>&nbspPennylane&nbsp</mark> 
+                    <mark>&nbspPennyLane&nbsp</mark> 
                 
-                    <mark>&nbspTensorflow&nbsp</mark> 
+                    <mark>&nbspTensorFlow&nbsp</mark> 
                 
                     <mark>&nbspNumpy&nbsp</mark> 
                 </div>
@@ -556,7 +615,7 @@
 </div>
  
      
-      <div class="project-item" data-project-area="Machine Learning">
+      <div class="project-item" data-project-area="Machine Learning" data-project-stack="TensorFlow Keras Docker tf.data PIL">
     <div class="col">
         <div class="card project-card">
             <div class="card-header">
@@ -585,7 +644,7 @@
                 </div>
             </div>  
             <div class="card-footer project-card-footer">
-                    <mark>&nbspTensorflow&nbsp</mark> 
+                    <mark>&nbspTensorFlow&nbsp</mark> 
                 
                     <mark>&nbspKeras&nbsp</mark> 
                 
@@ -600,7 +659,7 @@
 </div>
  
      
-      <div class="project-item" data-project-area="Web Development">
+      <div class="project-item" data-project-area="Web Development" data-project-stack="Jekyll BootStrap JQuery SCSS HTML5">
     <div class="col">
         <div class="card project-card">
             <div class="card-header">
@@ -660,7 +719,7 @@
 </div>
  
      
-      <div class="project-item" data-project-area="Machine Learning">
+      <div class="project-item" data-project-area="Machine Learning" data-project-stack="Kaldi ESPNet Bash PyTorch">
     <div class="col">
         <div class="card project-card">
             <div class="card-header">
@@ -702,7 +761,7 @@ Urdu and Pashto <br /></li>
 </div>
  
      
-      <div class="project-item" data-project-area="Quantum Machine Learning">
+      <div class="project-item" data-project-area="Quantum Machine Learning" data-project-stack="QisKit Numpy">
     <div class="col">
         <div class="card project-card">
             <div class="card-header">
@@ -739,7 +798,7 @@ Urdu and Pashto <br /></li>
 </div>
  
      
-      <div class="project-item" data-project-area="Quantum Machine Learning">
+      <div class="project-item" data-project-area="Quantum Machine Learning" data-project-stack="PennyLane Keras TensorFlow JAX PyTorch">
     <div class="col">
         <div class="card project-card">
             <div class="card-header">
@@ -808,10 +867,21 @@ document.addEventListener('DOMContentLoaded', function () {
             const itemValue = item.getAttribute(`data-${group}`);
             
             // If a filter is set (not 'all') and the item doesn't match, hide it
-            if (filterValue !== 'all' && itemValue !== filterValue) {
-                    isVisible = false;
-                    break; // No need to check other filters for this item
+            if (filterValue !== 'all') {
+                if(group === 'project-stack') {
+                    // Loose matching for stack (contains), case insensitive
+                     if (!itemValue || !itemValue.toLowerCase().includes(filterValue.toLowerCase())) {
+                        isVisible = false;
+                        break;
+                    }
+                } else {
+                    // Exact matching for others (like area)
+                    if (itemValue !== filterValue) {
+                        isVisible = false;
+                        break; // No need to check other filters for this item
+                    }
                 }
+            }
             }
 
             // Show or hide the item based on the final visibility status
