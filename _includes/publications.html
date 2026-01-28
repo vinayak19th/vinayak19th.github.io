@@ -2,38 +2,67 @@
     <h3>{{ site.publication.title | default: "Publications" }}</h3>
     <div class="biblography-container">
     <div id="Paperfilters" class="filters d-flex justify-content-center align-items-center flex-wrap gap-3">
+
       <div class="filter-group">
         <label for="paper-year-start">Start Year:</label>
         {% assign start_year = 2023 %}
         {% assign current_year = 'now' | date: "%Y" | plus: 0 %}
-        <select id="paper-year-start" class="filter-select publication-filter-select" data-filter-group="paper-year-min">
-          <option value="all">All</option>
-            {% for year in (start_year..current_year) reversed %}
-                <option value="{{ year }}">{{ year }}</option>
-            {% endfor %}
-        </select>
+        <div class="custom-dropdown">
+            <button class="custom-dropdown-toggle" type="button">All</button>
+            <div class="custom-dropdown-menu">
+                <input type="text" class="dropdown-search" placeholder="Search...">
+                <div class="dropdown-options">
+                    <div class="dropdown-option" data-value="all">All</div>
+                    {% for year in (start_year..current_year) reversed %}
+                        <div class="dropdown-option" data-value="{{ year }}">{{ year }}</div>
+                    {% endfor %}
+                </div>
+            </div>
+            <input type="hidden" id="paper-year-start" class="filter-select publication-filter-select" data-filter-group="paper-year-min" value="all">
+        </div>
         &nbsp;
         <label for="paper-year-end">End Year:</label>
-        <select id="paper-year-end" class="filter-select publication-filter-select" data-filter-group="paper-year-max">
-          <option value="all">All</option>
-            {% for year in (start_year..current_year) reversed %}
-                <option value="{{ year }}">{{ year }}</option>
-            {% endfor %}
-        </select>
+        <div class="custom-dropdown">
+            <button class="custom-dropdown-toggle" type="button">All</button>
+            <div class="custom-dropdown-menu">
+                <input type="text" class="dropdown-search" placeholder="Search...">
+                <div class="dropdown-options">
+                    <div class="dropdown-option" data-value="all">All</div>
+                    {% for year in (start_year..current_year) reversed %}
+                        <div class="dropdown-option" data-value="{{ year }}">{{ year }}</div>
+                    {% endfor %}
+                </div>
+            </div>
+            <input type="hidden" id="paper-year-end" class="filter-select publication-filter-select" data-filter-group="paper-year-max" value="all">
+        </div>
       </div>
       <div class="vr"></div>
       <div class="filter-group">
         <label for="paper-tag-filter">Tag&nbsp:</label>
-        <select id="paper-tag-filter" class="filter-select publication-filter-select" data-filter-group="paper-tag">
-          <option value="all">All</option>
-          </select>
+        <div class="custom-dropdown">
+            <button class="custom-dropdown-toggle" type="button">All</button>
+            <div class="custom-dropdown-menu">
+                <input type="text" class="dropdown-search" placeholder="Search...">
+                <div class="dropdown-options" id="paper-tag-filter-options">
+                    <div class="dropdown-option" data-value="all">All</div>
+                </div>
+            </div>
+            <input type="hidden" id="paper-tag-filter" class="filter-select publication-filter-select" data-filter-group="paper-tag" value="all">
+        </div>
       </div>
       <div class="vr"></div>
       <div class="filter-group">
         <label for="paper-venue-filter">Venue&nbsp:</label>
-        <select id="paper-venue-filter" class="filter-select publication-filter-select" data-filter-group="paper-venue">
-          <option value="all">All</option>
-          </select>
+        <div class="custom-dropdown">
+            <button class="custom-dropdown-toggle" type="button">All</button>
+            <div class="custom-dropdown-menu">
+                <input type="text" class="dropdown-search" placeholder="Search...">
+                <div class="dropdown-options" id="paper-venue-filter-options">
+                    <div class="dropdown-option" data-value="all">All</div>
+                </div>
+            </div>
+            <input type="hidden" id="paper-venue-filter" class="filter-select publication-filter-select" data-filter-group="paper-venue" value="all">
+        </div>
       </div>
     </div>
     <hr>

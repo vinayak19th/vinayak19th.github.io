@@ -267,20 +267,22 @@
 	<!-- Filter Controls -->
 
 	<div id="Projectfilters" class="filters d-flex justify-content-center align-items-center flex-wrap gap-3">
-		<div class="filter-group">
+
+        <div class="filter-group">
 			<label for="project-area-filter"> Area: </label>
-			<select
-				id="project-area-filter"
-				class="filter-select project-filter-select"
-				data-filter-group="project-area"
-			>
-				<option value="all">All</option>
-				<option value="Quantum Machine Learning">
-					Quantum Machine Learning
-				</option>
-				<option value="Machine Learning">Machine Learning</option>
-				<option value="Web Development">Web Development</option>
-			</select>
+            <div class="custom-dropdown">
+                <button class="custom-dropdown-toggle" type="button">All</button>
+                <div class="custom-dropdown-menu">
+                    <input type="text" class="dropdown-search" placeholder="Search...">
+                    <div class="dropdown-options">
+                        <div class="dropdown-option" data-value="all">All</div>
+                        <div class="dropdown-option" data-value="Quantum Machine Learning">Quantum Machine Learning</div>
+                        <div class="dropdown-option" data-value="Machine Learning">Machine Learning</div>
+                        <div class="dropdown-option" data-value="Web Development">Web Development</div>
+                    </div>
+                </div>
+                <input type="hidden" id="project-area-filter" class="filter-select project-filter-select" data-filter-group="project-area" value="all">
+            </div>
 		</div>
 
         <!-- Stack Filter -->
@@ -291,56 +293,59 @@
 
         <div class="filter-group">
             <label for="project-stack-filter"> Tech Stack: </label>
-            <select
-                id="project-stack-filter"
-                class="filter-select project-filter-select"
-                data-filter-group="project-stack"
-            >
-                <option value="all">All</option>
-                
-                    <option value="Android">Android</option>
-                
-                    <option value="Bash">Bash</option>
-                
-                    <option value="BootStrap">BootStrap</option>
-                
-                    <option value="Docker">Docker</option>
-                
-                    <option value="ESPNet">ESPNet</option>
-                
-                    <option value="HTML5">HTML5</option>
-                
-                    <option value="Image Filter">Image Filter</option>
-                
-                    <option value="JAX">JAX</option>
-                
-                    <option value="JQuery">JQuery</option>
-                
-                    <option value="Jekyll">Jekyll</option>
-                
-                    <option value="Kaldi">Kaldi</option>
-                
-                    <option value="Keras">Keras</option>
-                
-                    <option value="Numpy">Numpy</option>
-                
-                    <option value="OpenCV">OpenCV</option>
-                
-                    <option value="PIL">PIL</option>
-                
-                    <option value="PennyLane">PennyLane</option>
-                
-                    <option value="PyTorch">PyTorch</option>
-                
-                    <option value="QisKit">QisKit</option>
-                
-                    <option value="SCSS">SCSS</option>
-                
-                    <option value="TensorFlow">TensorFlow</option>
-                
-                    <option value="tf.data">tf.data</option>
-                
-            </select>
+            <div class="custom-dropdown">
+                <button class="custom-dropdown-toggle" type="button">All</button>
+                <div class="custom-dropdown-menu">
+                    <input type="text" class="dropdown-search" placeholder="Search...">
+                    <div class="dropdown-options">
+                        <div class="dropdown-option" data-value="all">All</div>
+                        
+                            <div class="dropdown-option" data-value="Android">Android</div>
+                        
+                            <div class="dropdown-option" data-value="Bash">Bash</div>
+                        
+                            <div class="dropdown-option" data-value="BootStrap">BootStrap</div>
+                        
+                            <div class="dropdown-option" data-value="Docker">Docker</div>
+                        
+                            <div class="dropdown-option" data-value="ESPNet">ESPNet</div>
+                        
+                            <div class="dropdown-option" data-value="HTML5">HTML5</div>
+                        
+                            <div class="dropdown-option" data-value="Image Filter">Image Filter</div>
+                        
+                            <div class="dropdown-option" data-value="JAX">JAX</div>
+                        
+                            <div class="dropdown-option" data-value="JQuery">JQuery</div>
+                        
+                            <div class="dropdown-option" data-value="Jekyll">Jekyll</div>
+                        
+                            <div class="dropdown-option" data-value="Kaldi">Kaldi</div>
+                        
+                            <div class="dropdown-option" data-value="Keras">Keras</div>
+                        
+                            <div class="dropdown-option" data-value="Numpy">Numpy</div>
+                        
+                            <div class="dropdown-option" data-value="OpenCV">OpenCV</div>
+                        
+                            <div class="dropdown-option" data-value="PIL">PIL</div>
+                        
+                            <div class="dropdown-option" data-value="PennyLane">PennyLane</div>
+                        
+                            <div class="dropdown-option" data-value="PyTorch">PyTorch</div>
+                        
+                            <div class="dropdown-option" data-value="QisKit">QisKit</div>
+                        
+                            <div class="dropdown-option" data-value="SCSS">SCSS</div>
+                        
+                            <div class="dropdown-option" data-value="TensorFlow">TensorFlow</div>
+                        
+                            <div class="dropdown-option" data-value="tf.data">tf.data</div>
+                        
+                    </div>
+                </div>
+                <input type="hidden" id="project-stack-filter" class="filter-select project-filter-select" data-filter-group="project-stack" value="all">
+            </div>
         </div>
 	</div>
 	<hr>

@@ -209,3 +209,110 @@ h2.bibliography{
     }
 }
 
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 1.3rem;
+    max-width: 200px;
+    vertical-align: middle;
+}
+
+.custom-dropdown-toggle {
+    padding: 5px 10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ececec;
+    color: #333;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.3rem;
+}
+
+.custom-dropdown-toggle::after {
+    content: '▼';
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+.custom-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 105%;
+    left: 0;
+    z-index: 1000;
+    min-width: 100%;
+    background: #ececec;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-height: 300px; /* Scrollable if too many items */
+}
+
+.custom-dropdown.open .custom-dropdown-menu {
+    display: block;
+}
+
+.dropdown-search {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #eee;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: #ececec;
+    color: #333;
+}
+
+.dropdown-options {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.dropdown-option {
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: background-color 0.2s;
+    color: #333;
+}
+
+.dropdown-option:hover {
+    background-color: #f0f0f0;
+}
+
+/* Dark mode support */
+.dark {
+    .custom-dropdown-toggle {
+        background-color: #3b3b46;
+        color: white;
+        border-color: #555;
+    }
+    
+    .custom-dropdown-menu {
+        background-color: #3b3b46;
+        border-color: #555;
+    }
+
+    .dropdown-search {
+        background-color: #2E3440;
+        color: white;
+        border-bottom-color: #555;
+    }
+
+    .dropdown-option {
+         color: white;
+    }
+
+    .dropdown-option:hover {
+        background-color: #2E3440;
+    }
+}

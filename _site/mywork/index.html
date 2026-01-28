@@ -264,50 +264,79 @@
     <h3>Publications</h3>
     <div class="biblography-container">
     <div id="Paperfilters" class="filters d-flex justify-content-center align-items-center flex-wrap gap-3">
+
       <div class="filter-group">
         <label for="paper-year-start">Start Year:</label>
         
         
-        <select id="paper-year-start" class="filter-select publication-filter-select" data-filter-group="paper-year-min">
-          <option value="all">All</option>
-            
-                <option value="2026">2026</option>
-            
-                <option value="2025">2025</option>
-            
-                <option value="2024">2024</option>
-            
-                <option value="2023">2023</option>
-            
-        </select>
+        <div class="custom-dropdown">
+            <button class="custom-dropdown-toggle" type="button">All</button>
+            <div class="custom-dropdown-menu">
+                <input type="text" class="dropdown-search" placeholder="Search...">
+                <div class="dropdown-options">
+                    <div class="dropdown-option" data-value="all">All</div>
+                    
+                        <div class="dropdown-option" data-value="2026">2026</div>
+                    
+                        <div class="dropdown-option" data-value="2025">2025</div>
+                    
+                        <div class="dropdown-option" data-value="2024">2024</div>
+                    
+                        <div class="dropdown-option" data-value="2023">2023</div>
+                    
+                </div>
+            </div>
+            <input type="hidden" id="paper-year-start" class="filter-select publication-filter-select" data-filter-group="paper-year-min" value="all">
+        </div>
         &nbsp;
         <label for="paper-year-end">End Year:</label>
-        <select id="paper-year-end" class="filter-select publication-filter-select" data-filter-group="paper-year-max">
-          <option value="all">All</option>
-            
-                <option value="2026">2026</option>
-            
-                <option value="2025">2025</option>
-            
-                <option value="2024">2024</option>
-            
-                <option value="2023">2023</option>
-            
-        </select>
+        <div class="custom-dropdown">
+            <button class="custom-dropdown-toggle" type="button">All</button>
+            <div class="custom-dropdown-menu">
+                <input type="text" class="dropdown-search" placeholder="Search...">
+                <div class="dropdown-options">
+                    <div class="dropdown-option" data-value="all">All</div>
+                    
+                        <div class="dropdown-option" data-value="2026">2026</div>
+                    
+                        <div class="dropdown-option" data-value="2025">2025</div>
+                    
+                        <div class="dropdown-option" data-value="2024">2024</div>
+                    
+                        <div class="dropdown-option" data-value="2023">2023</div>
+                    
+                </div>
+            </div>
+            <input type="hidden" id="paper-year-end" class="filter-select publication-filter-select" data-filter-group="paper-year-max" value="all">
+        </div>
       </div>
       <div class="vr"></div>
       <div class="filter-group">
         <label for="paper-tag-filter">Tag&nbsp:</label>
-        <select id="paper-tag-filter" class="filter-select publication-filter-select" data-filter-group="paper-tag">
-          <option value="all">All</option>
-          </select>
+        <div class="custom-dropdown">
+            <button class="custom-dropdown-toggle" type="button">All</button>
+            <div class="custom-dropdown-menu">
+                <input type="text" class="dropdown-search" placeholder="Search...">
+                <div class="dropdown-options" id="paper-tag-filter-options">
+                    <div class="dropdown-option" data-value="all">All</div>
+                </div>
+            </div>
+            <input type="hidden" id="paper-tag-filter" class="filter-select publication-filter-select" data-filter-group="paper-tag" value="all">
+        </div>
       </div>
       <div class="vr"></div>
       <div class="filter-group">
         <label for="paper-venue-filter">Venue&nbsp:</label>
-        <select id="paper-venue-filter" class="filter-select publication-filter-select" data-filter-group="paper-venue">
-          <option value="all">All</option>
-          </select>
+        <div class="custom-dropdown">
+            <button class="custom-dropdown-toggle" type="button">All</button>
+            <div class="custom-dropdown-menu">
+                <input type="text" class="dropdown-search" placeholder="Search...">
+                <div class="dropdown-options" id="paper-venue-filter-options">
+                    <div class="dropdown-option" data-value="all">All</div>
+                </div>
+            </div>
+            <input type="hidden" id="paper-venue-filter" class="filter-select publication-filter-select" data-filter-group="paper-venue" value="all">
+        </div>
       </div>
     </div>
     <hr>
@@ -513,20 +542,22 @@
 	<!-- Filter Controls -->
 
 	<div id="Projectfilters" class="filters d-flex justify-content-center align-items-center flex-wrap gap-3">
-		<div class="filter-group">
+
+        <div class="filter-group">
 			<label for="project-area-filter"> Area: </label>
-			<select
-				id="project-area-filter"
-				class="filter-select project-filter-select"
-				data-filter-group="project-area"
-			>
-				<option value="all">All</option>
-				<option value="Quantum Machine Learning">
-					Quantum Machine Learning
-				</option>
-				<option value="Machine Learning">Machine Learning</option>
-				<option value="Web Development">Web Development</option>
-			</select>
+            <div class="custom-dropdown">
+                <button class="custom-dropdown-toggle" type="button">All</button>
+                <div class="custom-dropdown-menu">
+                    <input type="text" class="dropdown-search" placeholder="Search...">
+                    <div class="dropdown-options">
+                        <div class="dropdown-option" data-value="all">All</div>
+                        <div class="dropdown-option" data-value="Quantum Machine Learning">Quantum Machine Learning</div>
+                        <div class="dropdown-option" data-value="Machine Learning">Machine Learning</div>
+                        <div class="dropdown-option" data-value="Web Development">Web Development</div>
+                    </div>
+                </div>
+                <input type="hidden" id="project-area-filter" class="filter-select project-filter-select" data-filter-group="project-area" value="all">
+            </div>
 		</div>
 
         <!-- Stack Filter -->
@@ -537,56 +568,59 @@
 
         <div class="filter-group">
             <label for="project-stack-filter"> Tech Stack: </label>
-            <select
-                id="project-stack-filter"
-                class="filter-select project-filter-select"
-                data-filter-group="project-stack"
-            >
-                <option value="all">All</option>
-                
-                    <option value="Android">Android</option>
-                
-                    <option value="Bash">Bash</option>
-                
-                    <option value="BootStrap">BootStrap</option>
-                
-                    <option value="Docker">Docker</option>
-                
-                    <option value="ESPNet">ESPNet</option>
-                
-                    <option value="HTML5">HTML5</option>
-                
-                    <option value="Image Filter">Image Filter</option>
-                
-                    <option value="JAX">JAX</option>
-                
-                    <option value="JQuery">JQuery</option>
-                
-                    <option value="Jekyll">Jekyll</option>
-                
-                    <option value="Kaldi">Kaldi</option>
-                
-                    <option value="Keras">Keras</option>
-                
-                    <option value="Numpy">Numpy</option>
-                
-                    <option value="OpenCV">OpenCV</option>
-                
-                    <option value="PIL">PIL</option>
-                
-                    <option value="PennyLane">PennyLane</option>
-                
-                    <option value="PyTorch">PyTorch</option>
-                
-                    <option value="QisKit">QisKit</option>
-                
-                    <option value="SCSS">SCSS</option>
-                
-                    <option value="TensorFlow">TensorFlow</option>
-                
-                    <option value="tf.data">tf.data</option>
-                
-            </select>
+            <div class="custom-dropdown">
+                <button class="custom-dropdown-toggle" type="button">All</button>
+                <div class="custom-dropdown-menu">
+                    <input type="text" class="dropdown-search" placeholder="Search...">
+                    <div class="dropdown-options">
+                        <div class="dropdown-option" data-value="all">All</div>
+                        
+                            <div class="dropdown-option" data-value="Android">Android</div>
+                        
+                            <div class="dropdown-option" data-value="Bash">Bash</div>
+                        
+                            <div class="dropdown-option" data-value="BootStrap">BootStrap</div>
+                        
+                            <div class="dropdown-option" data-value="Docker">Docker</div>
+                        
+                            <div class="dropdown-option" data-value="ESPNet">ESPNet</div>
+                        
+                            <div class="dropdown-option" data-value="HTML5">HTML5</div>
+                        
+                            <div class="dropdown-option" data-value="Image Filter">Image Filter</div>
+                        
+                            <div class="dropdown-option" data-value="JAX">JAX</div>
+                        
+                            <div class="dropdown-option" data-value="JQuery">JQuery</div>
+                        
+                            <div class="dropdown-option" data-value="Jekyll">Jekyll</div>
+                        
+                            <div class="dropdown-option" data-value="Kaldi">Kaldi</div>
+                        
+                            <div class="dropdown-option" data-value="Keras">Keras</div>
+                        
+                            <div class="dropdown-option" data-value="Numpy">Numpy</div>
+                        
+                            <div class="dropdown-option" data-value="OpenCV">OpenCV</div>
+                        
+                            <div class="dropdown-option" data-value="PIL">PIL</div>
+                        
+                            <div class="dropdown-option" data-value="PennyLane">PennyLane</div>
+                        
+                            <div class="dropdown-option" data-value="PyTorch">PyTorch</div>
+                        
+                            <div class="dropdown-option" data-value="QisKit">QisKit</div>
+                        
+                            <div class="dropdown-option" data-value="SCSS">SCSS</div>
+                        
+                            <div class="dropdown-option" data-value="TensorFlow">TensorFlow</div>
+                        
+                            <div class="dropdown-option" data-value="tf.data">tf.data</div>
+                        
+                    </div>
+                </div>
+                <input type="hidden" id="project-stack-filter" class="filter-select project-filter-select" data-filter-group="project-stack" value="all">
+            </div>
         </div>
 	</div>
 	<hr>
@@ -933,20 +967,24 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         // Populate Tags
-        const tagSelect = document.getElementById('paper-tag-filter');
-        Array.from(uniqueTags).sort().forEach(tag => {
-            const option = document.createElement('option');
-            option.value = tag;
-            option.textContent = tag;
-            tagSelect.appendChild(option);
-        });
+        const tagSelect = document.getElementById('paper-tag-filter-options');
+        if (tagSelect) {
+            Array.from(uniqueTags).sort().forEach(tag => {
+                const option = document.createElement('div');
+                option.className = 'dropdown-option';
+                option.dataset.value = tag;
+                option.textContent = tag;
+                tagSelect.appendChild(option);
+            });
+        }
 
         // Populate Venues
-        const venueSelect = document.getElementById('paper-venue-filter');
+        const venueSelect = document.getElementById('paper-venue-filter-options');
         if(venueSelect){ // Check if element exists
              Array.from(uniqueVenues).sort().forEach(venue => {
-                const option = document.createElement('option');
-                option.value = venue;
+                const option = document.createElement('div');
+                option.className = 'dropdown-option';
+                option.dataset.value = venue;
                 // Truncate if too long (e.g. > 50 chars)
                 if (venue.length > 50) {
                     option.textContent = venue.substring(0, 47) + '...';
@@ -966,7 +1004,7 @@ document.addEventListener('DOMContentLoaded', function () {
             activeFilters[filterGroup] = select.value;
         });
 
-        // Loop through each publication and check if it matches ALL active filters
+        // Loop through each publication and check if well ALL active filters
         items.forEach(item => {
             let isVisible = true; // Assume the item is visible by default
 
@@ -1027,7 +1065,65 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Custom Dropdown Logic
+    function closeAllDropdowns() {
+        document.querySelectorAll('.custom-dropdown').forEach(d => d.classList.remove('open'));
+    }
+
+    document.addEventListener('click', function(e) {
+        // Toggle Dropdown
+        if (e.target.closest('.custom-dropdown-toggle')) {
+            const dropdown = e.target.closest('.custom-dropdown');
+            const wasOpen = dropdown.classList.contains('open');
+            closeAllDropdowns(); // Close others
+            if (!wasOpen) {
+                dropdown.classList.add('open');
+            }
+            e.stopPropagation();
+        } 
+        // Select Option
+        else if (e.target.closest('.dropdown-option')) {
+            const option = e.target.closest('.dropdown-option');
+            const dropdown = option.closest('.custom-dropdown');
+            const toggle = dropdown.querySelector('.custom-dropdown-toggle');
+            const hiddenInput = dropdown.querySelector('input[type="hidden"]');
+            
+            toggle.textContent = option.textContent;
+            hiddenInput.value = option.dataset.value;
+            
+            // Dispatch change event for applyFilters listeners
+            hiddenInput.dispatchEvent(new Event('change'));
+            
+            closeAllDropdowns();
+        }
+        // Click outside
+        else if (!e.target.closest('.custom-dropdown-menu')) {
+            closeAllDropdowns();
+        }
+    });
+
+    // Dropdown Search
+    document.addEventListener('input', function(e) {
+        if (e.target.classList.contains('dropdown-search')) {
+            const term = e.target.value.toLowerCase();
+            const optionsContainer = e.target.nextElementSibling; // .dropdown-options
+            const options = optionsContainer.querySelectorAll('.dropdown-option');
+            
+            options.forEach(opt => {
+                const text = opt.textContent.toLowerCase();
+                const isAllOption = opt.dataset.value === 'all';
+                
+                if (isAllOption || text.includes(term)) {
+                    opt.style.display = 'block';
+                } else {
+                    opt.style.display = 'none';
+                }
+            });
+        }
+    });
+
     // Get publication items and filter selects
+    // Note: selecting hidden inputs now
     const publication_filterSelects = document.querySelectorAll('.publication-filter-select');
     const publication_items = document.querySelectorAll('.publication-item');
     

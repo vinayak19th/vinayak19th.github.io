@@ -29,20 +29,24 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         // Populate Tags
-        const tagSelect = document.getElementById('paper-tag-filter');
-        Array.from(uniqueTags).sort().forEach(tag => {
-            const option = document.createElement('option');
-            option.value = tag;
-            option.textContent = tag;
-            tagSelect.appendChild(option);
-        });
+        const tagSelect = document.getElementById('paper-tag-filter-options');
+        if (tagSelect) {
+            Array.from(uniqueTags).sort().forEach(tag => {
+                const option = document.createElement('div');
+                option.className = 'dropdown-option';
+                option.dataset.value = tag;
+                option.textContent = tag;
+                tagSelect.appendChild(option);
+            });
+        }
 
         // Populate Venues
-        const venueSelect = document.getElementById('paper-venue-filter');
+        const venueSelect = document.getElementById('paper-venue-filter-options');
         if(venueSelect){ // Check if element exists
              Array.from(uniqueVenues).sort().forEach(venue => {
-                const option = document.createElement('option');
-                option.value = venue;
+                const option = document.createElement('div');
+                option.className = 'dropdown-option';
+                option.dataset.value = venue;
                 // Truncate if too long (e.g. > 50 chars)
                 if (venue.length > 50) {
                     option.textContent = venue.substring(0, 47) + '...';
@@ -62,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
             activeFilters[filterGroup] = select.value;
         });
 
-        // Loop through each publication and check if it matches ALL active filters
+        // Loop through each publication and check if well ALL active filters
         items.forEach(item => {
             let isVisible = true; // Assume the item is visible by default
 
@@ -123,7 +127,65 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Custom Dropdown Logic
+    function closeAllDropdowns() {
+        document.querySelectorAll('.custom-dropdown').forEach(d => d.classList.remove('open'));
+    }
+
+    document.addEventListener('click', function(e) {
+        // Toggle Dropdown
+        if (e.target.closest('.custom-dropdown-toggle')) {
+            const dropdown = e.target.closest('.custom-dropdown');
+            const wasOpen = dropdown.classList.contains('open');
+            closeAllDropdowns(); // Close others
+            if (!wasOpen) {
+                dropdown.classList.add('open');
+            }
+            e.stopPropagation();
+        } 
+        // Select Option
+        else if (e.target.closest('.dropdown-option')) {
+            const option = e.target.closest('.dropdown-option');
+            const dropdown = option.closest('.custom-dropdown');
+            const toggle = dropdown.querySelector('.custom-dropdown-toggle');
+            const hiddenInput = dropdown.querySelector('input[type="hidden"]');
+            
+            toggle.textContent = option.textContent;
+            hiddenInput.value = option.dataset.value;
+            
+            // Dispatch change event for applyFilters listeners
+            hiddenInput.dispatchEvent(new Event('change'));
+            
+            closeAllDropdowns();
+        }
+        // Click outside
+        else if (!e.target.closest('.custom-dropdown-menu')) {
+            closeAllDropdowns();
+        }
+    });
+
+    // Dropdown Search
+    document.addEventListener('input', function(e) {
+        if (e.target.classList.contains('dropdown-search')) {
+            const term = e.target.value.toLowerCase();
+            const optionsContainer = e.target.nextElementSibling; // .dropdown-options
+            const options = optionsContainer.querySelectorAll('.dropdown-option');
+            
+            options.forEach(opt => {
+                const text = opt.textContent.toLowerCase();
+                const isAllOption = opt.dataset.value === 'all';
+                
+                if (isAllOption || text.includes(term)) {
+                    opt.style.display = 'block';
+                } else {
+                    opt.style.display = 'none';
+                }
+            });
+        }
+    });
+
     // Get publication items and filter selects
+    // Note: selecting hidden inputs now
     const publication_filterSelects = document.querySelectorAll('.publication-filter-select');
     const publication_items = document.querySelectorAll('.publication-item');
     
