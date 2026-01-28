@@ -32,6 +32,31 @@
 				<option value="Web Development">Web Development</option>
 			</select>
 		</div>
+
+        <!-- Stack Filter -->
+        {% assign all_stack = "" | split: "" %}
+        {% for project in site.data.projects %}
+            {% if project.stack %}
+                {% for tech in project.stack %}
+                    {% assign all_stack = all_stack | push: tech %}
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
+        {% assign unique_stack = all_stack | uniq | sort %}
+
+        <div class="filter-group">
+            <label for="project-stack-filter"> Tech Stack: </label>
+            <select
+                id="project-stack-filter"
+                class="filter-select project-filter-select"
+                data-filter-group="project-stack"
+            >
+                <option value="all">All</option>
+                {% for tech in unique_stack %}
+                    <option value="{{ tech }}">{{ tech }}</option>
+                {% endfor %}
+            </select>
+        </div>
 	</div>
 	<!-- Masonry grid container -->
 	<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
