@@ -19,7 +19,7 @@
   stack: ["PennyLane", "TensorFlow", "Numpy"]
   brief: Set of tutorials to learn teach Quantum Machine Learning
   description: | # this will include new lines to allow paragraphs
-      A set of tutorials in Pennylane to teach <mark> Quantum Machine Learning</mark> convering:
+      A set of tutorials in PennyLane to teach <mark> Quantum Machine Learning</mark> convering:
       * Toy dataset generation using random quantum circuits
       * Basic Variational or Explicit Models
       * Data ReUploading Models
@@ -78,13 +78,27 @@
       * Implementing QML algorithms from the University of Toronto Course<br>
       * Implemented in IBM Qiskit
 
+- name: PennyLane-Keras-Layer
+  #link:
+  area: Quantum Machine Learning
+  github: vinayak19th/pennylane-keras-layer
+  brief: Keras 3 Wrapper for PennyLane
+  stack: ["PennyLane", "Keras", "TensorFlow", "JAX", "PyTorch"]
+  description: | # this will include new lines to allow paragraphs
+      * Find the package on: 
+      [![PyPI](https://img.shields.io/badge/PyPI-3775A9?logo=pypi&logoColor=fff)](https://pypi.org/project/pennylane-keras3-layer/)
+      * Keras 3 PennyLane wrapper with QNode interface automatically selected based on the keras backend 
+      * Addded optimizations for JAX with `jax.compile`
+      * Support of saving and loading models
+      
+
 - name: PennyLane-Keras3
   #link:
   area: Quantum Machine Learning
   github: vinayak19th/PennyLane-Keras3
-  brief: Demo showing how to use Pennylane with Keras 3 with full multi-backend support (TensorFlow, JAX, PyTorch).
+  brief: Demo showing how to use PennyLane with Keras 3 with full multi-backend support (TensorFlow, JAX, PyTorch).
   stack: ["PennyLane", "Keras", "TensorFlow", "JAX", "PyTorch"]
   description: | # this will include new lines to allow paragraphs
-      * Created a wrapped for integrating Pennylane Qnodes into Keras3 models.
-      * System selected Pennylane interface automatically based on the keras backend 
-      * Addded optimizations for JAX with `jax.compile`
+      * Demo for Data-ReUploading models.
+      * Training loop tested on all 3 backends (Tensorflow, Keras, JAX)
+      
