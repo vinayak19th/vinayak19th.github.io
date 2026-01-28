@@ -45,7 +45,7 @@
   doclink : 
   stack: []
   description: > # this will include new lines to allow paragraphs
-    Accepted to a three month program that matches students with Google mentors and peers to support their pursuit of computer science research pathways. (research.google/outreach/csrmp) 
+    * Accepted to a three month program that matches students with Google mentors and peers to support their pursuit of computer science research pathways. (research.google/outreach/csrmp) 
 
 - layout: layout/left-ex
   company: Myelin Foundry
