@@ -316,3 +316,20 @@ h2.bibliography{
         background-color: #2E3440;
     }
 }
+
+.date-filter-group {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .date-filter-group {
+      gap: 5px;
+  }
+}
