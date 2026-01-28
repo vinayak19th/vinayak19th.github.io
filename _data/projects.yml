@@ -3,7 +3,7 @@
   #link:
   area: Machine Learning
   github: vinayak19th/Aesthetic-Face-De-Identification
-  stack: ["Tensorflow", "OpenCV", "Android", "Image Filter"]
+  stack: ["TensorFlow", "OpenCV", "Android", "Image Filter"]
   brief: Scalable privacy preserving face de-identification
   description: | # this will include new lines to allow paragraphs
       A scalable approach to preserving the privacy of bystanders in social media posts<br>
@@ -16,7 +16,7 @@
   # link:
   github: vinayak19th/QML-Tutorials
   area: Quantum Machine Learning
-  stack: ["Pennylane", "Tensorflow", "Numpy"]
+  stack: ["PennyLane", "TensorFlow", "Numpy"]
   brief: Set of tutorials to learn teach Quantum Machine Learning
   description: | # this will include new lines to allow paragraphs
       A set of tutorials in Pennylane to teach <mark> Quantum Machine Learning</mark> convering:
@@ -29,7 +29,7 @@
   #link:
   area: Machine Learning
   github: vinayak19th/ARCNN-keras
-  stack: ["Tensorflow", "Keras", "Docker", "tf.data", "PIL"]
+  stack: ["TensorFlow", "Keras", "Docker", "tf.data", "PIL"]
   brief: TF-keras implementation of ARCNN which removes JPEG compression artifacts
   description: | # this will include new lines to allow paragraphs
       A tf-keras implementation of ARCNN mentioned in :<br>
