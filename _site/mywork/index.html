@@ -263,12 +263,12 @@
       <div class="container education-container" id="publications">
     <h3>Publications</h3>
     <div class="biblography-container">
-    <div id="Paperfilters" class="filters">
+    <div id="Paperfilters" class="filters d-flex justify-content-center align-items-center flex-wrap gap-3">
       <div class="filter-group">
-        <label for="paper-year-filter"> Year&nbsp:</label>
+        <label for="paper-year-start">Start Year:</label>
         
         
-        <select id="paper-year-filter" class="filter-select publication-filter-select" data-filter-group="paper-year">
+        <select id="paper-year-start" class="filter-select publication-filter-select" data-filter-group="paper-year-min">
           <option value="all">All</option>
             
                 <option value="2026">2026</option>
@@ -279,8 +279,23 @@
             
                 <option value="2023">2023</option>
             
-          </select>
+        </select>
+        &nbsp;
+        <label for="paper-year-end">End Year:</label>
+        <select id="paper-year-end" class="filter-select publication-filter-select" data-filter-group="paper-year-max">
+          <option value="all">All</option>
+            
+                <option value="2026">2026</option>
+            
+                <option value="2025">2025</option>
+            
+                <option value="2024">2024</option>
+            
+                <option value="2023">2023</option>
+            
+        </select>
       </div>
+      <div class="vr"></div>
       <div class="filter-group">
         <label for="paper-tag-filter">Tag&nbsp:</label>
         <select id="paper-tag-filter" class="filter-select publication-filter-select" data-filter-group="paper-tag">
@@ -470,7 +485,7 @@
 	<h3>Projects</h3>
 	<!-- Filter Controls -->
 
-	<div id="Projectfilters" class="filters">
+	<div id="Projectfilters" class="filters d-flex justify-content-center align-items-center flex-wrap gap-3">
 		<div class="filter-group">
 			<label for="project-area-filter"> Area: </label>
 			<select
@@ -491,6 +506,7 @@
         
         
         
+		<div class="vr"></div>
 
         <div class="filter-group">
             <label for="project-stack-filter"> Tech Stack: </label>
@@ -546,6 +562,7 @@
             </select>
         </div>
 	</div>
+	<hr>
 	<!-- Masonry grid container -->
 	<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 		 
@@ -867,6 +884,7 @@ Urdu and Pashto <br /></li>
 </div>
 
 
+
 <!-- Script for filters -->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -902,13 +920,39 @@ document.addEventListener('DOMContentLoaded', function () {
         items.forEach(item => {
             let isVisible = true; // Assume the item is visible by default
 
-            for (const group in activeFilters) {
-            const filterValue = activeFilters[group];
+            for (const groupKey in activeFilters) {
+            const filterValue = activeFilters[groupKey];
+            let group = groupKey;
+            let rangeType = null; // 'min' or 'max'
+
+            if (groupKey.endsWith('-min')) {
+                group = groupKey.replace('-min', '');
+                rangeType = 'min';
+            } else if (groupKey.endsWith('-max')) {
+                 group = groupKey.replace('-max', '');
+                 rangeType = 'max';
+            }
+
             const itemValue = item.getAttribute(`data-${group}`);
             
             // If a filter is set (not 'all') and the item doesn't match, hide it
             if (filterValue !== 'all') {
-                if(group === 'project-stack' || group === 'paper-tag') {
+                if (rangeType) {
+                    // Numerical Range Comparison
+                    const itemNum = parseFloat(itemValue);
+                    const filterNum = parseFloat(filterValue);
+                    
+                    if (!isNaN(itemNum) && !isNaN(filterNum)) {
+                         if (rangeType === 'min' && itemNum < filterNum) {
+                            isVisible = false;
+                            break;
+                         }
+                         if (rangeType === 'max' && itemNum > filterNum) {
+                            isVisible = false;
+                            break;
+                         }
+                    }
+                } else if(group === 'project-stack' || group === 'paper-tag') {
                     // Loose matching for stack/tags (contains), case insensitive
                      if (!itemValue || !itemValue.toLowerCase().includes(filterValue.toLowerCase())) {
                         isVisible = false;

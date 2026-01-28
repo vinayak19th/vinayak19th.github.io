@@ -5,9 +5,25 @@
     display: flex;
     gap: 15px; /* Adds space between dropdowns */
     font-size: 2rem;
+    flex-wrap: wrap; /* allow wrapping on smaller desktop screens */
+    align-items: center; /* vertical alignment */
 
     @media screen and (max-width: 768px) {
           justify-content: center;
+          flex-direction: column;
+          gap: 5px;
+    }
+}
+
+.vr {
+    display: block;
+    width: 2px;
+    background-color: #555;
+    height: 3rem; /* Adjust height as needed */
+    margin: 0 5px;
+
+    @media screen and (max-width: 768px) {
+        display: none; /* Hide on mobile */
     }
 }
 
@@ -20,13 +36,15 @@
 
     label {
         margin-right: 5px; /* Space between label and select */
+        margin-bottom: 0;
         font-weight: bold;
         font-size: 1.5rem;
+        line-height: 1; /* reset line height for better centering */
     }
 
     select {
       padding: 5px;
-      margin-top: 1rem;
+      margin: 0; /* Remove all margins to rely on flex gap */
       border: 1px solid #ccc;
       border-radius: 4px;
       font-size: 1.3rem;
@@ -185,5 +203,8 @@ h2.bibliography{
     background-color: #3b3b46;
     color: white;
   }
+    .vr{
+        background-color: #ccc;
+    }
 }
 

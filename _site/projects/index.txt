@@ -266,7 +266,7 @@
 	<h3>Projects</h3>
 	<!-- Filter Controls -->
 
-	<div id="Projectfilters" class="filters">
+	<div id="Projectfilters" class="filters d-flex justify-content-center align-items-center flex-wrap gap-3">
 		<div class="filter-group">
 			<label for="project-area-filter"> Area: </label>
 			<select
@@ -287,6 +287,7 @@
         
         
         
+		<div class="vr"></div>
 
         <div class="filter-group">
             <label for="project-stack-filter"> Tech Stack: </label>
@@ -342,6 +343,7 @@
             </select>
         </div>
 	</div>
+	<hr>
 	<!-- Masonry grid container -->
 	<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 		 
@@ -661,6 +663,7 @@ Urdu and Pashto <br /></li>
 	</div>
 	<hr>
 </div>
+
 
     </main>
     <footer class="footer-box text-center text-lg-start text-muted">

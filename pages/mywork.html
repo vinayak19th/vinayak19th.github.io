@@ -43,13 +43,39 @@ document.addEventListener('DOMContentLoaded', function () {
         items.forEach(item => {
             let isVisible = true; // Assume the item is visible by default
 
-            for (const group in activeFilters) {
-            const filterValue = activeFilters[group];
+            for (const groupKey in activeFilters) {
+            const filterValue = activeFilters[groupKey];
+            let group = groupKey;
+            let rangeType = null; // 'min' or 'max'
+
+            if (groupKey.endsWith('-min')) {
+                group = groupKey.replace('-min', '');
+                rangeType = 'min';
+            } else if (groupKey.endsWith('-max')) {
+                 group = groupKey.replace('-max', '');
+                 rangeType = 'max';
+            }
+
             const itemValue = item.getAttribute(`data-${group}`);
             
             // If a filter is set (not 'all') and the item doesn't match, hide it
             if (filterValue !== 'all') {
-                if(group === 'project-stack' || group === 'paper-tag') {
+                if (rangeType) {
+                    // Numerical Range Comparison
+                    const itemNum = parseFloat(itemValue);
+                    const filterNum = parseFloat(filterValue);
+                    
+                    if (!isNaN(itemNum) && !isNaN(filterNum)) {
+                         if (rangeType === 'min' && itemNum < filterNum) {
+                            isVisible = false;
+                            break;
+                         }
+                         if (rangeType === 'max' && itemNum > filterNum) {
+                            isVisible = false;
+                            break;
+                         }
+                    }
+                } else if(group === 'project-stack' || group === 'paper-tag') {
                     // Loose matching for stack/tags (contains), case insensitive
                      if (!itemValue || !itemValue.toLowerCase().includes(filterValue.toLowerCase())) {
                         isVisible = false;
