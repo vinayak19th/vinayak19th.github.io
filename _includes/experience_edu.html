@@ -1,0 +1,11 @@
+<div class="container experience-container" id="experience">
+	<!-- Optional Title, matches projects.html style -->
+	<!-- <h3>{{ site.experience_title | default: "Experience & Education" }}</h3> -->
+	
+	<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+		{% for item in site.data.experience_edu %} 
+      		{% include layout/experience-card.html item=item %} 
+    	{% endfor %}
+	</div>
+	<hr>
+</div>

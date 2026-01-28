@@ -12,13 +12,11 @@
 </div>
 
 <div class="container experience-container">
-    <h2 style="text-align:center;margin-top:2rem;font-size:3rem">Labs / Student Organizations </h2>
-    <center>
-        <hr width="70%">
-    </center>
-    {% for experience in site.data.experience_edu %} {% include {{ experience.layout | default: 'left' | append: ".html"
-    }} item=experience %} {% unless forloop.last %}
-    <center>
-        <hr width="70%">
-    </center>{% endunless %} {% endfor %}
+	<h3>Labs / Student Organizations </h3>
+    <br>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        {% for experience in site.data.experience_edu %} 
+            {% include layout/experience-card.html item=experience %} 
+        {% endfor %}
+    </div>
 </div>

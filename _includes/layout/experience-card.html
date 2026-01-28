@@ -1,0 +1,45 @@
+<div class="experience-item">
+    <div class="col">
+        <div class="card experience-card">
+            <div class="card-header text-center">
+                {% if include.item.link %}
+                <a href="{{ include.item.link }}" target="_blank" style="text-decoration: none; color: inherit;">
+                    <h2 class="card-title">{{ include.item.company }}</h2>
+                </a>
+                {% else %}
+                <h2 class="card-title">{{ include.item.company }}</h2>
+                {% endif %}
+            </div>
+            <div class="card-body experience-card-header">
+                <!-- Location -->
+                {% if include.item.location %}
+                <div class="card-subtitle text-muted text-center">
+                    <p class="text-center"> {{ include.item.location }} </p>
+                </div>
+                {% endif %}
+
+                <div class="timeline-container">
+                    <ul class="timeline">
+                        {% for role in include.item.job_title %}
+                        <li>
+                            <p class="timeline">
+                                {{ role[0] }}<br> 
+                                <em class="text-muted" style="font-size: 0.9em;">{{ role[1] }}</em>
+                            </p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <!-- Description -->
+                <div class="card-text experience-card-text">
+                    {{ include.item.description | strip | markdownify }}
+                </div>
+                {% if include.item.document %}
+                <button href="{{ include.item.doclink }}" target="_blank" class="ref-button">
+                    {{ include.item.document }}
+                </button>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

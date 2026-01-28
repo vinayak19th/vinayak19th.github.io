@@ -72,7 +72,7 @@ h2.bibliography{
   display: none;
 }
 
-.project-card {
+.project-card, .experience-card {
     transition: box-shadow 0.3s ease-in-out;
     border: 1px solid #c9c8c8;
     background-color: #ececec !important;
@@ -87,13 +87,13 @@ h2.bibliography{
 
 
 .dark{
-  .project-card {
+  .project-card, .experience-card {
     background-color: #181825 !important;
   }
 }
 
 
-.project-card-header {
+.project-card-header, .experience-card-header {
   flex-shrink: 0;
 }
 
@@ -106,11 +106,16 @@ h2.bibliography{
   }
 }
 
-.project-card-text ul {
+.experience-card-text {
+  height: auto;
+  overflow-y: auto;
+}
+
+.project-card-text ul, .experience-card-text ul {
     padding-left: 1.9rem; /* Add padding to the left of the list */
 }
 
-.project-card-footer {
+.project-card-footer, .experience-card-footer {
     padding-top: 1rem;
     gap: 0.5rem;
     align-items: center;
@@ -159,6 +164,18 @@ h2.bibliography{
   margin-top: 1rem;
 }
 
+.workspan{
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #fff;
+  background-color: #333;
+  border-radius: 3px;
+  display: inline; 
+  word-wrap: break-word;
+}
+
+
+
 .dark{
     .badge-paper-tag{
         background-color: #a6adc8;
@@ -169,3 +186,4 @@ h2.bibliography{
     color: white;
   }
 }
+
