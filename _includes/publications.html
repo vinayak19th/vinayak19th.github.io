@@ -1,18 +1,27 @@
 <div class="container education-container" id="publications">
     <h3>{{ site.publication.title | default: "Publications" }}</h3>
     <div class="biblography-container">
-    <div id="Paperfilters" class="filters">
+    <div id="Paperfilters" class="filters d-flex justify-content-center align-items-center flex-wrap gap-3">
       <div class="filter-group">
-        <label for="paper-year-filter"> Year&nbsp:</label>
+        <label for="paper-year-start">Start Year:</label>
         {% assign start_year = 2023 %}
         {% assign current_year = 'now' | date: "%Y" | plus: 0 %}
-        <select id="paper-year-filter" class="filter-select publication-filter-select" data-filter-group="paper-year">
+        <select id="paper-year-start" class="filter-select publication-filter-select" data-filter-group="paper-year-min">
           <option value="all">All</option>
             {% for year in (start_year..current_year) reversed %}
                 <option value="{{ year }}">{{ year }}</option>
             {% endfor %}
-          </select>
+        </select>
+        &nbsp;
+        <label for="paper-year-end">End Year:</label>
+        <select id="paper-year-end" class="filter-select publication-filter-select" data-filter-group="paper-year-max">
+          <option value="all">All</option>
+            {% for year in (start_year..current_year) reversed %}
+                <option value="{{ year }}">{{ year }}</option>
+            {% endfor %}
+        </select>
       </div>
+      <div class="vr"></div>
       <div class="filter-group">
         <label for="paper-tag-filter">Tag&nbsp:</label>
         <select id="paper-tag-filter" class="filter-select publication-filter-select" data-filter-group="paper-tag">
