@@ -2,15 +2,13 @@
 - layout: layout/left-ex
   company: Arizona State University
   link: https://scai.engineering.asu.edu/
-  job_title: [[Research Assistant,Dec 2024-Present],[Teaching Assistant,Dec 2024-Aug 2024],[Teaching Assistant,May 2024-Jan 2024],[Teaching Assistant,Dec 2023-Aug 2023],[Teaching Assistant,Dec 2022-Aug 2022]]
+  job_title: [[Research Assistant, Dec 2024 - Present], [Teaching Assistant, Aug 2024 - Dec 2024], [Teaching Assistant, Jan 2024 - May 2024], [Teaching Assistant, Aug 2023 - Dec 2023], [Teaching Assistant, Aug 2022 - Dec 2022]]
   location: Tempe,Arizona
   document : 
   doclink : 
   stack: [Teaching, Quantum Computing, Game Design]
-  quote: > 
-    Arizona State University supports its students with various assistantship positions
   description: > # this will include new lines to allow paragraphs
-    [RA] <u> Dec 2024- Present</u> 
+    [RA] <u> Dec 2024 - Present</u> 
     Under Professor <a href="https://search.asu.edu/profile/969623">Prof. Aviral Shrivastava</a>:
       * Reasearching how to improve current NISQ Quantum Computers using SOTA Machine Learning
 
@@ -19,20 +17,20 @@
       * Created autograders for coding assignments in [Pennylane](https://pennylane.ai/)
       * Created final exams and quizzes 
       
-    [TA] <u> Dec 2024-Aug 2024</u> 
+    [TA] <u> Aug 2024 - Dec 2024</u> 
     486: Capstone Project under <a href="https://search.asu.edu/profile/1215971">Prof. Helen Chavez</a>:
       * Helping final year undergraduate students with any issues they face in their 'Capstone Project'
 
-    [TA] <u> May 2024 - Jan 2024</u> 
+    [TA] <u> Jan 2024 - May 2024</u> 
     CPI 111:Game Development I under <a href="https://search.asu.edu/profile/325953">Prof. Yoshihiro Kobayashi</a>:
       * Proving in-class support during game development. 
       * Working with a team of 2 graders and 5 UG-TAs.
     
-    [TA] <u> Dec 2023 - Aug 2023</u> 
+    [TA] <u> Aug 2023 - Dec 2023</u> 
     CSE 598:Quantum Computing under <a href="https://www.zilin.one/">Prof. Zilin Jiang</a>:
       * Graded and provided feedback on assignments related to randomized classical algorithms, basics of qubits and quantum computing systems, quantum cryptography and QML.
 
-    [TA] <u> Dec 2023 - Aug 2022</u> 
+    [TA] <u> Aug 2022 - Dec 2023</u> 
     486: Capstone Project under <a href="https://search.asu.edu/profile/1215971">Prof. Helen Chavez</a>:
       * Helping final year undergraduate students with any issues they face in their 'Capstone Project'
       * Teaching the fundamentals of *'Agile Development'*
@@ -41,30 +39,25 @@
 - layout: layout/left-ex
   company: Google Research
   link: https://research.google/outreach/csrmp/recipients/
-  job_title: [[CS Research Mentorship Program Mentee,Jan 2024-Sept 2023]]
+  job_title: [[CS Research Mentorship Program Mentee, Sep 2023 - Jan 2024]]
   location: Remote
   document : 
   doclink : 
   stack: []
-  quote: > 
-    CSRMP matches students from historically marginalized groups with peers and a Google mentor to support their pursuit of computing research pathways.
   description: > # this will include new lines to allow paragraphs
     Accepted to a three month program that matches students with Google mentors and peers to support their pursuit of computer science research pathways. (research.google/outreach/csrmp) 
 
 - layout: layout/left-ex
   company: Myelin Foundry
   link: https://www.myelinfoundry.com
-  job_title: [[Product Engineer-ML,June 2022-Sept 2021],[Deep Learning Consultant,Sept 2021 - Aug 2021],[Deep Learning Intern,Aug 2021 - Aug 2020],[Deep Learning Intern,July 2019 - June 2019]]
+  job_title: [[Product Engineer-ML, Sep 2021 - Jun 2022], [Deep Learning Consultant, Aug 2021 - Sep 2021], [Deep Learning Intern, Aug 2020 - Aug 2021], [Deep Learning Intern, Jun 2019 - Jul 2019]]
   location: Bangalore, India
   document : Letter Of Recommendation 
   doclink : https://drive.google.com/file/d/1lMmVEQ_GjviVMey4vY__Xct9HhlhCRmc/view?usp=sharing
   stack: [Tensorflow,PyTorch,ESPNET,Docker,FFmpeg,OpenCV,Tensorflow Lite,Tf.Data,Raspberry Pi 4]
-  quote: > 
-    Myelin Foundry is a deep tech product start-up that transforms human experiences and industry 
-    outcomes by building Artificial Intelligence algorithms on video, voice, and sensor data, for edge devices.
   description: > # this will include new lines to allow paragraphs
     At Myelin Foundry I worked on :<br>
-    <u> June 2022 - Aug 2020</u>
+    <u> Aug 2020 - Jun 2022</u>
       * Creating novel new architectures and training pipelines to <b>create higher detail SR outputs.</b>
       * Created an <b>end-to-end enhanced data loader pipeline in tf.data</b> to enable rapid prototyping
       * Co-ordinating the <b>comapny hackathon in partnership with NASSCOM</b>
@@ -72,7 +65,7 @@
       * Working on solutions to employing media super resolution on edge devices with higher fidelity
       * Redesigned container based server managment pipeline to allow for faster prototyping of models
 
-    <u> July 2019 - June 2019</u>
+    <u> Jun 2019 - Jul 2019</u>
       * Created an <b>end-to-end speech to text system for Pashto<b> - A challenge due to the extreme data scarcity associated with the language
       * Tested & evaluated the viability of <b>Tensorflow.js</b> for the deployment of the organizations product stack
       * Helped set up the company servers for model training
@@ -80,14 +73,11 @@
 - layout: layout/left-ex
   company: Samsung Research Institute
   link: https://www.samsung.com
-  job_title: [[Samsung PRISM Researcher, Aug 2020 - November 2019]]
+  job_title: [[Samsung PRISM Researcher, Nov 2019 - Aug 2020]]
   document : Certificate of Excellence
   doclink : https://drive.google.com/file/d/1zJz9bNg8mqhOhEcAL17YGZ3Zay3a34Ms/view?usp=sharing
   location: Chennai, India
   stack: [Tensorflow,Bezier Curves,BERT,NLTK]
-  quote: > 
-    Samsung is a South Korean multinational conglomerate headquartered in Samsung Town, Seoul. It comprises numerous 
-    affiliated businesses, most of them united under the Samsung brand, and is the largest South Korean chaebol. 
   description: > # this will include new lines to allow paragraphs
     As part of a team of student researcher under the <b>Samsung PRISM</b> program, I worked on:
       * <b>Online Handwritting Recognition</b> in <b>Bengali</b> and <b>Tamil</b>. 
@@ -100,13 +90,11 @@
 - layout: layout/left-ex
   company: Tata Elxsi
   link: https://www.tataelxsi.com/
-  job_title: [[Machine Learning Intern, June 2020 - May 2020]]
+  job_title: [[ML Intern, May 2020 - Jun 2020]]
   location: Work From Home 
   document : Internship Letter
   doclink : https://drive.google.com/file/d/1PxrCJSXEymsoQrzECKPsS5pK1jeFWI9t/view?usp=sharing
   stack: [Tensorflow,Docker,OpenCV]
-  quote: > 
-    Tata Elxsi is amongst the world’s leading providers of design and technology services across industries including Automotive, Broadcast, Communications and Healthcare.
   description: > # this will include new lines to allow paragraphs
     As an intern for Tata Elxsi, I was tasked with :
       * <b>Creating an API to perform object detection</b> in identifying humans <b>from video footage</b> and estimating their distance.
