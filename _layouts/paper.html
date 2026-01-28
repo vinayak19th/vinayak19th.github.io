@@ -1,6 +1,17 @@
 ---
 ---
-<div class="publication-item" data-paper-year="{{ entry.year }}" data-paper-tag="{{ entry.tag | default: 'misc' }}">
+{% assign venue = entry.archiveprefix %}
+{% unless venue %}
+  {% assign venue = entry.series %}
+{% endunless %}
+{% unless venue %}
+  {% assign venue = entry.booktitle %}
+{% endunless %}
+{% unless venue %}
+  {% assign venue = entry.publisher %}
+{% endunless %}
+
+<div class="publication-item" data-paper-year="{{ entry.year }}" data-paper-tag="{{ entry.tag | default: 'misc' }}" data-paper-venue="{{ venue }}">
   <div class="row clearfix layout layout-left">
     <div class="col-xs-12 col-sm-9 col-md-10 col-print-12 inlines borderless">
       {%- if entry.url -%}

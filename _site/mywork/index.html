@@ -302,10 +302,22 @@
           <option value="all">All</option>
           </select>
       </div>
+      <div class="vr"></div>
+      <div class="filter-group">
+        <label for="paper-venue-filter">Venue&nbsp:</label>
+        <select id="paper-venue-filter" class="filter-select publication-filter-select" data-filter-group="paper-venue">
+          <option value="all">All</option>
+          </select>
+      </div>
     </div>
     <hr>
       <div class="publications-list">
-          <ol class="bibliography"><li><div class="publication-item" data-paper-year="2025" data-paper-tag="Quantum Machine Learning">
+          <ol class="bibliography"><li>
+
+
+
+
+<div class="publication-item" data-paper-year="2025" data-paper-tag="Quantum Machine Learning" data-paper-venue="arXiv">
   <div class="row clearfix layout layout-left">
     <div class="col-xs-12 col-sm-9 col-md-10 col-print-12 inlines borderless">
 <a href="https://arxiv.org/abs/2510.08650" target="_blank" class="link"><h4 class="bibtitle">QuIRK: Quantum-Inspired Re-uploading KAN
@@ -346,7 +358,12 @@
   <hr width="70%">
 </center> -->
 </li>
-<li><div class="publication-item" data-paper-year="2025" data-paper-tag="Machine Learning">
+<li>
+
+
+
+
+<div class="publication-item" data-paper-year="2025" data-paper-tag="Machine Learning" data-paper-venue="LCTES ’25">
   <div class="row clearfix layout layout-left">
     <div class="col-xs-12 col-sm-9 col-md-10 col-print-12 inlines borderless">
 <a href="https://doi.org/10.1145/3735452.3735536" target="_blank" class="link"><h4 class="bibtitle">LUCI: Lightweight UI Command Interface
@@ -391,7 +408,12 @@
   <hr width="70%">
 </center> -->
 </li>
-<li><div class="publication-item" data-paper-year="2024" data-paper-tag="Quantum Machine Learning">
+<li>
+
+
+
+
+<div class="publication-item" data-paper-year="2024" data-paper-tag="Quantum Machine Learning" data-paper-venue="2024 International Conference on Compilers, Architecture, and Synthesis for Embedded Systems (CASES)">
   <div class="row clearfix layout layout-left">
     <div class="col-xs-12 col-sm-9 col-md-10 col-print-12 inlines borderless"><h4 class="bibtitle">Primer on Data in Quantum Machine Learning
         
@@ -430,7 +452,12 @@
   <hr width="70%">
 </center> -->
 </li>
-<li><div class="publication-item" data-paper-year="2023" data-paper-tag="Quantum Machine Learning, Metric Learning">
+<li>
+
+
+
+
+<div class="publication-item" data-paper-year="2023" data-paper-tag="Quantum Machine Learning, Metric Learning" data-paper-venue="arXiv">
   <div class="row clearfix layout layout-left">
     <div class="col-xs-12 col-sm-9 col-md-10 col-print-12 inlines borderless">
 <a href="https://mpslab-asu.github.io/QPMeL/" target="_blank" class="link"><h4 class="bibtitle">Quantum Polar Metric Learning: Efficient Classically Learned Quantum Embeddings
@@ -890,22 +917,45 @@ Urdu and Pashto <br /></li>
 document.addEventListener('DOMContentLoaded', function () {
     function populatePaperFilters(items) {
         const uniqueTags = new Set();
+        const uniqueVenues = new Set();
+
         items.forEach(item => {
+            // Tags
             const rawTags = item.getAttribute('data-paper-tag');
             if (rawTags) {
-                // Split by comma and trim whitespace
                 rawTags.split(',').forEach(tag => uniqueTags.add(tag.trim()));
+            }
+            // Venues
+            const venue = item.getAttribute('data-paper-venue');
+            if (venue) {
+                uniqueVenues.add(venue.trim());
             }
         });
 
-        const select = document.getElementById('paper-tag-filter');
-        // Convert Set to Array and sort, then add options
+        // Populate Tags
+        const tagSelect = document.getElementById('paper-tag-filter');
         Array.from(uniqueTags).sort().forEach(tag => {
             const option = document.createElement('option');
             option.value = tag;
             option.textContent = tag;
-            select.appendChild(option);
+            tagSelect.appendChild(option);
         });
+
+        // Populate Venues
+        const venueSelect = document.getElementById('paper-venue-filter');
+        if(venueSelect){ // Check if element exists
+             Array.from(uniqueVenues).sort().forEach(venue => {
+                const option = document.createElement('option');
+                option.value = venue;
+                // Truncate if too long (e.g. > 50 chars)
+                if (venue.length > 50) {
+                    option.textContent = venue.substring(0, 47) + '...';
+                } else {
+                    option.textContent = venue;
+                }
+                venueSelect.appendChild(option);
+            });
+        }
     }
 
     function applyFilters(filterSelects,items) {
@@ -952,8 +1002,8 @@ document.addEventListener('DOMContentLoaded', function () {
                             break;
                          }
                     }
-                } else if(group === 'project-stack' || group === 'paper-tag') {
-                    // Loose matching for stack/tags (contains), case insensitive
+                } else if(group === 'project-stack' || group === 'paper-tag' || group === 'paper-venue') {
+                    // Loose matching for stack/tags/venue (contains), case insensitive
                      if (!itemValue || !itemValue.toLowerCase().includes(filterValue.toLowerCase())) {
                         isVisible = false;
                         break;

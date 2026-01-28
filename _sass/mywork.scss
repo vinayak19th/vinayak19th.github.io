@@ -48,6 +48,7 @@
       border: 1px solid #ccc;
       border-radius: 4px;
       font-size: 1.3rem;
+      max-width: 200px; /* Prevent extremely long venues from breaking layout */
 
       @media screen and (max-width: 768px) {
         align-items: center !important;
