@@ -117,8 +117,9 @@ h2.bibliography{
 }
 
 .project-card-text {
-  height: 200px; 
-  overflow-y: scroll;
+  max-height: 200px; 
+  height: auto;
+  overflow-y: auto;
 
   @media screen and (max-width: 768px) {
     max-height: fit-content;
@@ -349,4 +350,25 @@ h2.bibliography{
   .date-filter-group {
       gap: 5px;
   }
+}
+
+/* Mosaic / Masonry Layout */
+.masonry-wrapper {
+    column-count: 1;
+    column-gap: 1.5rem;
+    
+    @media (min-width: 768px) {
+        column-count: 2;
+    }
+
+    @media (min-width: 1200px) {
+        column-count: 3;
+    }
+}
+
+.project-item {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    display: inline-block; /* Helps prevent breaking across columns */
 }
