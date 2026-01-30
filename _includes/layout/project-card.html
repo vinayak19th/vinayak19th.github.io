@@ -11,14 +11,11 @@
                 </div>
                 <!-- GitHub Stats Card Image -->
                 {%- if include.item.github -%}
-                <div class="repostats">
-                    {% assign data = include.item.github | split:"/" %}
-                    <a href="https://github.com/{{ include.item.github }}" target="_blank">
-                        <img class="projectgit GitData" 
-                        height=100 width=313 
-                        src="https://github-readme-stats.vercel.app/api/pin/?username={{data[0]}}&repo={{data[1]}}&card_width=313&theme=nord">
-                    </a>
-                </div>
+                <center>
+                <a role="button" href="https://github.com/{{data[0]}}/{{data[1]}}" class="btn btn-secondary rounded-pill project-github-button">
+                    <i class="devicon-github-original"></i><b>CodeBase</b> 
+                </a>
+                </center>
                 {%- endif -%} 
                 <!-- Description -->
                 <div class="card-text project-card-text">

@@ -363,14 +363,11 @@
                 <div class="text-muted text-center">
                     <p><em> Scalable privacy preserving face de-identification </em></p>
                 </div>
-                <!-- GitHub Stats Card Image --><div class="repostats">
-                    
-                    <a href="https://github.com/vinayak19th/Aesthetic-Face-De-Identification" target="_blank">
-                        <img class="projectgit GitData" 
-                        height=100 width=313 
-                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=Aesthetic-Face-De-Identification&card_width=313&theme=nord">
-                    </a>
-                </div><!-- Description -->
+                <!-- GitHub Stats Card Image --><center>
+                <a role="button" href="https://github.com//" class="btn btn-secondary rounded-pill project-github-button">
+                    <i class="devicon-github-original"></i><b>CodeBase</b> 
+                </a>
+                </center><!-- Description -->
                 <div class="card-text project-card-text">
                     <p>A scalable approach to preserving the privacy of bystanders in social media posts<br /></p>
 <ul>
@@ -407,14 +404,11 @@
                 <div class="text-muted text-center">
                     <p><em> Set of tutorials to learn teach Quantum Machine Learning </em></p>
                 </div>
-                <!-- GitHub Stats Card Image --><div class="repostats">
-                    
-                    <a href="https://github.com/vinayak19th/QML-Tutorials" target="_blank">
-                        <img class="projectgit GitData" 
-                        height=100 width=313 
-                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=QML-Tutorials&card_width=313&theme=nord">
-                    </a>
-                </div><!-- Description -->
+                <!-- GitHub Stats Card Image --><center>
+                <a role="button" href="https://github.com//" class="btn btn-secondary rounded-pill project-github-button">
+                    <i class="devicon-github-original"></i><b>CodeBase</b> 
+                </a>
+                </center><!-- Description -->
                 <div class="card-text project-card-text">
                     <p>A set of tutorials in PennyLane to teach <mark> Quantum Machine Learning</mark> convering:</p>
 <ul>
@@ -449,14 +443,11 @@
                 <div class="text-muted text-center">
                     <p><em> TF-keras implementation of ARCNN which removes JPEG compression artifacts </em></p>
                 </div>
-                <!-- GitHub Stats Card Image --><div class="repostats">
-                    
-                    <a href="https://github.com/vinayak19th/ARCNN-keras" target="_blank">
-                        <img class="projectgit GitData" 
-                        height=100 width=313 
-                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=ARCNN-keras&card_width=313&theme=nord">
-                    </a>
-                </div><!-- Description -->
+                <!-- GitHub Stats Card Image --><center>
+                <a role="button" href="https://github.com//" class="btn btn-secondary rounded-pill project-github-button">
+                    <i class="devicon-github-original"></i><b>CodeBase</b> 
+                </a>
+                </center><!-- Description -->
                 <div class="card-text project-card-text">
                     <p>A tf-keras implementation of ARCNN mentioned in :<br /></p>
 <ul>
@@ -493,14 +484,11 @@
                 <div class="text-muted text-center">
                     <p><em> The code repo for this website and instructions </em></p>
                 </div>
-                <!-- GitHub Stats Card Image --><div class="repostats">
-                    
-                    <a href="https://github.com/vinayak19th/vinayak19th.github.io" target="_blank">
-                        <img class="projectgit GitData" 
-                        height=100 width=313 
-                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=vinayak19th.github.io&card_width=313&theme=nord">
-                    </a>
-                </div><!-- Description -->
+                <!-- GitHub Stats Card Image --><center>
+                <a role="button" href="https://github.com//" class="btn btn-secondary rounded-pill project-github-button">
+                    <i class="devicon-github-original"></i><b>CodeBase</b> 
+                </a>
+                </center><!-- Description -->
                 <div class="card-text project-card-text">
                     <p>Website hosting my resume and profile. Notable Features include:</p>
 <ul>
@@ -553,14 +541,11 @@
                 <div class="text-muted text-center">
                     <p><em> A project based on the BABEL Dataset from the US government </em></p>
                 </div>
-                <!-- GitHub Stats Card Image --><div class="repostats">
-                    
-                    <a href="https://github.com/vinayak19th/ASR-LOW-RESOURCE" target="_blank">
-                        <img class="projectgit GitData" 
-                        height=100 width=313 
-                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=ASR-LOW-RESOURCE&card_width=313&theme=nord">
-                    </a>
-                </div><!-- Description -->
+                <!-- GitHub Stats Card Image --><center>
+                <a role="button" href="https://github.com//" class="btn btn-secondary rounded-pill project-github-button">
+                    <i class="devicon-github-original"></i><b>CodeBase</b> 
+                </a>
+                </center><!-- Description -->
                 <div class="card-text project-card-text">
                     <ul>
   <li>An End-to-End Framework for performing automatic speech recognition on low-resource languages such as 
@@ -595,14 +580,11 @@ Urdu and Pashto <br /></li>
                 <div class="text-muted text-center">
                     <p><em> Implementations of code for the University of Toronto QML course </em></p>
                 </div>
-                <!-- GitHub Stats Card Image --><div class="repostats">
-                    
-                    <a href="https://github.com/vinayak19th/QUANTUM-ML" target="_blank">
-                        <img class="projectgit GitData" 
-                        height=100 width=313 
-                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=QUANTUM-ML&card_width=313&theme=nord">
-                    </a>
-                </div><!-- Description -->
+                <!-- GitHub Stats Card Image --><center>
+                <a role="button" href="https://github.com//" class="btn btn-secondary rounded-pill project-github-button">
+                    <i class="devicon-github-original"></i><b>CodeBase</b> 
+                </a>
+                </center><!-- Description -->
                 <div class="card-text project-card-text">
                     <ul>
   <li>Implementing QML algorithms from the University of Toronto Course<br /></li>
@@ -632,14 +614,11 @@ Urdu and Pashto <br /></li>
                 <div class="text-muted text-center">
                     <p><em> Keras 3 Wrapper for PennyLane </em></p>
                 </div>
-                <!-- GitHub Stats Card Image --><div class="repostats">
-                    
-                    <a href="https://github.com/vinayak19th/pennylane-keras-layer" target="_blank">
-                        <img class="projectgit GitData" 
-                        height=100 width=313 
-                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=pennylane-keras-layer&card_width=313&theme=nord">
-                    </a>
-                </div><!-- Description -->
+                <!-- GitHub Stats Card Image --><center>
+                <a role="button" href="https://github.com//" class="btn btn-secondary rounded-pill project-github-button">
+                    <i class="devicon-github-original"></i><b>CodeBase</b> 
+                </a>
+                </center><!-- Description -->
                 <div class="card-text project-card-text">
                     <ul>
   <li>Find the package on: 
@@ -678,14 +657,11 @@ Urdu and Pashto <br /></li>
                 <div class="text-muted text-center">
                     <p><em> Demo showing how to use PennyLane with Keras 3 with full multi-backend support (TensorFlow, JAX, PyTorch). </em></p>
                 </div>
-                <!-- GitHub Stats Card Image --><div class="repostats">
-                    
-                    <a href="https://github.com/vinayak19th/PennyLane-Keras3" target="_blank">
-                        <img class="projectgit GitData" 
-                        height=100 width=313 
-                        src="https://github-readme-stats.vercel.app/api/pin/?username=vinayak19th&repo=PennyLane-Keras3&card_width=313&theme=nord">
-                    </a>
-                </div><!-- Description -->
+                <!-- GitHub Stats Card Image --><center>
+                <a role="button" href="https://github.com//" class="btn btn-secondary rounded-pill project-github-button">
+                    <i class="devicon-github-original"></i><b>CodeBase</b> 
+                </a>
+                </center><!-- Description -->
                 <div class="card-text project-card-text">
                     <ul>
   <li>Demo for Data-ReUploading models.</li>

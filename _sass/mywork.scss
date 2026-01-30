@@ -289,8 +289,25 @@ h2.bibliography{
     background-color: #f0f0f0;
 }
 
+.project-github-button{
+    background-color: #242424;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0px;
+}
+
 /* Dark mode support */
 .dark {
+  .project-github-button{
+    background-color: #242424;
+    color: white;
+  }
     .custom-dropdown-toggle {
         background-color: #3b3b46;
         color: white;
