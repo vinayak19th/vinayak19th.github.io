@@ -63,12 +63,18 @@
                 <input type="hidden" id="project-stack-filter" class="filter-select project-filter-select" data-filter-group="project-stack" value="all">
             </div>
         </div>
+        <div class="vr"></div>
+        <div class="filter-group">
+             <button class="reset-filters-btn" data-target="project">Reset</button>
+        </div>
 	</div>
 	<hr>
 	<!-- Masonry grid container -->
 	<div class="masonry-wrapper">
-		{% for project in site.data.projects %} 
-      {% include layout/project-card.html item=project %} 
+    {% for project in site.data.projects %} 
+        <div class="project-item" data-project-area="{{ project.area }}" data-project-stack="{{ project.stack | join: ' ' }}">
+            {% include layout/project-card.html item=project %} 
+        </div>
     {% endfor %}
 	</div>
 	<hr>

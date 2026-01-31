@@ -352,6 +352,27 @@ h2.bibliography{
   }
 }
 
+.reset-filters-btn {
+    background-color: #003064;
+    color: white;
+    padding: 0.8em;
+    border-radius: 1em;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 1rem; /* Reset to reasonable size, user previously asked for small */
+    transition: background-color 0.3s;
+}
+
+.reset-filters-btn:hover {
+    opacity: 0.9;
+}
+
+.dark .reset-filters-btn {
+    background-color: #007BFF;
+    color: white;
+}
+
 /* Mosaic / Masonry Layout */
 .masonry-wrapper {
     column-count: 1;
