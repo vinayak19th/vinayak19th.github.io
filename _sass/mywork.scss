@@ -303,6 +303,99 @@ h2.bibliography{
     margin-top: 0px;
 }
 
+
+.ref-button {
+    background-color: #003064;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border: 0; /* For button element reset if needed */
+
+    &:hover, &:focus {
+        background-color: #002040;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.icon-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+
+
+.date-filter-group {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .date-filter-group {
+      gap: 5px;
+  }
+}
+
+.reset-filters-btn {
+    background-color: #003064;
+    color: white;
+    padding: 0.8em;
+    border-radius: 1em;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 1.2rem; /* Reset to reasonable size, user previously asked for small */
+    transition: background-color 0.3s;
+}
+
+.reset-filters-btn:hover {
+    opacity: 0.9;
+}
+
+
+/* Mosaic / Masonry Layout */
+.masonry-wrapper {
+    column-count: 1;
+    column-gap: 1.5rem;
+    
+    @media (min-width: 768px) {
+        column-count: 2;
+    }
+
+    @media (min-width: 1200px) {
+        column-count: 3;
+    }
+}
+
+.project-item {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    display: inline-block; /* Helps prevent breaking across columns */
+}
+
+
 /* Dark mode support */
 .dark {
   .project-github-button{
@@ -333,63 +426,15 @@ h2.bibliography{
     .dropdown-option:hover {
         background-color: #2E3440;
     }
-}
+    .ref-button {
+        background-color: #0052aa;
 
-.date-filter-group {
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.filter-item {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-@media screen and (max-width: 768px) {
-  .date-filter-group {
-      gap: 5px;
+        a {
+            color: inherit;
+        }
+    }
+    .reset-filters-btn {
+      background-color: #0052aa;
+      color: white;
   }
-}
-
-.reset-filters-btn {
-    background-color: #003064;
-    color: white;
-    padding: 0.8em;
-    border-radius: 1em;
-    border: none;
-    cursor: pointer;
-    line-height: 1;
-    font-size: 1rem; /* Reset to reasonable size, user previously asked for small */
-    transition: background-color 0.3s;
-}
-
-.reset-filters-btn:hover {
-    opacity: 0.9;
-}
-
-.dark .reset-filters-btn {
-    background-color: #007BFF;
-    color: white;
-}
-
-/* Mosaic / Masonry Layout */
-.masonry-wrapper {
-    column-count: 1;
-    column-gap: 1.5rem;
-    
-    @media (min-width: 768px) {
-        column-count: 2;
-    }
-
-    @media (min-width: 1200px) {
-        column-count: 3;
-    }
-}
-
-.project-item {
-    break-inside: avoid;
-    margin-bottom: 1.5rem;
-    width: 100%;
-    display: inline-block; /* Helps prevent breaking across columns */
 }

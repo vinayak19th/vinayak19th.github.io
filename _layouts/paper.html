@@ -34,10 +34,17 @@
       </p>
     </div>
     <div class="col-xs-12 col-sm-3 col-md-2 col-print-12 borderless inlines inlines-right">
-      <p><button class="ref-button" type="button" data-toggle="collapse" data-target="#{{ entry.key }}"
-          aria-expanded="false" aria-controls="collapseExample">
-          BibTex
-        </button></p>
+      <p>
+        {%- if entry.weblink -%}
+        <a href="{{ entry.weblink }}" style="color: white;" class="ref-button icon-button" title="Website" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-link"></i>
+        </a>
+        {%- endif -%}
+        <button class="ref-button icon-button" type="button" data-toggle="collapse" data-target="#{{ entry.key }}"
+          aria-expanded="false" aria-controls="collapseExample" title="BibTex">
+          <i class="fa-solid fa-quote-left"></i>
+        </button>
+      </p>
     </div>
   </div>
   <div class="collapse" id="{{ entry.key }}" aria-labelledby="heading{{ forloop.index }}">
