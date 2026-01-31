@@ -13,7 +13,10 @@
 {% endcomment %}
 
 <div class="container projects-container" id="projects">
-	<h3>{{ site.projects_title | default: "Projects" }}</h3>
+	<div class="floating-reset-div mb-3">
+		<h3>{{ site.projects_title | default: "Projects" }}</h3>
+		<button class="reset-filters-btn floating-reset-btn" data-target="project">Reset</button>
+	</div>
 	<!-- Filter Controls -->
 
 	<div id="Projectfilters" class="filters d-flex justify-content-center align-items-center flex-wrap gap-3">
@@ -62,10 +65,6 @@
                 </div>
                 <input type="hidden" id="project-stack-filter" class="filter-select project-filter-select" data-filter-group="project-stack" value="all">
             </div>
-        </div>
-        <div class="vr"></div>
-        <div class="filter-group">
-             <button class="reset-filters-btn" data-target="project">Reset</button>
         </div>
 	</div>
 	<hr>

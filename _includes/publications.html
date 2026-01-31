@@ -1,14 +1,31 @@
 <div class="container education-container" id="publications">
-    <h3>{{ site.publication.title | default: "Publications" }}</h3>
+    <div class="floating-reset-div mb-3">
+        <h3>{{ site.publication.title | default: "Publications" }}</h3>
+        <button class="reset-filters-btn floating-reset-btn" data-target="publication">Reset</button>
+    </div>
     <div class="biblography-container">
     <div id="Paperfilters" class="filters d-flex justify-content-center align-items-center flex-wrap gap-3">
 
+      <div class="filter-group">
+        <label for="paper-title-filter">Title:&nbsp;</label>
+        <div class="custom-dropdown">
+            <button class="custom-dropdown-toggle" type="button">All</button>
+            <div class="custom-dropdown-menu">
+                <input type="text" class="dropdown-search" placeholder="Search...">
+                <div class="dropdown-options" id="paper-title-filter-options">
+                    <div class="dropdown-option" data-value="all">All</div>
+                </div>
+            </div>
+            <input type="hidden" id="paper-title-filter" class="filter-select publication-filter-select" data-filter-group="paper-title" value="all">
+        </div>
+      </div>
+      <div class="vr"></div>
       <div class="filter-group date-filter-group">
         <div class="filter-item">
             <label for="paper-year-start">Start Year:</label>
             {% assign start_year = 2023 %}
             {% assign current_year = 'now' | date: "%Y" | plus: 0 %}
-            <div class="custom-dropdown">
+            <div class="custom-dropdown year-filter">
                 <button class="custom-dropdown-toggle" type="button">All</button>
                 <div class="custom-dropdown-menu">
                     <input type="text" class="dropdown-search" placeholder="Search...">
@@ -25,7 +42,7 @@
         &nbsp;
         <div class="filter-item">
             <label for="paper-year-end">End Year:</label>
-            <div class="custom-dropdown">
+            <div class="custom-dropdown year-filter">
                 <button class="custom-dropdown-toggle" type="button">All</button>
                 <div class="custom-dropdown-menu">
                     <input type="text" class="dropdown-search" placeholder="Search...">
@@ -67,10 +84,6 @@
             </div>
             <input type="hidden" id="paper-venue-filter" class="filter-select publication-filter-select" data-filter-group="paper-venue" value="all">
         </div>
-      </div>
-      <div class="vr"></div>
-      <div class="filter-group">
-           <button class="reset-filters-btn" data-target="publication">Reset</button>
       </div>
     </div>
     <hr>

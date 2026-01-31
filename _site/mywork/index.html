@@ -261,16 +261,33 @@
 
     <main class="pagecontent" arialabel="Content">
       <div class="container education-container" id="publications">
-    <h3>Publications</h3>
+    <div class="floating-reset-div mb-3">
+        <h3>Publications</h3>
+        <button class="reset-filters-btn floating-reset-btn" data-target="publication">Reset</button>
+    </div>
     <div class="biblography-container">
     <div id="Paperfilters" class="filters d-flex justify-content-center align-items-center flex-wrap gap-3">
 
+      <div class="filter-group">
+        <label for="paper-title-filter">Title:&nbsp;</label>
+        <div class="custom-dropdown">
+            <button class="custom-dropdown-toggle" type="button">All</button>
+            <div class="custom-dropdown-menu">
+                <input type="text" class="dropdown-search" placeholder="Search...">
+                <div class="dropdown-options" id="paper-title-filter-options">
+                    <div class="dropdown-option" data-value="all">All</div>
+                </div>
+            </div>
+            <input type="hidden" id="paper-title-filter" class="filter-select publication-filter-select" data-filter-group="paper-title" value="all">
+        </div>
+      </div>
+      <div class="vr"></div>
       <div class="filter-group date-filter-group">
         <div class="filter-item">
             <label for="paper-year-start">Start Year:</label>
             
             
-            <div class="custom-dropdown">
+            <div class="custom-dropdown year-filter">
                 <button class="custom-dropdown-toggle" type="button">All</button>
                 <div class="custom-dropdown-menu">
                     <input type="text" class="dropdown-search" placeholder="Search...">
@@ -293,7 +310,7 @@
         &nbsp;
         <div class="filter-item">
             <label for="paper-year-end">End Year:</label>
-            <div class="custom-dropdown">
+            <div class="custom-dropdown year-filter">
                 <button class="custom-dropdown-toggle" type="button">All</button>
                 <div class="custom-dropdown-menu">
                     <input type="text" class="dropdown-search" placeholder="Search...">
@@ -342,10 +359,6 @@
             <input type="hidden" id="paper-venue-filter" class="filter-select publication-filter-select" data-filter-group="paper-venue" value="all">
         </div>
       </div>
-      <div class="vr"></div>
-      <div class="filter-group">
-           <button class="reset-filters-btn" data-target="publication">Reset</button>
-      </div>
     </div>
     <hr>
       <div class="publications-list">
@@ -354,7 +367,7 @@
 
 
 
-<div class="publication-item" data-paper-year="2025" data-paper-tag="Quantum Machine Learning, KANs" data-paper-venue="arXiv">
+<div class="publication-item" data-paper-year="2025" data-paper-tag="Quantum Machine Learning, KANs" data-paper-venue="arXiv" data-paper-title="QuIRK: Quantum-Inspired Re-uploading KAN">
   <div class="row clearfix layout layout-left">
     <div class="col-xs-12 col-sm-9 col-md-10 col-print-12 inlines borderless">
 <a href="https://arxiv.org/abs/2510.08650" target="_blank" class="link"><h4 class="bibtitle">QuIRK: Quantum-Inspired Re-uploading KAN
@@ -406,7 +419,7 @@
 
 
 
-<div class="publication-item" data-paper-year="2025" data-paper-tag="Machine Learning, LLM Agents, UI Automation" data-paper-venue="LCTES ’25">
+<div class="publication-item" data-paper-year="2025" data-paper-tag="Machine Learning, LLM Agents, UI Automation" data-paper-venue="LCTES ’25" data-paper-title="LUCI: Lightweight UI Command Interface">
   <div class="row clearfix layout layout-left">
     <div class="col-xs-12 col-sm-9 col-md-10 col-print-12 inlines borderless">
 <a href="https://doi.org/10.1145/3735452.3735536" target="_blank" class="link"><h4 class="bibtitle">LUCI: Lightweight UI Command Interface
@@ -464,7 +477,7 @@
 
 
 
-<div class="publication-item" data-paper-year="2024" data-paper-tag="Quantum Machine Learning" data-paper-venue="2024 International Conference on Compilers, Architecture, and Synthesis for Embedded Systems (CASES)">
+<div class="publication-item" data-paper-year="2024" data-paper-tag="Quantum Machine Learning" data-paper-venue="2024 International Conference on Compilers, Architecture, and Synthesis for Embedded Systems (CASES)" data-paper-title="Primer on Data in Quantum Machine Learning">
   <div class="row clearfix layout layout-left">
     <div class="col-xs-12 col-sm-9 col-md-10 col-print-12 inlines borderless"><h4 class="bibtitle">Primer on Data in Quantum Machine Learning
         
@@ -509,7 +522,7 @@
 
 
 
-<div class="publication-item" data-paper-year="2023" data-paper-tag="Quantum Machine Learning, Metric Learning, Representation Learning" data-paper-venue="arXiv">
+<div class="publication-item" data-paper-year="2023" data-paper-tag="Quantum Machine Learning, Metric Learning, Representation Learning" data-paper-venue="arXiv" data-paper-title="Quantum Polar Metric Learning: Efficient Classically Learned Quantum Embeddings">
   <div class="row clearfix layout layout-left">
     <div class="col-xs-12 col-sm-9 col-md-10 col-print-12 inlines borderless">
 <a href="https://arxiv.org/abs/2312.01655" target="_blank" class="link"><h4 class="bibtitle">Quantum Polar Metric Learning: Efficient Classically Learned Quantum Embeddings
@@ -567,7 +580,10 @@
 
 
 <div class="container projects-container" id="projects">
-	<h3>Projects</h3>
+	<div class="floating-reset-div mb-3">
+		<h3>Projects</h3>
+		<button class="reset-filters-btn floating-reset-btn" data-target="project">Reset</button>
+	</div>
 	<!-- Filter Controls -->
 
 	<div id="Projectfilters" class="filters d-flex justify-content-center align-items-center flex-wrap gap-3">
@@ -650,10 +666,6 @@
                 </div>
                 <input type="hidden" id="project-stack-filter" class="filter-select project-filter-select" data-filter-group="project-stack" value="all">
             </div>
-        </div>
-        <div class="vr"></div>
-        <div class="filter-group">
-             <button class="reset-filters-btn" data-target="project">Reset</button>
         </div>
 	</div>
 	<hr>
@@ -990,6 +1002,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function populatePaperFilters(items) {
         const uniqueTags = new Set();
         const uniqueVenues = new Set();
+        const uniqueTitles = new Set();
 
         items.forEach(item => {
             // Tags
@@ -1001,6 +1014,11 @@ document.addEventListener('DOMContentLoaded', function () {
             const venue = item.getAttribute('data-paper-venue');
             if (venue) {
                 uniqueVenues.add(venue.trim());
+            }
+             // Titles
+            const title = item.getAttribute('data-paper-title');
+            if (title) {
+                uniqueTitles.add(title.trim());
             }
         });
 
@@ -1030,6 +1048,23 @@ document.addEventListener('DOMContentLoaded', function () {
                     option.textContent = venue;
                 }
                 venueSelect.appendChild(option);
+            });
+        }
+
+        // Populate Titles
+        const titleSelect = document.getElementById('paper-title-filter-options');
+        if(titleSelect){ // Check if element exists
+             Array.from(uniqueTitles).sort().forEach(title => {
+                const option = document.createElement('div');
+                option.className = 'dropdown-option';
+                option.dataset.value = title;
+                // Truncate if too long (e.g. > 50 chars)
+                if (title.length > 50) {
+                    option.textContent = title.substring(0, 47) + '...';
+                } else {
+                    option.textContent = title;
+                }
+                titleSelect.appendChild(option);
             });
         }
     }
@@ -1078,7 +1113,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             break;
                          }
                     }
-                } else if(group === 'project-stack' || group === 'paper-tag' || group === 'paper-venue') {
+                } else if(group === 'project-stack' || group === 'paper-tag' || group === 'paper-venue' || group === 'paper-title') {
                     // Loose matching for stack/tags/venue (contains), case insensitive
                      if (!itemValue || !itemValue.toLowerCase().includes(filterValue.toLowerCase())) {
                         isVisible = false;

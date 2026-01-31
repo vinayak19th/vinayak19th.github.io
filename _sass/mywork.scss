@@ -238,6 +238,16 @@ h2.bibliography{
     font-size: 1.3rem;
 }
 
+input.custom-dropdown-toggle {
+    cursor: text;
+    display: inline-block; 
+}
+
+.year-filter .custom-dropdown-toggle {
+    min-width: 80px;
+    width: auto;
+}
+
 .custom-dropdown-toggle::after {
     content: '▼';
     font-size: 0.8em;
@@ -371,6 +381,19 @@ h2.bibliography{
 
 .reset-filters-btn:hover {
     opacity: 0.9;
+}
+
+.floating-reset-div {
+    position: relative;
+    /* ensure header doesn't overlap if it gets long, though h3 block usually fine */
+}
+
+.floating-reset-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
 }
 
 
