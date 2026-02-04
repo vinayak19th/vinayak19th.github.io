@@ -74,6 +74,17 @@
   counter-reset: item;
 }
 
+.paper-details {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 5px;
+    
+    b {
+        font-weight: 600;
+        color: #003064; /* Use the primary blue color */
+    }
+}
+
 h2.bibliography{
     margin-top: 1.5rem;
     margin-bottom: -2rem;
@@ -460,4 +471,9 @@ input.custom-dropdown-toggle {
       background-color: #0052aa;
       color: white;
   }
+    .paper-details {
+        b {
+            color: #a6adc8;
+        }
+    }
 }

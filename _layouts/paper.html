@@ -2,8 +2,11 @@
 ---
 {% assign venue = entry.archiveprefix %}
 {% unless venue %}
+  {% assign venue = entry.customvenue %}
+{% endunless %} 
+{% unless venue %}
   {% assign venue = entry.series %}
-{% endunless %}
+{% endunless %} 
 {% unless venue %}
   {% assign venue = entry.booktitle %}
 {% endunless %}
@@ -14,18 +17,22 @@
 <div class="publication-item" data-paper-year="{{ entry.year }}" data-paper-tag="{{ entry.tag | default: 'misc' }}" data-paper-venue="{{ venue }}" data-paper-title="{{ entry.title }}">
   <div class="row clearfix layout layout-left">
     <div class="col-xs-12 col-sm-9 col-md-10 col-print-12 inlines borderless">
-      {%- if entry.url -%}
-      {% include a.html href=entry.url class="link" %}
-      {%- endif -%}
-      <h4 class="bibtitle">{{ entry.title }}
-        {% if entry.preprint == "true" %}
-        <span class="badge badge-danger">Pre-Print</span>
+      <h4 class="bibtitle">{{ entry.title }}</h4>
+      <div class="paper-details">
+        {% if venue contains entry.year %}
+          <b>{{ venue | truncate: 100 }}</b>
+        {% else %}
+          <b>{{ venue }}, {{ entry.year }}</b>
         {% endif %}
-      </h4>
-      {%- if entry.url -%}
-      </a>
-      {%- endif -%}
-      <p><em>{{ entry.author }} ; {{ entry.year }}</em></p>
+        {% if entry.preprint == "true" %}
+          <span class="badge badge-danger">Pre-Print</span>
+        {% endif %}
+        <br>
+        {% for author in entry.author_array %}
+          {{ author.first }} {{ author.last }}
+          {% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </div>
       <p>
         {% assign tags = entry.tag | split: ", " %}
         {% for tag in tags %}
@@ -35,6 +42,11 @@
     </div>
     <div class="col-xs-12 col-sm-3 col-md-2 col-print-12 borderless inlines inlines-right">
       <p>
+        {%- if entry.pdfurl -%}
+        <a href="{{ entry.pdfurl }}" style="color: white;" class="ref-button icon-button" title="Website" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-file-pdf"></i>
+        </a>
+        {%- endif -%}
         {%- if entry.weblink -%}
         <a href="{{ entry.weblink }}" style="color: white;" class="ref-button icon-button" title="Website" target="_blank" rel="noopener noreferrer">
           <i class="fa-solid fa-link"></i>
@@ -51,6 +63,6 @@
     <pre class="bibentry-print">{{ entry.bibtex }}</pre>
   </div>
 </div>
-<!-- <center>
-  <hr width="70%">
-</center> -->
+<center>
+  <hr width="100%">
+</center>

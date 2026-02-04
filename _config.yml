@@ -91,6 +91,7 @@ scholar:
   source: _data/
   bibliography: papers.bib
   bibliography_template: paper
+  last_first: false
 
 exclude : [
   "Gemfile",
