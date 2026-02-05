@@ -3,9 +3,26 @@ $navbar-brand-font-size: 1.8rem;
 
 :root {
     --cursor-color: #ffffff;
+    
+    /* Blog Theme Variables Ported */
+    --topbar-bg: rgba(226, 226, 226, 0.6);
+    --topbar-border-color: #d3d3d3;
+    --topbar-text-color: rgb(78 78 78);
+
+    --nav-backdrop-filter: blur(8px);
+    --btn-border-color: #e9ecef;
+    --card-header-bg: #ffffff; /* Default for light */
 
     .dark {
         --cursor-color: #ffffff;
+        
+        /* Dark Mode Overrides */
+        --topbar-bg: rgba(24, 24, 37, 0.3);
+        --topbar-border-color: #9ba2bb;
+        --topbar-text-color: #e7e7e7;
+        --btn-border-color: #2e2f31;
+        --card-header-bg: #1e1e2e;
+        --nav-backdrop-filter: blur(4px);
     }
 }
 
@@ -13,28 +30,54 @@ $navbar-brand-font-size: 1.8rem;
     -webkit-transition: padding .3s;
     -moz-transition: padding .3s;
     transition: padding .3s;
+    
+    /* Floating Effect Wrapper - Matches #topbar-wrapper */
+    height: $topbar-height;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+    background-color: transparent; /* Wrapper handles bg */
+
+    /* Fixes */
+    top: 1rem;
+    position: sticky; 
+    z-index: 1000;
 }
 
 .navbar-fixed-top .navbar-brand {
     font-size: $navbar-brand-font-size;
-    color: #ffffff;
+    color: var(--topbar-text-color);
     font-weight: 600;
     text-transform: lowercase;
 }
 
-.ExploreButton{
-    border-radius: 1rem !important;
-    @media (min-width: 1000px){
-        display: none;
-    }
+/* Inner Container - Matches #topbar pill shape */
+.navig-container {
+
+    background-color: var(--topbar-bg);
+    backdrop-filter: var(--nav-backdrop-filter);
+    -webkit-backdrop-filter: var(--nav-backdrop-filter);
+
+    padding-top: 0.1rem;
+    padding-bottom: 0.2rem;
+    border: 2px solid var(--topbar-border-color);
+    margin-top: 0; /* Bootstrap override */
+    border-radius: 5rem;
+    width: calc(100% - 1rem);
 }
 
-.ExploreText{
-    margin-right: 0.5rem;
-    border-radius: 1rem !important;
-}
-
+/* Mobile Tweaks */
 @media (max-width: 1000px) {
+    .navbar-fixed-top {
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    
+    .navig-container {
+        max-width: none !important;
+        margin: 0 !important;
+    }
+
     .navbar-header {
       float: none;
     }
@@ -45,7 +88,7 @@ $navbar-brand-font-size: 1.8rem;
   
     .navbar-collapse {
       border-top: 1px solid #eee;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+      border-radius: 5rem;
     }
   
     .navbar-collapse.collapse {
@@ -72,9 +115,6 @@ $navbar-brand-font-size: 1.8rem;
     .navbar-header{
         width: 100vw;
     }
-    .ExploreText{
-        display: none;
-    }
 }
 
 .navbar-center {
@@ -94,11 +134,12 @@ $navbar-brand-font-size: 1.8rem;
     text-transform: capitalize;
     font-weight: 600;
     font-size: 1rem;
-    background: $navbar-color;
-
+    /* Background handled by specific class now or var */
+    /* background: $navbar-color;  <-- Old */
+    
     @media screen and (min-width: 900px) {
-        height: 4.5  rem;
         align-items: center;
+        border: none; /* Remove default bootstrap border */
     }
 }
 
@@ -115,19 +156,14 @@ $navbar-brand-font-size: 1.8rem;
 
 .navbar .navbar-nav li a {
     outline: 3;
-    color: #ffffff;
+    color: var(--topbar-text-color);
 }
 
 .navbar-header {
     display: flex;
-    /* Allow flexible arrangement of items */
     align-items: center;
-    /* Vertically center items */
     justify-content: space-between;
-    /* Space between the collapse button and other elements */
 }
-
-
 
 .collapse-button {
     height: 4rem;
@@ -137,16 +173,13 @@ $navbar-brand-font-size: 1.8rem;
     padding-right: 0.7rem;
     border: 0px;
     margin-left: -1rem;
+    color: var(--topbar-text-color);
+    background: transparent;
 }
 
 .navbar .navbar-nav li a:focus {
     outline: 0;
-    color: #ffffff;
-
-    .dark {
-        color: #ffffff;
-    }
-
+    color: var(--topbar-text-color);
     border-color: #e6e6e6;
 }
 
@@ -166,83 +199,28 @@ $navbar-brand-font-size: 1.8rem;
 
 $icon-size : 3.2rem;
 
-.dark-mode {
-    background-color: #a6adc8;
-    color: $navbar-color;
-    border-radius: 4rem;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 2rem;
-    margin-left: -0.5rem;
-    height: $icon-size;
-    width: $icon-size;
-    padding: 0px;
-
-    a {
-        color: white;
-    }
-}
-
-button:focus {
-    background-color: #a6adc8;
-    color: $navbar-color;
-}
-
-button:hover {
-    background-color: #48ca85;
-    color: $navbar-color;
-}
-
-.blinking {
-    width: 0.5rem;
-    height: 1.7rem;
-    display: inline-block;
-    background-color: var(--cursor-color);
-    -webkit-animation: blinking 2s infinite;
-    animation: blinking 2s infinite;
-}
-
-@keyframes blinking {
-    0% {
-        background-color: transparent;
-    }
-
-    49% {
-        background-color: transparent;
-    }
-
-    50% {
-        background-color: var(--cursor-color);
-    }
-}
-
-
+/* Toggle Button Styling from Blog (modified for structure) */
 .toggle-btn {
   position: relative;
   width: 45px;
   height: 3rem;
   background-color: #333;
-//   border: none;
-  border: 1px solid white;
+  border: 1px solid var(--btn-border-color);
   border-radius: 20px;
   cursor: pointer;
   outline: none;
   transition: background 0.4s;
   margin: 0px;
   padding: 0px;
-  padding: 0;
 
   @media (min-width: 849px) and (max-width: 990px) {
       width: 45px;
   }
-
-
 }
 
 .toggle-btn:focus {
     background-color: #333;
-    border: 1px solid white;
-
+    border: 1px solid var(--btn-border-color);
 }
 
 .toggle-btn.dark{
@@ -251,10 +229,8 @@ button:hover {
 
 .toggle-btn.dark:focus{
     background-color: #ccc;
-    border: 1px solid white;
-
+    border: 1px solid var(--btn-border-color);
 }
-
 
 .toggle-circle {
   position: absolute;
@@ -263,24 +239,23 @@ button:hover {
   width: 2rem;
   height: 2rem;
   background: white;
-  color: #2E3440 !important;
+  color: var(--card-header-bg) !important;
   border-radius: 50%;
   padding: 0px;
   align-items: center;
   justify-content: center;
-  transition: transform 0.4s ease; /* smooth sliding */
+  transition: transform 0.4s ease;
+  display: flex; /* Fix for icon centering */
 }
 
-.mode-logo::before{
-    position: absolute;
-    top: 0.42rem;
-    left: 0.45rem;
-    font-weight: 800;
-    font-size: 1.2rem;
+.mode-logo {
+   /* Renamed from .mode-logo::before to be direct child usually, but existing code had specificity */
+   font-weight: 800;
+   font-size: 1.2rem;
 }
 
 .toggle-btn.active .toggle-circle {
-  transform: translateX(13px); /* moves to the right */
+  transform: translateX(13px);
   background: white;
 }
 
@@ -309,36 +284,51 @@ button:hover {
     }
 }
 
-// Adding the wiggle animation to the Explore button
+.blinking {
+    width: 0.5rem;
+    height: 1.7rem;
+    display: inline-block;
+    background-color: var(--cursor-color);
+    -webkit-animation: blinking 2s infinite;
+    animation: blinking 2s infinite;
+}
 
-/* The wiggle animation keyframes */
-@keyframes wiggle {
-    0%, 7% {
-        transform: rotateZ(0);
-    }
-    15% {
-        transform: rotateZ(-5deg);
-    }
-    20% {
-        transform: rotateZ(3deg);
-    }
-    25% {
-        transform: rotateZ(-3deg);
-    }
-    30% {
-        transform: rotateZ(2deg);
-    }
-    35% {
-        transform: rotateZ(-2deg);
-    }
-    40%, 100% {
-        transform: rotateZ(0);
+@keyframes blinking {
+    0% { background-color: transparent; }
+    49% { background-color: transparent; }
+    50% { background-color: var(--cursor-color); }
+}
+
+.ExploreButton{
+    border-radius: 1rem !important;
+    @media (min-width: 1000px){
+        display: none;
     }
 }
 
-/* The class that will be added to the list items */
+.ExploreText{
+    margin-right: 0.5rem;
+    border-radius: 1rem !important;
+}
+
+@media (max-width: 1000px) {
+    .ExploreText{
+        display: none;
+    }
+}
+
+// Keeping wiggle animation
+@keyframes wiggle {
+    0%, 7% { transform: rotateZ(0); }
+    15% { transform: rotateZ(-5deg); }
+    20% { transform: rotateZ(3deg); }
+    25% { transform: rotateZ(-3deg); }
+    30% { transform: rotateZ(2deg); }
+    35% { transform: rotateZ(-2deg); }
+    40%, 100% { transform: rotateZ(0); }
+}
+
 .wiggle {
     animation: wiggle 2s ease-in-out;
-    /* Ensures the animation runs once per click */
     animation-iteration-count: 1;
 }

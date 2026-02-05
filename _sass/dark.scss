@@ -43,10 +43,10 @@
     }
 
     .navig-container {
-        box-shadow: 0px 0px 0px rgb(17, 15, 15);
         // background: #00000000;
-        background: #1e1e2e;
-        border-width: 0.0rem;
+        background: rgba(24, 24, 37, 0.7);
+        border-radius: 5rem;
+        border: 2px solid var(--topbar-border-color);
     }
 
     .footer-container {
@@ -71,10 +71,6 @@
         color: #9baeff;
     }
 
-    .navbar {
-        // background: #0D1B2A;
-        background: #1E1E2E;
-    }
 
     .navbar .navbar-nav li a {
         color: #ffffff;

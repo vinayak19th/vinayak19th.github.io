@@ -1,3 +1,4 @@
+$topbar-height: 3.5rem;
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500,500italic,400italic,300italic,100italic,700italic);
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
 // @import url(https://use.fontawesome.com/releases/v5.11.2/css/all.css);
@@ -268,7 +269,7 @@ body {
 
 
 .header-container {
-    margin-top: 7rem;
+    margin-top: calc(#{$topbar-height} - 2rem);
     border-radius: 3rem;
     box-shadow: 0px 0px 0px #110f0f;
     background: none;
