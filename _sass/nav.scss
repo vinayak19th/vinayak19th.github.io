@@ -70,6 +70,10 @@ $navbar-brand-font-size: 1.8rem;
     width: calc(100% - 1rem);
 }
 
+.page-jump{
+    aspect-ratio: auto !important;
+}
+
 /* Mobile Tweaks */
 @media (max-width: 1000px) {
     .navbar{
@@ -149,7 +153,15 @@ $navbar-brand-font-size: 1.8rem;
     .navbar-nav>li:active {
         transform: scale(0.98);
     }
-  
+    
+    ul{
+        margin-top: 2rem !important;
+    }
+
+    ul::before{
+        display: none !important; 
+    }
+
     .navbar-nav>li>a {
       padding-top: 0;
       padding-bottom: 0;
@@ -169,6 +181,8 @@ $navbar-brand-font-size: 1.8rem;
 
     .navbar-header{
         width: 100vw;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 
