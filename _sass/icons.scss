@@ -69,9 +69,7 @@ ul.icons a {
         color: #ccd0da;
     }
 
-    .filter-svg {
-        filter: brightness(80%) contrast(129%) invert(100%);
-    }
+
 }
 
 .devicon {
@@ -86,5 +84,15 @@ ul.icons a {
 }
 
 .filter-svg {
-    filter: brightness(0%) contrast(129%) saturate(100%) invert(29%) sepia(95%) saturate(1358%) hue-rotate(198deg) brightness(30%) contrast(101%);
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    background-color: currentColor;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
 }

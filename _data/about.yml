@@ -4,23 +4,25 @@ content: | # this will include new lines to allow paragraphs
      <b>Where I'm looking to go</b> : My current goal is to complete a PhD in Quantum Machine Learning and contribute to the development of this emerging and interdisciplinary field.<br><br>
 stack:
   - languages:
-      - <i class="devicon-python-plain-wrodmark devicon"></i>
-      - <i class="devicon-cplusplus-plain-wrodmark devicon"></i>
+      - <i class="devicon-python-plain-wordmark devicon"></i>
+      - <i class="devicon-cplusplus-plain-wordmark devicon"></i>
       - <i class="devicon-html5-plain-wordmark devicon"></i> 
       - <i class="devicon-javascript-plain devicon"></i>
       - <i class="devicon-matlab-plain devicon"></i>
       - <i class="devicon-postgresql-plain devicon"></i>
-      - <i class="devicon-bash-plain devicon"></i>
       - <i class="devicon-java-plain devicon"></i>
       - <i class="devicon-kotlin-plain devicon"></i>
 
   - machine_learning:
       - <i class="devicon-tensorflow-original devicon"></i>
       - <i class="devicon-pytorch-original devicon"></i>
-      - <i class="devicon-numpy-original devicon"></i>
-      - <i class="devicon-pandas-original-wordmark devicon "></i>
+      - <i class="devicon-keras-plain devicon"></i>
+      - '<span class="filter-svg devicon" style="mask-image: url(https://upload.wikimedia.org/wikipedia/commons/8/86/Google_JAX_logo.svg); -webkit-mask-image: url(https://upload.wikimedia.org/wikipedia/commons/8/86/Google_JAX_logo.svg);"></span>'
+      - <i class="devicon-numpy-plain devicon"></i>
+      - <i class="devicon-pandas-plain devicon "></i>
       - <i class="devicon-opencv-plain-wordmark devicon"></i>
-      - <img class="filter-svg" src="https://raw.githubusercontent.com/scikit-learn/scikit-learn/main/doc/logos/scikit-learn-logo-without-subtitle.svg" alt="scikit_learn" width="40" height="40"/>
+      - <i class="devicon-scikitlearn-plain devicon"></i>
+
 
   - Web frameworks:
       - <i class="devicon-sass-original devicon"></i>
@@ -31,12 +33,15 @@ stack:
 
   - dev_ops:
       - <i class="devicon-git-plain devicon"></i>
-      - <i class="devicon-github-original-wordmark devicon"></i>
-      - <i class="devicon-docker-plain-wordmark devicon"></i>
-      - <i class="devicon-kubernetes-plain-wordmark devicon"></i>
+      - <i class="devicon-github-original devicon"></i>
+      - <i class="devicon-docker-plain devicon"></i>
+      - <i class="devicon-kubernetes-plain devicon"></i>
+      - <i class="devicon-bash-plain devicon"></i>
     
 footer: |
   Feel free to message me on [LinkedIn](https://www.linkedin.com/in/vinayaksha/) anytime. <br>Always ready to talk <mark>Tech</mark>, <mark>Machine Learning</mark>, <mark>Quantum Computing</mark>, <b>K-Pop</b> or <b>Anime</b>.
 
 addons: | 
     <b>Stuff I'm good with</b>:
+
+
