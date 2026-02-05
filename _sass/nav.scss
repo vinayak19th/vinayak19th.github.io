@@ -7,7 +7,7 @@ $navbar-brand-font-size: 1.8rem;
     /* Blog Theme Variables Ported */
     --topbar-bg: rgba(226, 226, 226, 0.6);
     --topbar-border-color: #a0a0a0;
-    --topbar-text-color: rgb(78 78 78);
+    --topbar-text-color: #4e4e4e;
 
     --nav-backdrop-filter: blur(8px);
     --btn-border-color: #e9ecef;
@@ -41,6 +41,7 @@ $navbar-brand-font-size: 1.8rem;
     margin-top: 0.5rem;
     margin-bottom: 0rem;
     background-color: transparent; /* Wrapper handles bg */
+    
 
     /* Fixes */
     top: 1rem;
@@ -72,6 +73,7 @@ $navbar-brand-font-size: 1.8rem;
 
 .page-jump{
     aspect-ratio: auto !important;
+    margin-top: 0.5rem;
 }
 
 /* Mobile Tweaks */
@@ -313,9 +315,10 @@ $icon-size : 3.2rem;
   width: 2rem;
   height: 2rem;
   background: white;
-  color: var(--card-header-bg) !important;
+  color: #4e4e4e !important;
   border-radius: 50%;
   padding: 0px;
+  padding-top: 2px;
   align-items: center;
   justify-content: center;
   transition: transform 0.4s ease;

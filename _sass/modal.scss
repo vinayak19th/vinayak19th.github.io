@@ -40,7 +40,13 @@ $button-pad: 6px;
 .fa-nopad {
     padding-top: $button-pad !important;
     padding-bottom: $button-pad !important;
-    margin: 0px;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    @media (max-width: 768px) {
+        padding-top: 0px !important;
+        padding-bottom: 1em !important;
+        margin-right: 0rem;
+    }
 }
 
 .modalBox {
@@ -56,6 +62,10 @@ $button-pad: 6px;
 #ContactModalLabel {
     font-size: 2.5rem;
     display: inline;
+}
+
+#ContactModal{
+    padding-top: 0rem;
 }
 
 .modal-dialog {
