@@ -4,8 +4,8 @@ content: | # this will include new lines to allow paragraphs
      <b>Where I'm looking to go</b> : My current goal is to complete a PhD in Quantum Machine Learning and contribute to the development of this emerging and interdisciplinary field.<br><br>
 stack:
   - languages:
-      - <i class="devicon-python-plain devicon"></i>
-      - <i class="devicon-cplusplus-plain devicon"></i>
+      - <i class="devicon-python-plain-wrodmark devicon"></i>
+      - <i class="devicon-cplusplus-plain-wrodmark devicon"></i>
       - <i class="devicon-html5-plain-wordmark devicon"></i> 
       - <i class="devicon-javascript-plain devicon"></i>
       - <i class="devicon-matlab-plain devicon"></i>
@@ -19,25 +19,21 @@ stack:
       - <i class="devicon-pytorch-original devicon"></i>
       - <i class="devicon-numpy-original devicon"></i>
       - <i class="devicon-pandas-original-wordmark devicon "></i>
-      - <i class="devicon-opencv-plain-wordmark devicon "></i>
+      - <i class="devicon-opencv-plain-wordmark devicon"></i>
       - <img class="filter-svg" src="https://raw.githubusercontent.com/scikit-learn/scikit-learn/main/doc/logos/scikit-learn-logo-without-subtitle.svg" alt="scikit_learn" width="40" height="40"/>
 
-  - frameworks:
+  - Web frameworks:
       - <i class="devicon-sass-original devicon"></i>
       - <i class="devicon-bootstrap-plain-wordmark devicon"></i>
       - <i class="devicon-django-plain-wordmark devicon"></i>
       - <i class="devicon-android-plain devicon"></i>
-      - <span class="devicon-fastapi-plain-wordmark devicon wordmark"></span>
-    #   - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original-wordmark.svg" alt="FastAPI" width="70" height="70" />
+      - <span class="devicon-fastapi-plain devicon"></span>
 
   - dev_ops:
-      - <i class="devicon-git-plain-wordmark devicon wordmark"></i>
+      - <i class="devicon-git-plain devicon"></i>
       - <i class="devicon-github-original-wordmark devicon"></i>
       - <i class="devicon-docker-plain-wordmark devicon"></i>
       - <i class="devicon-kubernetes-plain-wordmark devicon"></i>
-      - <i class="devicon-googlecloud-plain devicon"></i>
-      - <i class="devicon-amazonwebservices-plain-wordmark devicon wordmark"></i>
-      - <i class="devicon-azure-plain-wordmark devicon wordmark"></i>
     
 footer: |
   Feel free to message me on [LinkedIn](https://www.linkedin.com/in/vinayaksha/) anytime. <br>Always ready to talk <mark>Tech</mark>, <mark>Machine Learning</mark>, <mark>Quantum Computing</mark>, <b>K-Pop</b> or <b>Anime</b>.
