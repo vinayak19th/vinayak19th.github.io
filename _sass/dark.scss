@@ -1,10 +1,10 @@
 .dark {
     // background: #181825;
-    background: linear-gradient(-45deg, #3b3b46,#181825, #1e1e29 ,#49495b);
+    background: linear-gradient(-45deg, #272731,#181825,#12121d,#1e1e29, #272735 ,#272731);
     background-size: 400% 400%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    animation: gradient 10s ease infinite;
+    animation: gradient 10s ease-in-out infinite;
     height: 100vh;
 
     @keyframes gradient {
@@ -28,12 +28,11 @@
     }
 
     .container {
-        background: #1e1e2e;
-        border-radius: 2rem;
-        border-width: 0.08rem;
-        border-style: solid;
-        border-color: white;
-        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.205);
+        background: rgba(24, 24, 37, 0.6);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid #9ba2bb;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
     }
 
     .header-container {

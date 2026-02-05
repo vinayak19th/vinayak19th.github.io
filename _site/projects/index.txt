@@ -10,16 +10,16 @@
 
   <title>Vinayak Sharma</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="PhD in CS, Arizona State University" />
+<meta property="og:title" content="PhD Student in CS, Arizona State University" />
 <meta property="og:locale" content="en_US" />
 <link rel="canonical" href="http://0.0.0.0:4001/projects/" />
 <meta property="og:url" content="http://0.0.0.0:4001/projects/" />
-<meta property="og:site_name" content="PhD in CS, Arizona State University" />
+<meta property="og:site_name" content="PhD Student in CS, Arizona State University" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="PhD in CS, Arizona State University" />
+<meta property="twitter:title" content="PhD Student in CS, Arizona State University" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","headline":"PhD in CS, Arizona State University","url":"http://0.0.0.0:4001/projects/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","headline":"PhD Student in CS, Arizona State University","url":"http://0.0.0.0:4001/projects/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <!-- <link rel="FavIcon" type="image/svg+xml" href="/images/fav.svg" ,
@@ -102,31 +102,56 @@
                 
                 
                 <li class="page-jump">
-                    <a href="/about/">about</a>
+                    <a href="/about/">
+                        
+                        <i class="fa-solid fa-user nav-icon"></i>
+                        
+                        about
+                    </a>
                 </li>
                 
                 
                 
                 <li class="page-jump">
-                    <a href="/mywork/">My Work</a>
+                    <a href="/portfolio/">
+                        
+                        <i class="fa-solid fa-microscope nav-icon"></i>
+                        
+                        Research & Projects
+                    </a>
                 </li>
                 
                 
                 
                 <li class="page-jump">
-                    <a href="/experience/">experience</a>
+                    <a href="/experience/">
+                        
+                        <i class="fa-solid fa-briefcase nav-icon"></i>
+                        
+                        experience
+                    </a>
                 </li>
                 
                 
                 
                 <li class="page-jump">
-                    <a href="http://127.0.0.1:4000/Blog/">Blog</a>
+                    <a href="http://127.0.0.1:4000/Blog/">
+                        
+                        <i class="fa-solid fa-pen-nib nav-icon"></i>
+                        
+                        Blog
+                    </a>
                 </li>
                 
                 
                 
                 <li class="page-jump">
-                    <a href="/certifications/">certifications</a>
+                    <a href="/certifications/">
+                        
+                        <i class="fa-solid fa-award nav-icon"></i>
+                        
+                        certifications
+                    </a>
                 </li>
                 
                 <li>
@@ -165,7 +190,7 @@
                 <div class="card-body d-flex flex-column h-100 p-4">
                     <div class="card-header pb-2">
                         <h2 class="card-title mb-2" style="font-weight: 500;">Vinayak Sharma</h2>
-                        <p class="card-text mb-2" style="font-size:1.5rem"><em>PhD in CS, Arizona State University</em></p>
+                        <p class="card-text mb-2" style="font-size:1.5rem"><em>PhD Student in CS, Arizona State University</em></p>
                     </div>
                     <div class="card-text mt-3">
                         <p class="mb-1">Find me on: </p>    
@@ -193,7 +218,7 @@
     <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 header-left">
             <h1>Vinayak Sharma</h1>
-            <h2 style="margin-left: 0.6rem;">PhD in CS, Arizona State University</h2>
+            <h2 style="margin-left: 0.6rem;">PhD Student in CS, Arizona State University</h2>
         </div>
         <br>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 header-right">
@@ -242,16 +267,6 @@
             </a>
             <div class="mt-2 icon-text">
                 Resume
-            </div>
-        </div>
-    </li><li>
-        <div class="flex justify-content-around">
-            <a target="_blank" href="https://gravatar.com/vinayak19th"
-                class="button button--sacnite button--round-l">
-                <i class="cib-gravatar" title="Gravatar link"></i>
-            </a>
-            <div class="mt-2 icon-text">
-                Gravatar
             </div>
         </div>
     </li><li>
@@ -690,16 +705,6 @@ Urdu and Pashto <br /></li>
 
 
     </main>
-    <footer class="footer-box text-center text-lg-start text-muted">
-    <section>
-        <div class="text-center p-4">
-        Vinayak Sharma | </span> <a href="mailto:vinayak1998th@Gmail.com">vinayak1998th@Gmail.com</a> | 
-        </div>
-    </section>
-</footer>
-
-
-
     <!-- jQuery Version 1.11.0 -->
     <script src="/assets/js/jquery-1.11.0.js"></script>
 

@@ -6,12 +6,16 @@ $navbar-brand-font-size: 1.8rem;
     
     /* Blog Theme Variables Ported */
     --topbar-bg: rgba(226, 226, 226, 0.6);
-    --topbar-border-color: #d3d3d3;
+    --topbar-border-color: #a0a0a0;
     --topbar-text-color: rgb(78 78 78);
 
     --nav-backdrop-filter: blur(8px);
     --btn-border-color: #e9ecef;
     --card-header-bg: #ffffff; /* Default for light */
+
+    @media (max-width: 1000px) {
+        --topbar-bg: rgba(226, 226, 226, 0.7);
+    }
 
     .dark {
         --cursor-color: #ffffff;
@@ -60,7 +64,7 @@ $navbar-brand-font-size: 1.8rem;
 
     padding-top: 0.1rem;
     padding-bottom: 0.2rem;
-    border: 2px solid var(--topbar-border-color);
+    border: 1.5px solid var(--topbar-border-color);
     margin-top: 0; /* Bootstrap override */
     border-radius: 5rem;
     width: calc(100% - 1rem);
@@ -68,8 +72,6 @@ $navbar-brand-font-size: 1.8rem;
 
 /* Mobile Tweaks */
 @media (max-width: 1000px) {
-    --topbar-bg: rgba(226, 226, 226, 0.7);
-
     .navbar{
         border: none;
     }
