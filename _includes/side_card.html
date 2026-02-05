@@ -1,0 +1,63 @@
+<div class="side-card container">
+    <div class="profile-section center-text">
+        {%- if site.about_profile_image -%}
+        <div class="profile-img-wrapper">
+            <span class="profile-img-sidecard" style="background-image: url({{site.about_profile_image | relative_url }});"></span>
+        </div>
+        {%- endif -%}
+        
+        <h1>{{ site.name | escape }}</h1>
+        <h2>{{site.title}}</h2>
+        <h2>{{site.organization}}</h2>
+
+        <!-- Mobile Toggle Button (Visible only on small screens) -->
+        <button id="show-contacts-btn" class="visible-xs visible-sm visible-md hidden-lg">
+            <i class="fas fa-chevron-down"></i>
+        </button>
+        
+        <div id="side-card-contacts" class="side-card-icons collapse in-lg" style="margin-top: 2rem;">
+            {% include icons.html %}
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleBtn = document.getElementById('show-contacts-btn');
+        const contactsDiv = document.getElementById('side-card-contacts');
+        const icon = toggleBtn.querySelector('i');
+
+        // Check if screen is large
+        function checkScreenSize() {
+             if (window.innerWidth >= 1200) {
+                 contactsDiv.classList.add('in'); // Bootstrap 3 'show' class is 'in' usually for collapse, or just display block
+                 contactsDiv.style.display = 'block';
+                 toggleBtn.style.display = 'none';
+             } else {
+                 // Mobile state initialization
+                 toggleBtn.style.display = 'block';
+                 if (!contactsDiv.classList.contains('in')) {
+                    contactsDiv.style.display = 'none';
+                 }
+             }
+        }
+
+        toggleBtn.addEventListener('click', function() {
+            if (contactsDiv.style.display === 'none' || contactsDiv.style.display === '') {
+                contactsDiv.style.display = 'block';
+                contactsDiv.classList.add('in');
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            } else {
+                contactsDiv.style.display = 'none';
+                contactsDiv.classList.remove('in');
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            }
+        });
+
+        // Initial check and resize listener
+        checkScreenSize();
+        window.addEventListener('resize', checkScreenSize);
+    });
+</script>
