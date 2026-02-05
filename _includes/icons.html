@@ -74,19 +74,6 @@
         </div>
     </li>
     {%- endif -%}
-    {%- if site.gravatar_username -%}
-    <li>
-        <div class="flex justify-content-around">
-            <a target="_blank" href="https://gravatar.com/{{ site.gravatar_username| cgi_escape | escape }}"
-                class="button button--sacnite button--round-l">
-                <i class="cib-gravatar" title="Gravatar link"></i>
-            </a>
-            <div class="mt-2 icon-text">
-                Gravatar
-            </div>
-        </div>
-    </li>
-    {%- endif -%} 
     {%- if site.whatsapp_number -%}
     <li>
         <div class="flex justify-content-around">

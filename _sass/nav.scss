@@ -17,7 +17,7 @@ $navbar-brand-font-size: 1.8rem;
         --cursor-color: #ffffff;
         
         /* Dark Mode Overrides */
-        --topbar-bg: rgba(24, 24, 37, 0.3);
+        --topbar-bg: rgba(24, 24, 37, 0.8);
         --topbar-border-color: #9ba2bb;
         --topbar-text-color: #e7e7e7;
         --btn-border-color: #2e2f31;
@@ -68,14 +68,32 @@ $navbar-brand-font-size: 1.8rem;
 
 /* Mobile Tweaks */
 @media (max-width: 1000px) {
+    --topbar-bg: rgba(226, 226, 226, 0.7);
+
+    .navbar{
+        border: none;
+    }
+    .navbar-default{
+        border: none;
+    }    
     .navbar-fixed-top {
         height: auto;
-        margin-bottom: 2rem;
+        bottom: 2rem;
+        top: auto;
+        position: fixed; 
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        width: 100%;
+        pointer-events: none;
     }
     
     .navig-container {
         max-width: none !important;
         margin: 0 !important;
+        width: 95%;
+        pointer-events: auto;
     }
 
     .navbar-header {
@@ -87,8 +105,13 @@ $navbar-brand-font-size: 1.8rem;
     }
   
     .navbar-collapse {
-      border-top: 1px solid #eee;
-      border-radius: 5rem;
+      border-top: 1px solid var(--topbar-text-color) !important;
+      text-align: center;
+
+      li{
+        align-items: center;
+        text-align: center;
+      }
     }
   
     .navbar-collapse.collapse {
@@ -101,20 +124,55 @@ $navbar-brand-font-size: 1.8rem;
   
     .navbar-nav {
       float: none!important;
-      margin: 7.5px -15px;
+      margin: 0.5rem 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 0 10px;
     }
   
     .navbar-nav>li {
       float: none;
+      background: transparent; 
+      border-radius: 1rem;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: none;
+      transition: transform 0.2s;
+      aspect-ratio: 1; /* Make it square */
+    }
+
+    .navbar-nav>li:active {
+        transform: scale(0.98);
     }
   
     .navbar-nav>li>a {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 0;
+      padding-bottom: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; 
     }
+    
+    .navbar-nav > li > a > .nav-icon {
+        margin-right: 0;
+        margin-bottom: 0.3rem;
+        font-size: 2rem; /* Even larger for the square look? User said bigger menu style earlier */
+    }
+
     .navbar-header{
         width: 100vw;
     }
+}
+
+.nav-icon {
+    margin-right: 0.5rem;
+    font-size: 1.7rem; 
 }
 
 .navbar-center {
@@ -264,13 +322,15 @@ $icon-size : 3.2rem;
 }
 
 .navbar-divider{
+    border-left : 2px solid var(--topbar-text-color) !important;
+    margin-left: 0.1em !important;
     @media screen and (max-width: 1000px) {
         display: none;
     }
 }
 
 .dropdown-divider{
-    border-color : white;
+    border-color : var(--topbar-text-color);
     @media screen and (min-width: 1000px) {
         display: none;
     }

@@ -30,7 +30,12 @@
                     {% assign link_url = "http://127.0.0.1:4000/Blog/" %}
                 {% endif %}
                 <li class="page-jump">
-                    <a href="{{ link_url }}">{{page.name}}</a>
+                    <a href="{{ link_url }}">
+                        {% if page.icon %}
+                        <i class="{{ page.icon }} nav-icon"></i>
+                        {% endif %}
+                        {{page.name}}
+                    </a>
                 </li>
                 {%endfor%}
                 <li>
