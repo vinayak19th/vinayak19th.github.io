@@ -25,8 +25,12 @@
         <div class="collapse navbar-collapse " id="pagenavs">
             <ul class="nav navbar-nav navbar-right">
                 {%for page in site.data.pages%}
+                {% assign link_url = page.permalink | prepend: '/' | append: '/' %}
+                {% if page.name == 'Blog' and jekyll.environment == 'development' %}
+                    {% assign link_url = "http://127.0.0.1:4000/Blog/" %}
+                {% endif %}
                 <li class="page-jump">
-                    <a href=" /{{page.permalink}}/">{{page.name}}</a>
+                    <a href="{{ link_url }}">{{page.name}}</a>
                 </li>
                 {%endfor%}
                 <li>
