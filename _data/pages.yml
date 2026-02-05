@@ -1,14 +1,19 @@
 - name : about
   permalink: about
+  icon: fa-solid fa-user
 
-- name : My Work
-  permalink: mywork
+- name : Research & Projects
+  permalink: portfolio
+  icon: fa-solid fa-microscope
 
 - name : experience
   permalink: experience
+  icon: fa-solid fa-briefcase
 
 - name : Blog
   permalink: Blog
+  icon: fa-solid fa-pen-nib
 
 - name : certifications
   permalink: certifications
+  icon: fa-solid fa-award
