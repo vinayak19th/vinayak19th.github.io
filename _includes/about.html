@@ -1,7 +1,7 @@
 <div class="container intro-container" id="about">
   <h3>{{ site.about_title | default: "About Me" }}</h3>
   <div class="row clearfix" style="margin-top: 3rem">
-    {%- if site.about_profile_image -%}
+      {%- if site.about_profile_image -%}
     <div class="col-xs-12 col-sm-4 col-md-3 no-print">
       <span
         class="profile-img"
@@ -15,22 +15,24 @@
       {{ site.data.about.content | strip | markdownify }}
       {{ site.data.about.addons | strip | markdownify }}
       <!--sd-->
-      <ul style="font-size: 1.7rem">
+      <div class="skills-grid">
         {% for cat in site.data.about.stack %}
-        <!--For-->
-        {% for key in cat %}
-        <!--For-->
-        <li style="margin-bottom: 1rem">
-          <mark>{{key[0]}}</mark> -> {% for item in key[1] %} {{ item }} | {%
-          endfor %}
-        </li>
+          {% for key in cat %}
+          <div class="skill-card">
+            <h3 class="skill-card-header">{{ key[0] | replace: '_', ' ' | capitalize }}</h3>
+            <div class="skill-list">
+              {% for item in key[1] %}
+              <div class="skill-item">
+                {{ item }}
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
         {% endfor %}
-        <!--For-->
-        {% endfor %}
-      </ul>
+      </div>
       <!--sd--><br />
       {{ site.data.about.footer | strip | markdownify }}
       <br />
     </div>
   </div>
-</div>
