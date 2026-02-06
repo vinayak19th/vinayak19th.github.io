@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     animation: gradient 10s ease-in-out infinite;
-    height: 100vh;
+    min-height: 100vh;
 
     @keyframes gradient {
         0% {
