@@ -46,9 +46,7 @@
         background: var(--topbar-bg);
         border-radius: 5rem;
         border: 2px solid var(--topbar-border-color);
-        @media (max-width: 1000px) {
-            --topbar-bg: rgba(24, 24, 37, 0.95);
-        }
+       
     }
 
     .footer-container {
