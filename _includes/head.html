@@ -42,12 +42,26 @@
         canvas.width = canvas.height = size;
         const ctx = canvas.getContext('2d');
 
-        ctx.beginPath();
-        ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
-        ctx.closePath();
-        ctx.clip();
-
+        // Draw the uploaded image to the canvas
         ctx.drawImage(img, 0, 0, size, size);
+
+        // Get the PNG data URL from the canvas
+        const pngBase64 = canvas.toDataURL('image/png');
+
+        // Create an SVG string that includes the PNG and clips it to a circle
+        const svg = `
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${size} ${size}">
+          <defs>
+            <clipPath id="circle">
+              <circle cx="${size / 2}" cy="${size / 2}" r="${size / 2}"/>
+            </clipPath>
+          </defs>
+          <image width="${size}" height="${size}" href="${pngBase64}" clip-path="url(#circle)"/>
+        </svg>`;
+
+        // Encode the SVG string to base64
+        const svgBase64 = btoa(svg);
+        const faviconUrl = `data:image/svg+xml;base64,${svgBase64}`;
 
         let favicon = document.querySelector('link[rel="icon"]');
         if (!favicon) {
@@ -55,7 +69,8 @@
           favicon.rel = 'icon';
           document.head.appendChild(favicon);
         }
-        favicon.href = canvas.toDataURL('image/png');
+        favicon.type = 'image/svg+xml';
+        favicon.href = faviconUrl;
       };
 
       img.onerror = function () {
