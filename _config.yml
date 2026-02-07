@@ -78,6 +78,7 @@ sass:
 plugins:
   - jekyll-scholar
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 color:
   primary: 18bc9c #80B3FF

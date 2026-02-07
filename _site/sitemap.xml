@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://0.0.0.0:4001/about/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:4001/certifications/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:4001/experience/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:4001/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:4001/insta/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:4001/portfolio/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:4001/projects/</loc>
+</url>
+</urlset>
