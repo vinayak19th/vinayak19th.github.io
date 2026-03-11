@@ -17,6 +17,9 @@
 <div class="publication-item" data-paper-year="{{ entry.year }}" data-paper-tag="{{ entry.tag | default: 'misc' }}" data-paper-venue="{{ venue }}" data-paper-title="{{ entry.title }}">
   <div class="row clearfix layout layout-left">
     <div class="col-xs-12 col-sm-9 col-md-10 col-print-12 inlines borderless">
+      {%- if entry.url -%}
+      <a href = "{{ entry.url }}" style="font-style: normal;">
+      {%- endif -%}
       <h4 class="bibtitle">{{ entry.title }}</h4>
       <div class="paper-details">
         {% if venue contains entry.year %}
@@ -32,6 +35,10 @@
           {{ author.first }} {{ author.last }}
           {% unless forloop.last %}, {% endunless %}
         {% endfor %}
+      {%- if entry.url -%}
+        </a>
+      {%- endif -%}
+
       </div>
       <p>
         {% assign tags = entry.tag | split: ", " %}
