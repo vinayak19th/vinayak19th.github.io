@@ -94,6 +94,8 @@ scholar:
   bibliography: papers.bib
   bibliography_template: paper
   last_first: false
+  sort_by: year
+  order: descending
 
 exclude : [
   "Gemfile",
