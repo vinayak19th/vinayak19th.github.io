@@ -1,9 +1,6 @@
 ---
 ---
-{% assign venue = entry.archiveprefix %}
-{% unless venue %}
-  {% assign venue = entry.customvenue %}
-{% endunless %} 
+{% assign venue = entry.customvenue  %}
 {% unless venue %}
   {% assign venue = entry.series %}
 {% endunless %} 
@@ -13,6 +10,9 @@
 {% unless venue %}
   {% assign venue = entry.publisher %}
 {% endunless %}
+{% unless venue %}
+  {% assign venue = entry.archiveprefix %}
+{% endunless %} 
 
 <div class="publication-item" data-paper-year="{{ entry.year }}" data-paper-tag="{{ entry.tag | default: 'misc' }}" data-paper-venue="{{ venue }}" data-paper-title="{{ entry.title }}">
   <div class="row clearfix layout layout-left">
