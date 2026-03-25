@@ -2,7 +2,7 @@
 - layout: layout/left-edu
   name: Arizona State University
   link: https://www.asu.edu/
-  dates: Present - 2024
+  dates: 2024 - Present
   degree: Doctor of Philosophy 
   abbr: PhD
   major: Computer Science
@@ -12,7 +12,7 @@
 - layout: layout/left-edu
   name: Arizona State University
   link: https://www.asu.edu/
-  dates: 2024 - 2022
+  dates: 2022 - 2024
   degree: Master of Science 
   abbr: MSc
   major: Computer Science
@@ -23,7 +23,7 @@
 - layout: layout/left-edu
   name: SRM Institute of Science & Technology
   link: https://www.srmist.edu.in/
-  dates: 2021-2017
+  dates: 2017 - 2021
   degree: Bachelor of Technology 
   abbr: B.Tech
   major: Computer Science & Engineering 
