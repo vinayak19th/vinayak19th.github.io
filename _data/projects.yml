@@ -4,22 +4,22 @@
   area: Machine Learning
   github: vinayak19th/Aesthetic-Face-De-Identification
   stack: ["TensorFlow", "OpenCV", "Android", "Image Filter"]
-  brief: Scalable privacy preserving face de-identification
+  brief: Scalable privacy-preserving face de-identification
   description: | # this will include new lines to allow paragraphs
       A scalable approach to preserving the privacy of bystanders in social media posts<br>
-      * Entirely '*edge*' system tested on low end android phones-
-      * Client side nature makes it scalable as no server compute required for new nodes,
+      * Entirely '*edge*' system tested on low-end Android phones
+      * Client-side nature makes it scalable, as no server compute is required for new nodes
       * Edge compute improves privacy as unfiltered data never leaves the device
-      * Aesthetics are preserved via custom filter implementation based on human tendecies
+      * Aesthetics are preserved via custom filter implementation based on human tendencies
 
 - name: QML-Tutorials
   # link:
   github: vinayak19th/QML-Tutorials
   area: Quantum Machine Learning
   stack: ["PennyLane", "TensorFlow", "Numpy"]
-  brief: Set of tutorials to learn teach Quantum Machine Learning
+  brief: Set of tutorials to learn and teach Quantum Machine Learning
   description: | # this will include new lines to allow paragraphs
-      A set of tutorials in PennyLane to teach <mark> Quantum Machine Learning</mark> convering:
+      A set of tutorials in PennyLane to teach <mark> Quantum Machine Learning</mark> covering:
       * Toy dataset generation using random quantum circuits
       * Basic Variational or Explicit Models
       * Data ReUploading Models
@@ -33,7 +33,7 @@
   brief: TF-keras implementation of ARCNN which removes JPEG compression artifacts
   description: | # this will include new lines to allow paragraphs
       A tf-keras implementation of ARCNN mentioned in :<br>
-      * Implemented ARCNN in tf.keras for easy of use
+      * Implemented ARCNN in tf.keras for ease of use
       * Created a novel "lite" version using dilated convolutions and reducing the number of parameters to half of that of Faster ARCNN (64k -> 32k)
 
 - name: vinayak19th.github.io
@@ -41,21 +41,21 @@
   area: Web Development
   github: vinayak19th/vinayak19th.github.io
   stack: ["Jekyll", "BootStrap", "JQuery", "SCSS", "HTML5"]
-  brief: The code repo for this website and instructions 
+  brief: The code repository for this website and instructions 
   description: | # this will include new lines to allow paragraphs
       Website hosting my resume and profile. Notable Features include:
         * System persistent dark mode (Remembers your preference via cookies)
-        * Live Github based Statistcs
-            * Profie Statistics on the about page
+        * Live Github-based Statistics
+            * Profile statistics on the about page
             * Project statistics per repository in the project page
-        * Reactive design for mobile friendly operation
-        * Tabbed Page for certifications for easy of reading and management
+        * Reactive design for mobile-friendly operation
+        * Tabbed page for certifications for ease of reading and management
         * Header section with live links such as :
-            * Direct whatsapp message
+            * Direct WhatsApp message
             * Medium Profile
             * Stack Overflow
             * etc
-        * Modular self generating based on yml datasheets
+        * Modular self-generating layout based on YAML data sheets
 
 - name: LOW-RESOURCE ASR
   #link:
@@ -88,7 +88,7 @@
       * Find the package on: 
       [![PyPI](https://img.shields.io/badge/PyPI-3775A9?logo=pypi&logoColor=fff)](https://pypi.org/project/pennylane-keras3-layer/)
       * Keras 3 PennyLane wrapper with QNode interface automatically selected based on the keras backend 
-      * Addded optimizations for JAX with `jax.compile`
+      * Added optimizations for JAX with `jax.compile`
       * Support of saving and loading models
       
 

@@ -47,7 +47,7 @@ certification:
     field : NLP
     date: May 22 2020
     description: > # this will include new lines to allow paragraphs
-      This course covers a wide range of tasks in Natural Language Processing from basic to advanced: sentiment analysis, summarization, dialogue state tracking, to name a few. Upon completing, you will be able to recognize NLP tasks in your day-to-day work, propose approaches, and judge what techniques are likely to work well.  The final project is devoted to one of the most hot topics in today’s NLP. You will build your own conversational chat-bot that will assist with search on StackOverflow website. The project will be based on practical assignments of the course, that will give you hands-on experience with such tasks as text classification, named entities recognition, and duplicates detection. 
+      This course covers a wide range of tasks in Natural Language Processing from basic to advanced: sentiment analysis, summarization, dialogue state tracking, to name a few. Upon completing it, you will be able to recognize NLP tasks in your day-to-day work, propose approaches, and judge what techniques are likely to work well. The final project is devoted to one of the hottest topics in today's NLP. You will build your own conversational chatbot that will assist with search on the Stack Overflow website. The project will be based on practical assignments from the course, giving you hands-on experience with tasks such as text classification, named entity recognition, and duplicate detection. 
 
   - layout: layout/left-cer
     name: Advanced Deployment Scenarios with TensorFlow
@@ -100,11 +100,11 @@ certification:
     date: Jan 4 2020
     field : Web Deployment
     description: > # this will include new lines to allow paragraphs
-      This course teaches you learn how to train and run machine learning models in any browser using TensorFlow.js. 
+      This course teaches you how to train and run machine learning models in any browser using TensorFlow.js. 
       You’ll learn techniques for handling data in the browser, and at the end you’ll build a computer vision project that 
       recognizes and classifies objects from a webcam.<br><br>
       I personally incorporated my learning in this course into my internship at Myelin Foundry to test viability of project 
-      deployment in Tensorflow.js for web browser based inference. This was done for multiple projects.
+      deployment in Tensorflow.js for web browser-based inference. This was done for multiple projects.
   
   - layout: layout/left-cer
     name: Creating Custom Callbacks in Keras

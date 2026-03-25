@@ -4,23 +4,23 @@ certification:
   - layout: layout/left-cer
     name: PennyLane 
     link: https://cloud.pennylane.ai/profiles/ob/certificates/permalink/372a08e4-c719-44dd-a6e7-2b97d78e8442
-    provider: pennylane
-    qualification: Introduction to Pennylane
+    provider: PennyLane
+    qualification: Introduction to PennyLane
     field : Quantum Computing, Quantum Machine Learning
     date: Apr 4 2024
     description: > # this will include new lines to allow paragraphs
-      This certificate is awarded on the completion of the pennylane programming challenge, creating a quantum neural network from scratch. 
+      This certificate is awarded upon completion of the PennyLane programming challenge for creating a quantum neural network from scratch. 
 
   - layout: layout/left-cer
     name: Qiskit Global Summer School on Quantum Machine Learning
     link: https://drive.google.com/file/d/1hb9Lf0KVLjEoiiPaMCUuedBNcDigs0q9/view?usp=sharing
-    provider: IBMQisKit
+    provider: IBM Qiskit
     qualification: Certificate of Excellence
     field : Quantum Computing, Quantum Machine Learning
     date: Jul 23 2021
     description: > # this will include new lines to allow paragraphs
       Completed the two-week intensive course provided by IBM Quantum, completing all graded lab work assignments with a final 
-      cumulative score above 75%, demonstrating applied understanding and comfort with and about Quantum Computing and Quantum Machine 
+      cumulative score above 75%, demonstrating applied understanding and comfort with Quantum Computing and Quantum Machine 
       Learning using Qiskit
       
   - layout: layout/left-cer

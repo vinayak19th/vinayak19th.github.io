@@ -10,7 +10,7 @@
   description: > # this will include new lines to allow paragraphs
     [RA] <u> Dec 2024 - Present</u> 
     Under Professor <a href="https://search.asu.edu/profile/969623">Prof. Aviral Shrivastava</a>:
-      * Reasearching how to improve current NISQ Quantum Computers using SOTA Machine Learning
+      * Researching how to improve current NISQ Quantum Computers using SOTA Machine Learning
 
     [TA] <u> Jan 2025 - May 2025</u>
     CSE 598:Quantum Computing under <a href="https://search.asu.edu/profile/969623">Prof. Aviral Shrivastava</a>: 
@@ -23,14 +23,14 @@
 
     [TA] <u> Jan 2024 - May 2024</u> 
     CPI 111:Game Development I under <a href="https://search.asu.edu/profile/325953">Prof. Yoshihiro Kobayashi</a>:
-      * Proving in-class support during game development. 
+      * Providing in-class support during game development. 
       * Working with a team of 2 graders and 5 UG-TAs.
     
     [TA] <u> Aug 2023 - Dec 2023</u> 
     CSE 598:Quantum Computing under <a href="https://www.zilin.one/">Prof. Zilin Jiang</a>:
       * Graded and provided feedback on assignments related to randomized classical algorithms, basics of qubits and quantum computing systems, quantum cryptography and QML.
 
-    [TA] <u> Aug 2022 - Dec 2023</u> 
+    [TA] <u> Aug 2022 - Dec 2022</u> 
     486: Capstone Project under <a href="https://search.asu.edu/profile/1215971">Prof. Helen Chavez</a>:
       * Helping final year undergraduate students with any issues they face in their 'Capstone Project'
       * Teaching the fundamentals of *'Agile Development'*
@@ -45,7 +45,7 @@
   doclink : 
   stack: []
   description: > # this will include new lines to allow paragraphs
-    * Accepted to a three month program that matches students with Google mentors and peers to support their pursuit of computer science research pathways. (research.google/outreach/csrmp) 
+    * Accepted to a three-month program that matches students with Google mentors and peers to support their pursuit of computer science research pathways. (research.google/outreach/csrmp) 
 
 - layout: layout/left-ex
   company: Myelin Foundry
@@ -58,7 +58,7 @@
   description: > # this will include new lines to allow paragraphs
     At Myelin Foundry I worked on :<br>
     <u> Aug 2020 - Jun 2022</u>
-      * Overhauled inference pipeline for a multi-model orchestration system comprising of face detection, recognition & Driver management models resulting in a 70% increase in the number of running concurrent models.
+      * Overhauled the inference pipeline for a multi-model orchestration system comprising face detection, recognition & driver management models, resulting in a 70% increase in the number of concurrently running models.
       * Optimized computer vision system utilizing Tensorflow with TensorRT acceleration on Nvidia Jetson platform, resulting
       in a 2x increase in inference speed and 50% increase in defect detection rate in real-time steel manufacturing.
       * Reduced footprint of a low-light image enhancement model by 50% by adapting the ZeroDCE++ architecture to run
@@ -68,8 +68,8 @@
       * Awarded the Myelin Impact Award as the most impactful employee for the company in the year 2021.
 
     <u> Jun 2019 - Jul 2019</u>
-      * Created an <b>end-to-end speech to text system for Pashto<b> - A challenge due to the extreme data scarcity associated with the language
-      * Tested & evaluated the viability of <b>Tensorflow.js</b> for the deployment of the organizations product stack
+      * Created an <b>end-to-end speech-to-text system for Pashto</b> - a challenge due to the extreme data scarcity associated with the language
+      * Tested & evaluated the viability of <b>Tensorflow.js</b> for deployment of the organization's product stack
       * Helped set up the company servers for model training
 
 - layout: layout/left-ex
@@ -81,11 +81,11 @@
   location: Chennai, India
   stack: [Tensorflow,Bezier Curves,BERT,NLTK]
   description: > # this will include new lines to allow paragraphs
-    As part of a team of student researcher under the <b>Samsung PRISM</b> program, I worked on:
-      * <b>Online Handwritting Recognition</b> in <b>Bengali</b> and <b>Tamil</b>. 
-      * The <i>dataset</i> was collected by us on campus and comprised of 1300 Handwritting samples. 
+    As part of a team of student researchers under the <b>Samsung PRISM</b> program, I worked on:
+      * <b>Online Handwriting Recognition</b> in <b>Bengali</b> and <b>Tamil</b>. 
+      * The <i>dataset</i> was collected by us on campus and comprised of 1300 handwriting samples. 
       * The data was in the form of <b>XML Files</b> with <b>(x,y,t)</b> information.
-      * The model we chose to use was an <b>attention based LSTM</b> to learn more information. 
+      * The model we chose to use was an <b>attention-based LSTM</b> to learn more information. 
       * This model was combined with a <b>pre-trained language model - BERT</b> to improve the accuracy of our predictions.  
 
 
