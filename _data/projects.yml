@@ -102,3 +102,15 @@
       * Demo for Data-ReUploading models.
       * Training loop tested on all 3 backends (Tensorflow, Keras, JAX)
       
+- name: DDU-Brightness-Controller
+  #link:
+  area: Linux
+  github: vinayak19th/ddcutil-brightness-controller-Gnome
+  brief: A GNOME extension to manage external monitor brightness using ddcutil
+  stack: ["JavaScript", "GNOME", "DDCutil"]
+  description: | # this will include new lines to allow paragraphs
+      * A GNOME extension to manage external monitor brightness using ddcutil.
+      * Multiple sliders per monitor supported natively.
+      * Persistence: Remembers your last configured brightness state across reloads.
+      * Config file populated automatically based on connected monitors using ddcutil detect.
+      * Debounced inputs to avoid hardware command saturation on sliders drag-n-drop.
