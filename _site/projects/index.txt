@@ -300,36 +300,47 @@
       
 
 <div class="container projects-container" id="projects">
-	<div class="floating-reset-div mb-3">
-		<h3>Projects</h3>
-		<button class="reset-filters-btn floating-reset-btn" data-target="project">Reset</button>
-	</div>
-	<!-- Filter Controls -->
+    <div class="floating-reset-div mb-3">
+        <h3>Projects</h3>
+        <button class="reset-filters-btn floating-reset-btn" data-target="project">Reset</button>
+    </div>
+    <!-- Filter Controls -->
 
-	<div id="Projectfilters" class="filters d-flex justify-content-center align-items-center flex-wrap gap-3">
+    <div id="Projectfilters" class="filters d-flex justify-content-center align-items-center flex-wrap gap-3">
+
+        
+        
+        
 
         <div class="filter-group">
-			<label for="project-area-filter"> Area: </label>
+            <label for="project-area-filter"> Area: </label>
             <div class="custom-dropdown">
                 <button class="custom-dropdown-toggle" type="button">All</button>
                 <div class="custom-dropdown-menu">
                     <input type="text" class="dropdown-search" placeholder="Search...">
                     <div class="dropdown-options">
                         <div class="dropdown-option" data-value="all">All</div>
-                        <div class="dropdown-option" data-value="Quantum Machine Learning">Quantum Machine Learning</div>
+                        
+                        <div class="dropdown-option" data-value="Linux">Linux</div>
+                        
                         <div class="dropdown-option" data-value="Machine Learning">Machine Learning</div>
+                        
+                        <div class="dropdown-option" data-value="Quantum Machine Learning">Quantum Machine Learning</div>
+                        
                         <div class="dropdown-option" data-value="Web Development">Web Development</div>
+                        
                     </div>
                 </div>
-                <input type="hidden" id="project-area-filter" class="filter-select project-filter-select" data-filter-group="project-area" value="all">
+                <input type="hidden" id="project-area-filter" class="filter-select project-filter-select"
+                    data-filter-group="project-area" value="all">
             </div>
-		</div>
+        </div>
 
         <!-- Stack Filter -->
         
         
         
-		<div class="vr"></div>
+        <div class="vr"></div>
 
         <div class="filter-group">
             <label for="project-stack-filter"> Tech Stack: </label>
@@ -340,59 +351,67 @@
                     <div class="dropdown-options">
                         <div class="dropdown-option" data-value="all">All</div>
                         
-                            <div class="dropdown-option" data-value="Android">Android</div>
+                        <div class="dropdown-option" data-value="Android">Android</div>
                         
-                            <div class="dropdown-option" data-value="Bash">Bash</div>
+                        <div class="dropdown-option" data-value="Bash">Bash</div>
                         
-                            <div class="dropdown-option" data-value="BootStrap">BootStrap</div>
+                        <div class="dropdown-option" data-value="BootStrap">BootStrap</div>
                         
-                            <div class="dropdown-option" data-value="Docker">Docker</div>
+                        <div class="dropdown-option" data-value="DDCutil">DDCutil</div>
                         
-                            <div class="dropdown-option" data-value="ESPNet">ESPNet</div>
+                        <div class="dropdown-option" data-value="Docker">Docker</div>
                         
-                            <div class="dropdown-option" data-value="HTML5">HTML5</div>
+                        <div class="dropdown-option" data-value="ESPNet">ESPNet</div>
                         
-                            <div class="dropdown-option" data-value="Image Filter">Image Filter</div>
+                        <div class="dropdown-option" data-value="GNOME">GNOME</div>
                         
-                            <div class="dropdown-option" data-value="JAX">JAX</div>
+                        <div class="dropdown-option" data-value="HTML5">HTML5</div>
                         
-                            <div class="dropdown-option" data-value="JQuery">JQuery</div>
+                        <div class="dropdown-option" data-value="Image Filter">Image Filter</div>
                         
-                            <div class="dropdown-option" data-value="Jekyll">Jekyll</div>
+                        <div class="dropdown-option" data-value="JAX">JAX</div>
                         
-                            <div class="dropdown-option" data-value="Kaldi">Kaldi</div>
+                        <div class="dropdown-option" data-value="JQuery">JQuery</div>
                         
-                            <div class="dropdown-option" data-value="Keras">Keras</div>
+                        <div class="dropdown-option" data-value="JavaScript">JavaScript</div>
                         
-                            <div class="dropdown-option" data-value="Numpy">Numpy</div>
+                        <div class="dropdown-option" data-value="Jekyll">Jekyll</div>
                         
-                            <div class="dropdown-option" data-value="OpenCV">OpenCV</div>
+                        <div class="dropdown-option" data-value="Kaldi">Kaldi</div>
                         
-                            <div class="dropdown-option" data-value="PIL">PIL</div>
+                        <div class="dropdown-option" data-value="Keras">Keras</div>
                         
-                            <div class="dropdown-option" data-value="PennyLane">PennyLane</div>
+                        <div class="dropdown-option" data-value="Numpy">Numpy</div>
                         
-                            <div class="dropdown-option" data-value="PyTorch">PyTorch</div>
+                        <div class="dropdown-option" data-value="OpenCV">OpenCV</div>
                         
-                            <div class="dropdown-option" data-value="QisKit">QisKit</div>
+                        <div class="dropdown-option" data-value="PIL">PIL</div>
                         
-                            <div class="dropdown-option" data-value="SCSS">SCSS</div>
+                        <div class="dropdown-option" data-value="PennyLane">PennyLane</div>
                         
-                            <div class="dropdown-option" data-value="TensorFlow">TensorFlow</div>
+                        <div class="dropdown-option" data-value="PyTorch">PyTorch</div>
                         
-                            <div class="dropdown-option" data-value="tf.data">tf.data</div>
+                        <div class="dropdown-option" data-value="QisKit">QisKit</div>
+                        
+                        <div class="dropdown-option" data-value="SCSS">SCSS</div>
+                        
+                        <div class="dropdown-option" data-value="TensorFlow">TensorFlow</div>
+                        
+                        <div class="dropdown-option" data-value="tf.data">tf.data</div>
                         
                     </div>
                 </div>
-                <input type="hidden" id="project-stack-filter" class="filter-select project-filter-select" data-filter-group="project-stack" value="all">
+                <input type="hidden" id="project-stack-filter" class="filter-select project-filter-select"
+                    data-filter-group="project-stack" value="all">
             </div>
         </div>
-	</div>
-	<hr>
-	<!-- Masonry grid container -->
-	<div class="masonry-wrapper">
-     
-        <div class="project-item" data-project-area="Machine Learning" data-project-stack="TensorFlow OpenCV Android Image Filter">
+    </div>
+    <hr>
+    <!-- Masonry grid container -->
+    <div class="masonry-wrapper">
+        
+        <div class="project-item" data-project-area="Machine Learning"
+            data-project-stack="TensorFlow OpenCV Android Image Filter">
                     <div class="card project-card">
             <div class="card-header">
                 <h2 class="text-center">Face De-Identification</h4>
@@ -428,10 +447,11 @@
                     <mark>&nbspImage Filter&nbsp</mark> 
                 </div>
         </div>
- 
+
         </div>
-     
-        <div class="project-item" data-project-area="Quantum Machine Learning" data-project-stack="PennyLane TensorFlow Numpy">
+        
+        <div class="project-item" data-project-area="Quantum Machine Learning"
+            data-project-stack="PennyLane TensorFlow Numpy">
                     <div class="card project-card">
             <div class="card-header">
                 <h2 class="text-center">QML-Tutorials</h4>
@@ -465,10 +485,11 @@
                     <mark>&nbspNumpy&nbsp</mark> 
                 </div>
         </div>
- 
+
         </div>
-     
-        <div class="project-item" data-project-area="Machine Learning" data-project-stack="TensorFlow Keras Docker tf.data PIL">
+        
+        <div class="project-item" data-project-area="Machine Learning"
+            data-project-stack="TensorFlow Keras Docker tf.data PIL">
                     <div class="card project-card">
             <div class="card-header">
                 <h2 class="text-center">ARCNN-keras</h4>
@@ -504,10 +525,11 @@
                     <mark>&nbspPIL&nbsp</mark> 
                 </div>
         </div>
- 
+
         </div>
-     
-        <div class="project-item" data-project-area="Web Development" data-project-stack="Jekyll BootStrap JQuery SCSS HTML5">
+        
+        <div class="project-item" data-project-area="Web Development"
+            data-project-stack="Jekyll BootStrap JQuery SCSS HTML5">
                     <div class="card project-card">
             <div class="card-header">
                 <h2 class="text-center">vinayak19th.github.io</h4>
@@ -559,10 +581,11 @@
                     <mark>&nbspHTML5&nbsp</mark> 
                 </div>
         </div>
- 
+
         </div>
-     
-        <div class="project-item" data-project-area="Machine Learning" data-project-stack="Kaldi ESPNet Bash PyTorch">
+        
+        <div class="project-item" data-project-area="Machine Learning"
+            data-project-stack="Kaldi ESPNet Bash PyTorch">
                     <div class="card project-card">
             <div class="card-header">
                 <h2 class="text-center">LOW-RESOURCE ASR</h4>
@@ -596,10 +619,11 @@ Urdu and Pashto <br /></li>
                     <mark>&nbspPyTorch&nbsp</mark> 
                 </div>
         </div>
- 
+
         </div>
-     
-        <div class="project-item" data-project-area="Quantum Machine Learning" data-project-stack="QisKit Numpy">
+        
+        <div class="project-item" data-project-area="Quantum Machine Learning"
+            data-project-stack="QisKit Numpy">
                     <div class="card project-card">
             <div class="card-header">
                 <h2 class="text-center">Quantum Machine Learning</h4>
@@ -628,10 +652,11 @@ Urdu and Pashto <br /></li>
                     <mark>&nbspNumpy&nbsp</mark> 
                 </div>
         </div>
- 
+
         </div>
-     
-        <div class="project-item" data-project-area="Quantum Machine Learning" data-project-stack="PennyLane Keras TensorFlow JAX PyTorch">
+        
+        <div class="project-item" data-project-area="Quantum Machine Learning"
+            data-project-stack="PennyLane Keras TensorFlow JAX PyTorch">
                     <div class="card project-card">
             <div class="card-header">
                 <h2 class="text-center">PennyLane-Keras-Layer</h4>
@@ -669,10 +694,11 @@ Urdu and Pashto <br /></li>
                     <mark>&nbspPyTorch&nbsp</mark> 
                 </div>
         </div>
- 
+
         </div>
-     
-        <div class="project-item" data-project-area="Quantum Machine Learning" data-project-stack="PennyLane Keras TensorFlow JAX PyTorch">
+        
+        <div class="project-item" data-project-area="Quantum Machine Learning"
+            data-project-stack="PennyLane Keras TensorFlow JAX PyTorch">
                     <div class="card project-card">
             <div class="card-header">
                 <h2 class="text-center">PennyLane-Keras3</h4>
@@ -707,14 +733,50 @@ Urdu and Pashto <br /></li>
                     <mark>&nbspPyTorch&nbsp</mark> 
                 </div>
         </div>
- 
+
         </div>
-    
-	</div>
-	<hr>
+        
+        <div class="project-item" data-project-area="Linux"
+            data-project-stack="JavaScript GNOME DDCutil">
+                    <div class="card project-card">
+            <div class="card-header">
+                <h2 class="text-center">DDU-Brightness-Controller</h4>
+            </div>
+            <div class="card-body project-card-header">
+                <!-- Brief -->
+                <div class="text-muted text-center">
+                    <p><em> A GNOME extension to manage external monitor brightness using ddcutil </em></p>
+                </div>
+                <!-- GitHub Stats Card Image --><center>
+                <a role="button" href="https://github.com/vinayak19th/ddcutil-brightness-controller-Gnome" class="btn btn-secondary rounded-pill project-github-button">
+                    <i class="devicon-github-original"></i><b>CodeBase</b> 
+                </a>
+                </center><!-- Description -->
+                <div class="card-text project-card-text">
+                    <ul>
+  <li>A GNOME extension to manage external monitor brightness using ddcutil.</li>
+  <li>Multiple sliders per monitor supported natively.</li>
+  <li>Persistence: Remembers your last configured brightness state across reloads.</li>
+  <li>Config file populated automatically based on connected monitors using ddcutil detect.</li>
+  <li>Debounced inputs to avoid hardware command saturation on sliders drag-n-drop.</li>
+</ul>
+
+                </div>
+            </div>  
+            <div class="card-footer project-card-footer">
+                    <mark>&nbspJavaScript&nbsp</mark> 
+                
+                    <mark>&nbspGNOME&nbsp</mark> 
+                
+                    <mark>&nbspDDCutil&nbsp</mark> 
+                </div>
+        </div>
+
+        </div>
+        
+    </div>
+    <hr>
 </div>
-
-
     </main>
     <!-- jQuery Version 1.11.0 -->
     <script src="/assets/js/jquery-1.11.0.js"></script>

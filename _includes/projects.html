@@ -1,54 +1,63 @@
 {% comment %}
 <div class="container projects-container" id="projects">
-	<h3>{{ site.projects_title | default: "Projects" }}</h3>
-	<div class="row">
-		{% for project in site.data.projects %}
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			{% include {{ project.layout | default: 'left' | append: ".html" }}
-			item=project %}
-		</div>
-		{% endfor %}
-	</div>
+    <h3>{{ site.projects_title | default: "Projects" }}</h3>
+    <div class="row">
+        {% for project in site.data.projects %}
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            {% include {{ project.layout | default: 'left' | append: ".html" }}
+            item=project %}
+        </div>
+        {% endfor %}
+    </div>
 </div>
 {% endcomment %}
 
 <div class="container projects-container" id="projects">
-	<div class="floating-reset-div mb-3">
-		<h3>{{ site.projects_title | default: "Projects" }}</h3>
-		<button class="reset-filters-btn floating-reset-btn" data-target="project">Reset</button>
-	</div>
-	<!-- Filter Controls -->
+    <div class="floating-reset-div mb-3">
+        <h3>{{ site.projects_title | default: "Projects" }}</h3>
+        <button class="reset-filters-btn floating-reset-btn" data-target="project">Reset</button>
+    </div>
+    <!-- Filter Controls -->
 
-	<div id="Projectfilters" class="filters d-flex justify-content-center align-items-center flex-wrap gap-3">
+    <div id="Projectfilters" class="filters d-flex justify-content-center align-items-center flex-wrap gap-3">
+
+        {% assign all_areas = "" | split: "" %}
+        {% for project in site.data.projects %}
+        {% if project.area %}
+        {% assign all_areas = all_areas | push: project.area %}
+        {% endif %}
+        {% endfor %}
+        {% assign unique_areas = all_areas | uniq | sort %}
 
         <div class="filter-group">
-			<label for="project-area-filter"> Area: </label>
+            <label for="project-area-filter"> Area: </label>
             <div class="custom-dropdown">
                 <button class="custom-dropdown-toggle" type="button">All</button>
                 <div class="custom-dropdown-menu">
                     <input type="text" class="dropdown-search" placeholder="Search...">
                     <div class="dropdown-options">
                         <div class="dropdown-option" data-value="all">All</div>
-                        <div class="dropdown-option" data-value="Quantum Machine Learning">Quantum Machine Learning</div>
-                        <div class="dropdown-option" data-value="Machine Learning">Machine Learning</div>
-                        <div class="dropdown-option" data-value="Web Development">Web Development</div>
+                        {% for area in unique_areas %}
+                        <div class="dropdown-option" data-value="{{ area }}">{{ area }}</div>
+                        {% endfor %}
                     </div>
                 </div>
-                <input type="hidden" id="project-area-filter" class="filter-select project-filter-select" data-filter-group="project-area" value="all">
+                <input type="hidden" id="project-area-filter" class="filter-select project-filter-select"
+                    data-filter-group="project-area" value="all">
             </div>
-		</div>
+        </div>
 
         <!-- Stack Filter -->
         {% assign all_stack = "" | split: "" %}
         {% for project in site.data.projects %}
-            {% if project.stack %}
-                {% for tech in project.stack %}
-                    {% assign all_stack = all_stack | push: tech %}
-                {% endfor %}
-            {% endif %}
+        {% if project.stack %}
+        {% for tech in project.stack %}
+        {% assign all_stack = all_stack | push: tech %}
+        {% endfor %}
+        {% endif %}
         {% endfor %}
         {% assign unique_stack = all_stack | uniq | sort %}
-		<div class="vr"></div>
+        <div class="vr"></div>
 
         <div class="filter-group">
             <label for="project-stack-filter"> Tech Stack: </label>
@@ -59,23 +68,24 @@
                     <div class="dropdown-options">
                         <div class="dropdown-option" data-value="all">All</div>
                         {% for tech in unique_stack %}
-                            <div class="dropdown-option" data-value="{{ tech }}">{{ tech }}</div>
+                        <div class="dropdown-option" data-value="{{ tech }}">{{ tech }}</div>
                         {% endfor %}
                     </div>
                 </div>
-                <input type="hidden" id="project-stack-filter" class="filter-select project-filter-select" data-filter-group="project-stack" value="all">
+                <input type="hidden" id="project-stack-filter" class="filter-select project-filter-select"
+                    data-filter-group="project-stack" value="all">
             </div>
         </div>
-	</div>
-	<hr>
-	<!-- Masonry grid container -->
-	<div class="masonry-wrapper">
-    {% for project in site.data.projects %} 
-        <div class="project-item" data-project-area="{{ project.area }}" data-project-stack="{{ project.stack | join: ' ' }}">
-            {% include layout/project-card.html item=project %} 
+    </div>
+    <hr>
+    <!-- Masonry grid container -->
+    <div class="masonry-wrapper">
+        {% for project in site.data.projects %}
+        <div class="project-item" data-project-area="{{ project.area }}"
+            data-project-stack="{{ project.stack | join: ' ' }}">
+            {% include layout/project-card.html item=project %}
         </div>
-    {% endfor %}
-	</div>
-	<hr>
+        {% endfor %}
+    </div>
+    <hr>
 </div>
-
