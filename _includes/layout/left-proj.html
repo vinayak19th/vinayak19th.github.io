@@ -10,7 +10,7 @@
             {%- endif -%}
         </div>
         <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 details">
-            {%- if include.item.github -%}
+            {%- if include.item.github and site.githubstats -%}
             <div class="repostats">
                 {% assign data = include.item.github | split:"/" %}
                 <a href="https://github.com/{{ include.item.github }}" target="_blank">

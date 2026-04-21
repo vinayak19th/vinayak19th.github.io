@@ -58,6 +58,10 @@ function modeSwitcher() {
     }
 }
 
+if (toggle) {
+    toggle.addEventListener('click', modeSwitcher);
+}
+
 //Check User Device Settings
 /*if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     document.body.classList.add("dark");

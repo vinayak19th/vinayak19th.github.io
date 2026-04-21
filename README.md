@@ -18,7 +18,7 @@ Based on : [modern-resume-theme](https://github.com/sproogen/modern-resume-theme
 
 
 ## Notable Features:
-* System persistent dark mode (Remembers your preference via cookies)
+* System persistent dark mode (Remembers your preference via localStorage)
 * Auto Generating **Filterable Publications List** from .bib file. 
 * Filtered Project List
 * Live Github Stats and Repo cards
@@ -135,7 +135,7 @@ A full example of the _config.yml can be found [here](https://github.com/vinayak
     * Replace all the personal info in this section
     * This will automatically update the following:
         * All buttons in the header and homepage
-    * If **githubstats** is set to any value and not commented out, **github_username** will generate all the GitHub statics on the about page
+    * If **githubstats** is set to `true`, GitHub profile/repo stat cards are rendered where supported layouts use `github` values
 3. About Section:
     * Replace all the personal info in this section
     * This will automatically update the following:
