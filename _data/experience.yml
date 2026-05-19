@@ -1,5 +1,24 @@
 # Experience template
 - layout: layout/left-ex
+  company: Anton Intelligence
+  link: https://www.antonintelligence.com/
+  job_title: [[Artificial Intelligence/Machine Learning Intern, PhD, May 2026 - Present],]
+  location: Tempe,Arizona
+  document : 
+  doclink : 
+  stack: [Machine Learning, Artificial Intelligence]
+  description: > # this will include new lines to allow paragraphs
+    * Designing and developing software and AI/ML systems to advance the company's AI-powered software platform.
+
+    * Conducting applied research and proof-of-concept development to evaluate new techniques and technologies for integration into production software.
+
+    * Providing research-informed guidance to the broader engineering team regarding system architecture, model selection, and implementation approaches.
+
+    * Defining evaluation frameworks, performance benchmarks, and quality metrics to ensure the reliability of engineering deliverables.
+
+    * Documenting technical findings, architectural recommendations, and research outcomes while collaborating in engineering standups and sprint reviews to facilitate team knowledge-sharing 
+
+- layout: layout/left-ex
   company: Arizona State University
   link: https://scai.engineering.asu.edu/
   job_title: [[Research Assistant, Dec 2024 - Present], [Teaching Assistant, Aug 2024 - Dec 2024], [Teaching Assistant, Jan 2024 - May 2024], [Teaching Assistant, Aug 2023 - Dec 2023], [Teaching Assistant, Aug 2022 - Dec 2022]]
