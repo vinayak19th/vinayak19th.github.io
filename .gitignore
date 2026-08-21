@@ -2,3 +2,4 @@
 .jekyll-cache/*
 .agents/
 .claude/
+*.DS_Store

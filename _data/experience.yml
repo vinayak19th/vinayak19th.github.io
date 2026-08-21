@@ -1,35 +1,44 @@
 # Experience template
 - layout: layout/left-ex
+  company: Arizona State University
+  link: https://scai.engineering.asu.edu/
+  job_title: [[Research Assistant, Dec 2024 - Present]]
+  location: Tempe,Arizona
+  document : Research & Projects
+  doclink : https://vinayak19th.github.io/portfolio/
+  stack: [Quantum Machine Learning, Quantum Computing, Machine Learning]
+  description: > # this will include new lines to allow paragraphs
+    [RA] <u> Dec 2024 - Present</u> 
+    Under Professor <a href="https://search.asu.edu/profile/969623">Prof. Aviral Shrivastava</a> at <a href="https://labs.engineering.asu.edu/mps-lab/">MPS Lab</a>:
+      * Developed [QPMeL](https://arxiv.org/abs/2312.01655): Quantum Polar Metric Learning for classically trained, quantum-aware embeddings that encode classical data onto unentangled qubit state spaces
+      * Introduced [QuIRK](https://arxiv.org/abs/2510.08650): a quantum-inspired re-uploading Kolmogorov–Arnold Network that replaces B-splines with single-qubit data re-uploading circuits for more parameter-efficient, interpretable function approximation
+      * Co-authored a [primer on data in Quantum Machine Learning](https://ieeexplore.ieee.org/document/10740770) (CASES 2024) surveying how classical data is represented and used in QML systems
+      * Contributed to [LUCI](https://doi.org/10.1145/3735452.3735536) (LCTES 2025): a lightweight LLM-based UI command interface for embedded system automation
+
+- layout: layout/left-ex
   company: Anton Intelligence
   link: https://www.antonintelligence.com/
-  job_title: [['Artificial Intelligence/Machine Learning Intern, PhD', May 2026 - Present],]
+  job_title: [['Artificial Intelligence/Machine Learning Intern, PhD', May 2026 - August 2026],]
   location: Tempe,Arizona
   document : 
   doclink : 
   stack: [Machine Learning, Artificial Intelligence]
   description: > # this will include new lines to allow paragraphs
     * Designing and developing software and AI/ML systems to advance the company's AI-powered software platform.
-
     * Conducting applied research and proof-of-concept development to evaluate new techniques and technologies for integration into production software.
-
     * Providing research-informed guidance to the broader engineering team regarding system architecture, model selection, and implementation approaches.
-
     * Defining evaluation frameworks, performance benchmarks, and quality metrics to ensure the reliability of engineering deliverables.
-
     * Documenting technical findings, architectural recommendations, and research outcomes while collaborating in engineering standups and sprint reviews to facilitate team knowledge-sharing 
 
 - layout: layout/left-ex
   company: Arizona State University
   link: https://scai.engineering.asu.edu/
-  job_title: [[Research Assistant, Dec 2024 - Present], [Teaching Assistant, Aug 2024 - Dec 2024], [Teaching Assistant, Jan 2024 - May 2024], [Teaching Assistant, Aug 2023 - Dec 2023], [Teaching Assistant, Aug 2022 - Dec 2022]]
+  job_title: [[Teaching Assistant, Aug 2024 - Dec 2024], [Teaching Assistant, Jan 2024 - May 2024], [Teaching Assistant, Aug 2023 - Dec 2023], [Teaching Assistant, Aug 2022 - Dec 2022]]
   location: Tempe,Arizona
   document : 
   doclink : 
   stack: [Teaching, Quantum Computing, Game Design]
   description: > # this will include new lines to allow paragraphs
-    [RA] <u> Dec 2024 - Present</u> 
-    Under Professor <a href="https://search.asu.edu/profile/969623">Prof. Aviral Shrivastava</a>:
-      * Researching how to improve current NISQ Quantum Computers using SOTA Machine Learning
 
     [TA] <u> Jan 2025 - May 2025</u>
     CSE 598:Quantum Computing under <a href="https://search.asu.edu/profile/969623">Prof. Aviral Shrivastava</a>: 
