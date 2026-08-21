@@ -24,11 +24,15 @@
   doclink : 
   stack: [Machine Learning, Artificial Intelligence]
   description: > # this will include new lines to allow paragraphs
-    * Designing and developing software and AI/ML systems to advance the company's AI-powered software platform.
-    * Conducting applied research and proof-of-concept development to evaluate new techniques and technologies for integration into production software.
-    * Providing research-informed guidance to the broader engineering team regarding system architecture, model selection, and implementation approaches.
-    * Defining evaluation frameworks, performance benchmarks, and quality metrics to ensure the reliability of engineering deliverables.
-    * Documenting technical findings, architectural recommendations, and research outcomes while collaborating in engineering standups and sprint reviews to facilitate team knowledge-sharing 
+      * Designing and developing software and AI/ML systems to advance the company's AI-powered software platform.
+      
+      * Conducting applied research and proof-of-concept development to evaluate new techniques and technologies for integration into production software.
+      
+      * Providing research-informed guidance to the broader engineering team regarding system architecture, model selection, and implementation approaches.
+      
+      * Defining evaluation frameworks, performance benchmarks, and quality metrics to ensure the reliability of engineering deliverables.
+      
+      * Documenting technical findings, architectural recommendations, and research outcomes while collaborating in engineering standups and sprint reviews to facilitate team knowledge-sharing 
 
 - layout: layout/left-ex
   company: Arizona State University
