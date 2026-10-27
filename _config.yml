@@ -96,6 +96,7 @@ scholar:
   last_first: false
   sort_by: year
   order: descending
+  bibtex_skip_fields: [weblink, customvenue, tag, pdfurl]
 
 exclude : [
   "Gemfile",
