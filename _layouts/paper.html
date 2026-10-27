@@ -31,10 +31,7 @@
           <span class="badge badge-danger">Pre-Print</span>
         {% endif %}
         <br>
-        {% for author in entry.author_array %}
-          {{ author.first }} {{ author.last }}
-          {% unless forloop.last %}, {% endunless %}
-        {% endfor %}
+        {{ entry.author_array | authors_first_last }}
       {%- if entry.url -%}
         </a>
       {%- endif -%}
@@ -67,7 +64,7 @@
     </div>
   </div>
   <div class="collapse" id="{{ entry.key }}" aria-labelledby="heading{{ forloop.index }}">
-    <pre class="bibentry-print">{{ entry.bibtex }}</pre>
+    <pre class="bibentry-print">{{ entry.bibtex | bibtex_first_last_authors: entry.author_array }}</pre>
   </div>
   <center>
   <hr width="80%">
